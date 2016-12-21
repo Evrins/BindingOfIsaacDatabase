@@ -1,0 +1,6 @@
+framework module Pods_binding_of_isaac_databaseTests {
+  umbrella header "Pods-binding-of-isaac-databaseTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

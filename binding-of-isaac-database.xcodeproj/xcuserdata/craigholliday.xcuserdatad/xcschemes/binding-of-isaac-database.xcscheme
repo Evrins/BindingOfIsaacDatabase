@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "163F1FA31E07371D005BCDA9"
+               BuildableName = "binding-of-isaac-database.app"
+               BlueprintName = "binding-of-isaac-database"
+               ReferencedContainer = "container:binding-of-isaac-database.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "163F1FB71E07371E005BCDA9"
+               BuildableName = "binding-of-isaac-databaseTests.xctest"
+               BlueprintName = "binding-of-isaac-databaseTests"
+               ReferencedContainer = "container:binding-of-isaac-database.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "163F1FC21E07371E005BCDA9"
+               BuildableName = "binding-of-isaac-databaseUITests.xctest"
+               BlueprintName = "binding-of-isaac-databaseUITests"
+               ReferencedContainer = "container:binding-of-isaac-database.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "163F1FA31E07371D005BCDA9"
+            BuildableName = "binding-of-isaac-database.app"
+            BlueprintName = "binding-of-isaac-database"
+            ReferencedContainer = "container:binding-of-isaac-database.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "163F1FA31E07371D005BCDA9"
+            BuildableName = "binding-of-isaac-database.app"
+            BlueprintName = "binding-of-isaac-database"
+            ReferencedContainer = "container:binding-of-isaac-database.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "163F1FA31E07371D005BCDA9"
+            BuildableName = "binding-of-isaac-database.app"
+            BlueprintName = "binding-of-isaac-database"
+            ReferencedContainer = "container:binding-of-isaac-database.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

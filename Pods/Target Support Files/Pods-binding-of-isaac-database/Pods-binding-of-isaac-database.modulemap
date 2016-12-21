@@ -1,0 +1,6 @@
+framework module Pods_binding_of_isaac_database {
+  umbrella header "Pods-binding-of-isaac-database-umbrella.h"
+
+  export *
+  module * { export * }
+}
