@@ -11,6 +11,7 @@ import RealmSwift
 import ObjectMapper
 
 class ItemModel: Object, Mappable {
+    dynamic var itemKey = UUID().uuidString
     dynamic var itemName: String? = nil
     dynamic var itemId: String? = nil
     dynamic var itemQuote: String? = nil
@@ -27,7 +28,7 @@ class ItemModel: Object, Mappable {
     }
     
     override static func primaryKey() -> String? {
-        return "itemName"
+        return "itemKey"
     }
     
     // Mappable

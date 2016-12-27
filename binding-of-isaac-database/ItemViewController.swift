@@ -15,11 +15,34 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    var genre = LayoutMachine.Grid {
+        didSet {
+            displayOptions(genre: genre)
+        }
+    }
+    
+    func displayOptions(genre: LayoutMachine) {
+        switch genre {
+//        case .Grid:
+//            setupGridLayout()
+        case .List:
+            setupListLayout()
+//        case .Color:
+//            displayRockSongs()
+        default:
+            setupGridLayout()
+        }
+    }
+    
     fileprivate var tap: UITapGestureRecognizer!
     
     let itemCollection = ItemCollection.sharedInstance
     var items: Results<ItemModel>!
     var searchItems: Results<ItemModel>!
+    var selectedItem: ItemModel? = nil
+    
+    let gridFlowLayout = GridFlowLayout()
+    let listFlowLayout = ListFlowLayout()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +52,16 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         itemCollection.delegate = self
 
         itemCollection.loadItems()
-        self.items = self.itemCollection.getItems()
-        self.searchItems = items
-        // Do any additional setup after loading the view.
+
+        displayOptions(genre: genre)
+        collectionView.backgroundColor = UIColor(rgb: 0xEAEAEA)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(addTapped))
+
+    }
+    
+    func addTapped() {
+        genre.next()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +70,22 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func itemsDidFinishLoading() {
-        self.items = self.itemCollection.getItems()
+        self.items = self.itemCollection.getItemsSorted(byProperty: "itemId")
+        self.searchItems = items
+        collectionView.reloadData()
+    }
+    
+    // MARK: - Private methods
+    fileprivate func setupListLayout() {
+        collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
+        collectionView.collectionViewLayout = listFlowLayout
+        collectionView.reloadData()
+    }
+    
+    fileprivate func setupGridLayout() {
+        collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
+
+        collectionView.collectionViewLayout = gridFlowLayout
         collectionView.reloadData()
     }
 
@@ -68,13 +113,41 @@ extension ItemViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ItemCollectionViewCell
+        let item = searchItems[indexPath.row]
         
-        // Configure the cell
-        cell.itemImage.backgroundColor = UIColor.cyan
-        cell.itemTitle.text = searchItems[indexPath.row].getItemName()
-        
-        return cell
+        switch(genre) {
+        case .List:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCollectionViewCell.id, for: indexPath) as! ItemListCollectionViewCell
+            
+            cell.itemQuote.text = "\"\(item.getItemQuote()!)\""
+            cell.itemTitle.text = item.getItemName()
+            
+            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
+            let image: UIImage? = UIImage(named: item.getItemId()!)
+            if image != nil {
+                cell.itemImage.image = image
+            }
+            
+            cell.alpha = 0
+            UIView.animate(withDuration: 0.25, animations: { cell.alpha = 1 })
+            
+            return cell
+        default: // .Grid
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
+            
+            cell.itemTitle.text = ""
+            
+            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
+            let image: UIImage? = UIImage(named: item.getItemId()!)
+            if image != nil {
+                cell.itemImage.image = image
+            }
+                        
+            cell.alpha = 0
+            UIView.animate(withDuration: 0.25, animations: { cell.alpha = 1 })
+            
+            return cell
+        }
     }
 }
 
@@ -115,7 +188,10 @@ extension ItemViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Hi \(indexPath.row)")
+        let item = searchItems[indexPath.row]
+        selectedItem = item
+        performSegue(withIdentifier: "showItemDetail", sender: nil)
+//        print("Item: \(item.getItemId())")
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -130,4 +206,31 @@ extension ItemViewController {
         view.endEditing(true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showItemDetail" {
+            let destinationVC =  segue.destination as! ItemDetailViewController
+            destinationVC.selectedItem = selectedItem
+        }
+
+    }
+    
+}
+
+extension ItemViewController {
+    // MARK: - Collection View Delegate Flow Layout Methods
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let bounds = collectionView.bounds
+        
+        return CGSize(width: (bounds.width * 10), height: bounds.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+
 }

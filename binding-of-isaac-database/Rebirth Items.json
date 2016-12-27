@@ -2,7 +2,7 @@
   "Rebirth Items" : [
     {
       "itemName" : "<3",
-      "itemId" : "15",
+      "itemId" : "015",
       "itemQuote" : "HP up",
       "itemDescription" : "• +1 Health Up  • Fully restores all red heart containers  • Has a chance to drop from the Gluttony miniboss fight.",
       "itemType" : "Passive",
@@ -22,7 +22,7 @@
     },
     {
       "itemName" : "1UP",
-      "itemId" : "11",
+      "itemId" : "011",
       "itemQuote" : "Extra life",
       "itemDescription" : "• Gives the player an extra life  • When revived, the green mushroom that follows Isaac will disappear and he will respawn with the same amount of red heart containers at full health.  • Resurrection takes place before all other items which give you an extra live, except Guppy's Collar.",
       "itemType" : "Passive",
@@ -61,6 +61,56 @@
       "rechargeTime" : ""
     },
     {
+      "itemName" : "A Dollar",
+      "itemId" : "018",
+      "itemQuote" : "$$$",
+      "itemDescription" : "• +99 coins.  • Can drop from an exploding slot machine while playing it.",
+      "itemType" : "Passive",
+      "itemPool" : "None (Arcade machine only)",
+      "itemTags" : "slot machine, arcade machine",
+      "rechargeTime" : "None (Arcade machine only)"
+    },
+    {
+      "itemName" : "A Lump of Coal",
+      "itemId" : "132",
+      "itemQuote" : "My Xmas present",
+      "itemDescription" : "• Tears gain a damage up and increase in size based on the distance they travel.  • The length of a normal room roughly gives +6 damage, but this can be higher with double rooms or Tiny Planet.  In Afterbirth this item synergises with Brimstone and Tech, allowing them to do more damage the further away the enemy is.",
+      "itemType" : "Passive",
+      "itemPool" : "None (Krampus only)",
+      "itemTags" : "krampus",
+      "rechargeTime" : "None (Krampus only)"
+    },
+    {
+      "itemName" : "A Pony",
+      "itemId" : "130",
+      "itemQuote" : "Flight + dash attack",
+      "itemDescription" : "• Allows Isaac to fly while the Pony is held.  • Sets your speed stat to 1.5 if it isn't already that high.  • When the active attack is used, Isaac will dash across the screen dealing 40 contact damage to anything he hits.  • Drops from the Headless Horseman boss fight.",
+      "itemType" : "Active",
+      "itemPool" : "None (Headless horseman only)",
+      "itemTags" : "headless horseman, headless horsemen",
+      "rechargeTime" : "Recharge Time: 6 rooms"
+    },
+    {
+      "itemName" : "A Quarter",
+      "itemId" : "074",
+      "itemQuote" : "+25 coins",
+      "itemDescription" : "• +25 Coins  • Has a very small chance to drop after destroying one of the pots that appear in the Basement and Cellar floors.  • Has a chance to drop from the Super Greed miniboss fight.  UNLOCK: Unlock this item by beating Mom's Heart 8 times.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Secret Room, Super Greed Miniboss",
+      "itemTags" : "secret room pool, item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room, Secret Room, Super Greed Miniboss"
+    },
+    {
+      "itemName" : "A Snack",
+      "itemId" : "346",
+      "itemQuote" : "HP up",
+      "itemDescription" : "• +1 Health Up.",
+      "itemType" : "Passive",
+      "itemPool" : "Boss Room",
+      "itemTags" : "boss room pool, boss room item, the lost item pool",
+      "rechargeTime" : "Boss Room"
+    },
+    {
       "itemName" : "Abaddon",
       "itemId" : "230",
       "itemQuote" : "Evil up + DMG up + fear shot",
@@ -82,7 +132,7 @@
     },
     {
       "itemName" : "Anarchist's Cookbook",
-      "itemId" : "65",
+      "itemId" : "065",
       "itemQuote" : "Summon bombs",
       "itemDescription" : "• Spawns troll bombs at random locations around the room.  • Bombs are effected by other passive bomb items.  • Has a chance to drop from the Pride miniboss fight.",
       "itemType" : "Active",
@@ -161,16 +211,6 @@
       "rechargeTime" : ""
     },
     {
-      "itemName" : "The Battery",
-      "itemId" : "63",
-      "itemQuote" : "Stores energy",
-      "itemDescription" : "• All spacebar items can now be 'overcharged', allowing them to be charged up twice instead of once.  • The extra charges appear in yellow on top of the normal green bars.  • Has no effect with items which recharge over time instead of on a per-room basis.",
-      "itemType" : "Passive",
-      "itemPool" : "Shop",
-      "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : ""
-    },
-    {
       "itemName" : "BBF",
       "itemId" : "272",
       "itemQuote" : "Big beautiful fly",
@@ -178,26 +218,6 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool,",
-      "rechargeTime" : ""
-    },
-    {
-      "itemName" : "The Bean",
-      "itemId" : "111",
-      "itemQuote" : "Toot on command",
-      "itemDescription" : "• Upon use, this item causes Isaac to fart and poison any enemies in close proximity.  • The Bean deals 26 damage total (5 initially then 21 in a Damage over Time effect.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room, Beggar",
-      "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, team bean, #teambean",
-      "rechargeTime" : "Recharge Time: 1 room."
-    },
-    {
-      "itemName" : "The Belt",
-      "itemId" : "28",
-      "itemQuote" : "Speed up",
-      "itemDescription" : "• +0.3 Speed Up.",
-      "itemType" : "Passive",
-      "itemPool" : "Boss Room",
-      "itemTags" : "boss room pool, boss room item,",
       "rechargeTime" : ""
     },
     {
@@ -231,16 +251,6 @@
       "rechargeTime" : ""
     },
     {
-      "itemName" : "The Bible",
-      "itemId" : "33",
-      "itemQuote" : "Temporary flight",
-      "itemDescription" : "• Gives Isaac angel wings for the current room, allowing him to fly.  • If used during the Mom's Foot or Mom's Heart boss fights, The Bible will kill Mom instantly.  • If used during the Satan fight, The Bible will instantly kill Isaac.",
-      "itemType" : "Active",
-      "itemPool" : "Shop, Library, Angel Room",
-      "itemTags" : "library pool, library room, book room pool, angel room pool, god room pool, angel room item, shop room pool, shop item pool,",
-      "rechargeTime" : "Recharge Time: 6 rooms."
-    },
-    {
       "itemName" : "Big Fan",
       "itemId" : "279",
       "itemQuote" : "Fat protector",
@@ -248,16 +258,6 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : ""
-    },
-    {
-      "itemName" : "The Black Bean",
-      "itemId" : "180",
-      "itemQuote" : "Toot on touch",
-      "itemDescription" : "• Upon taking damage, Isaac will fart, causing all enemies in close proximity to become poisoned.  • Black Bean deals 26 damage total (5 initially then 21 in a Damage over Time effect.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Beggar",
-      "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, the lost item pool",
       "rechargeTime" : ""
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "itemName" : "Blood of the Martyr",
-      "itemId" : "7",
+      "itemId" : "007",
       "itemQuote" : "DMG up",
       "itemDescription" : "• +1.0 Damage Up.  • +50% / 1.5 times Damage Multiplier if you also have Book of Belial (Does not stack with Magic Mushroom or Cricket's Head multipliers)  • This item can only be found in the item room pool, unlike the original game where it was also a god item",
       "itemType" : "Passive",
@@ -382,7 +382,7 @@
     },
     {
       "itemName" : "Bob's Rotten Head",
-      "itemId" : "42",
+      "itemId" : "042",
       "itemQuote" : "Reusable ranged bomb",
       "itemDescription" : "• A poison bomb which can be thrown and leaves a poison effect on any enemies within the blast radius.  • The bomb deals 50 damage on hit and leaves a damage over time poison effect that does 6 or 8 damage per tick.  • Synergizes with tear modifying items such as My Reflection or Tiny Planet.  • Has a chance to drop from the Sloth miniboss fight.",
       "itemType" : "Active",
@@ -398,16 +398,6 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool, bomb beggar",
-      "rechargeTime" : ""
-    },
-    {
-      "itemName" : "The Body",
-      "itemId" : "334",
-      "itemQuote" : "I feel all",
-      "itemDescription" : "• +3 Health Up.  • The three heart containers are pre-filled with red hearts.  UNLOCK: Unlock this item by beating the Chest with The Lost.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Angel Room",
-      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, real platinum god, the lost item pool",
       "rechargeTime" : ""
     },
     {
@@ -431,18 +421,8 @@
       "rechargeTime" : ""
     },
     {
-      "itemName" : "The Book of Belial",
-      "itemId" : "34",
-      "itemQuote" : "Temporary DMG up",
-      "itemDescription" : "• Upon use, gives +2 damage up which lasts for the current room.  • +50% / 1.5 times Damage Multiplier if you also have Blood of the Martyr (Does not stack with Magic Mushroom or Cricket's Head multipliers).  • Guaranteed Devil or Angel Room if you have it when you kill the boss on all floors where it's possible to get one.  • Judas starts with this item.  In Afterbirth this is no longer a Guaranteed Devil Deal chance, instead it is +12.5%",
-      "itemType" : "Active",
-      "itemPool" : "Library, Devil Room",
-      "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, starting",
-      "rechargeTime" : "Recharge Time: 3 rooms"
-    },
-    {
       "itemName" : "Book of Revelations",
-      "itemId" : "78",
+      "itemId" : "078",
       "itemQuote" : "Reusable soul protection",
       "itemDescription" : "• Upon use, gives Isaac an extra Soul heart.  • Using this item gives you a higher chance of finding a horsemen boss at the end of the floor.  • +25% chance of a Devil Deal opening after the boss fight (Exact chance unknown).  UNLOCK: Unlock this item by beating one of the horsemen bosses for the first time.  In Afterbirth this item gives +17.5% devil deal chance instead of +25%",
       "itemType" : "Active",
@@ -462,7 +442,7 @@
     },
     {
       "itemName" : "Book of Shadows",
-      "itemId" : "58",
+      "itemId" : "058",
       "itemQuote" : "Temporary invincibility",
       "itemDescription" : "• Gives the player an invulnerability effect which lasts for a few seconds.",
       "itemType" : "Active",
@@ -471,18 +451,8 @@
       "rechargeTime" : "Recharge Time: 3 rooms"
     },
     {
-      "itemName" : "The Book of Sin",
-      "itemId" : "97",
-      "itemQuote" : "Reusable item generator",
-      "itemDescription" : "• Spawns a random pickup on the floor.  • The possible pickups from this item include: Bombs, hearts, keys, coins, pills, batteries or tarot cards.  UNLOCK: Unlock this item by beating each of the Seven Sins once.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room, Library, Devil Room",
-      "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, red 7 book",
-      "rechargeTime" : "Recharge Time: 4 rooms"
-    },
-    {
       "itemName" : "Boom!",
-      "itemId" : "19",
+      "itemId" : "019",
       "itemQuote" : "10 bombs",
       "itemDescription" : "• +10 Bombs",
       "itemType" : "Passive",
@@ -522,7 +492,7 @@
     },
     {
       "itemName" : "Breakfast",
-      "itemId" : "25",
+      "itemId" : "025",
       "itemQuote" : "HP up",
       "itemDescription" : "• +1 Health Up.",
       "itemType" : "Passive",
@@ -562,7 +532,7 @@
     },
     {
       "itemName" : "Brother Bobby",
-      "itemId" : "8",
+      "itemId" : "008",
       "itemQuote" : "Friends 'till the end",
       "itemDescription" : "• A familiar which follows Isaac and shoots normal tears which do 3.5 damage.  • Brother Bobby fires tears at a rate of 1 tear per second.",
       "itemType" : "Passive, Familiar",
@@ -641,16 +611,6 @@
       "rechargeTime" : "Item Room"
     },
     {
-      "itemName" : "The Candle",
-      "itemId" : "164",
-      "itemQuote" : "Reusable flame",
-      "itemDescription" : "• A spacebar item which allows Isaac to fire a blue flame that damages anything in its path for 23 damage per tick.  • Can cause up to a total of 184 potential damage.  UNLOCK: Unlock this item by donating 900 coins to the Shop.",
-      "itemType" : "Active",
-      "itemPool" : "Shop",
-      "itemTags" : "shop room pool, shop item pool, blue candle,",
-      "rechargeTime" : "Recharge Time: Timed (A few seconds)"
-    },
-    {
       "itemName" : "Capricorn",
       "itemId" : "307",
       "itemQuote" : "All stats up",
@@ -702,7 +662,7 @@
     },
     {
       "itemName" : "Charm of the Vampire",
-      "itemId" : "62",
+      "itemId" : "062",
       "itemQuote" : "Kills heal",
       "itemDescription" : "• Heals half a heart after every 13 enemies killed.",
       "itemType" : "Passive",
@@ -722,33 +682,13 @@
     },
     {
       "itemName" : "Chocolate Milk",
-      "itemId" : "69",
+      "itemId" : "069",
       "itemQuote" : "Charge shots",
       "itemDescription" : "• Isaac can now charge shots for more damage by holding down the fire button.  • At full charge, your tears do 4 times more damage.  • Tears fired at the minimum possible charge do roughly 1/3 of your normal damage.  • Tears up - Spamming the fire button allows for rapid fire shots at normal damage.",
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "The Common Cold",
-      "itemId" : "103",
-      "itemQuote" : "Poison damage",
-      "itemDescription" : "• Tears now have a random chance to apply a poison effect, causing 4 or 6 damage per tick to enemies.  • The chance to fire poison shots is affected by your luck stat and at +12 Luck it will activate every time.  • Gives a big increase in damage to Dr. Fetus bombs.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "The Compass",
-      "itemId" : "21",
-      "itemQuote" : "The end is near",
-      "itemDescription" : "• Shows all icons on the map (e.g. Shop)  • Does not show the layout of the map.  • Room icons will not show if a Curse of the Lost is in effect on the current floor.",
-      "itemType" : "Passive",
-      "itemPool" : "Shop, Beggar",
-      "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool,",
-      "rechargeTime" : "Shop, Beggar"
     },
     {
       "itemName" : "Contract From Below",
@@ -792,7 +732,7 @@
     },
     {
       "itemName" : "Cricket's Head",
-      "itemId" : "4",
+      "itemId" : "004",
       "itemQuote" : "DMG up",
       "itemDescription" : "• +0.5 Damage Up  • +50% / 1.5 times Damage Multiplier (Does not stack with the Magic Mushroom multipier).  • Tears now have a significant knockback effect (Does not increase the shot speed stat).  • Can be found in golden chests.  • Cricket's Head used to be known as 'Max's Head in the original game and was renamed for Rebirth.",
       "itemType" : "Passive",
@@ -812,7 +752,7 @@
     },
     {
       "itemName" : "Cube of Meat",
-      "itemId" : "73",
+      "itemId" : "073",
       "itemQuote" : "Gotta meat em all",
       "itemDescription" : "• An orbital which blocks shots and damages enemies it comes into contact with for 7 damage per tick.  • Exclusively drops from one of the horsemen bosses.  • 2 cubes of meat transform the orbital into a meat head which fires blood tears which deal 3.5 damage each.  • 3 cubes of meat transform it into a meat boy familiar that walks around and deals 3.5 contact damage per tick to enemies.  • 4 cubes of meat cause the meat boy familiar to grow in size and do 5.5 damage per tick instead.  • Any further cubes of meat past 4 will start the cycle again.  UNLOCK: Unlock this item by beating Mom for the first time.",
       "itemType" : "Passive",
@@ -822,7 +762,7 @@
     },
     {
       "itemName" : "Cupid's Arrow",
-      "itemId" : "48",
+      "itemId" : "048",
       "itemQuote" : "Piercing shots",
       "itemDescription" : "• Isaac's tears now have a piercing effect which allows them to travel through enemies whilst damaging them.",
       "itemType" : "Passive",
@@ -839,16 +779,6 @@
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
       "rechargeTime" : "Item Room, Secret Room"
-    },
-    {
-      "itemName" : "D4",
-      "itemId" : "284",
-      "itemQuote" : "Reroll into something else",
-      "itemDescription" : "• When used, the D4 re-rolls each item you currently have into another random item from the item room pool.  • Each time an item is generated by the D4, it is also removed from the pool. When the pool is empty, it will eventually re-roll all your items into heart containers.  • Cannot remove Azazel's Brimstone laser.  UNLOCK: Unlock this item by blowing up 30 slot machines.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool, dice, starting",
-      "rechargeTime" : "Recharge Time: 6 rooms"
     },
     {
       "itemName" : "D10",
@@ -881,10 +811,10 @@
       "rechargeTime" : "Recharge Time: 6 rooms"
     },
     {
-      "itemName" : "The D6",
-      "itemId" : "105",
-      "itemQuote" : "Reroll your destiny",
-      "itemDescription" : "• Upon use, any pedestal item (e.g. an item room item) will be re-rolled into another item.  • Isaac starts with this item after it is unlocked.  UNLOCK: Unlock this item by defeating the Isaac boss with Blue Baby.",
+      "itemName" : "D4",
+      "itemId" : "284",
+      "itemQuote" : "Reroll into something else",
+      "itemDescription" : "• When used, the D4 re-rolls each item you currently have into another random item from the item room pool.  • Each time an item is generated by the D4, it is also removed from the pool. When the pool is empty, it will eventually re-roll all your items into heart containers.  • Cannot remove Azazel's Brimstone laser.  UNLOCK: Unlock this item by blowing up 30 slot machines.",
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, dice, starting",
@@ -942,7 +872,7 @@
     },
     {
       "itemName" : "Dead Cat",
-      "itemId" : "81",
+      "itemId" : "081",
       "itemQuote" : "9 lives",
       "itemDescription" : "• Isaac's health is set to 1 and he also gains 9 extra lives.  • Each time Isaac dies, he will respawn with 1 Health.  • Has a chance to drop from the Super Pride mini boss.  • The floating Dead Cat head that follows you will disappear when you are on your last life (Very useful for The Lost)  • This is one of the items which allows you to transform into Guppy.",
       "itemType" : "Passive",
@@ -992,7 +922,7 @@
     },
     {
       "itemName" : "Deck of Cards",
-      "itemId" : "85",
+      "itemId" : "085",
       "itemQuote" : "Reusable card generator",
       "itemDescription" : "• Gives Isaac a random tarot card on use.",
       "itemType" : "Active",
@@ -1012,7 +942,7 @@
     },
     {
       "itemName" : "Dessert",
-      "itemId" : "24",
+      "itemId" : "024",
       "itemQuote" : "HP up",
       "itemDescription" : "• +1 Health Up.",
       "itemType" : "Passive",
@@ -1022,7 +952,7 @@
     },
     {
       "itemName" : "Dinner",
-      "itemId" : "23",
+      "itemId" : "023",
       "itemQuote" : "HP up",
       "itemDescription" : "• +1 Health Up.",
       "itemType" : "Passive",
@@ -1032,7 +962,7 @@
     },
     {
       "itemName" : "Distant Admiration",
-      "itemId" : "57",
+      "itemId" : "057",
       "itemQuote" : "Attack fly",
       "itemDescription" : "• Gives Isaac an orbiting fly which deals 5 contact damage to enemies per tick.  • Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies.",
       "itemType" : "Passive, Orbital",
@@ -1042,7 +972,7 @@
     },
     {
       "itemName" : "Doctor's Remote",
-      "itemId" : "47",
+      "itemId" : "047",
       "itemQuote" : "Reusable air strike",
       "itemDescription" : "• A target is placed on the floor which can be controlled. After a few seconds a huge missile hits the target and deals 70 damage to anything nearby.  • The damage dealt from this item scales with your damage stat.  • Essentially a one-time more powerful use of the Epic Fetus item.",
       "itemType" : "Active",
@@ -1051,18 +981,8 @@
       "rechargeTime" : "Recharge Time: 3 rooms"
     },
     {
-      "itemName" : "A Dollar",
-      "itemId" : "18",
-      "itemQuote" : "$$$",
-      "itemDescription" : "• +99 coins.  • Can drop from an exploding slot machine while playing it.",
-      "itemType" : "Passive",
-      "itemPool" : "None (Arcade machine only)",
-      "itemTags" : "slot machine, arcade machine",
-      "rechargeTime" : "None (Arcade machine only)"
-    },
-    {
       "itemName" : "Dr. Fetus",
-      "itemId" : "52",
+      "itemId" : "052",
       "itemQuote" : "???",
       "itemDescription" : "• Instead of tears, Isaac now shoots bombs from his eyes, which explode dealing damage to anything nearby.  • Bomb damage = damage 5 + 30.  • Tears Down (Tear delay 2.5).  • Bombs will also synergize with other bomb items and tear modifiers (not including Sad Bombs).  UNLOCK: Unlock this item by beating Mom's Heart 9 times.  In Afterbirth the bomb damage has been greatly increased to dmg 5 + 30 instead of just dmg 3.",
       "itemType" : "Passive, Tear Modifier",
@@ -1181,16 +1101,6 @@
       "rechargeTime" : "Recharge Time: Instant (One time use)"
     },
     {
-      "itemName" : "The Gamekid",
-      "itemId" : "93",
-      "itemQuote" : "Temporary Man-Pac",
-      "itemDescription" : "• When used Isaac transforms into pacman, which makes him invincible and does 40 contact damage to enemies per chomp.  • Everytime you 'eat' an enemy, you regain some health.  UNLOCK: Unlock this item by visiting 10 arcades.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
-    },
-    {
       "itemName" : "Gemini",
       "itemId" : "318",
       "itemQuote" : "Conjoined friend",
@@ -1252,7 +1162,7 @@
     },
     {
       "itemName" : "Growth Hormones",
-      "itemId" : "70",
+      "itemId" : "070",
       "itemQuote" : "DMG up + speed up",
       "itemDescription" : "• +1.0 Damage Up  • +0.4 Speed Up",
       "itemType" : "Passive",
@@ -1269,16 +1179,6 @@
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
       "rechargeTime" : "Angel Room"
-    },
-    {
-      "itemName" : "The Guillotine",
-      "itemId" : "206",
-      "itemQuote" : "An out-of-body experience",
-      "itemDescription" : "• +1.0 Damage Up.  • -1 Tear Delay (Tears Up).  • Causes Isaac's head to detach and orbit his body, blocking shots and dealing 7 contact damage per tick.  • BFFs will cause the Guillotine head to do double damage (14 damage per tick)  • Tears are still fired from Isaac's head but the hitbox remains around his body.  UNLOCK: Unlock this item by beating the Isaac boss with Judas.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
     },
     {
       "itemName" : "Guppy's Collar",
@@ -1341,18 +1241,8 @@
       "rechargeTime" : "Shop, Angel Room"
     },
     {
-      "itemName" : "The Halo",
-      "itemId" : "101",
-      "itemQuote" : "All stats up",
-      "itemDescription" : "• +1 Health Up.  • +0.3 Damage Up.  • +0.2 Tears Up.  • +0.25 Range Up.  • +0.3 Speed Up.  • +0.5 Tear Height.  UNLOCK: Unlock this item by killing Mom (Mom's Foot or Mom's Heart) using The Bible.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Boss Room, Angel Room",
-      "itemTags" : "angel room pool, god room pool, angel room item, boss room pool, boss room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Boss Room, Angel Room"
-    },
-    {
       "itemName" : "Halo of Flies",
-      "itemId" : "10",
+      "itemId" : "010",
       "itemQuote" : "Projectile protection",
       "itemDescription" : "• Gives Isaac 2 orbital flies which block enemy shots.  • Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies.",
       "itemType" : "Passive, Orbital",
@@ -1441,16 +1331,6 @@
       "rechargeTime" : "Item Room, Bomb Beggar"
     },
     {
-      "itemName" : "The Hourglass",
-      "itemId" : "66",
-      "itemQuote" : "Temporary enemy slowdown",
-      "itemDescription" : "• When used, slows down all enemies in the current room and their projectiles for a short period of time.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool, hour glass, hourglass",
-      "rechargeTime" : "Recharge Time: 2 rooms"
-    },
-    {
       "itemName" : "How To Jump",
       "itemId" : "282",
       "itemQuote" : "It's time you learned how",
@@ -1496,16 +1376,6 @@
       "itemQuote" : "Infestation shot",
       "itemDescription" : "• Creates 1-2 friendly spiders when you kill an enemy.  • Spiders are spawned at the location where the enemy died.",
       "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "The Inner Eye",
-      "itemId" : "2",
-      "itemQuote" : "Triple shot",
-      "itemDescription" : "• Tears now shoot three at a time (Triple Shot)  • Tears Down significantly (tears = tears 2.1 + 3).",
-      "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Item Room"
@@ -1561,16 +1431,6 @@
       "rechargeTime" : "Recharge Time: Instant"
     },
     {
-      "itemName" : "The Jar",
-      "itemId" : "290",
-      "itemQuote" : "Save your life",
-      "itemDescription" : "• Isaac can now pick up hearts while at full health, which will be stored in the Jar and can be spawned again using the spacebar.  • Up to 4 hearts can be stored in The Jar.  • Soul hearts and black hearts cannot be stored.  • If used in a Black heart or Eternal heart super secret room, it will spawn the relevant heart.",
-      "itemType" : "Active",
-      "itemPool" : "Shop",
-      "itemTags" : "shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: Instant"
-    },
-    {
       "itemName" : "Jesus Juice",
       "itemId" : "197",
       "itemQuote" : "Damage + range up",
@@ -1602,7 +1462,7 @@
     },
     {
       "itemName" : "Kamikaze",
-      "itemId" : "40",
+      "itemId" : "040",
       "itemQuote" : "Become the bomb!",
       "itemDescription" : "• Causes an explosion near the player which takes away half a heart and does 40 damage all enemies in close proximity.",
       "itemType" : "Active",
@@ -1631,14 +1491,14 @@
       "rechargeTime" : "None (Angel statue only)"
     },
     {
-      "itemName" : "The Ladder",
-      "itemId" : "60",
-      "itemQuote" : "Building bridges",
-      "itemDescription" : "• Allows Isaac to walk over gaps with a width of one tile.",
+      "itemName" : "Latch Key",
+      "itemId" : "343",
+      "itemQuote" : "Luck up",
+      "itemDescription" : "• +1 Luck Up.  • +1 Soul Heart.  • Spawns 2 keys on the ground.",
       "itemType" : "Passive",
-      "itemPool" : "Shop",
-      "itemTags" : "shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Shop"
+      "itemPool" : "Boss Room",
+      "itemTags" : "boss room pool, boss room item,",
+      "rechargeTime" : "Boss Room"
     },
     {
       "itemName" : "Lazarus' Rags",
@@ -1649,26 +1509,6 @@
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, starting",
       "rechargeTime" : "Item Room, Angel Room"
-    },
-    {
-      "itemName" : "Leo",
-      "itemId" : "302",
-      "itemQuote" : "Stompy",
-      "itemDescription" : "• Isaac gets a lion's mane and now has the ability to crush rocks by walking over them.  • Crushed rocks and poop can fill holes if you walk in their direction.  • Allows you to crush Red Poops and sometimes not take damage. However, If you also have flying you will always take damage.  • One of the twelve zodiac items available in the game.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "Latch Key",
-      "itemId" : "343",
-      "itemQuote" : "Luck up",
-      "itemDescription" : "• +1 Luck Up.  • +1 Soul Heart.  • Spawns 2 keys on the ground.",
-      "itemType" : "Passive",
-      "itemPool" : "Boss Room",
-      "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
     },
     {
       "itemName" : "Leech",
@@ -1682,13 +1522,23 @@
     },
     {
       "itemName" : "Lemon Mishap",
-      "itemId" : "56",
+      "itemId" : "056",
       "itemQuote" : "Oops...",
       "itemDescription" : "• When used, drops a pool of 'lemonade' on the floor which damages any enemies that come into contact with it for 8 damage per tick.",
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Recharge Time: 2 rooms"
+    },
+    {
+      "itemName" : "Leo",
+      "itemId" : "302",
+      "itemQuote" : "Stompy",
+      "itemDescription" : "• Isaac gets a lion's mane and now has the ability to crush rocks by walking over them.  • Crushed rocks and poop can fill holes if you walk in their direction.  • Allows you to crush Red Poops and sometimes not take damage. However, If you also have flying you will always take damage.  • One of the twelve zodiac items available in the game.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
     },
     {
       "itemName" : "Libra",
@@ -1732,7 +1582,7 @@
     },
     {
       "itemName" : "Little C.H.A.D.",
-      "itemId" : "96",
+      "itemId" : "096",
       "itemQuote" : "Gives kisses",
       "itemDescription" : "• A familiar which follows Isaac and drops half a red heart every 3 rooms.  UNLOCK: Unlock this item by beating the Caves 30 times and defeating C.H.A.D.",
       "itemType" : "Passive, Familiar",
@@ -1742,7 +1592,7 @@
     },
     {
       "itemName" : "Little Chubby",
-      "itemId" : "88",
+      "itemId" : "088",
       "itemQuote" : "Attack buddy",
       "itemDescription" : "• A familiar that follows Isaac and charges forwards, dealing 3.5 damage per tick to any enemies it comes into contact with.  UNLOCK: Unlock this item by beating the Caves II for the first time.",
       "itemType" : "Passive, Familiar",
@@ -1752,7 +1602,7 @@
     },
     {
       "itemName" : "Little Gish",
-      "itemId" : "99",
+      "itemId" : "099",
       "itemQuote" : "Sticky friend",
       "itemDescription" : "• A familiar that follows Isaac and fires black tar tears, which slow enemy movement and projectile speed for a few seconds.  • Little Gish's tears do 3.5 damage.  • Little Gish fires tears at a rate of 1 tear per second.  • A Guaranteed drop from the Gish boss fight.  UNLOCK: Unlock this item by beating the Depths 20 times and killing the Gish boss.",
       "itemType" : "Passive, Familiar",
@@ -1772,7 +1622,7 @@
     },
     {
       "itemName" : "Loki's Horns",
-      "itemId" : "87",
+      "itemId" : "087",
       "itemQuote" : "Cross tears",
       "itemDescription" : "• Everytime you fire a tear, there is a chance that you will also fire three more tears in all cardinal directions.  • The chance to fire 4-way tears is affected by your luck stat and at +7 Luck it will activate every time.  UNLOCK: Unlock this item by beating Lokii for the first time.",
       "itemType" : "Passive, Tear Modifier",
@@ -1782,7 +1632,7 @@
     },
     {
       "itemName" : "Lord of the Pit",
-      "itemId" : "82",
+      "itemId" : "082",
       "itemQuote" : "Demon wings",
       "itemDescription" : "• Gives Isaac demon wings and the ability to fly.  • +0.3 Speed Up (Only applied after the speed stat is next updated).",
       "itemType" : "Passive",
@@ -1802,7 +1652,7 @@
     },
     {
       "itemName" : "Lucky Foot",
-      "itemId" : "46",
+      "itemId" : "046",
       "itemQuote" : "Luck up",
       "itemDescription" : "• +1.0 Luck Up.  • Better chance to win while gambling.  • Does not make all pills positive or neutral like the original game.",
       "itemType" : "Passive",
@@ -1811,28 +1661,8 @@
       "rechargeTime" : "Item Room, Beggar"
     },
     {
-      "itemName" : "The Ludovico Technique",
-      "itemId" : "329",
-      "itemQuote" : "Controlled tears",
-      "itemDescription" : "• You no longer shoot tears and instead now control a single large tear with the arrow keys.  • Items which increase your tears stat will cause the tear to deal damage at a faster rate.  • Items which increase your shot speed cause the tear to travel faster across the screen.  • Ludo and Brimstone create a large controllable red ring of death that does massive damage to anything in its path.  • Taking this with Mom's Knife allows you to remote control the knife around the room, dealing huge damage.",
-      "itemType" : "Passive, Tear Modifier",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "A Lump of Coal",
-      "itemId" : "132",
-      "itemQuote" : "My Xmas present",
-      "itemDescription" : "• Tears gain a damage up and increase in size based on the distance they travel.  • The length of a normal room roughly gives +6 damage, but this can be higher with double rooms or Tiny Planet.  In Afterbirth this item synergises with Brimstone and Tech, allowing them to do more damage the further away the enemy is.",
-      "itemType" : "Passive",
-      "itemPool" : "None (Krampus only)",
-      "itemTags" : "krampus",
-      "rechargeTime" : "None (Krampus only)"
-    },
-    {
       "itemName" : "Lunch",
-      "itemId" : "22",
+      "itemId" : "022",
       "itemQuote" : "HP up",
       "itemDescription" : "• +1 Health Up.",
       "itemType" : "Passive",
@@ -1872,7 +1702,7 @@
     },
     {
       "itemName" : "Magic Mushroom",
-      "itemId" : "12",
+      "itemId" : "012",
       "itemQuote" : "All stats up!",
       "itemDescription" : "• +1 Health Up.  • +0.3 Damage Up.  • +50% / 1.5 times Damage Multiplier (Does not stack with the multipliers from Cricket's Head / Blood of The Martyr+Book of Belial.  • +5.25 Range Up.  • +0.3 Speed Up.  • +0.5 Tear Height.  • Isaac grows in size.  • Similar to the original game, the Magic Mushroom does not give a tears up despite saying 'All Stats Up'.  • Fully restores all red heart containers.  • Can be dropped when exploding mushrooms in the Caves/Catacombs.",
       "itemType" : "Passive",
@@ -1892,23 +1722,13 @@
     },
     {
       "itemName" : "Magneto",
-      "itemId" : "53",
+      "itemId" : "053",
       "itemQuote" : "Item snatcher",
       "itemDescription" : "• Causes pickups on the floor move towards the player.",
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "The Mark",
-      "itemId" : "79",
-      "itemQuote" : "DMG up",
-      "itemDescription" : "• +1.0 Damage Up.  • +0.2 Speed Up.  • +1 Soul Heart.",
-      "itemType" : "Passive",
-      "itemPool" : "Curse Room, Devil Room",
-      "itemTags" : "curse room pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Curse Room, Devil Room"
     },
     {
       "itemName" : "Match Book",
@@ -1941,18 +1761,8 @@
       "rechargeTime" : "Item Room"
     },
     {
-      "itemName" : "The Mind",
-      "itemId" : "333",
-      "itemQuote" : "I know all",
-      "itemDescription" : "• Gives Isaac a full mapping effect, revealing the entire floor and locations of all secret rooms.  UNLOCK: Unlock this item by beating Satan with The Lost.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Angel Room",
-      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Angel Room"
-    },
-    {
       "itemName" : "Mini Mush",
-      "itemId" : "71",
+      "itemId" : "071",
       "itemQuote" : "Speed + range up",
       "itemDescription" : "• +0.3 Speed Up  • Decreases range stat by -4.25 but increases your tear height by 1.5, increasing your actual tear range.  • Causes Isaac to shrink in size.  • Can be dropped when exploding mushrooms in the environment that are usually found in the Caves/Catacombs and in secret rooms.",
       "itemType" : "Passive",
@@ -2002,7 +1812,7 @@
     },
     {
       "itemName" : "Mom's Bra",
-      "itemId" : "39",
+      "itemId" : "039",
       "itemQuote" : "Mass fear",
       "itemDescription" : "• When used, freezes all enemies in the current room temporarily.",
       "itemType" : "Active",
@@ -2032,7 +1842,7 @@
     },
     {
       "itemName" : "Mom's Eye",
-      "itemId" : "55",
+      "itemId" : "055",
       "itemQuote" : "Eye in the back of your head",
       "itemDescription" : "• Isaac has a random chance to fire another tear out the back of his head.  • The chance to fire the second tear can improve based on your luck stat and will always activate at +2 Luck.  • Synergizes very well with a lot of items. If used with Brimstone you have a 100% chance to fire a laser out the back of your head.",
       "itemType" : "Passive, Tear Modifier",
@@ -2052,7 +1862,7 @@
     },
     {
       "itemName" : "Mom's Heels",
-      "itemId" : "30",
+      "itemId" : "030",
       "itemQuote" : "Range up",
       "itemDescription" : "• +5.25 Range Up  • +0.5 Tear Height.",
       "itemType" : "Passive",
@@ -2082,7 +1892,7 @@
     },
     {
       "itemName" : "Mom's Lipstick",
-      "itemId" : "31",
+      "itemId" : "031",
       "itemQuote" : "Range up",
       "itemDescription" : "• +5.25 Range Up  • +0.5 Tear Height.",
       "itemType" : "Passive",
@@ -2092,7 +1902,7 @@
     },
     {
       "itemName" : "Mom's Pad",
-      "itemId" : "41",
+      "itemId" : "041",
       "itemQuote" : "Gross...",
       "itemDescription" : "• When used, causes all enemies in the current room to run away from Isaac in fear for a few seconds.",
       "itemType" : "Active",
@@ -2121,6 +1931,16 @@
       "rechargeTime" : "Shop"
     },
     {
+      "itemName" : "Mom's Underwear",
+      "itemId" : "029",
+      "itemQuote" : "Range Up",
+      "itemDescription" : "• +5.25 Range Up  • +0.5 Tear Height.",
+      "itemType" : "Passive",
+      "itemPool" : "Boss Room, Challenge Room",
+      "itemTags" : "dungeon room, blood challenge room, arena pool, boss room pool, boss room item,",
+      "rechargeTime" : "Boss Room, Challenge Room"
+    },
+    {
       "itemName" : "Mom's Wig",
       "itemId" : "217",
       "itemQuote" : "You feel itchy",
@@ -2129,16 +1949,6 @@
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, item room, treasure room, item room pool",
       "rechargeTime" : "Item Room, Challenge Room"
-    },
-    {
-      "itemName" : "Mom's Underwear",
-      "itemId" : "29",
-      "itemQuote" : "Range Up",
-      "itemDescription" : "• +5.25 Range Up  • +0.5 Tear Height.",
-      "itemType" : "Passive",
-      "itemPool" : "Boss Room, Challenge Room",
-      "itemTags" : "dungeon room, blood challenge room, arena pool, boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room, Challenge Room"
     },
     {
       "itemName" : "Money = Power",
@@ -2182,7 +1992,7 @@
     },
     {
       "itemName" : "Monstro's Tooth",
-      "itemId" : "86",
+      "itemId" : "086",
       "itemQuote" : "Summon monstro",
       "itemDescription" : "• When used, spawns a Monstro which will jump on a random enemy in the room, dealing 120 damage.  UNLOCK: Unlock this item by beating the Basement II for the first time.",
       "itemType" : "Active",
@@ -2192,7 +2002,7 @@
     },
     {
       "itemName" : "Mr. Boom",
-      "itemId" : "37",
+      "itemId" : "037",
       "itemQuote" : "Reusable bomb buddy",
       "itemDescription" : "• Drops a large bomb below the player which does 110 damage.  • Has a chance to drop from the Wrath miniboss fight.",
       "itemType" : "Active",
@@ -2211,16 +2021,6 @@
       "rechargeTime" : "Item Room, Secret Room, Super Wrath Miniboss"
     },
     {
-      "itemName" : "The Mulligan",
-      "itemId" : "151",
-      "itemQuote" : "They grow inside",
-      "itemDescription" : "• Isaac has a 1/6 chance to spawn a blue fly when one of his tears hits an enemy.  • Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies.  • Blue Flies do 2.0x of Isaac's damage.  • The chance to activate this effect is not changed with your Luck stat.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
       "itemName" : "Mutant Spider",
       "itemId" : "153",
       "itemQuote" : "Quad Shot",
@@ -2232,7 +2032,7 @@
     },
     {
       "itemName" : "My Little Unicorn",
-      "itemId" : "77",
+      "itemId" : "077",
       "itemQuote" : "Temporary badass",
       "itemDescription" : "• Gives Isaac temporary invincibility and allows him to do 40 contact damage to enemies per hit.",
       "itemType" : "Active",
@@ -2242,7 +2042,7 @@
     },
     {
       "itemName" : "My Reflection",
-      "itemId" : "5",
+      "itemId" : "005",
       "itemQuote" : "Boomerang tears",
       "itemDescription" : "• Gives tears a boomerang effect.  • +1.5 Range Up.  • +0.6 Shot Speed Up.  • +1 Tear Height.",
       "itemType" : "Passive, Tear Modifier",
@@ -2271,36 +2071,6 @@
       "rechargeTime" : "Item Room, Beggar, Secret Room"
     },
     {
-      "itemName" : "The Nail",
-      "itemId" : "83",
-      "itemQuote" : "Temporary demon form",
-      "itemDescription" : "• +0.7 Damage Up.  • -0.18 Speed Down.  • +1 Soul Heart  • Gives you the ability to crush rocks by walking over them.  • All the above effects are only active when the item is used.  UNLOCK: Unlock this item by beating the Boss Rush with Azazel.",
-      "itemType" : "Active",
-      "itemPool" : "Devil Room",
-      "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Recharge Time: 6 rooms"
-    },
-    {
-      "itemName" : "The Necronomicon",
-      "itemId" : "35",
-      "itemQuote" : "Mass room damage",
-      "itemDescription" : "• Deals 40 damage to everything in the room when used.  UNLOCK: Unlock this item by using 4 Death Cards.",
-      "itemType" : "Active",
-      "itemPool" : "Library, Secret Room, Devil Room",
-      "itemTags" : "library pool, library room, book room pool, secret room pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Recharge Time: 6 rooms"
-    },
-    {
-      "itemName" : "The Negative",
-      "itemId" : "328",
-      "itemQuote" : "Fate chosen",
-      "itemDescription" : "• Damages all enemies in the room for 40 damage when hit down to 1/2 heart remaining.  • Gives you access to the Dark Room floor.  • When unlocked, is guaranteed to drop after the Mom's Foot boss fight.  UNLOCK: Unlock this item by beating Satan in Sheol 5 times.",
-      "itemType" : "Passive",
-      "itemPool" : "None (Mom's foot boss only)",
-      "itemTags" : "mom's foot, mom fight, mom boss, dark room",
-      "rechargeTime" : "None (Mom's foot boss only)"
-    },
-    {
       "itemName" : "Notched Axe",
       "itemId" : "147",
       "itemQuote" : "Rocks didn't stand a chance",
@@ -2312,7 +2082,7 @@
     },
     {
       "itemName" : "Number One",
-      "itemId" : "6",
+      "itemId" : "006",
       "itemQuote" : "Tears up",
       "itemDescription" : "• Gives you a very high tear rate in exchange for a big range down.  • +1.5 Tears Up.  • -15.78 Range Down.  • +0.45 Tear Height.",
       "itemType" : "Passive",
@@ -2361,16 +2131,6 @@
       "rechargeTime" : "Item Room"
     },
     {
-      "itemName" : "The Pact",
-      "itemId" : "80",
-      "itemQuote" : "DMG + tears up",
-      "itemDescription" : "• +0.5 Damage Up.  • +0.7 Tears Up.  • +2 Soul Hearts.",
-      "itemType" : "Passive",
-      "itemPool" : "Devil Room, Curse Room",
-      "itemTags" : "curse room pool, devil pool, devil room pool, devil deal, piece of paper, bloody paper, contract",
-      "rechargeTime" : "Devil Room, Curse Room"
-    },
-    {
       "itemName" : "Pageant Boy",
       "itemId" : "141",
       "itemQuote" : "Ultimate grand supreme",
@@ -2391,28 +2151,8 @@
       "rechargeTime" : "Recharge Time: One time use"
     },
     {
-      "itemName" : "The Parasite",
-      "itemId" : "104",
-      "itemQuote" : "Split shot",
-      "itemDescription" : "• Isaac's tears now split into two upon contact with enemies or the environment.  • Tears that split off from the main tear do less damage (tear damage 0.25).  UNLOCK: Unlock this item by collecting two of the following items: Bob's Rotten Head, Dead Cat, Cricket's Head, Tammy's Head.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "The Peeper",
-      "itemId" : "155",
-      "itemQuote" : "Plop!",
-      "itemDescription" : "• Gives Isaac an eye companion that floats around the room and deals 8 damage per tick on contact with enemies.",
-      "itemType" : "Passive, Familiar",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
       "itemName" : "Pentagram",
-      "itemId" : "51",
+      "itemId" : "051",
       "itemQuote" : "DMG up",
       "itemDescription" : "• +1.0 Damage Up.  • Higher chance of a Devil Deal opening after the boss fight (Approximately +20% through testing).",
       "itemType" : "Passive",
@@ -2422,7 +2162,7 @@
     },
     {
       "itemName" : "PhD",
-      "itemId" : "75",
+      "itemId" : "075",
       "itemQuote" : "Better pills",
       "itemDescription" : "• All pills now have a positive or neutral effect.  • Pills are identified before using them.  • Drops one pill on pickup.  • Heals for 2 full red hearts.",
       "itemType" : "Passive",
@@ -2439,6 +2179,16 @@
       "itemPool" : "Item Room, Shop",
       "itemTags" : "shop room pool, shop item pool, item room, treasure room, item room pool",
       "rechargeTime" : "Item Room, Shop"
+    },
+    {
+      "itemName" : "Pinking Shears",
+      "itemId" : "107",
+      "itemQuote" : "Cut and run",
+      "itemDescription" : "• Cuts Isaac's head from his body for the current room, allowing him to fly and leaving the decapitated body to run around attacking enemies for 5.5 damage per tick.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool, scissors, cutters, snip",
+      "rechargeTime" : "Recharge Time: 6 rooms"
     },
     {
       "itemName" : "Pisces",
@@ -2461,26 +2211,6 @@
       "rechargeTime" : "Boss Room"
     },
     {
-      "itemName" : "Pinking Shears",
-      "itemId" : "107",
-      "itemQuote" : "Cut and run",
-      "itemDescription" : "• Cuts Isaac's head from his body for the current room, allowing him to fly and leaving the decapitated body to run around attacking enemies for 5.5 damage per tick.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool, scissors, cutters, snip",
-      "rechargeTime" : "Recharge Time: 6 rooms"
-    },
-    {
-      "itemName" : "The Polaroid",
-      "itemId" : "327",
-      "itemQuote" : "Fate chosen",
-      "itemDescription" : "• Gives Isaac an invincibility shield for a few seconds when hit down to 1/2 heart remaining.  • Gives you access to the Chest floor.  • When unlocked, is guaranteed to drop after the Mom's Foot boss fight.  UNLOCK: Unlock this item by beating Isaac in the Cathedral 5 times.",
-      "itemType" : "Passive",
-      "itemPool" : "None (Mom's foot boss only)",
-      "itemTags" : "",
-      "rechargeTime" : "None (Mom's foot boss only)"
-    },
-    {
       "itemName" : "Polyphemus",
       "itemId" : "169",
       "itemQuote" : "Mega tears",
@@ -2489,26 +2219,6 @@
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, large eye, cyclops, one eye,",
       "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "A Pony",
-      "itemId" : "130",
-      "itemQuote" : "Flight + dash attack",
-      "itemDescription" : "• Allows Isaac to fly while the Pony is held.  • Sets your speed stat to 1.5 if it isn't already that high.  • When the active attack is used, Isaac will dash across the screen dealing 40 contact damage to anything he hits.  • Drops from the Headless Horseman boss fight.",
-      "itemType" : "Active",
-      "itemPool" : "None (Headless horseman only)",
-      "itemTags" : "headless horseman, headless horsemen",
-      "rechargeTime" : "Recharge Time: 6 rooms"
-    },
-    {
-      "itemName" : "The Poop",
-      "itemId" : "36",
-      "itemQuote" : "Plop!",
-      "itemDescription" : "• Drops a poop on the floor.  • Blue Baby starts with this item.  • Can be placed next to a pit and exploded to make a bridge.  • Can be placed over a broken red poop to overwrite it, causing it to no longer regenerate.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool, starting",
-      "rechargeTime" : "Recharge Time: 1 room"
     },
     {
       "itemName" : "Portable Slot",
@@ -2571,16 +2281,6 @@
       "rechargeTime" : "Item Room"
     },
     {
-      "itemName" : "A Quarter",
-      "itemId" : "74",
-      "itemQuote" : "+25 coins",
-      "itemDescription" : "• +25 Coins  • Has a very small chance to drop after destroying one of the pots that appear in the Basement and Cellar floors.  • Has a chance to drop from the Super Greed miniboss fight.  UNLOCK: Unlock this item by beating Mom's Heart 8 times.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Secret Room, Super Greed Miniboss",
-      "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room, Super Greed Miniboss"
-    },
-    {
       "itemName" : "Rainbow Baby",
       "itemId" : "174",
       "itemQuote" : "Random buddy",
@@ -2592,7 +2292,7 @@
     },
     {
       "itemName" : "Raw Liver",
-      "itemId" : "16",
+      "itemId" : "016",
       "itemQuote" : "HP up",
       "itemDescription" : "• +2 Health Up.  • Full red heart heal.",
       "itemType" : "Passive",
@@ -2621,16 +2321,6 @@
       "rechargeTime" : "Recharge Time: Timed (A few seconds)"
     },
     {
-      "itemName" : "The Relic",
-      "itemId" : "98",
-      "itemQuote" : "Soul generator",
-      "itemDescription" : "• A blue cross that follows Isaac and drops a soul heart every 4 rooms.  UNLOCK: Unlock this item by beating the Isaac boss with Maggy.",
-      "itemType" : "Passive, Familiar",
-      "itemPool" : "Item Room, Angel Room",
-      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
-    },
-    {
       "itemName" : "Remote Detonator",
       "itemId" : "137",
       "itemQuote" : "Remote bomb detonation",
@@ -2642,7 +2332,7 @@
     },
     {
       "itemName" : "Robo-Baby",
-      "itemId" : "95",
+      "itemId" : "095",
       "itemQuote" : "Friends till the bzzzttt",
       "itemDescription" : "• A familiar which follows Isaac and shoots lasers, similar to the Technology item.  • Robo-Baby's laser is spectral and piercing (It will pass through rocks and objects in the environment)  • Robo-Baby's lasers deal 3.5 damage per hit.",
       "itemType" : "Passive, Familiar",
@@ -2662,7 +2352,7 @@
     },
     {
       "itemName" : "Roid Rage",
-      "itemId" : "14",
+      "itemId" : "014",
       "itemQuote" : "Speed and range up",
       "itemDescription" : "• +0.6 Speed Up.  • +5.25 Range Up.  • +0.5 Shot Height.",
       "itemType" : "Passive",
@@ -2672,7 +2362,7 @@
     },
     {
       "itemName" : "Rosary",
-      "itemId" : "72",
+      "itemId" : "072",
       "itemQuote" : "Faith up",
       "itemDescription" : "• +3 Soul Hearts.  • Adds several instances of The Bible item into the Boss Room, Shop, Beggar, Secret Room, Gold Chest and Devil Pools.",
       "itemType" : "Passive",
@@ -2692,7 +2382,7 @@
     },
     {
       "itemName" : "Rotten Meat",
-      "itemId" : "26",
+      "itemId" : "026",
       "itemQuote" : "HP up",
       "itemDescription" : "• +1 Health Up",
       "itemType" : "Passive",
@@ -2712,7 +2402,7 @@
     },
     {
       "itemName" : "Sack of Pennies",
-      "itemId" : "94",
+      "itemId" : "094",
       "itemQuote" : "Gives money",
       "itemDescription" : "• A bag that floats around following Isaac and drops a random coin every 2 rooms.  UNLOCK: Unlock this item by beating Isaac with Cain.",
       "itemType" : "Passive, Familiar",
@@ -2751,16 +2441,6 @@
       "rechargeTime" : "Item Room, Bomb Beggar"
     },
     {
-      "itemName" : "The Sad Onion",
-      "itemId" : "1",
-      "itemQuote" : "Tears up",
-      "itemDescription" : "• +0.7 Tears Up",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
-    },
-    {
       "itemName" : "Safety Pin",
       "itemId" : "339",
       "itemQuote" : "Evil up + range + shot speed",
@@ -2789,16 +2469,6 @@
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
       "rechargeTime" : "Item Room, Secret Room"
-    },
-    {
-      "itemName" : "The Satanic Bible",
-      "itemId" : "292",
-      "itemQuote" : "Reusable evil",
-      "itemDescription" : "• When used, gives Isaac +1 Black Heart.  • When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect.  UNLOCK: Unlock this item by beating the Isaac boss with Azazel.",
-      "itemType" : "Active",
-      "itemPool" : "Item Room, Library, Devil Room",
-      "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
     },
     {
       "itemName" : "Scapular",
@@ -2852,7 +2522,7 @@
     },
     {
       "itemName" : "Shoop Da Whoop",
-      "itemId" : "49",
+      "itemId" : "049",
       "itemQuote" : "BLLLARRRRGGG!",
       "itemDescription" : "• When used, fires a high damage laser in a straight line across the room in a similar way to Brimstone.  • The laser deals damage equal to your tear damage 4, at 7 ticks per laser, meaning the maximum potential damage per laser is your tear damage 28.  • Has a chance to drop from the Envy and Super Envy miniboss fights.",
       "itemType" : "Active",
@@ -2872,7 +2542,7 @@
     },
     {
       "itemName" : "Sister Maggy",
-      "itemId" : "67",
+      "itemId" : "067",
       "itemQuote" : "Friends 'till the end",
       "itemDescription" : "• A familiar which follows Isaac around and shoots blood tears that deal 3.5 damage.  • The tears appear red but have no additional damage.  • Sister Maggy fires tears at a rate of 1 tear per second.",
       "itemType" : "Passive, Familiar",
@@ -2882,7 +2552,7 @@
     },
     {
       "itemName" : "Skatole",
-      "itemId" : "9",
+      "itemId" : "009",
       "itemQuote" : "Fly love",
       "itemDescription" : "• All fly enemies are no longer aggressive towards Isaac.  • Is only available from the shell game in the arcade.  • Can be won from the arcade skull game.  • Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies.",
       "itemType" : "Passive",
@@ -2892,23 +2562,13 @@
     },
     {
       "itemName" : "Skeleton Key",
-      "itemId" : "17",
+      "itemId" : "017",
       "itemQuote" : "99 keys",
       "itemDescription" : "• +99 Keys",
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool,",
       "rechargeTime" : "Secret Room"
-    },
-    {
-      "itemName" : "The Small Rock",
-      "itemId" : "90",
-      "itemQuote" : "DMG up",
-      "itemDescription" : "• +1.0 Damage Up.  • +0.2 Tears Up. (Only applied after the tears stat is next updated)  • -0.2 Speed Down. (Only applied after the speed stat is next updated)  • Has a chance to drop when exploding a tinted rock.  UNLOCK: Unlock this item by destroying 100 tinted rocks.",
-      "itemType" : "Passive",
-      "itemPool" : "None (Tinted rock only)",
-      "itemTags" : "tinted rock, marked rock,",
-      "rechargeTime" : "None (Tinted rock only)"
     },
     {
       "itemName" : "Smart Fly",
@@ -2929,26 +2589,6 @@
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Item Room"
-    },
-    {
-      "itemName" : "A Snack",
-      "itemId" : "346",
-      "itemQuote" : "HP up",
-      "itemDescription" : "• +1 Health Up.",
-      "itemType" : "Passive",
-      "itemPool" : "Boss Room",
-      "itemTags" : "boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room"
-    },
-    {
-      "itemName" : "The Soul",
-      "itemId" : "335",
-      "itemQuote" : "I am all",
-      "itemDescription" : "• +2 Soul Hearts.  • Enemy projectiles will now slowly curve away from Isaac and avoid hitting him.  UNLOCK: Unlock this item by beating Dark Room with The Lost.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Angel Room",
-      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Angel Room"
     },
     {
       "itemName" : "Soy Milk",
@@ -2972,12 +2612,22 @@
     },
     {
       "itemName" : "Spelunker Hat",
-      "itemId" : "91",
+      "itemId" : "091",
       "itemQuote" : "See-through doors",
       "itemDescription" : "• Reveals the location of the Secret Room and Super Secret Room when you are in a room directly next to them.",
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, spelunky",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "Spider Bite",
+      "itemId" : "089",
+      "itemQuote" : "Slow effect",
+      "itemDescription" : "• Tears now have a chance of slowing enemies and their projectiles for 2.5 seconds.  • The chance to slow enemies is affected by your luck stat and at +15 Luck it will activate every time.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Item Room"
     },
     {
@@ -2989,16 +2639,6 @@
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
       "rechargeTime" : "Recharge Time: 2 rooms"
-    },
-    {
-      "itemName" : "Spider Bite",
-      "itemId" : "89",
-      "itemQuote" : "Slow effect",
-      "itemDescription" : "• Tears now have a chance of slowing enemies and their projectiles for 2.5 seconds.  • The chance to slow enemies is affected by your luck stat and at +15 Luck it will activate every time.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room",
-      "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
     },
     {
       "itemName" : "Spiderbaby",
@@ -3022,7 +2662,7 @@
     },
     {
       "itemName" : "Spoon Bender",
-      "itemId" : "3",
+      "itemId" : "003",
       "itemQuote" : "Homing shots",
       "itemDescription" : "• Gives Isaac's tears a homing effect.",
       "itemType" : "Passive",
@@ -3052,7 +2692,7 @@
     },
     {
       "itemName" : "Steam Sale",
-      "itemId" : "64",
+      "itemId" : "064",
       "itemQuote" : "50% off",
       "itemDescription" : "• Items in the shop are now -50% off, rounded down to the nearest whole number.  • Has a chance to drop from the Greed miniboss fight or when bombing the shopkeeper.",
       "itemType" : "Passive",
@@ -3072,7 +2712,7 @@
     },
     {
       "itemName" : "Steven",
-      "itemId" : "50",
+      "itemId" : "050",
       "itemQuote" : "DMG up",
       "itemDescription" : "• +1 Damage Up.  • Has a small chance to drop from the Steven boss fight.  UNLOCK: Unlock this item by beating the Basement 40 times and defeating the Steven boss.  In Afterbirth this item also appears in the Gold Chest item pool.",
       "itemType" : "Passive",
@@ -3112,7 +2752,7 @@
     },
     {
       "itemName" : "Super Bandage",
-      "itemId" : "92",
+      "itemId" : "092",
       "itemQuote" : "+2 hearts",
       "itemDescription" : "• +1 Health Up.  • +2 Soul Hearts  UNLOCK: Unlock this item by making a Super Bandage Girl.",
       "itemType" : "Passive",
@@ -3132,7 +2772,7 @@
     },
     {
       "itemName" : "Tammy's Head",
-      "itemId" : "38",
+      "itemId" : "038",
       "itemQuote" : "Reusable tear burst",
       "itemDescription" : "• Fires 10 tears in a circle around Isaac.  • Each tear is equal to your damage stat + 25 flat damage.  • The tears spawned from Tammy's Head retain tear effects of Isaac's tears, such as poison or homing.  • Synergizes extremely well with Brimstone due to how the damage from both items is calculated when combined.",
       "itemType" : "Active",
@@ -3162,7 +2802,7 @@
     },
     {
       "itemName" : "Technology",
-      "itemId" : "68",
+      "itemId" : "068",
       "itemQuote" : "Laser tears",
       "itemDescription" : "• Isaac's tears are replaced with a laser that has unlimited range and can only fire at right angles.  • Lasers travel through enemies but not obstacles in the room.",
       "itemType" : "Passive, Tear Modifier",
@@ -3192,13 +2832,393 @@
     },
     {
       "itemName" : "Teleport",
-      "itemId" : "44",
+      "itemId" : "044",
       "itemQuote" : "Teleport!",
       "itemDescription" : "• Teleports Isaac to a random location on the map.",
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, blue remote",
       "rechargeTime" : "Recharge Time: 2 rooms"
+    },
+    {
+      "itemName" : "The Battery",
+      "itemId" : "063",
+      "itemQuote" : "Stores energy",
+      "itemDescription" : "• All spacebar items can now be 'overcharged', allowing them to be charged up twice instead of once.  • The extra charges appear in yellow on top of the normal green bars.  • Has no effect with items which recharge over time instead of on a per-room basis.",
+      "itemType" : "Passive",
+      "itemPool" : "Shop",
+      "itemTags" : "shop room pool, shop item pool,",
+      "rechargeTime" : ""
+    },
+    {
+      "itemName" : "The Bean",
+      "itemId" : "111",
+      "itemQuote" : "Toot on command",
+      "itemDescription" : "• Upon use, this item causes Isaac to fart and poison any enemies in close proximity.  • The Bean deals 26 damage total (5 initially then 21 in a Damage over Time effect.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room, Beggar",
+      "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, team bean, #teambean",
+      "rechargeTime" : "Recharge Time: 1 room."
+    },
+    {
+      "itemName" : "The Belt",
+      "itemId" : "028",
+      "itemQuote" : "Speed up",
+      "itemDescription" : "• +0.3 Speed Up.",
+      "itemType" : "Passive",
+      "itemPool" : "Boss Room",
+      "itemTags" : "boss room pool, boss room item,",
+      "rechargeTime" : ""
+    },
+    {
+      "itemName" : "The Bible",
+      "itemId" : "033",
+      "itemQuote" : "Temporary flight",
+      "itemDescription" : "• Gives Isaac angel wings for the current room, allowing him to fly.  • If used during the Mom's Foot or Mom's Heart boss fights, The Bible will kill Mom instantly.  • If used during the Satan fight, The Bible will instantly kill Isaac.",
+      "itemType" : "Active",
+      "itemPool" : "Shop, Library, Angel Room",
+      "itemTags" : "library pool, library room, book room pool, angel room pool, god room pool, angel room item, shop room pool, shop item pool,",
+      "rechargeTime" : "Recharge Time: 6 rooms."
+    },
+    {
+      "itemName" : "The Black Bean",
+      "itemId" : "180",
+      "itemQuote" : "Toot on touch",
+      "itemDescription" : "• Upon taking damage, Isaac will fart, causing all enemies in close proximity to become poisoned.  • Black Bean deals 26 damage total (5 initially then 21 in a Damage over Time effect.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Beggar",
+      "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, the lost item pool",
+      "rechargeTime" : ""
+    },
+    {
+      "itemName" : "The Body",
+      "itemId" : "334",
+      "itemQuote" : "I feel all",
+      "itemDescription" : "• +3 Health Up.  • The three heart containers are pre-filled with red hearts.  UNLOCK: Unlock this item by beating the Chest with The Lost.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Angel Room",
+      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, real platinum god, the lost item pool",
+      "rechargeTime" : ""
+    },
+    {
+      "itemName" : "The Book of Belial",
+      "itemId" : "034",
+      "itemQuote" : "Temporary DMG up",
+      "itemDescription" : "• Upon use, gives +2 damage up which lasts for the current room.  • +50% / 1.5 times Damage Multiplier if you also have Blood of the Martyr (Does not stack with Magic Mushroom or Cricket's Head multipliers).  • Guaranteed Devil or Angel Room if you have it when you kill the boss on all floors where it's possible to get one.  • Judas starts with this item.  In Afterbirth this is no longer a Guaranteed Devil Deal chance, instead it is +12.5%",
+      "itemType" : "Active",
+      "itemPool" : "Library, Devil Room",
+      "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, starting",
+      "rechargeTime" : "Recharge Time: 3 rooms"
+    },
+    {
+      "itemName" : "The Book of Sin",
+      "itemId" : "097",
+      "itemQuote" : "Reusable item generator",
+      "itemDescription" : "• Spawns a random pickup on the floor.  • The possible pickups from this item include: Bombs, hearts, keys, coins, pills, batteries or tarot cards.  UNLOCK: Unlock this item by beating each of the Seven Sins once.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room, Library, Devil Room",
+      "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, red 7 book",
+      "rechargeTime" : "Recharge Time: 4 rooms"
+    },
+    {
+      "itemName" : "The Candle",
+      "itemId" : "164",
+      "itemQuote" : "Reusable flame",
+      "itemDescription" : "• A spacebar item which allows Isaac to fire a blue flame that damages anything in its path for 23 damage per tick.  • Can cause up to a total of 184 potential damage.  UNLOCK: Unlock this item by donating 900 coins to the Shop.",
+      "itemType" : "Active",
+      "itemPool" : "Shop",
+      "itemTags" : "shop room pool, shop item pool, blue candle,",
+      "rechargeTime" : "Recharge Time: Timed (A few seconds)"
+    },
+    {
+      "itemName" : "The Common Cold",
+      "itemId" : "103",
+      "itemQuote" : "Poison damage",
+      "itemDescription" : "• Tears now have a random chance to apply a poison effect, causing 4 or 6 damage per tick to enemies.  • The chance to fire poison shots is affected by your luck stat and at +12 Luck it will activate every time.  • Gives a big increase in damage to Dr. Fetus bombs.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Compass",
+      "itemId" : "021",
+      "itemQuote" : "The end is near",
+      "itemDescription" : "• Shows all icons on the map (e.g. Shop)  • Does not show the layout of the map.  • Room icons will not show if a Curse of the Lost is in effect on the current floor.",
+      "itemType" : "Passive",
+      "itemPool" : "Shop, Beggar",
+      "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool,",
+      "rechargeTime" : "Shop, Beggar"
+    },
+    {
+      "itemName" : "The D6",
+      "itemId" : "105",
+      "itemQuote" : "Reroll your destiny",
+      "itemDescription" : "• Upon use, any pedestal item (e.g. an item room item) will be re-rolled into another item.  • Isaac starts with this item after it is unlocked.  UNLOCK: Unlock this item by defeating the Isaac boss with Blue Baby.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool, dice, starting",
+      "rechargeTime" : "Recharge Time: 6 rooms"
+    },
+    {
+      "itemName" : "The Gamekid",
+      "itemId" : "093",
+      "itemQuote" : "Temporary Man-Pac",
+      "itemDescription" : "• When used Isaac transforms into pacman, which makes him invincible and does 40 contact damage to enemies per chomp.  • Everytime you 'eat' an enemy, you regain some health.  UNLOCK: Unlock this item by visiting 10 arcades.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Recharge Time: 6 rooms"
+    },
+    {
+      "itemName" : "The Guillotine",
+      "itemId" : "206",
+      "itemQuote" : "An out-of-body experience",
+      "itemDescription" : "• +1.0 Damage Up.  • -1 Tear Delay (Tears Up).  • Causes Isaac's head to detach and orbit his body, blocking shots and dealing 7 contact damage per tick.  • BFFs will cause the Guillotine head to do double damage (14 damage per tick)  • Tears are still fired from Isaac's head but the hitbox remains around his body.  UNLOCK: Unlock this item by beating the Isaac boss with Judas.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Halo",
+      "itemId" : "101",
+      "itemQuote" : "All stats up",
+      "itemDescription" : "• +1 Health Up.  • +0.3 Damage Up.  • +0.2 Tears Up.  • +0.25 Range Up.  • +0.3 Speed Up.  • +0.5 Tear Height.  UNLOCK: Unlock this item by killing Mom (Mom's Foot or Mom's Heart) using The Bible.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Boss Room, Angel Room",
+      "itemTags" : "angel room pool, god room pool, angel room item, boss room pool, boss room item, item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room, Boss Room, Angel Room"
+    },
+    {
+      "itemName" : "The Hourglass",
+      "itemId" : "066",
+      "itemQuote" : "Temporary enemy slowdown",
+      "itemDescription" : "• When used, slows down all enemies in the current room and their projectiles for a short period of time.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool, hour glass, hourglass",
+      "rechargeTime" : "Recharge Time: 2 rooms"
+    },
+    {
+      "itemName" : "The Inner Eye",
+      "itemId" : "002",
+      "itemQuote" : "Triple shot",
+      "itemDescription" : "• Tears now shoot three at a time (Triple Shot)  • Tears Down significantly (tears = tears 2.1 + 3).",
+      "itemType" : "Passive, Tear Modifier",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Jar",
+      "itemId" : "290",
+      "itemQuote" : "Save your life",
+      "itemDescription" : "• Isaac can now pick up hearts while at full health, which will be stored in the Jar and can be spawned again using the spacebar.  • Up to 4 hearts can be stored in The Jar.  • Soul hearts and black hearts cannot be stored.  • If used in a Black heart or Eternal heart super secret room, it will spawn the relevant heart.",
+      "itemType" : "Active",
+      "itemPool" : "Shop",
+      "itemTags" : "shop room pool, shop item pool, the lost item pool",
+      "rechargeTime" : "Recharge Time: Instant"
+    },
+    {
+      "itemName" : "The Ladder",
+      "itemId" : "060",
+      "itemQuote" : "Building bridges",
+      "itemDescription" : "• Allows Isaac to walk over gaps with a width of one tile.",
+      "itemType" : "Passive",
+      "itemPool" : "Shop",
+      "itemTags" : "shop room pool, shop item pool, the lost item pool",
+      "rechargeTime" : "Shop"
+    },
+    {
+      "itemName" : "The Ludovico Technique",
+      "itemId" : "329",
+      "itemQuote" : "Controlled tears",
+      "itemDescription" : "• You no longer shoot tears and instead now control a single large tear with the arrow keys.  • Items which increase your tears stat will cause the tear to deal damage at a faster rate.  • Items which increase your shot speed cause the tear to travel faster across the screen.  • Ludo and Brimstone create a large controllable red ring of death that does massive damage to anything in its path.  • Taking this with Mom's Knife allows you to remote control the knife around the room, dealing huge damage.",
+      "itemType" : "Passive, Tear Modifier",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Mark",
+      "itemId" : "079",
+      "itemQuote" : "DMG up",
+      "itemDescription" : "• +1.0 Damage Up.  • +0.2 Speed Up.  • +1 Soul Heart.",
+      "itemType" : "Passive",
+      "itemPool" : "Curse Room, Devil Room",
+      "itemTags" : "curse room pool, devil pool, devil room pool, devil deal",
+      "rechargeTime" : "Curse Room, Devil Room"
+    },
+    {
+      "itemName" : "The Mind",
+      "itemId" : "333",
+      "itemQuote" : "I know all",
+      "itemDescription" : "• Gives Isaac a full mapping effect, revealing the entire floor and locations of all secret rooms.  UNLOCK: Unlock this item by beating Satan with The Lost.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Angel Room",
+      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room, Angel Room"
+    },
+    {
+      "itemName" : "The Mulligan",
+      "itemId" : "151",
+      "itemQuote" : "They grow inside",
+      "itemDescription" : "• Isaac has a 1/6 chance to spawn a blue fly when one of his tears hits an enemy.  • Picking up this item as well as 2 other fly-type items will allow you to transform into Lord of the Flies.  • Blue Flies do 2.0x of Isaac's damage.  • The chance to activate this effect is not changed with your Luck stat.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Nail",
+      "itemId" : "083",
+      "itemQuote" : "Temporary demon form",
+      "itemDescription" : "• +0.7 Damage Up.  • -0.18 Speed Down.  • +1 Soul Heart  • Gives you the ability to crush rocks by walking over them.  • All the above effects are only active when the item is used.  UNLOCK: Unlock this item by beating the Boss Rush with Azazel.",
+      "itemType" : "Active",
+      "itemPool" : "Devil Room",
+      "itemTags" : "devil pool, devil room pool, devil deal",
+      "rechargeTime" : "Recharge Time: 6 rooms"
+    },
+    {
+      "itemName" : "The Necronomicon",
+      "itemId" : "035",
+      "itemQuote" : "Mass room damage",
+      "itemDescription" : "• Deals 40 damage to everything in the room when used.  UNLOCK: Unlock this item by using 4 Death Cards.",
+      "itemType" : "Active",
+      "itemPool" : "Library, Secret Room, Devil Room",
+      "itemTags" : "library pool, library room, book room pool, secret room pool, devil pool, devil room pool, devil deal",
+      "rechargeTime" : "Recharge Time: 6 rooms"
+    },
+    {
+      "itemName" : "The Negative",
+      "itemId" : "328",
+      "itemQuote" : "Fate chosen",
+      "itemDescription" : "• Damages all enemies in the room for 40 damage when hit down to 1/2 heart remaining.  • Gives you access to the Dark Room floor.  • When unlocked, is guaranteed to drop after the Mom's Foot boss fight.  UNLOCK: Unlock this item by beating Satan in Sheol 5 times.",
+      "itemType" : "Passive",
+      "itemPool" : "None (Mom's foot boss only)",
+      "itemTags" : "mom's foot, mom fight, mom boss, dark room",
+      "rechargeTime" : "None (Mom's foot boss only)"
+    },
+    {
+      "itemName" : "The Pact",
+      "itemId" : "080",
+      "itemQuote" : "DMG + tears up",
+      "itemDescription" : "• +0.5 Damage Up.  • +0.7 Tears Up.  • +2 Soul Hearts.",
+      "itemType" : "Passive",
+      "itemPool" : "Devil Room, Curse Room",
+      "itemTags" : "curse room pool, devil pool, devil room pool, devil deal, piece of paper, bloody paper, contract",
+      "rechargeTime" : "Devil Room, Curse Room"
+    },
+    {
+      "itemName" : "The Parasite",
+      "itemId" : "104",
+      "itemQuote" : "Split shot",
+      "itemDescription" : "• Isaac's tears now split into two upon contact with enemies or the environment.  • Tears that split off from the main tear do less damage (tear damage 0.25).  UNLOCK: Unlock this item by collecting two of the following items: Bob's Rotten Head, Dead Cat, Cricket's Head, Tammy's Head.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Peeper",
+      "itemId" : "155",
+      "itemQuote" : "Plop!",
+      "itemDescription" : "• Gives Isaac an eye companion that floats around the room and deals 8 damage per tick on contact with enemies.",
+      "itemType" : "Passive, Familiar",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Polaroid",
+      "itemId" : "327",
+      "itemQuote" : "Fate chosen",
+      "itemDescription" : "• Gives Isaac an invincibility shield for a few seconds when hit down to 1/2 heart remaining.  • Gives you access to the Chest floor.  • When unlocked, is guaranteed to drop after the Mom's Foot boss fight.  UNLOCK: Unlock this item by beating Isaac in the Cathedral 5 times.",
+      "itemType" : "Passive",
+      "itemPool" : "None (Mom's foot boss only)",
+      "itemTags" : "",
+      "rechargeTime" : "None (Mom's foot boss only)"
+    },
+    {
+      "itemName" : "The Poop",
+      "itemId" : "036",
+      "itemQuote" : "Plop!",
+      "itemDescription" : "• Drops a poop on the floor.  • Blue Baby starts with this item.  • Can be placed next to a pit and exploded to make a bridge.  • Can be placed over a broken red poop to overwrite it, causing it to no longer regenerate.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool, starting",
+      "rechargeTime" : "Recharge Time: 1 room"
+    },
+    {
+      "itemName" : "The Relic",
+      "itemId" : "098",
+      "itemQuote" : "Soul generator",
+      "itemDescription" : "• A blue cross that follows Isaac and drops a soul heart every 4 rooms.  UNLOCK: Unlock this item by beating the Isaac boss with Maggy.",
+      "itemType" : "Passive, Familiar",
+      "itemPool" : "Item Room, Angel Room",
+      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
+      "rechargeTime" : "Item Room, Angel Room"
+    },
+    {
+      "itemName" : "The Sad Onion",
+      "itemId" : "001",
+      "itemQuote" : "Tears up",
+      "itemDescription" : "• +0.7 Tears Up",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room",
+      "itemTags" : "item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room"
+    },
+    {
+      "itemName" : "The Satanic Bible",
+      "itemId" : "292",
+      "itemQuote" : "Reusable evil",
+      "itemDescription" : "• When used, gives Isaac +1 Black Heart.  • When depleted, Black Hearts deal 40 damage to the entire room, in a Necronomicon style effect.  UNLOCK: Unlock this item by beating the Isaac boss with Azazel.",
+      "itemType" : "Active",
+      "itemPool" : "Item Room, Library, Devil Room",
+      "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, the lost item pool",
+      "rechargeTime" : "Recharge Time: 6 rooms"
+    },
+    {
+      "itemName" : "The Small Rock",
+      "itemId" : "090",
+      "itemQuote" : "DMG up",
+      "itemDescription" : "• +1.0 Damage Up.  • +0.2 Tears Up. (Only applied after the tears stat is next updated)  • -0.2 Speed Down. (Only applied after the speed stat is next updated)  • Has a chance to drop when exploding a tinted rock.  UNLOCK: Unlock this item by destroying 100 tinted rocks.",
+      "itemType" : "Passive",
+      "itemPool" : "None (Tinted rock only)",
+      "itemTags" : "tinted rock, marked rock,",
+      "rechargeTime" : "None (Tinted rock only)"
+    },
+    {
+      "itemName" : "The Soul",
+      "itemId" : "335",
+      "itemQuote" : "I am all",
+      "itemDescription" : "• +2 Soul Hearts.  • Enemy projectiles will now slowly curve away from Isaac and avoid hitting him.  UNLOCK: Unlock this item by beating Dark Room with The Lost.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Angel Room",
+      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
+      "rechargeTime" : "Item Room, Angel Room"
+    },
+    {
+      "itemName" : "The Virus",
+      "itemId" : "013",
+      "itemQuote" : "Poison touch",
+      "itemDescription" : "• Deals poison damage on contact with enemies (Damage over time 4 or 6 per tick).  • -0.1 Speed Down. (Cached: Only applied after the speed stat is next updated)  • Has a chance to drop from the Lust miniboss fight.  In Afterbirth this item can cause enemies to drop black hearts if it was poisoned.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Demon Beggar, Lust Miniboss",
+      "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, item room, treasure room, item room pool, syringe, needle, injection, the lost item pool",
+      "rechargeTime" : "Item Room, Demon Beggar, Lust Miniboss"
+    },
+    {
+      "itemName" : "The Wafer",
+      "itemId" : "108",
+      "itemQuote" : "Damage resistance",
+      "itemDescription" : "• All damage taken is reduced to half a heart.  • Damaged reduction is reduced from every source in the game except Devil Deals and health down pills.  • Does not prevent death (i.e. Suicide King or using The Bible on Isaac, ??? or Satan).  • The Wafer becomes most effective in the Womb and beyond where enemies all deal a whole heart of damage.  • The Wafer causes the Sharp Plug item to only cost 1/2 a heart per use.",
+      "itemType" : "Passive",
+      "itemPool" : "Item Room, Angel Room",
+      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, communion, the lost item pool",
+      "rechargeTime" : "Item Room, Angel Room"
     },
     {
       "itemName" : "There's Options",
@@ -3262,7 +3282,7 @@
     },
     {
       "itemName" : "Transcendence",
-      "itemId" : "20",
+      "itemId" : "020",
       "itemQuote" : "We all float down here...",
       "itemDescription" : "• Gives Isaac the ability to fly.  UNLOCK: Unlock this item by beating Mom's Heart 3 times.",
       "itemType" : "Passive",
@@ -3272,7 +3292,7 @@
     },
     {
       "itemName" : "Treasure Map",
-      "itemId" : "54",
+      "itemId" : "054",
       "itemQuote" : "Full visible map",
       "itemDescription" : "• Reveals the entire map for every floor not including both secret room locations.  • Does not show the icons for any unknown rooms.  • Can still help you to guess which direction the boss room is in, due to the fact that the Boss Room is usually in the room furthest away from the first room.",
       "itemType" : "Passive",
@@ -3321,28 +3341,8 @@
       "rechargeTime" : "Item Room"
     },
     {
-      "itemName" : "The Virus",
-      "itemId" : "13",
-      "itemQuote" : "Poison touch",
-      "itemDescription" : "• Deals poison damage on contact with enemies (Damage over time 4 or 6 per tick).  • -0.1 Speed Down. (Cached: Only applied after the speed stat is next updated)  • Has a chance to drop from the Lust miniboss fight.  In Afterbirth this item can cause enemies to drop black hearts if it was poisoned.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Demon Beggar, Lust Miniboss",
-      "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, item room, treasure room, item room pool, syringe, needle, injection, the lost item pool",
-      "rechargeTime" : "Item Room, Demon Beggar, Lust Miniboss"
-    },
-    {
-      "itemName" : "The Wafer",
-      "itemId" : "108",
-      "itemQuote" : "Damage resistance",
-      "itemDescription" : "• All damage taken is reduced to half a heart.  • Damaged reduction is reduced from every source in the game except Devil Deals and health down pills.  • Does not prevent death (i.e. Suicide King or using The Bible on Isaac, ??? or Satan).  • The Wafer becomes most effective in the Womb and beyond where enemies all deal a whole heart of damage.  • The Wafer causes the Sharp Plug item to only cost 1/2 a heart per use.",
-      "itemType" : "Passive",
-      "itemPool" : "Item Room, Angel Room",
-      "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, communion, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
-    },
-    {
       "itemName" : "We Need To Go Deeper",
-      "itemId" : "84",
+      "itemId" : "084",
       "itemQuote" : "Reusable level skip",
       "itemDescription" : "• Spawns a trapdoor at Isaac's feet which allows him to travel to the next floor.  • The trapdoor has a 10% chance to become a Black Market.  • Has no effect in Sheol, Cathedral, Chest and Dark Room.  • Cannot spawn a trapdoor directly infront of a secret room entrance.  • Can destroy rocks if used when Isaac is flying over a rock.",
       "itemType" : "Active",
@@ -3372,7 +3372,7 @@
     },
     {
       "itemName" : "Wire Coat Hanger",
-      "itemId" : "32",
+      "itemId" : "032",
       "itemQuote" : "Tears up",
       "itemDescription" : "• +0.7 Tears Up.  UNLOCK: Unlock this item by beating Mom's Heart 4 times.",
       "itemType" : "Passive",
@@ -3382,7 +3382,7 @@
     },
     {
       "itemName" : "Wooden Spoon",
-      "itemId" : "27",
+      "itemId" : "027",
       "itemQuote" : "Speed up",
       "itemDescription" : "• +0.3 Speed Up.",
       "itemType" : "Passive",
@@ -3392,7 +3392,7 @@
     },
     {
       "itemName" : "X-Ray Vision",
-      "itemId" : "76",
+      "itemId" : "076",
       "itemQuote" : "I've seen everything",
       "itemDescription" : "• Reveals the entrance to secret rooms and automatically opens the hole, removing the need for bombs to enter.",
       "itemType" : "Passive",
@@ -3402,7 +3402,7 @@
     },
     {
       "itemName" : "Yum Heart",
-      "itemId" : "45",
+      "itemId" : "045",
       "itemQuote" : "Reusable regeneration",
       "itemDescription" : "• Heals Isaac for one whole red heart.  • Maggy starts with this item.  • Has a chance to drop from the Super Lust miniboss fight.",
       "itemType" : "Active",

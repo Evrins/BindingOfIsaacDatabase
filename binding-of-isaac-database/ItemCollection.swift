@@ -26,6 +26,10 @@ class ItemCollection {
         return self.items
     }
     
+    func getItemsSorted(byProperty: String) -> Results<ItemModel>! {
+        return self.realm.objects(ItemModel.self).sorted(byProperty: byProperty)
+    }
+    
     func loadItems() {
         self.items = self.realm.objects(ItemModel.self)
         
