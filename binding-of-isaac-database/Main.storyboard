@@ -123,6 +123,35 @@
             </objects>
             <point key="canvasLocation" x="2525.5999999999999" y="259.52023988005999"/>
         </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="UAY-np-uTU">
+            <objects>
+                <tableViewController id="Cvl-5q-vH3" customClass="MenuTableViewController" customModule="binding_of_isaac_database" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gTA-Q7-oTB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="R7A-9H-Pud">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R7A-9H-Pud" id="zIl-8m-ayp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cvl-5q-vH3" id="kAw-aG-CpJ"/>
+                            <outlet property="delegate" destination="Cvl-5q-vH3" id="M1l-gX-wUP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EC3-Av-QF2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDa-LF-P7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888.8000000000002" y="1026.8365817091455"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gos-c2-o5K">
             <objects>
@@ -140,6 +169,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vct-lu-vdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="602.39999999999998" y="259.52023988005999"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="xYD-Zl-AAa">
+            <objects>
+                <navigationController storyboardIdentifier="LeftMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qzw-Z1-r7Q" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ism-uZ-WFE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cvl-5q-vH3" kind="relationship" relationship="rootViewController" id="Puo-3o-j8v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AVC-bP-ccR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949.5999999999999" y="1026.8365817091455"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,7 @@ target 'binding-of-isaac-database' do
   pod 'Shoyu', '~> 1.0'
   pod 'SideMenu'
 
+
   target 'binding-of-isaac-databaseTests' do
     inherit! :search_paths
     # Pods for testing

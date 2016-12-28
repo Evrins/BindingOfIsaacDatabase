@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Macaw
 
 class ItemDetailViewController: UIViewController {
     @IBOutlet weak var itemImage: UIImageView!
@@ -19,7 +18,7 @@ class ItemDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(rgb: 0xEAEAEA)
+        view.backgroundColor = UIColor(hex: 0xEAEAEA)
         
         itemTitleLabel.text = selectedItem?.getItemName()
         itemQuoteLabel.text = selectedItem?.getItemQuote()

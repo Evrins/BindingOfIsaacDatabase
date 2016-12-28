@@ -8,10 +8,11 @@
 
 import UIKit
 import RealmSwift
+import SideMenu
 
 private let reuseIdentifier = "Cell"
 
-class ItemViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, ItemCollectionDelegate {
+class ItemViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -49,15 +50,24 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
-        itemCollection.delegate = self
+        itemCollection.onComplete = { complete in
+            self.items = self.itemCollection.getItemsSorted(byProperty: "itemId")
+            self.searchItems = self.items
+            self.collectionView.reloadData()
+        }
 
         itemCollection.loadItems()
+        self.setUpSideMenu()
 
         displayOptions(genre: genre)
-        collectionView.backgroundColor = UIColor(rgb: 0xEAEAEA)
+        collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(addTapped))
-
+    }
+    
+    func menuButtonPressed() {
+        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     
     func addTapped() {
@@ -67,12 +77,6 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func itemsDidFinishLoading() {
-        self.items = self.itemCollection.getItemsSorted(byProperty: "itemId")
-        self.searchItems = items
-        collectionView.reloadData()
     }
     
     // MARK: - Private methods
@@ -233,4 +237,27 @@ extension ItemViewController {
         return 10
     }
 
+}
+
+extension ItemViewController {
+    func setUpSideMenu() {
+    // Define the menus
+        let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
+
+        menuLeftNavigationController?.leftSide = true
+        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+        
+        SideMenuManager.menuPresentMode = .menuSlideIn
+        SideMenuManager.menuAnimationBackgroundColor = UIColor.clear
+        
+        let menuRightNavigationController = UISideMenuNavigationController()
+        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
+        SideMenuManager.menuRightNavigationController = menuRightNavigationController
+        
+        // Enable gestures. The left and/or right menus must be set up above for these to work.
+        // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+    }
 }

@@ -9,18 +9,16 @@
 import Foundation
 import RealmSwift
 
-protocol ItemCollectionDelegate {
-    func itemsDidFinishLoading()
-}
-
-class ItemCollection {
+class ItemCollection: NSObject {
+    
+    var onComplete: ((_ complete: Bool)->())?
+    
     static let sharedInstance = ItemCollection()
+    private override init() {}
     
     let realm = try! Realm()
     
-    var delegate: ItemCollectionDelegate! = nil
     var items: Results<ItemModel>!
-    
     
     func getItems() -> Results<ItemModel>! {
         return self.items
@@ -36,7 +34,7 @@ class ItemCollection {
         if self.items.isEmpty {
             self.loadInitialItems()
         } else {
-            self.itemsDidFinish()
+            onComplete?(true)
         }
     }
     
@@ -47,11 +45,8 @@ class ItemCollection {
     func loadInitialItems() {
         DataSource.loadItems() { (success) -> Void in
             self.items = self.realm.objects(ItemModel.self)
-            self.itemsDidFinish()
+            self.onComplete?(true)
         }
     }
     
-    func itemsDidFinish() {
-        self.delegate.itemsDidFinishLoading()
-    }
 }

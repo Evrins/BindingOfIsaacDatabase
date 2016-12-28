@@ -23,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
 
         DataSource.loadItems() { (success) -> Void in }
+        
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), for: UIBarMetrics.default)
+        
+//        UILabel.appearance().setSubstituteFontName("Helvetica")
+
+        
         return true
     }
 

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "binding-of-isaac-database/ItemViewController.swift"
-            timestampString = "504328994.277993"
+            timestampString = "504657282.583713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "ItemViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,13 +42,91 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "binding-of-isaac-database/ItemViewController.swift"
-            timestampString = "504328994.277993"
+            timestampString = "504657282.583713"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "binding-of-isaac-database/MenuTableViewController.swift"
+            timestampString = "504652233.381289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "MenuTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "binding_of_isaac_database.MenuTableViewController.menuItemCollection.getter : binding_of_isaac_database.MenuItemCollection"
+                  moduleName = "binding-of-isaac-database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/MenuTableViewController.swift"
+                  timestampString = "504655047.121751"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "binding_of_isaac_database.MenuTableViewController.init (style : __C.UITableViewStyle) -&gt; binding_of_isaac_database.MenuTableViewController"
+                  moduleName = "binding-of-isaac-database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/MenuTableViewController.swift"
+                  timestampString = "504655047.12601"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "binding_of_isaac_database.MenuTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; binding_of_isaac_database.MenuTableViewController"
+                  moduleName = "binding-of-isaac-database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/MenuTableViewController.swift"
+                  timestampString = "504655047.127785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "binding_of_isaac_database.MenuTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;binding_of_isaac_database.MenuTableViewController&gt;"
+                  moduleName = "binding-of-isaac-database"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/MenuTableViewController.swift"
+                  timestampString = "504655047.129391"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -47,19 +47,6 @@ class ListFlowLayout: UICollectionViewFlowLayout {
         minimumLineSpacing = cellSpacing
     }
     
-//    func itemWidth() -> CGFloat {
-//        return collectionView!.frame.width
-//    }
-//    
-//    override var itemSize: CGSize {
-//        set {
-//            self.itemSize = CGSize(width: itemWidth(), height: itemHeight)
-//        }
-//        get {
-//            return CGSize(width: itemWidth() - 10, height: itemHeight)
-//        }
-//    }
-    
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         return collectionView!.contentOffset
     }
