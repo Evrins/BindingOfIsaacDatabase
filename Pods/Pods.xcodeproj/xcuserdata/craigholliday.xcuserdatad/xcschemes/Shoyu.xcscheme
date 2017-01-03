@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B565D366E7759FEE70B934AE5EC2A63B'
+               BlueprintIdentifier = '6ABDD395EA9675EEF97E49DA0D349CCF'
                BlueprintName = 'Shoyu'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Shoyu.framework'>

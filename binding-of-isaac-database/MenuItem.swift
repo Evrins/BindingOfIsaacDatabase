@@ -11,13 +11,15 @@ import UIKit
 class MenuItem: NSObject {
     var title = ""
     var image: UIImage? = nil
+    var type = ""
     
-    init?(title: String, image: UIImage?) {
+    init?(title: String, image: UIImage?, type: String) {
         self.title = title
         self.image = image
+        self.type = type
     }
     
-    convenience init(title: String) {
-        self.init(title: title, image: nil)!
+    convenience init(title: String, type: String) {
+        self.init(title: title, image: nil, type: type)!
     }
 }

@@ -12,6 +12,7 @@ import RealmSwift
 
 class MenuTableViewController: UITableViewController {
     
+    let itemCollection = ItemCollection.sharedInstance
     let menuItemCollection = MenuItemCollection.sharedInstance
     
     var menuItems = [MenuItem]()
@@ -21,7 +22,7 @@ class MenuTableViewController: UITableViewController {
         
         self.title = "Menu"
         
-        menuItemCollection.onComplete = { complete in
+        menuItemCollection.onComplete = { _ in
             self.menuItems = self.menuItemCollection.getMenuItems()
             self.setUpTable()
         }
@@ -30,11 +31,11 @@ class MenuTableViewController: UITableViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Hide", style: .plain, target: self, action: #selector(dismissView))
         
+        self.tableView.tableFooterView = UIView()
     }
     
     func setUpTable() {
         tableView.source = Source() { source in
-            
             source.createSection { section in
                 section.createRows(for: menuItems, closure: { menuItem, row in
                     row.reuseIdentifier = "Cell"
@@ -47,6 +48,9 @@ class MenuTableViewController: UITableViewController {
                         if let index = self.tableView.indexPathForSelectedRow{
                             self.tableView.deselectRow(at: index, animated: true)
                         }
+                        
+                        self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: "globalType")
+                        
                         self.dismissView()
                     }
                 })

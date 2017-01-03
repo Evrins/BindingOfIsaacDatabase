@@ -8,7 +8,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room, Gluttony Miniboss",
       "itemTags" : "boss room pool, boss room item, item room, treasure room, item room pool, red heart, ballchinnian, ball sack, full heal, gluttony, the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "???'s Only Friend",
@@ -18,7 +20,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, blue fly, big fly, blue baby's only friend",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "1UP",
@@ -28,7 +32,9 @@
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool, mario, green mushroom, extra life",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "20/20",
@@ -38,7 +44,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "20 20, item room, treasure room, item room pool, black glasses, spectacles",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "3 Dollar Bill",
@@ -48,7 +56,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, pink note, money, cash, three dollar bill, cash money",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "9 Volt",
@@ -58,7 +68,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, battery, black, brown,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "A Dollar",
@@ -68,7 +80,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Arcade machine only)",
       "itemTags" : "slot machine, arcade machine",
-      "rechargeTime" : "None (Arcade machine only)"
+      "rechargeTime" : "None (Arcade machine only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "A Lump of Coal",
@@ -78,7 +92,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Krampus only)",
       "itemTags" : "krampus",
-      "rechargeTime" : "None (Krampus only)"
+      "rechargeTime" : "None (Krampus only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "A Pony",
@@ -88,7 +104,9 @@
       "itemType" : "Active",
       "itemPool" : "None (Headless horseman only)",
       "itemTags" : "headless horseman, headless horsemen",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "A Quarter",
@@ -98,7 +116,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Secret Room, Super Greed Miniboss",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room, Super Greed Miniboss"
+      "rechargeTime" : "Item Room, Secret Room, Super Greed Miniboss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "A Snack",
@@ -108,7 +128,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Abaddon",
@@ -118,7 +140,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, red devil sign, abandon, abadon",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Abel",
@@ -128,7 +152,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Gold Chest",
       "itemTags" : "golden chest pool, gold chest pool, item room, treasure room, item room pool, follower, everyone knows it's abel, brown, grey, gray,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Anarchist's Cookbook",
@@ -138,7 +164,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library, Pride Miniboss",
       "itemTags" : "library pool, library room, book room pool, item room, treasure room, item room pool, white, red",
-      "rechargeTime" : "Recharge Time: 3 rooms."
+      "rechargeTime" : "Recharge Time: 3 rooms.",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Anemic",
@@ -148,7 +176,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, blood drop, red blood",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ankh",
@@ -158,7 +188,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, black, grey, gray, extra life",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Anti-Gravity",
@@ -168,7 +200,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "anti gravity, item room, treasure room, item room pool, anti gravity,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Aquarius",
@@ -178,7 +212,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool, black, blue, cyan",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Aries",
@@ -188,7 +224,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool, black, blue, cyan",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ball of Bandages",
@@ -198,7 +236,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "None (Horsemen boss only)",
       "itemTags" : "super meat boy",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ball of Tar",
@@ -208,7 +248,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, black,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "BBF",
@@ -218,7 +260,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Best Bud",
@@ -228,7 +272,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room, Key Beggar",
       "itemTags" : "key master pool, key beggar pool, key judgement pool, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Best Friend",
@@ -238,7 +284,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, worst friend",
-      "rechargeTime" : "Recharge Time: 3 rooms."
+      "rechargeTime" : "Recharge Time: 3 rooms.",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "BFFS!",
@@ -248,7 +296,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Key Beggar",
       "itemTags" : "key master pool, key beggar pool, key judgement pool, shop room pool, shop item pool, northernlion",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Big Fan",
@@ -258,7 +308,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Black Candle",
@@ -268,7 +320,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Curse Room",
       "itemTags" : "curse room pool, shop room pool, shop item pool,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Black Lotus",
@@ -278,7 +332,9 @@
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool, , the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blank Card",
@@ -288,7 +344,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Shop, Secret Room",
       "itemTags" : "secret room pool, shop room pool, shop item pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 4 rooms."
+      "rechargeTime" : "Recharge Time: 4 rooms.",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blood Bag",
@@ -298,7 +356,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Blood Donation machine only)",
       "itemTags" : "the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blood Clot",
@@ -308,7 +368,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blood of the Martyr",
@@ -318,7 +380,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blood Rights",
@@ -328,7 +392,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: Instant."
+      "rechargeTime" : "Recharge Time: Instant.",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bloody Lust",
@@ -338,7 +404,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool, starting",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blue Cap",
@@ -348,7 +416,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, mushroom, fungi, fungus,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Blue Map",
@@ -358,7 +428,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Beggar, Key Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bob's Brain",
@@ -368,7 +440,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Gold Chest",
       "itemTags" : "golden chest pool, gold chest pool, item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bob's Curse",
@@ -378,7 +452,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Super Sloth Miniboss, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool, bob sloth, bomb beggar",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bob's Rotten Head",
@@ -388,7 +464,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Gold Chest, Sloth Miniboss",
       "itemTags" : "golden chest pool, gold chest pool, item room, treasure room, item room pool, bob sloth",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bobby - Bomb",
@@ -398,7 +476,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool, bomb beggar",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bogo Bombs",
@@ -408,7 +488,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Bomb Beggar",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bomb Bag",
@@ -418,7 +500,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Secret Room, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Book of Revelations",
@@ -428,7 +512,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library",
       "itemTags" : "library pool, library room, book room pool, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Book of Secrets",
@@ -438,7 +524,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library, Secret Room",
       "itemTags" : "library pool, library room, book room pool, secret room pool, item room, treasure room, item room pool, question mark book",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Book of Shadows",
@@ -448,7 +536,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library",
       "itemTags" : "library pool, library room, book room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Boom!",
@@ -458,7 +548,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Boomerang",
@@ -468,7 +560,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Recharge Time: Timed (A few seconds)"
+      "rechargeTime" : "Recharge Time: Timed (A few seconds)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Box",
@@ -478,7 +572,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Box of Spiders",
@@ -488,7 +584,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Breakfast",
@@ -498,7 +596,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Challenge Room, Beggar",
       "itemTags" : "dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Breath of Life",
@@ -508,7 +608,9 @@
       "itemType" : "Active",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
-      "rechargeTime" : "Recharge Time: Timed (1 bar per second)"
+      "rechargeTime" : "Recharge Time: Timed (1 bar per second)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Brimstone",
@@ -518,7 +620,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Broken Watch",
@@ -528,7 +632,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Brother Bobby",
@@ -538,7 +644,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "item room, treasure room, item room pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bucket of Lard",
@@ -548,7 +656,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Super Gluttony Miniboss",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Bum Friend",
@@ -558,7 +668,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Butt Bombs",
@@ -568,7 +680,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Butter Bean",
@@ -578,7 +692,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: Timed (A few seconds)"
+      "rechargeTime" : "Recharge Time: Timed (A few seconds)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Caffeine Pill",
@@ -588,7 +704,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, pro plus",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cain's Other Eye",
@@ -598,7 +716,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, eyeball",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cancer",
@@ -608,7 +728,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool, cyan, black, the lost item pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Capricorn",
@@ -618,7 +740,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool, cyan, black,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cat-O-Nine-Tails",
@@ -628,7 +752,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Celtic Cross",
@@ -638,7 +764,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ceremonial Robes",
@@ -648,7 +776,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room, Demon Beggar",
       "itemTags" : "curse room pool, demon beggar pool, demon judgement pool, devil beggar pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room, Curse Room, Demon Beggar"
+      "rechargeTime" : "Devil Room, Curse Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Champion Belt",
@@ -658,7 +788,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Charm of the Vampire",
@@ -668,7 +800,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Chemical Peel",
@@ -678,7 +812,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Chocolate Milk",
@@ -688,7 +824,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Contract From Below",
@@ -698,7 +836,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room, Demon Beggar",
       "itemTags" : "curse room pool, demon beggar pool, demon judgement pool, devil beggar pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room, Curse Room, Demon Beggar"
+      "rechargeTime" : "Devil Room, Curse Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Converter",
@@ -708,7 +848,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Crack The Sky",
@@ -718,7 +860,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 4 rooms"
+      "rechargeTime" : "Recharge Time: 4 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cricket's Body",
@@ -728,7 +872,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cricket's Head",
@@ -738,7 +884,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Gold Chest",
       "itemTags" : "item room, treasure room, item room pool, golden chest pool, gold chest pool,",
-      "rechargeTime" : "Item Room, Gold Chest"
+      "rechargeTime" : "Item Room, Gold Chest",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Crystal Ball",
@@ -748,7 +896,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cube of Meat",
@@ -758,7 +908,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Horsemen boss only)",
       "itemTags" : "",
-      "rechargeTime" : "None (Horsemen boss only)"
+      "rechargeTime" : "None (Horsemen boss only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cupid's Arrow",
@@ -768,7 +920,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, arrow, penetrative, penetrating shots",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Cursed Eye",
@@ -778,7 +932,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room"
+      "rechargeTime" : "Item Room, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "D10",
@@ -788,7 +944,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, DIO, dice",
-      "rechargeTime" : "Recharge Time: 1 room"
+      "rechargeTime" : "Recharge Time: 1 room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "D100",
@@ -798,7 +956,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, deathstar, death star, dice",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "D20",
@@ -808,7 +968,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, dice",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "D4",
@@ -818,7 +980,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, dice, starting",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dad's Key",
@@ -828,7 +992,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Key Beggar",
       "itemTags" : "key master pool, key beggar pool, key judgement pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Daddy Longlegs",
@@ -838,7 +1004,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dark Bum",
@@ -848,7 +1016,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool, celebrate good times come on, the lost item pool, q t 3.14, dark bum, otp, damn it reddit",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dark Matter",
@@ -858,7 +1028,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room"
+      "rechargeTime" : "Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dead Bird",
@@ -868,7 +1040,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool, starting",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dead Cat",
@@ -878,7 +1052,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room, Red Chest, Super Pride Miniboss",
       "itemTags" : "curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room, Curse Room, Red Chest, Super Pride Miniboss"
+      "rechargeTime" : "Devil Room, Curse Room, Red Chest, Super Pride Miniboss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dead Dove",
@@ -888,7 +1064,9 @@
       "itemType" : "Passive",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
-      "rechargeTime" : "Angel Room"
+      "rechargeTime" : "Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dead Onion",
@@ -898,7 +1076,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dead Sea Scrolls",
@@ -908,7 +1088,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 4 rooms"
+      "rechargeTime" : "Recharge Time: 4 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Death's Touch",
@@ -918,7 +1100,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Deck of Cards",
@@ -928,7 +1112,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Shop",
       "itemTags" : "shop room pool, shop item pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Demon Baby",
@@ -938,7 +1124,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dessert",
@@ -948,7 +1136,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Beggar, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room, Beggar, Challenge Room"
+      "rechargeTime" : "Boss Room, Beggar, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dinner",
@@ -958,7 +1148,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Beggar, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room, Beggar, Challenge Room"
+      "rechargeTime" : "Boss Room, Beggar, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Distant Admiration",
@@ -968,7 +1160,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room, Key Beggar",
       "itemTags" : "key master pool, key beggar pool, key judgement pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Key Beggar"
+      "rechargeTime" : "Item Room, Key Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Doctor's Remote",
@@ -978,7 +1172,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dr. Fetus",
@@ -988,7 +1184,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Dry Baby",
@@ -998,7 +1196,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, dry baby is best baby, northernlion",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "E. Coli",
@@ -1008,7 +1208,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "e coli, item room, treasure room, item room pool,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Epic Fetus",
@@ -1018,7 +1220,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, fetus in a jar",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Eve's Mascara",
@@ -1028,7 +1232,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, makeup, make up,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Experimental Treatment",
@@ -1038,7 +1244,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room, Demon Beggar",
       "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, item room, treasure room, item room pool, yellow syringe, needle, injection,",
-      "rechargeTime" : "Item Room, Boss Room, Demon Beggar"
+      "rechargeTime" : "Item Room, Boss Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Fanny pack",
@@ -1048,7 +1256,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, bag, satchel, backpack",
-      "rechargeTime" : "Shop, Beggar"
+      "rechargeTime" : "Shop, Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Fate",
@@ -1058,7 +1268,9 @@
       "itemType" : "Passive",
       "itemPool" : "Gold Chest",
       "itemTags" : "golden chest pool, gold chest pool, blue head, the lost item pool",
-      "rechargeTime" : "Gold Chest"
+      "rechargeTime" : "Gold Chest",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Fire Mind",
@@ -1068,7 +1280,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "FLUSH!",
@@ -1078,7 +1292,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, silver spoon handle",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Forever Alone",
@@ -1088,7 +1304,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Forget Me Now",
@@ -1098,7 +1316,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool, pill, tablet, drug",
-      "rechargeTime" : "Recharge Time: Instant (One time use)"
+      "rechargeTime" : "Recharge Time: Instant (One time use)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Gemini",
@@ -1108,7 +1328,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ghost Baby",
@@ -1118,7 +1340,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Gimpy",
@@ -1128,7 +1352,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Devil Room, Curse Room, Demon Beggar",
       "itemTags" : "curse room pool, demon beggar pool, demon judgement pool, devil beggar pool devil pool, devil room pool, devil deal, item room, treasure room, item room pool, gimp mask, the lost item pool",
-      "rechargeTime" : "Item Room, Devil Room, Curse Room, Demon Beggar"
+      "rechargeTime" : "Item Room, Devil Room, Curse Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Gnawed Leaf",
@@ -1138,7 +1364,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, raccoon,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Goat Head",
@@ -1148,7 +1376,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room, Red Chest, Golden Chest",
       "itemTags" : "curse room pool, red chest pool, red chest item pool, golden chest pool, gold chest pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room, Curse Room, Red Chest, Golden Chest"
+      "rechargeTime" : "Devil Room, Curse Room, Red Chest, Golden Chest",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "GodHead",
@@ -1158,7 +1388,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
-      "rechargeTime" : "Angel Room"
+      "rechargeTime" : "Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Growth Hormones",
@@ -1168,7 +1400,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Demon Beggar",
       "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, syringe, needle, injection,",
-      "rechargeTime" : "Boss Room, Demon Beggar"
+      "rechargeTime" : "Boss Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Guardian Angel",
@@ -1178,7 +1412,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
-      "rechargeTime" : "Angel Room"
+      "rechargeTime" : "Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Guppy's Collar",
@@ -1188,7 +1424,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room, Red Chest",
       "itemTags" : "curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room, Curse Room, Red Chest"
+      "rechargeTime" : "Devil Room, Curse Room, Red Chest",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Guppy's Hairball",
@@ -1198,7 +1436,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room"
+      "rechargeTime" : "Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Guppy's Head",
@@ -1208,7 +1448,9 @@
       "itemType" : "Active",
       "itemPool" : "Devil Room, Curse Room, Red Chest, Gold Chest",
       "itemTags" : "curse room pool, red chest pool, red chest item pool, golden chest pool, gold chest pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Recharge Time: 1 room"
+      "rechargeTime" : "Recharge Time: 1 room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Guppy's Paw",
@@ -1218,7 +1460,9 @@
       "itemType" : "Active",
       "itemPool" : "Devil Room, Curse Room, Red Chest",
       "itemTags" : "curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal, the lost item pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Guppy's Tail",
@@ -1228,7 +1472,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room, Red Chest",
       "itemTags" : "curse room pool, red chest pool, red chest item pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room, Curse Room, Red Chest"
+      "rechargeTime" : "Devil Room, Curse Room, Red Chest",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Habit",
@@ -1238,7 +1484,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Shop, Angel Room"
+      "rechargeTime" : "Shop, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Halo of Flies",
@@ -1248,7 +1496,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room, Key Beggar",
       "itemTags" : "item room, treasure room, item room pool, key master pool, key beggar pool, key judgement pool,",
-      "rechargeTime" : "Item Room, Key Beggar"
+      "rechargeTime" : "Item Room, Key Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Harlequin Baby",
@@ -1258,7 +1508,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Head of Krampus",
@@ -1268,7 +1520,9 @@
       "itemType" : "Active",
       "itemPool" : "None (Krampus only)",
       "itemTags" : "",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Headless Baby",
@@ -1278,7 +1532,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Hive Mind",
@@ -1288,7 +1544,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Holy Grail",
@@ -1298,7 +1556,9 @@
       "itemType" : "Passive",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, the lost item pool",
-      "rechargeTime" : "Angel Room"
+      "rechargeTime" : "Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Holy Mantle",
@@ -1308,7 +1568,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, starting",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Holy Water",
@@ -1318,7 +1580,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Hot Bombs",
@@ -1328,7 +1592,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Bomb Beggar",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Bomb Beggar"
+      "rechargeTime" : "Item Room, Bomb Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "How To Jump",
@@ -1338,7 +1604,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library",
       "itemTags" : "library pool, library room, book room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Humbleing Bundle",
@@ -1348,7 +1616,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Infamy",
@@ -1358,7 +1628,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Gold Chest, Secret Room",
       "itemTags" : "golden chest pool, gold chest pool, secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Gold Chest, Secret Room"
+      "rechargeTime" : "Item Room, Gold Chest, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Infestation",
@@ -1368,7 +1640,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Infestation 2",
@@ -1378,7 +1652,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ipecac",
@@ -1388,7 +1664,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Iron Bar",
@@ -1398,7 +1676,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Isaac's Heart",
@@ -1408,7 +1688,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Isaac's Tears",
@@ -1418,7 +1700,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 1 bar per tear fired"
+      "rechargeTime" : "Recharge Time: 1 bar per tear fired",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "IV Bag",
@@ -1428,7 +1712,9 @@
       "itemType" : "Active",
       "itemPool" : "None (Blood donation machine only)",
       "itemTags" : ", the lost item pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Jesus Juice",
@@ -1438,7 +1724,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Judas' Shadow",
@@ -1448,7 +1736,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Juicy Sack",
@@ -1458,7 +1748,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Kamikaze",
@@ -1468,7 +1760,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Key Piece #1",
@@ -1478,7 +1772,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "None (Angel statue only)",
       "itemTags" : "angel room, angels",
-      "rechargeTime" : "None (Angel statue only)"
+      "rechargeTime" : "None (Angel statue only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Key Piece #2",
@@ -1488,7 +1784,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "None (Angel statue only)",
       "itemTags" : "",
-      "rechargeTime" : "None (Angel statue only)"
+      "rechargeTime" : "None (Angel statue only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Latch Key",
@@ -1498,7 +1796,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lazarus' Rags",
@@ -1508,7 +1808,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, starting",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Leech",
@@ -1518,7 +1820,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lemon Mishap",
@@ -1528,7 +1832,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Leo",
@@ -1538,7 +1844,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Libra",
@@ -1548,7 +1856,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lil' Brimstone",
@@ -1558,7 +1868,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lil' Haunt",
@@ -1568,7 +1880,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Little Baggy",
@@ -1578,7 +1892,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Little C.H.A.D.",
@@ -1588,7 +1904,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, C.H.A.D. Boss",
       "itemTags" : "little chad, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, C.H.A.D. Boss"
+      "rechargeTime" : "Item Room, C.H.A.D. Boss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Little Chubby",
@@ -1598,7 +1916,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Little Gish",
@@ -1608,7 +1928,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Gish Boss",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Gish Boss"
+      "rechargeTime" : "Item Room, Gish Boss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Little Steven",
@@ -1618,7 +1940,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Steven Boss",
       "itemTags" : "boss room pool, boss room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Steven Boss"
+      "rechargeTime" : "Item Room, Steven Boss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Loki's Horns",
@@ -1628,7 +1952,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lord of the Pit",
@@ -1638,7 +1964,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, the lost item pool",
-      "rechargeTime" : "Devil Room"
+      "rechargeTime" : "Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lost Contact",
@@ -1648,7 +1976,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room"
+      "rechargeTime" : "Item Room, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lucky Foot",
@@ -1658,7 +1988,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, starting",
-      "rechargeTime" : "Item Room, Beggar"
+      "rechargeTime" : "Item Room, Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Lunch",
@@ -1668,7 +2000,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Challenge Room, Beggar",
       "itemTags" : "dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room, Challenge Room, Beggar"
+      "rechargeTime" : "Boss Room, Challenge Room, Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Maggy's Bow",
@@ -1678,7 +2012,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Magic 8 Ball",
@@ -1688,7 +2024,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Magic Fingers",
@@ -1698,7 +2036,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Shop",
       "itemTags" : "shop room pool, shop item pool, item room, treasure room, item room pool, tissue",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Magic Mushroom",
@@ -1708,7 +2048,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room, Mushrooms",
       "itemTags" : "boss room pool, boss room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Boss Room, Mushrooms"
+      "rechargeTime" : "Item Room, Boss Room, Mushrooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Magic Scab",
@@ -1718,7 +2060,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Magneto",
@@ -1728,7 +2072,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Match Book",
@@ -1738,7 +2084,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "MEAT!",
@@ -1748,7 +2096,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Midas Touch",
@@ -1758,7 +2108,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mini Mush",
@@ -1768,7 +2120,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Missing No.",
@@ -1778,7 +2132,9 @@
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool,",
-      "rechargeTime" : "Secret Room"
+      "rechargeTime" : "Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Missing Page 2",
@@ -1788,7 +2144,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Demon Beggar, Secret Room",
       "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, secret room pool, devil pool, devil room pool, devil deal, the lost item pool",
-      "rechargeTime" : "Devil Room, Demon Beggar, Secret Room"
+      "rechargeTime" : "Devil Room, Demon Beggar, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mitre",
@@ -1798,7 +2156,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Bottle of Pills",
@@ -1808,7 +2168,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Shop, Challenge Room, Beggar, Demon Beggar",
       "itemTags" : "dungeon room, blood challenge room, arena pool, demon beggar pool, demon judgement pool, devil beggar pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Bra",
@@ -1818,7 +2180,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Coin Purse",
@@ -1828,7 +2192,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Boss Room, Challenge Room, Beggar, Demon Beggar",
       "itemTags" : "dungeon room, blood challenge room, arena pool, demon beggar pool, demon judgement pool, devil beggar pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, shop room pool, shop item pool,",
-      "rechargeTime" : "Shop, Boss Room, Challenge Room, Beggar, Demon Beggar"
+      "rechargeTime" : "Shop, Boss Room, Challenge Room, Beggar, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Contacts",
@@ -1838,7 +2204,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "item room, treasure room, item room pool, dungeon room, blood challenge room, arena pool",
-      "rechargeTime" : "Item Room, Challenge Room"
+      "rechargeTime" : "Item Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Eye",
@@ -1848,7 +2216,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Challenge Room"
+      "rechargeTime" : "Item Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Eyeshadow",
@@ -1858,7 +2228,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Challenge Room"
+      "rechargeTime" : "Item Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Heels",
@@ -1868,7 +2240,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room, Challenge Room"
+      "rechargeTime" : "Boss Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Key",
@@ -1878,7 +2252,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Challenge Room, Key Beggar",
       "itemTags" : "key master pool, key beggar pool, key judgement pool, , dungeon room, blood challenge room, arena pool, shop room pool, shop item pool,",
-      "rechargeTime" : "Shop, Challenge Room, Key Beggar"
+      "rechargeTime" : "Shop, Challenge Room, Key Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Knife",
@@ -1888,7 +2264,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room, Devil Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room, Challenge Room"
+      "rechargeTime" : "Item Room, Devil Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Lipstick",
@@ -1898,7 +2276,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room, Challenge Room"
+      "rechargeTime" : "Boss Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Pad",
@@ -1908,7 +2288,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "item room, treasure room, item room pool, dungeon room, blood challenge room, arena pool",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Perfume:",
@@ -1918,7 +2300,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Challenge Room"
+      "rechargeTime" : "Item Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Purse",
@@ -1928,7 +2312,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Underwear",
@@ -1938,7 +2324,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room, Challenge Room"
+      "rechargeTime" : "Boss Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mom's Wig",
@@ -1948,7 +2336,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Challenge Room"
+      "rechargeTime" : "Item Room, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Money = Power",
@@ -1958,7 +2348,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mongo Baby",
@@ -1968,7 +2360,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Monster Manual",
@@ -1978,7 +2372,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Monstro's Lung",
@@ -1988,7 +2384,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Monstro's Tooth",
@@ -1998,7 +2396,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mr. Boom",
@@ -2008,7 +2408,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Wrath Miniboss, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool, bomb beggar",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mr. Mega",
@@ -2018,7 +2420,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Secret Room, Super Wrath Miniboss",
       "itemTags" : "boss rush pool, boss rush room, secret room pool, item room, treasure room, item room pool, dungeon room, blood challenge room, arena pool, slackaholicus",
-      "rechargeTime" : "Item Room, Secret Room, Super Wrath Miniboss"
+      "rechargeTime" : "Item Room, Secret Room, Super Wrath Miniboss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mutant Spider",
@@ -2028,7 +2432,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "My Little Unicorn",
@@ -2038,7 +2444,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "My Reflection",
@@ -2048,7 +2456,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mysterious Liquid",
@@ -2058,7 +2468,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, mystery liquid,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Mystery Sack",
@@ -2068,7 +2480,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Beggar, Secret Room",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, secret room pool, item room, treasure room, item room pool, mysterious sack, multiple sacks",
-      "rechargeTime" : "Item Room, Beggar, Secret Room"
+      "rechargeTime" : "Item Room, Beggar, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Notched Axe",
@@ -2078,7 +2492,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, minecraft, notch, markus persson, minceraft, mojang",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Number One",
@@ -2088,7 +2504,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, mm sweet lemonade, urine,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Odd Mushroom (Thick)",
@@ -2098,7 +2516,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room"
+      "rechargeTime" : "Item Room, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Odd Mushroom (Thin)",
@@ -2108,7 +2528,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room"
+      "rechargeTime" : "Item Room, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Old Bandage",
@@ -2118,7 +2540,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Ouija Board",
@@ -2128,7 +2552,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, luigi board, weeja board,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pageant Boy",
@@ -2138,7 +2564,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, dtQt, dtphase, crown, nocrown, yescrown, diana, princezzxdiana",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pandora's Box",
@@ -2148,7 +2576,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop, Red Chest",
       "itemTags" : "red chest pool, red chest item pool, shop room pool, shop item pool, blue box",
-      "rechargeTime" : "Recharge Time: One time use"
+      "rechargeTime" : "Recharge Time: One time use",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pentagram",
@@ -2158,7 +2588,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Curse Room, Devil Room",
       "itemTags" : "curse room pool, devil pool, devil room pool, devil deal, boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room, Curse Room, Devil Room"
+      "rechargeTime" : "Boss Room, Curse Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "PhD",
@@ -2168,7 +2600,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Shop",
       "itemTags" : "shop room pool, shop item pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Shop"
+      "rechargeTime" : "Item Room, Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Piggy Bank",
@@ -2178,7 +2612,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Shop",
       "itemTags" : "shop room pool, shop item pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Shop"
+      "rechargeTime" : "Item Room, Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pinking Shears",
@@ -2188,7 +2624,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, scissors, cutters, snip",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pisces",
@@ -2198,7 +2636,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Placenta",
@@ -2208,7 +2648,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Polyphemus",
@@ -2218,7 +2660,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, large eye, cyclops, one eye,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Portable Slot",
@@ -2228,7 +2672,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool,",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Prayer Card",
@@ -2238,7 +2684,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Proptosis",
@@ -2248,7 +2696,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Punching Bag",
@@ -2258,7 +2708,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pyro",
@@ -2268,7 +2720,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Secret Room, Bomb Beggar",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room, Bomb Beggar"
+      "rechargeTime" : "Item Room, Secret Room, Bomb Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Pyromaniac",
@@ -2278,7 +2732,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Rainbow Baby",
@@ -2288,7 +2744,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Raw Liver",
@@ -2298,7 +2756,9 @@
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool, the lost item pool",
-      "rechargeTime" : "Secret Room"
+      "rechargeTime" : "Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Razor Blade",
@@ -2308,7 +2768,9 @@
       "itemType" : "Active",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, the lost item pool, starting",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Red Candle",
@@ -2318,7 +2780,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Recharge Time: Timed (A few seconds)"
+      "rechargeTime" : "Recharge Time: Timed (A few seconds)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Remote Detonator",
@@ -2328,7 +2792,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Shop",
       "itemTags" : "boss rush pool, boss rush room, shop room pool, shop item pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Robo-Baby",
@@ -2338,7 +2804,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, robo baby, robot baby,",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Robo-Baby 2.0",
@@ -2348,7 +2816,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "robo baby 2.0, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Roid Rage",
@@ -2358,7 +2828,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room, Demon Beggar",
       "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, item room, treasure room, item room pool, syringe, needle, injection,",
-      "rechargeTime" : "Item Room, Boss Room, Demon Beggar"
+      "rechargeTime" : "Item Room, Boss Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Rosary",
@@ -2368,7 +2840,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Rotten Baby",
@@ -2378,7 +2852,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Rotten Meat",
@@ -2388,7 +2864,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room, Beggar, Challenge Room",
       "itemTags" : "dungeon room, blood challenge room, arena pool, normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, boss room pool, boss room item, the lost item pool",
-      "rechargeTime" : "Boss Room, Beggar, Challenge Room"
+      "rechargeTime" : "Boss Room, Beggar, Challenge Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Rubber Cement",
@@ -2398,7 +2876,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sack of Pennies",
@@ -2408,7 +2888,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room"
+      "rechargeTime" : "Item Room, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sacred Heart",
@@ -2418,7 +2900,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
-      "rechargeTime" : "Angel Room"
+      "rechargeTime" : "Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sacrificial Dagger",
@@ -2428,7 +2912,9 @@
       "itemType" : "Passive, Orbital",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sad Bombs",
@@ -2438,7 +2924,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Bomb Beggar",
       "itemTags" : "boss rush pool, boss rush room, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Bomb Beggar"
+      "rechargeTime" : "Item Room, Bomb Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Safety Pin",
@@ -2448,7 +2936,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sagittarius",
@@ -2458,7 +2948,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool, nys, notyoursagittarius",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Samson's Chains",
@@ -2468,7 +2960,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Secret Room",
       "itemTags" : "secret room pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Secret Room"
+      "rechargeTime" : "Item Room, Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Scapular",
@@ -2478,7 +2972,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Scissors",
@@ -2488,7 +2984,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Scorpio",
@@ -2498,7 +2996,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Screw",
@@ -2508,7 +3008,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sharp plug",
@@ -2518,7 +3020,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Shoop Da Whoop",
@@ -2528,7 +3032,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Envy Miniboss, Super Envy Miniboss",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sissy Long Legs",
@@ -2538,7 +3044,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, q t 3.14, dark bum, otp, damn it reddit",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Sister Maggy",
@@ -2548,7 +3056,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Devil Room"
+      "rechargeTime" : "Item Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Skatole",
@@ -2558,7 +3068,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Arcade shell game only)",
       "itemTags" : "arcade, skull game,",
-      "rechargeTime" : "None (Arcade shell game only)"
+      "rechargeTime" : "None (Arcade shell game only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Skeleton Key",
@@ -2568,7 +3080,9 @@
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool,",
-      "rechargeTime" : "Secret Room"
+      "rechargeTime" : "Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Smart Fly",
@@ -2578,7 +3092,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Key Beggar",
       "itemTags" : "key master pool, key beggar pool, key judgement pool, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Key Beggar"
+      "rechargeTime" : "Item Room, Key Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "SMB Super Fan",
@@ -2588,7 +3104,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Soy Milk",
@@ -2598,7 +3116,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Speed Ball",
@@ -2608,7 +3128,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room, Demon Beggar",
       "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, boss room pool, boss room item, item room, treasure room, item room pool, syringe, needle, injection,",
-      "rechargeTime" : "Item Room, Boss Room, Demon Beggar"
+      "rechargeTime" : "Item Room, Boss Room, Demon Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Spelunker Hat",
@@ -2618,7 +3140,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, spelunky",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Spider Bite",
@@ -2628,7 +3152,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Spider Butt",
@@ -2638,7 +3164,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Spiderbaby",
@@ -2648,7 +3176,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Spirit of the Night",
@@ -2658,7 +3188,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room"
+      "rechargeTime" : "Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Spoon Bender",
@@ -2668,7 +3200,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Squeezy",
@@ -2678,7 +3212,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, mr. squeezy, mr squeezy, cobaltstreak",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Starter Deck",
@@ -2688,7 +3224,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Steam Sale",
@@ -2698,7 +3236,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Greed Miniboss, Shopkeeper",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop, Greed Miniboss, Shopkeeper"
+      "rechargeTime" : "Shop, Greed Miniboss, Shopkeeper",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Stem Cells",
@@ -2708,7 +3248,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room",
       "itemTags" : "boss room pool, boss room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Boss Room"
+      "rechargeTime" : "Item Room, Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Steven",
@@ -2718,7 +3260,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Steven boss only)",
       "itemTags" : "",
-      "rechargeTime" : "None (Steven boss only)"
+      "rechargeTime" : "None (Steven boss only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Stigmata",
@@ -2728,7 +3272,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Stop Watch",
@@ -2738,7 +3284,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, stopwatch",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Strange Attractor",
@@ -2748,7 +3296,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Super Bandage",
@@ -2758,7 +3308,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room",
       "itemTags" : "boss room pool, boss room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Boss Room"
+      "rechargeTime" : "Item Room, Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Synthoil",
@@ -2768,7 +3320,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item, syringe, needle",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Tammy's Head",
@@ -2778,7 +3332,9 @@
       "itemType" : "Active",
       "itemPool" : "Gold Chest",
       "itemTags" : "golden chest pool, gold chest pool,",
-      "rechargeTime" : "Recharge Time: 1 room"
+      "rechargeTime" : "Recharge Time: 1 room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Taurus",
@@ -2788,7 +3344,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Tech.5",
@@ -2798,7 +3356,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "technology.5, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Technology",
@@ -2808,7 +3368,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Technology 2",
@@ -2818,7 +3380,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Telepathy for Dummies",
@@ -2828,7 +3392,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library",
       "itemTags" : "library pool, library room, book room pool, item room, treasure room, item room pool, yellow book how to",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Teleport",
@@ -2838,7 +3404,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, blue remote",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Battery",
@@ -2848,7 +3416,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Bean",
@@ -2858,7 +3428,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, team bean, #teambean",
-      "rechargeTime" : "Recharge Time: 1 room."
+      "rechargeTime" : "Recharge Time: 1 room.",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Belt",
@@ -2868,7 +3440,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Bible",
@@ -2878,7 +3452,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop, Library, Angel Room",
       "itemTags" : "library pool, library room, book room pool, angel room pool, god room pool, angel room item, shop room pool, shop item pool,",
-      "rechargeTime" : "Recharge Time: 6 rooms."
+      "rechargeTime" : "Recharge Time: 6 rooms.",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Black Bean",
@@ -2888,7 +3464,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Body",
@@ -2898,7 +3476,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, real platinum god, the lost item pool",
-      "rechargeTime" : ""
+      "rechargeTime" : "",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Book of Belial",
@@ -2908,7 +3488,9 @@
       "itemType" : "Active",
       "itemPool" : "Library, Devil Room",
       "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, starting",
-      "rechargeTime" : "Recharge Time: 3 rooms"
+      "rechargeTime" : "Recharge Time: 3 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Book of Sin",
@@ -2918,7 +3500,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library, Devil Room",
       "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, red 7 book",
-      "rechargeTime" : "Recharge Time: 4 rooms"
+      "rechargeTime" : "Recharge Time: 4 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Candle",
@@ -2928,7 +3512,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, blue candle,",
-      "rechargeTime" : "Recharge Time: Timed (A few seconds)"
+      "rechargeTime" : "Recharge Time: Timed (A few seconds)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Common Cold",
@@ -2938,7 +3524,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Compass",
@@ -2948,7 +3536,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool,",
-      "rechargeTime" : "Shop, Beggar"
+      "rechargeTime" : "Shop, Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The D6",
@@ -2958,7 +3548,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, dice, starting",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Gamekid",
@@ -2968,7 +3560,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Guillotine",
@@ -2978,7 +3572,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Halo",
@@ -2988,7 +3584,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Boss Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, boss room pool, boss room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Boss Room, Angel Room"
+      "rechargeTime" : "Item Room, Boss Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Hourglass",
@@ -2998,7 +3596,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, hour glass, hourglass",
-      "rechargeTime" : "Recharge Time: 2 rooms"
+      "rechargeTime" : "Recharge Time: 2 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Inner Eye",
@@ -3008,7 +3608,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Jar",
@@ -3018,7 +3620,9 @@
       "itemType" : "Active",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: Instant"
+      "rechargeTime" : "Recharge Time: Instant",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Ladder",
@@ -3028,7 +3632,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool, the lost item pool",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Ludovico Technique",
@@ -3038,7 +3644,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Mark",
@@ -3048,7 +3656,9 @@
       "itemType" : "Passive",
       "itemPool" : "Curse Room, Devil Room",
       "itemTags" : "curse room pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Curse Room, Devil Room"
+      "rechargeTime" : "Curse Room, Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Mind",
@@ -3058,7 +3668,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Mulligan",
@@ -3068,7 +3680,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Nail",
@@ -3078,7 +3692,9 @@
       "itemType" : "Active",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Necronomicon",
@@ -3088,7 +3704,9 @@
       "itemType" : "Active",
       "itemPool" : "Library, Secret Room, Devil Room",
       "itemTags" : "library pool, library room, book room pool, secret room pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Negative",
@@ -3098,7 +3716,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Mom's foot boss only)",
       "itemTags" : "mom's foot, mom fight, mom boss, dark room",
-      "rechargeTime" : "None (Mom's foot boss only)"
+      "rechargeTime" : "None (Mom's foot boss only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Pact",
@@ -3108,7 +3728,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room, Curse Room",
       "itemTags" : "curse room pool, devil pool, devil room pool, devil deal, piece of paper, bloody paper, contract",
-      "rechargeTime" : "Devil Room, Curse Room"
+      "rechargeTime" : "Devil Room, Curse Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Parasite",
@@ -3118,7 +3740,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Peeper",
@@ -3128,7 +3752,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Polaroid",
@@ -3138,7 +3764,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Mom's foot boss only)",
       "itemTags" : "",
-      "rechargeTime" : "None (Mom's foot boss only)"
+      "rechargeTime" : "None (Mom's foot boss only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Poop",
@@ -3148,7 +3776,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, starting",
-      "rechargeTime" : "Recharge Time: 1 room"
+      "rechargeTime" : "Recharge Time: 1 room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Relic",
@@ -3158,7 +3788,9 @@
       "itemType" : "Passive, Familiar",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Sad Onion",
@@ -3168,7 +3800,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Satanic Bible",
@@ -3178,7 +3812,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Library, Devil Room",
       "itemTags" : "library pool, library room, book room pool, devil pool, devil room pool, devil deal, item room, treasure room, item room pool, the lost item pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Small Rock",
@@ -3188,7 +3824,9 @@
       "itemType" : "Passive",
       "itemPool" : "None (Tinted rock only)",
       "itemTags" : "tinted rock, marked rock,",
-      "rechargeTime" : "None (Tinted rock only)"
+      "rechargeTime" : "None (Tinted rock only)",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Soul",
@@ -3198,7 +3836,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Virus",
@@ -3208,7 +3848,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Demon Beggar, Lust Miniboss",
       "itemTags" : "demon beggar pool, demon judgement pool, devil beggar pool, item room, treasure room, item room pool, syringe, needle, injection, the lost item pool",
-      "rechargeTime" : "Item Room, Demon Beggar, Lust Miniboss"
+      "rechargeTime" : "Item Room, Demon Beggar, Lust Miniboss",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "The Wafer",
@@ -3218,7 +3860,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room, Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item, item room, treasure room, item room pool, communion, the lost item pool",
-      "rechargeTime" : "Item Room, Angel Room"
+      "rechargeTime" : "Item Room, Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "There's Options",
@@ -3228,7 +3872,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop",
       "itemTags" : "shop room pool, shop item pool,",
-      "rechargeTime" : "Shop"
+      "rechargeTime" : "Shop",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Thunder Thighs",
@@ -3238,7 +3884,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Tiny Planet",
@@ -3248,7 +3896,9 @@
       "itemType" : "Passive, Tear Modifier",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Toothpicks",
@@ -3258,7 +3908,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Torn Photo",
@@ -3268,7 +3920,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Tough Love",
@@ -3278,7 +3932,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Transcendence",
@@ -3288,7 +3944,9 @@
       "itemType" : "Passive",
       "itemPool" : "Secret Room",
       "itemTags" : "secret room pool, the lost item pool",
-      "rechargeTime" : "Secret Room"
+      "rechargeTime" : "Secret Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Treasure Map",
@@ -3298,7 +3956,9 @@
       "itemType" : "Passive",
       "itemPool" : "Shop, Beggar",
       "itemTags" : "normal beggar pool, normal judgement pool, coin beggar pool, coin judgement pool, shop room pool, shop item pool,",
-      "rechargeTime" : "Shop, Beggar"
+      "rechargeTime" : "Shop, Beggar",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Trinity Shield",
@@ -3308,7 +3968,9 @@
       "itemType" : "Passive",
       "itemPool" : "Angel Room",
       "itemTags" : "angel room pool, god room pool, angel room item",
-      "rechargeTime" : "Angel Room"
+      "rechargeTime" : "Angel Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Undefined",
@@ -3318,7 +3980,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Unicorn Stump",
@@ -3328,7 +3992,9 @@
       "itemType" : "Active",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool",
-      "rechargeTime" : "Recharge Time: 1 room"
+      "rechargeTime" : "Recharge Time: 1 room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Virgo",
@@ -3338,7 +4004,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "astrology, astronomy, item room, treasure room, item room pool",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "We Need To Go Deeper",
@@ -3348,7 +4016,9 @@
       "itemType" : "Active",
       "itemPool" : "Secret Room, Devil Room",
       "itemTags" : "secret room pool, devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "White Pony",
@@ -3358,7 +4028,9 @@
       "itemType" : "Active",
       "itemPool" : "None (Conquest boss only)",
       "itemTags" : "",
-      "rechargeTime" : "Recharge Time: 6 rooms"
+      "rechargeTime" : "Recharge Time: 6 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Whore of Babylon",
@@ -3368,7 +4040,9 @@
       "itemType" : "Passive",
       "itemPool" : "Devil Room",
       "itemTags" : "devil pool, devil room pool, devil deal",
-      "rechargeTime" : "Devil Room"
+      "rechargeTime" : "Devil Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Wire Coat Hanger",
@@ -3378,7 +4052,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Wooden Spoon",
@@ -3388,7 +4064,9 @@
       "itemType" : "Passive",
       "itemPool" : "Boss Room",
       "itemTags" : "boss room pool, boss room item,",
-      "rechargeTime" : "Boss Room"
+      "rechargeTime" : "Boss Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "X-Ray Vision",
@@ -3398,7 +4076,9 @@
       "itemType" : "Passive",
       "itemPool" : "Item Room",
       "itemTags" : "item room, treasure room, item room pool, xray vision, xray glasses",
-      "rechargeTime" : "Item Room"
+      "rechargeTime" : "Item Room",
+      "globalType" : "items",
+      "game" : "Rebirth"
     },
     {
       "itemName" : "Yum Heart",
@@ -3408,7 +4088,8 @@
       "itemType" : "Active",
       "itemPool" : "Item Room, Super Lust Miniboss",
       "itemTags" : "item room, treasure room, item room pool, the lost item pool, maggy, starting",
-      "rechargeTime" : "Recharge Time: 4 rooms"
+      "rechargeTime" : "Recharge Time: 4 rooms",
+      "globalType" : "items",
+      "game" : "Rebirth"
     }
-  ]
-}
+  ]}

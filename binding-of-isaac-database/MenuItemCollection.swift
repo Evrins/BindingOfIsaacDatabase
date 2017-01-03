@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import SwifterSwift
 
 class MenuItemCollection: NSObject {
     
-    var onComplete: ((_ complete: Bool)->())?
+    var onComplete: ((() -> Void))?
     
     static let sharedInstance = MenuItemCollection()
     private override init() {}
@@ -23,10 +24,13 @@ class MenuItemCollection: NSObject {
         "Trinkets",
         "Cards and Runes",
         "Pickups",
+        /*
         "Achievements",
         "Transformations",
         "Seeds",
+         */
         "Pills",
+        /*
         "Monsters",
         "Bosses",
         "Characters",
@@ -36,16 +40,58 @@ class MenuItemCollection: NSObject {
         "Rooms",
         "Challenges",
         "Babies (Co-op)",
+         */
         "Collection",
         "Settings"
+        ,
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
+        "test",
     ]
     
     func loadMenuItems() {
         menuTitles.forEach { title in
-            let newItem = MenuItem(title: title)
+            let type = title.camelCased
+            let newItem = MenuItem(title: title, type: type)
             menuItems.append(newItem)
         }
-        onComplete?(true)
+        onComplete?()
     }
     
 

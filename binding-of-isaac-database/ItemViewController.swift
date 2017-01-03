@@ -50,8 +50,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
-        itemCollection.onComplete = { complete in
-            self.items = self.itemCollection.getItemsSorted(byProperty: "itemId")
+        itemCollection.onComplete = { _ in
+            self.items = self.itemCollection.getItems().sorted(byProperty: "itemId", ascending: true)
             self.searchItems = self.items
             self.collectionView.reloadData()
         }

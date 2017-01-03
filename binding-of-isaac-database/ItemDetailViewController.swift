@@ -7,28 +7,50 @@
 //
 
 import UIKit
+import SnapKit
+import Shoyu
 
-class ItemDetailViewController: UIViewController {
-    @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var itemTitleLabel: UILabel!
-    @IBOutlet weak var itemQuoteLabel: UILabel!
-    
+class ItemDetailViewController: UIViewController {        
     var selectedItem: ItemModel? = nil
-
+    let itemImage = UIImageView()
+    let itemTitleLabel = UILabel()
+    let itemQuoteLabel = UILabel()
+    
+    let menuItemCollection = MenuItemCollection.sharedInstance
+    
+    var menuItems = [MenuItem]()
+    
+    var tableView = UITableView()
+    var contentView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(hex: 0xEAEAEA)
+        navigationController?.navigationBar.isTranslucent = false
         
-        itemTitleLabel.text = selectedItem?.getItemName()
+//        itemTitleLabel.text = selectedItem?.getItemName()
+        itemTitleLabel.numberOfLines = 0
+        itemTitleLabel.sizeToFit()
+        
         itemQuoteLabel.text = selectedItem?.getItemQuote()
         
-        itemImage.layer.magnificationFilter = kCAFilterNearest;
-        let image: UIImage? = UIImage(named: (selectedItem?.getItemId()!)!)
-        if image != nil {
-            itemImage.image = image
-        }
+//        itemImage.layer.magnificationFilter = kCAFilterNearest;
+        // @TODO: Make image optional
+//        let image: UIImage? = UIImage(named: (selectedItem?.getItemId()!)!)
+//        if image != nil {
+//            itemImage.image = image
+//        }
         
+        self.menuItems = self.menuItemCollection.getMenuItems()
+
+        setUpTable()
+        view.backgroundColor = UIColor(hex: 0xEAEAEA)
+        contentView.backgroundColor = .white
+        
+        contentView.addSubview(tableView)
+        view.addSubview(contentView)
+        
+        setupConstraints()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,15 +58,62 @@ class ItemDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupConstraints() {
+        contentView.snp.makeConstraints { (make) -> Void in
+            make.top.equalToSuperview().inset(5)
+            make.left.equalToSuperview().inset(5)
+            make.right.equalToSuperview().inset(5)
+            make.bottom.equalToSuperview().inset(5)
+        }
+        
+        tableView.snp.makeConstraints { (make) -> Void in
+            make.edges.equalTo(contentView.snp.edges)
+        }
+        
     }
-    */
+    
+    func setUpTable() {
+        tableView.tableFooterView = UIView()
+        tableView.backgroundColor = .clear
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        tableView.source = Source() { source in
+            source.createSection { section in
+                section.createRows(for: menuItems, closure: { (menuItem, row: Row<CustomTableViewCell>) in
+//                section.createRows(for: menuItems, closure: { menuItem, row in
+                    row.reuseIdentifier = "Cell"
+                    row.height = 40
+                    row.configureCell = { cell, _ in
+                        cell.cellLabel.text = menuItem.title
+                    }
+                })
+            }
+            
+        }
+    }
 
+   
+}
+
+class CustomTableViewCell: UITableViewCell {
+    let cellLabel = UILabel()
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.contentView.addSubview(cellLabel)
+        
+        setupConstraints()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:)")
+    }
+    
+    func setupConstraints() {
+        cellLabel.snp.makeConstraints { (make) -> Void in
+            make.size.equalToSuperview()
+            make.edges.equalToSuperview().inset(5)
+        }
+    }
 }

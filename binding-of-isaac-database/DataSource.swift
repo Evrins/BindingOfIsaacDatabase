@@ -15,7 +15,7 @@ class DataSource {
     static func loadItems(_ completionHandler:@escaping (Bool) -> ()) {
         
         let realm = try! Realm()
-//        guard realm.isEmpty else {return}
+        guard realm.isEmpty else {return}
         
         try! realm.write {
             realm.deleteAll()

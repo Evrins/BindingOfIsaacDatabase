@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4FD1215A4C096DB2B1C59EC933AF9DE2"
+               BlueprintIdentifier = "40161BFD055C6EEEC9B46FE7ECA2416E"
                BuildableName = "Pods_binding_of_isaac_database.framework"
                BlueprintName = "Pods-binding-of-isaac-database"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4FD1215A4C096DB2B1C59EC933AF9DE2"
+            BlueprintIdentifier = "40161BFD055C6EEEC9B46FE7ECA2416E"
             BuildableName = "Pods_binding_of_isaac_database.framework"
             BlueprintName = "Pods-binding-of-isaac-database"
             ReferencedContainer = "container:Pods.xcodeproj">

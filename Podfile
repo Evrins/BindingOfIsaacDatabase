@@ -10,11 +10,12 @@ target 'binding-of-isaac-database' do
   pod 'AlamofireObjectMapper', '~> 4.0'
   pod 'RealmSwift'
   pod 'SwiftyJSON'
-  pod 'Macaw', :git => 'https://github.com/exyte/Macaw.git’
   pod 'Hue'
   pod 'Shoyu', '~> 1.0'
   pod 'SideMenu'
-
+  pod 'SwifterSwift'
+  pod 'SnapKit'
+  pod 'TZStackView', '1.3.0'
 
   target 'binding-of-isaac-databaseTests' do
     inherit! :search_paths
