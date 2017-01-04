@@ -1,6 +1,0 @@
-framework module Shoyu {
-  umbrella header "Shoyu-umbrella.h"
-
-  export *
-  module * { export * }
-}

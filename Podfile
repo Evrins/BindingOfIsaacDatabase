@@ -10,12 +10,10 @@ target 'binding-of-isaac-database' do
   pod 'AlamofireObjectMapper', '~> 4.0'
   pod 'RealmSwift'
   pod 'SwiftyJSON'
-  pod 'Hue'
-  pod 'Shoyu', '~> 1.0'
   pod 'SideMenu'
   pod 'SwifterSwift'
   pod 'SnapKit'
-  pod 'TZStackView', '1.3.0'
+  pod 'Reusable'
 
   target 'binding-of-isaac-databaseTests' do
     inherit! :search_paths

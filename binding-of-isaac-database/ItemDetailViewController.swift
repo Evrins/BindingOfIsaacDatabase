@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-import Shoyu
 
 class ItemDetailViewController: UIViewController {        
     var selectedItem: ItemModel? = nil
@@ -80,7 +79,6 @@ class ItemDetailViewController: UIViewController {
         tableView.source = Source() { source in
             source.createSection { section in
                 section.createRows(for: menuItems, closure: { (menuItem, row: Row<CustomTableViewCell>) in
-//                section.createRows(for: menuItems, closure: { menuItem, row in
                     row.reuseIdentifier = "Cell"
                     row.height = 40
                     row.configureCell = { cell, _ in

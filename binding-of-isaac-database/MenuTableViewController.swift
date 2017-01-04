@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Shoyu
+//import Shoyu
 import RealmSwift
 
 class MenuTableViewController: UITableViewController {
@@ -24,7 +24,7 @@ class MenuTableViewController: UITableViewController {
         
         menuItemCollection.onComplete = { _ in
             self.menuItems = self.menuItemCollection.getMenuItems()
-            self.setUpTable()
+//            self.setUpTable()
         }
         
         menuItemCollection.loadMenuItems()
@@ -34,31 +34,51 @@ class MenuTableViewController: UITableViewController {
         self.tableView.tableFooterView = UIView()
     }
     
-    func setUpTable() {
-        tableView.source = Source() { source in
-            source.createSection { section in
-                section.createRows(for: menuItems, closure: { menuItem, row in
-                    row.reuseIdentifier = "Cell"
-                    row.height = 40
-                    row.configureCell = { cell, _ in
-                        cell.textLabel?.text = menuItem.title
-                    }
-                    row.didSelect = { _ in
-                        
-                        if let index = self.tableView.indexPathForSelectedRow{
-                            self.tableView.deselectRow(at: index, animated: true)
-                        }
-                        
-                        self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: "globalType")
-                        
-                        self.dismissView()
-                    }
-                })
-            }
-        }
-    }
+//    func setUpTable() {
+//        tableView.source = Source() { source in
+//            source.createSection { section in
+//                section.createRows(for: menuItems, closure: { menuItem, row in
+//                    row.reuseIdentifier = "Cell"
+//                    row.height = 40
+//                    row.configureCell = { cell, _ in
+//                        cell.textLabel?.text = menuItem.title
+//                    }
+//                    row.didSelect = { _ in
+//                        
+//                        if let index = self.tableView.indexPathForSelectedRow{
+//                            self.tableView.deselectRow(at: index, animated: true)
+//                        }
+//                        
+//                        self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: "globalType")
+//                        
+//                        self.dismissView()
+//                    }
+//                })
+//            }
+//        }
+//    }
     
     func dismissView() {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension MenuTableViewController {
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return menuItems.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let row = indexPath.row
+        
+        cell.textLabel?.text = menuItems[row].title
+        
+        return cell
     }
 }
