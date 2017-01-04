@@ -8,8 +8,9 @@
 
 import UIKit
 import SnapKit
+import Reusable
 
-class ItemDetailViewController: UIViewController {        
+class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var selectedItem: ItemModel? = nil
     let itemImage = UIImageView()
     let itemTitleLabel = UILabel()
@@ -42,7 +43,17 @@ class ItemDetailViewController: UIViewController {
         
         self.menuItems = self.menuItemCollection.getMenuItems()
 
-        setUpTable()
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        tableView.alwaysBounceVertical = false
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.tableFooterView = UIView()
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(cellType: CustomTableViewCell.self)
+        
         view.backgroundColor = UIColor(hex: 0xEAEAEA)
         contentView.backgroundColor = .white
         
@@ -71,35 +82,44 @@ class ItemDetailViewController: UIViewController {
         
     }
     
-    func setUpTable() {
-        tableView.tableFooterView = UIView()
-        tableView.backgroundColor = .clear
-        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "Cell")
-        
-        tableView.source = Source() { source in
-            source.createSection { section in
-                section.createRows(for: menuItems, closure: { (menuItem, row: Row<CustomTableViewCell>) in
-                    row.reuseIdentifier = "Cell"
-                    row.height = 40
-                    row.configureCell = { cell, _ in
-                        cell.cellLabel.text = menuItem.title
-                    }
-                })
-            }
-            
-        }
-    }
-
-   
 }
 
-class CustomTableViewCell: UITableViewCell {
+extension ItemDetailViewController {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return menuItems.count
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath) as CustomTableViewCell
+        
+        let row = indexPath.row
+        
+//        cell.cellLabel.text = menuItems[row].title
+        cell.cellLabel.text = "Title"
+        cell.cellDetailLabel.text = "Line 1" + "\n" + "Line 2" + "\n" + "Line 3"
+        
+        return cell
+    }
+}
+
+class CustomTableViewCell: UITableViewCell, Reusable {
     let cellLabel = UILabel()
+    let cellDetailLabel = UILabel()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         self.contentView.addSubview(cellLabel)
+        self.contentView.addSubview(cellDetailLabel)
+        
+        self.cellLabel.sizeToFit()
+        self.cellDetailLabel.sizeToFit()
+        self.cellDetailLabel.numberOfLines = 0
         
         setupConstraints()
     }
@@ -110,8 +130,15 @@ class CustomTableViewCell: UITableViewCell {
     
     func setupConstraints() {
         cellLabel.snp.makeConstraints { (make) -> Void in
-            make.size.equalToSuperview()
-            make.edges.equalToSuperview().inset(5)
+            make.top.equalTo(contentView.snp.top).inset(5)
+            make.left.equalToSuperview().inset(10)
+        }
+        cellDetailLabel.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(cellLabel.snp.bottom)
+            make.left.equalTo(cellLabel.snp.left).inset(5)
+        }
+        contentView.snp.makeConstraints { (make) -> Void in
+            make.bottom.equalTo(cellDetailLabel.snp.bottom).inset(-10)
         }
     }
 }
