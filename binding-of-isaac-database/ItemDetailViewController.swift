@@ -12,20 +12,18 @@ import Reusable
 
 class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var selectedItem: ItemModel? = nil
-    let itemImage = UIImageView()
-    let itemTitleLabel = UILabel()
-    let itemQuoteLabel = UILabel()
-    
-    let menuItemCollection = MenuItemCollection.sharedInstance
-    
-    var menuItems = [MenuItem]()
+    lazy var selectedItemProperties: [String : String] = {
+        let item = self.selectedItem
+        var itemProperties = self.getItemFields(item: item!)
+        return itemProperties
+    }()
     
     var tableView = UITableView()
     var contentView = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationController?.navigationBar.isTranslucent = false
         
 //        itemTitleLabel.text = selectedItem?.getItemName()
@@ -41,8 +39,6 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
 //            itemImage.image = image
 //        }
         
-        self.menuItems = self.menuItemCollection.getMenuItems()
-
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -61,6 +57,8 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         view.addSubview(contentView)
         
         setupConstraints()
+        
+        self.getItemFields(item: selectedItem!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,6 +102,67 @@ extension ItemDetailViewController {
         cell.cellDetailLabel.text = "Line 1" + "\n" + "Line 2" + "\n" + "Line 3"
         
         return cell
+    }
+    
+    func getItemFields(item: ItemModel) -> [String: String] {
+        var itemProperties: [String : String?] = [
+            "Name" : item.getItemName(),
+            "ID:" :item.getItemId(),
+            "Qoute" :item.getItemQuote(),
+            "Description:" :item.getItemDescription(),
+            "Type:" :item.getItemType(),
+            "Item Pool:" :item.getItemPool(),
+            "Recharge Time:" :item.getRechargeTime(),
+            "Game:" :item.getGame()
+        ]
+        
+        for (key, value) in itemProperties {
+            if value == nil || value == "" {
+                itemProperties.removeValue(forKey: key)
+            }
+        }
+        
+        return itemProperties as! [String: String]
+    }
+}
+
+class ItemDetailTopCell: UITableViewCell, Reusable {
+    let itemImage = UIImageView()
+    let itemTitleLabel = UILabel()
+    let itemQuoteLabel = UILabel()
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.contentView.addSubview(itemImage)
+        self.contentView.addSubview(itemTitleLabel)
+        self.contentView.addSubview(itemQuoteLabel)
+        
+        self.itemTitleLabel.sizeToFit()
+        self.itemQuoteLabel.sizeToFit()
+        
+        setupConstraints()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:)")
+    }
+    
+    func setupConstraints() {
+        itemImage.snp.makeConstraints { (make) -> Void in
+            make.size.equalTo(CGSize(width: 50, height: 50))
+        }
+        cellLabel.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(contentView.snp.top).inset(5)
+            make.left.equalToSuperview().inset(10)
+        }
+        cellDetailLabel.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(cellLabel.snp.bottom)
+            make.left.equalTo(cellLabel.snp.left).inset(5)
+        }
+        contentView.snp.makeConstraints { (make) -> Void in
+            make.bottom.equalTo(cellDetailLabel.snp.bottom).inset(-10)
+        }
     }
 }
 
