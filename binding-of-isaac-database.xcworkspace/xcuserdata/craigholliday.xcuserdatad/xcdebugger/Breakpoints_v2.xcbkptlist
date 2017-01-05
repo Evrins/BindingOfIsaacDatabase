@@ -9,22 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "binding-of-isaac-database/ItemViewController.swift"
-            timestampString = "504746115.209689"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "ItemViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "binding-of-isaac-database/LayoutMachine.swift"
             timestampString = "504061780.996711"
             startingColumnNumber = "9223372036854775807"
@@ -32,22 +16,6 @@
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "next()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "binding-of-isaac-database/ItemViewController.swift"
-            timestampString = "504748610.608945"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
-            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -124,84 +92,6 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "15"
                   endingLineNumber = "15"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "binding-of-isaac-database/ItemDetailViewController.swift"
-            timestampString = "505277963.446673"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "ItemDetailViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "binding_of_isaac_database.ItemDetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; binding_of_isaac_database.ItemDetailViewController"
-                  moduleName = "binding-of-isaac-database"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/ItemDetailViewController.swift"
-                  timestampString = "505265945.400346"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "57">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "binding_of_isaac_database.ItemDetailViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; binding_of_isaac_database.ItemDetailViewController"
-                  moduleName = "binding-of-isaac-database"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/ItemDetailViewController.swift"
-                  timestampString = "505265945.402656"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "23">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "binding_of_isaac_database.ItemDetailViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;binding_of_isaac_database.ItemDetailViewController&gt;"
-                  moduleName = "binding-of-isaac-database"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/ItemDetailViewController.swift"
-                  timestampString = "505265945.404307"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "binding_of_isaac_database.ItemDetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;binding_of_isaac_database.ItemDetailViewController&gt;"
-                  moduleName = "binding-of-isaac-database"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/craigholliday/Documents/Random%20Projects/binding-of-isaac-database/binding-of-isaac-database/ItemDetailViewController.swift"
-                  timestampString = "505265945.406199"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
                   offsetFromSymbolStart = "16">
                </Location>
             </Locations>

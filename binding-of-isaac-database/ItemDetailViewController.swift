@@ -116,10 +116,10 @@ extension ItemDetailViewController {
                 
                 var valueText = itemProperty.value
                 
-                valueText = convertStringToMultiline(string: valueText)
+                valueText = convertStringToMultiline(string: valueText!)
                 
                 let valueAttributes = [NSFontAttributeName : UIFont.systemFont(ofSize: 16)]
-                let valueString = NSMutableAttributedString(string: " " + valueText, attributes: valueAttributes)
+                let valueString = NSMutableAttributedString(string: " " + valueText!, attributes: valueAttributes)
 
                 attributedString.append(keyString)
                 attributedString.append(valueString)
@@ -141,12 +141,13 @@ extension ItemDetailViewController {
     func getItemFields(item: ItemModel) -> [ItemProperty] {
         
         var itemProperties = [
-            ItemProperty(key: "ID:", value: item.getItemId()!),
-            ItemProperty(key: "Description:", value: item.getItemDescription()!),
-            ItemProperty(key: "Type:", value: item.getItemType()!),
-            ItemProperty(key: "Item Pool:", value: item.getItemPool()!),
-            ItemProperty(key: "Recharge Time:", value: item.getRechargeTime()!),
-            ItemProperty(key: "Game:", value: item.getGame()!)
+            ItemProperty(key: "ID:", value: item.getItemId()),
+            ItemProperty(key: "Description:", value: item.getItemDescription()),
+            ItemProperty(key: "Type:", value: item.getItemType()),
+            ItemProperty(key: "Item Pool:", value: item.getItemPool()),
+            ItemProperty(key: "Recharge Time:", value: item.getRechargeTime()),
+            ItemProperty(key: "Unlock:", value: item.getItemUnlock()),
+            ItemProperty(key: "Game:", value: item.getGame())
         ]
         
         itemProperties = itemProperties.filter{ $0.value != ""}
@@ -252,5 +253,5 @@ class CustomTableViewCell: UITableViewCell, Reusable {
 
 struct ItemProperty {
     let key: String
-    let value: String
+    let value: String?
 }

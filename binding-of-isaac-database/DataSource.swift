@@ -41,23 +41,25 @@ class DataSource {
             }
         }
         
-//        let itemArray = NSArray()
-//        
-//        
-//        
-//        for item in itemArray {
-//            
-//            let JSON = item
-//            
-//            let item = ItemModel(JSONString: JSON)
-//            
-//            try! realm.write {
-//                realm.add(item)
-//            }
-//            
-//        }
-        
+        if let url = Bundle.main.url(forResource: "Rebirth Trinkets", withExtension: "json") {
+            do {
+                let jsonData = try Data(contentsOf: url)
+                
+                let json = JSON(data: jsonData)
+                
+                for item in json["Rebirth Trinkets"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                completionHandler(true)
+            } catch {
+                // Handle Error
+                completionHandler(false)
+            }
+        }
     }
-    
     
 }

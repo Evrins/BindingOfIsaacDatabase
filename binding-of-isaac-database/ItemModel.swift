@@ -20,9 +20,9 @@ class ItemModel: Object, Mappable {
     dynamic var itemPool: String? = nil
     dynamic var itemTags: String? = nil
     dynamic var rechargeTime: String? = nil
+    dynamic var itemUnlock: String? = nil
     dynamic var globalType: String? = nil
     dynamic var game: String? = nil
-//    var itemImage: UIImage? = nil
     
     //Impl. of Mappable protocol
     required convenience init?(map: Map) {
@@ -43,9 +43,9 @@ class ItemModel: Object, Mappable {
         itemPool <- map["itemPool"]
         itemTags <- map["itemTags"]
         rechargeTime <- map["rechargeTime"]
+        itemUnlock <- map["itemUnlock"]
         globalType <- map["globalType"]
         game <- map["game"]
-//        itemImage <- map["itemImage"]
     }
     
     // Mark: Getters
@@ -82,6 +82,10 @@ class ItemModel: Object, Mappable {
         return self.rechargeTime
     }
     
+    func getItemUnlock() -> String? {
+        return self.itemUnlock
+    }
+    
     func getGlobalType() -> String? {
         return self.globalType
     }
@@ -89,9 +93,5 @@ class ItemModel: Object, Mappable {
     func getGame() -> String? {
         return self.game
     }
-    
-//    func getItemImage() -> UIImage? {
-//        return self.itemImage
-//    }
 }
 

@@ -16,14 +16,14 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var genre = LayoutMachine.Grid {
+    var layoutType = LayoutMachine.Grid {
         didSet {
-            displayOptions(genre: genre)
+            displayOptions(layoutType: layoutType)
         }
     }
     
-    func displayOptions(genre: LayoutMachine) {
-        switch genre {
+    func displayOptions(layoutType: LayoutMachine) {
+        switch layoutType {
 //        case .Grid:
 //            setupGridLayout()
         case .List:
@@ -59,7 +59,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         itemCollection.loadItems()
         self.setUpSideMenu()
 
-        displayOptions(genre: genre)
+        displayOptions(layoutType: layoutType)
         collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
@@ -71,7 +71,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func addTapped() {
-        genre.next()
+        layoutType.next()
     }
 
     override func didReceiveMemoryWarning() {
@@ -119,7 +119,7 @@ extension ItemViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = searchItems[indexPath.row]
         
-        switch(genre) {
+        switch(layoutType) {
         case .List:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCollectionViewCell.id, for: indexPath) as! ItemListCollectionViewCell
             
@@ -127,7 +127,10 @@ extension ItemViewController {
             cell.itemTitle.text = item.getItemName()
             
             cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            let image: UIImage? = UIImage(named: item.getItemId()!)
+            var image: UIImage? = nil
+            if let itemId = item.getItemId() {
+                image = UIImage(named: itemId)
+            }
             if image != nil {
                 cell.itemImage.image = image
             }
@@ -139,14 +142,20 @@ extension ItemViewController {
         default: // .Grid
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
             
-            cell.itemTitle.text = ""
+//            cell.itemTitle.text = ""
+            cell.itemTitle.text = item.getItemName()
             
+            cell.itemImage.backgroundColor = .cyan
             cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            let image: UIImage? = UIImage(named: item.getItemId()!)
+            
+            var image: UIImage? = nil
+            if let itemId = item.getItemId() {
+                image = UIImage(named: itemId)
+            }
             if image != nil {
                 cell.itemImage.image = image
             }
-                        
+            
             cell.alpha = 0
             UIView.animate(withDuration: 0.25, animations: { cell.alpha = 1 })
             

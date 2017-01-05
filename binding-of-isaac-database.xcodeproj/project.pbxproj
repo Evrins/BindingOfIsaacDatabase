@@ -32,6 +32,7 @@
 		16E2527C1E0B5E7600108E27 /* ListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2527B1E0B5E7600108E27 /* ListFlowLayout.swift */; };
 		16E2527F1E0B5F2700108E27 /* LayoutMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2527E1E0B5F2700108E27 /* LayoutMachine.swift */; };
 		16E252821E0B611300108E27 /* GridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E252811E0B611300108E27 /* GridFlowLayout.swift */; };
+		16E8933E1E1EF0D100EEB8AE /* Rebirth Trinkets.json in Resources */ = {isa = PBXBuildFile; fileRef = 16E8933D1E1EF0D100EEB8AE /* Rebirth Trinkets.json */; };
 		16FB4FD91E0EDFB400219B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FB4FD81E0EDFB400219B63 /* Assets.xcassets */; };
 		57D5EEF9B123C5957F3A9300 /* Pods_binding_of_isaac_databaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDE24347B322D561C3564D0 /* Pods_binding_of_isaac_databaseUITests.framework */; };
 		B9A0EA495399D118669E1A90 /* Pods_binding_of_isaac_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888A3B4CA98A75FAD3CB492A /* Pods_binding_of_isaac_database.framework */; };
@@ -85,6 +86,7 @@
 		16E2527B1E0B5E7600108E27 /* ListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFlowLayout.swift; sourceTree = "<group>"; };
 		16E2527E1E0B5F2700108E27 /* LayoutMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutMachine.swift; sourceTree = "<group>"; };
 		16E252811E0B611300108E27 /* GridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridFlowLayout.swift; sourceTree = "<group>"; };
+		16E8933D1E1EF0D100EEB8AE /* Rebirth Trinkets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Rebirth Trinkets.json"; sourceTree = "<group>"; };
 		16FB4FD81E0EDFB400219B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267A079E28E881318E657DEB /* Pods-binding-of-isaac-databaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binding-of-isaac-databaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-binding-of-isaac-databaseTests/Pods-binding-of-isaac-databaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DDE24347B322D561C3564D0 /* Pods_binding_of_isaac_databaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_binding_of_isaac_databaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +249,7 @@
 		16F8DA1D1E09F1D600AAC94D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				16E8933D1E1EF0D100EEB8AE /* Rebirth Trinkets.json */,
 				16DB7E431E1E0D3200DDB23B /* Rebirth Items.json */,
 			);
 			name = JSON;
@@ -399,6 +402,7 @@
 				163F1FB21E07371E005BCDA9 /* LaunchScreen.storyboard in Resources */,
 				16E252721E0B4ACC00108E27 /* ItemCollectionViewCell.xib in Resources */,
 				16FB4FD91E0EDFB400219B63 /* Assets.xcassets in Resources */,
+				16E8933E1E1EF0D100EEB8AE /* Rebirth Trinkets.json in Resources */,
 				168AA22F1E0B482C0034B3F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

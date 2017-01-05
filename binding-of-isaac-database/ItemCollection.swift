@@ -32,7 +32,6 @@ class ItemCollection: NSObject {
     func filterItemsByProperty(property: String, itemAttribute: String) {
         let predicate = NSPredicate(format: "globalType == '\(property.lowercased())'")
         self.currentItems = self.loadedItems.filter(predicate)
-        print(self.currentItems)
         onComplete?()
     }
 }

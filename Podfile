@@ -14,6 +14,7 @@ target 'binding-of-isaac-database' do
   pod 'SwifterSwift'
   pod 'SnapKit'
   pod 'Reusable'
+  pod 'Kingfisher', '~> 3.0'
 
   target 'binding-of-isaac-databaseTests' do
     inherit! :search_paths
