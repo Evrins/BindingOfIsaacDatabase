@@ -25,10 +25,6 @@ class ItemCollection: NSObject {
         return self.currentItems
     }
     
-//    func getItemsSorted(byProperty: String) -> Results<ItemModel>! {
-//        return self.realm.objects(ItemModel.self).sorted(byProperty: byProperty)
-//    }
-    
     func filterItemsByProperty(property: String, itemAttribute: String) {
         let predicate = NSPredicate(format: "globalType == '\(property.lowercased())'")
         self.currentItems = self.loadedItems.filter(predicate)

@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 import SideMenu
+import Kingfisher
+import SnapKit
 
 private let reuseIdentifier = "Cell"
 
@@ -24,8 +26,6 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func displayOptions(layoutType: LayoutMachine) {
         switch layoutType {
-//        case .Grid:
-//            setupGridLayout()
         case .List:
             setupListLayout()
 //        case .Color:
@@ -44,10 +44,23 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     let gridFlowLayout = GridFlowLayout()
     let listFlowLayout = ListFlowLayout()
-
+    
+    var viewTitle: String? = "" {
+        didSet {
+            print(viewTitle)
+            self.title = viewTitle
+            print(self.title)
+            print(self.navigationController?.navigationBar.topItem?.title)
+            print(self.navigationController?.navigationItem)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewTitle = "Search"
+        navigationController?.navigationBar.isTranslucent = false
+
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
         itemCollection.onComplete = { _ in
@@ -58,19 +71,24 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
 
         itemCollection.loadItems()
         self.setUpSideMenu()
+        self.setupConstraints()
 
         displayOptions(layoutType: layoutType)
         collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(layoutButtonTapped))
+        
+        // Register Custom Cells
+        collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
+        collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
     }
     
     func menuButtonPressed() {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     
-    func addTapped() {
+    func layoutButtonTapped() {
         layoutType.next()
     }
 
@@ -81,28 +99,30 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // MARK: - Private methods
     fileprivate func setupListLayout() {
-        collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
         collectionView.collectionViewLayout = listFlowLayout
         collectionView.reloadData()
     }
     
     fileprivate func setupGridLayout() {
-        collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
-
         collectionView.collectionViewLayout = gridFlowLayout
         collectionView.reloadData()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func setupConstraints() {
+        searchBar.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(view.snp.top)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(collectionView.snp.top)
+        }
+        
+        collectionView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(searchBar.snp.bottom)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(view.snp.bottom)
+        }
     }
-    */
-
 }
 
 extension ItemViewController {
@@ -119,20 +139,23 @@ extension ItemViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = searchItems[indexPath.row]
         
+        var url = Bundle.main.url(forResource: "001", withExtension: ".png")
+        if let itemId = item.getItemId() {
+            url = Bundle.main.url(forResource: itemId, withExtension: ".png")
+        }
+        
         switch(layoutType) {
         case .List:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCollectionViewCell.id, for: indexPath) as! ItemListCollectionViewCell
             
             cell.itemQuote.text = "\"\(item.getItemQuote()!)\""
             cell.itemTitle.text = item.getItemName()
-            
+
             cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            var image: UIImage? = nil
-            if let itemId = item.getItemId() {
-                image = UIImage(named: itemId)
-            }
-            if image != nil {
-                cell.itemImage.image = image
+            
+            if url != nil {
+                cell.itemImage.kf.indicatorType = .activity
+                cell.itemImage.kf.setImage(with: url)
             }
             
             cell.alpha = 0
@@ -147,13 +170,10 @@ extension ItemViewController {
             
             cell.itemImage.backgroundColor = .cyan
             cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            
-            var image: UIImage? = nil
-            if let itemId = item.getItemId() {
-                image = UIImage(named: itemId)
-            }
-            if image != nil {
-                cell.itemImage.image = image
+
+            if url != nil {
+                cell.itemImage.kf.indicatorType = .activity
+                cell.itemImage.kf.setImage(with: url)
             }
             
             cell.alpha = 0
@@ -162,9 +182,43 @@ extension ItemViewController {
             return cell
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = searchItems[indexPath.row]
+        selectedItem = item
+        performSegue(withIdentifier: "showItemDetail", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showItemDetail" {
+            let destinationVC =  segue.destination as! ItemDetailViewController
+            destinationVC.selectedItem = selectedItem
+        }
+        
+    }
 }
 
 extension ItemViewController {
+    // MARK: - Collection View Delegate Flow Layout Methods
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let bounds = collectionView.bounds
+        
+        return CGSize(width: (bounds.width * 10), height: bounds.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+}
+
+extension ItemViewController {
+    
+    // MARK: Search bar
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
@@ -200,13 +254,6 @@ extension ItemViewController {
         collectionView.reloadData()
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let item = searchItems[indexPath.row]
-        selectedItem = item
-        performSegue(withIdentifier: "showItemDetail", sender: nil)
-//        print("Item: \(item.getItemId())")
-    }
-    
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         view.addGestureRecognizer(tap)
     }
@@ -219,36 +266,10 @@ extension ItemViewController {
         view.endEditing(true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showItemDetail" {
-            let destinationVC =  segue.destination as! ItemDetailViewController
-            destinationVC.selectedItem = selectedItem
-        }
-
-    }
-    
 }
 
 extension ItemViewController {
-    // MARK: - Collection View Delegate Flow Layout Methods
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let bounds = collectionView.bounds
-        
-        return CGSize(width: (bounds.width * 10), height: bounds.height)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-
-}
-
-extension ItemViewController {
+    // MARK: Side Menu
     func setUpSideMenu() {
     // Define the menus
         let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController

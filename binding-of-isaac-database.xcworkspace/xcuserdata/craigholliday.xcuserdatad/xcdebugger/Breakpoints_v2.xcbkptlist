@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "binding-of-isaac-database/MenuTableViewController.swift"
-            timestampString = "504744071.377821"
+            timestampString = "505347377.838252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "MenuTableViewController"
             landmarkType = "3">
             <Locations>

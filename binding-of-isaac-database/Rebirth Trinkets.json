@@ -6,7 +6,7 @@
       "itemDescription" : "• Creates a familiar which moves around the room in a similar fashion to The Peeper, shooting tears in the same direction as Isaac.",
       "itemUnlock" : "Unlock this item by beating the Dark Room with Blue Baby.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -15,7 +15,7 @@
       "itemDescription" : "• Lowers your spacebar item charge rate by 1.; • Cannot lower the charge of your spacebar item below 1 room.; • For example, you will now be able to use a 3 room charge item after 2 rooms instead.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -24,7 +24,7 @@
       "itemDescription" : "• Gives Isaac a higher chance to find Tarot cards after clearing a room or from chests.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -33,7 +33,7 @@
       "itemDescription" : "• Gives you a higher chance of eternal hearts.; • Contrary to popular belief, the Bible Tract doesn't allow Angel Rooms to appear after paying for a Devil Deal.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -42,7 +42,7 @@
       "itemDescription" : "• Increases the chance for Black hearts to spawn.",
       "itemUnlock" : "Unlock this item by beating the Dark Room with Eve.",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -51,7 +51,7 @@
       "itemDescription" : "• Everytime you pick up a penny, you have a chance to spawn a red heart on the floor.",
       "itemUnlock" : "Unlock this item by beating the Chest with Samson.",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -60,7 +60,7 @@
       "itemDescription" : "• Has a partial Magneto effect and will attract coins, pulling them into Isaac from a distance.; • Does not attract other pickups like the full Magneto item does.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -69,7 +69,7 @@
       "itemDescription" : "• Has a chance (roughly 20%) to respawn with 3 Soul hearts as Blue Baby when you die.",
       "itemUnlock" : "Unlock this item by beating Satan with Lazarus.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -78,7 +78,7 @@
       "itemDescription" : "• Does the teleport effect every time you use your current spacebar item.; • Can be used infinitely every room if you have Guppy's Paw and no red heart containers (Can be exploited to get to the boss room without clearing any other rooms).",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -87,7 +87,7 @@
       "itemDescription" : "• Everytime you pick up a coin, you have a chance to spawn a bomb on the floor.",
       "itemUnlock" : "Unlock this item by beating Challenge #13 (Beans!).",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -96,7 +96,7 @@
       "itemDescription" : "• Everytime you pick up a coin, you fart.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -105,7 +105,7 @@
       "itemDescription" : "• Gives a 25% chance to reveal map icons at the start of a new floor (The same effect as the Compass).",
       "itemUnlock" : "Unlock this item by beating the Chest with Cain.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -114,7 +114,7 @@
       "itemDescription" : "• Isaac no longer takes damage from walking over spikes and blood creep while this trinket is held.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -123,7 +123,7 @@
       "itemDescription" : "• -2 Tear Delay (Tears Up).; • The fire rate increase is applied in such a way that the higher your tear stat is, the more effective Cancer is.; • Breaks the normal fire rate cap, allowing you to fire faster than the normal maximum.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -132,7 +132,7 @@
       "itemDescription" : "• When Isaac takes damage, there is a chance he will gain the Gamekid effect, turning him invincible and dealing contact damage to any enemies he touches.; • The chance to activate the invincibility effect is affected by your luck stat and at +38 Luck it will activate every time you get hit.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -141,7 +141,7 @@
       "itemDescription" : "• Gives Isaac a higher chance to find hearts from drops after clearing a room and from chests.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -150,7 +150,7 @@
       "itemDescription" : "• When picking up a coin, you have a chance to automatically gain one more coin.",
       "itemUnlock" : "Unlock this item by playing the shell game in the arcade 100 times.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -159,7 +159,7 @@
       "itemDescription" : "• When you take damage while on 1/2 a heart, you are teleported back to the previous room.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -168,7 +168,7 @@
       "itemDescription" : "• +2 Damage Up",
       "itemUnlock" : "Unlock this item by beating the Dark Room with Judas.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -177,7 +177,7 @@
       "itemDescription" : "• When Daemon's Tail is held, most future Heart drop will be rerolled into something else, with a certain chance to be rerolled into a Black Heart.; • Every type of heart will be affected (except for hearts spawned in Super Secret Rooms) and causes Mitre, Bible Tract, Mom's Pearl to become useless.; • Upon entering a new room that already has hearts on the ground, they will all be converted into Black Hearts.; • Hearts that spawn after clearing a room, opening a chest or playing a slot machine/beggar will be re-rolled into another possible pickup that could appear. This essentially means you are sacrificing your heart drops for a higher chance of all other pickups",
       "itemUnlock" : "Unlock this item by beating Satan with Azazel.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -186,7 +186,7 @@
       "itemDescription" : "• When you kill an enemy, you have a chance to spawn a transparent Dead Bird familiar.; • The Dead Bird familiar deals 2 damage per tick to enemies while in contact with them.",
       "itemUnlock" : "Unlock this item by beating the Isaac boss with Eve.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -195,7 +195,7 @@
       "itemDescription" : "• Everytime Isaac takes damage, one blue fly will spawn.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -204,7 +204,7 @@
       "itemDescription" : "• Everytime you pick up a coin, you have a chance to spawn a key.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -213,7 +213,7 @@
       "itemDescription" : "• Tears become flat and disc shaped giving them a larger hitbox.; • Higher knockback effect with your tears.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -222,7 +222,7 @@
       "itemDescription" : "• +0.15 Speed Up.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -231,7 +231,7 @@
       "itemDescription" : "• Tears now move forwards at right angles, shifting left and right across the room.; • Increases your range stat by +10.0 while held but due to the fire pattern, your tears travel a similar distance to normal.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -240,7 +240,7 @@
       "itemDescription" : "• After clearing a room, you have a chance to heal for half a red heart.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -249,7 +249,7 @@
       "itemDescription" : "• While held, this trinket gives Isaac a familiar that shoots piercing tears that deal 3.5 damage.",
       "itemUnlock" : "Unlock this item by beating the Boss Rush with Isaac.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -258,7 +258,7 @@
       "itemDescription" : "• Items which cost 2 heart containers in a deal with the devil are reduced to only cost 1 heart.",
       "itemUnlock" : "Unlock this item by beating Satan with Judas.",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -267,7 +267,7 @@
       "itemDescription" : "• Replaces chest spawns with red chests.",
       "itemUnlock" : "Unlock this item by beating Ultra Pride.",
       "itemTags" : "northernlion, drop the left hand",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -276,7 +276,7 @@
       "itemDescription" : "• While held, this trinket gives a random mushroom effect each room; • Possible mushrooms include: Mini Mush, Odd Mushroom (Thin), Odd Mushroom (Thick), The Compass.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -285,7 +285,7 @@
       "itemDescription" : "• Rocks now drop money when broken.",
       "itemUnlock" : "Unlock this item by destroying 100 rocks.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -294,7 +294,7 @@
       "itemDescription" : "• +1 Luck Up while held.",
       "itemUnlock" : "Unlock this item by blowing up 20 shop keepers (this includes the ones in the secret room).",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -303,7 +303,7 @@
       "itemDescription" : "• At the start of a new floor, you get an eternal heart.",
       "itemUnlock" : "Unlock this item by beating the Dark Room with Maggy.",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -312,7 +312,7 @@
       "itemDescription" : "• Gives Isaac a higher chance to find bombs.; • Picking up the Match Stick is the only way to remove the Tick trinket.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -321,7 +321,7 @@
       "itemDescription" : "• When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect.; • The chance to damage enemies is affected by your luck stat and at +50 or more Luck it will activate 50% of the time.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -330,7 +330,7 @@
       "itemDescription" : "• Dying in a sacrifice room while holding this trinket will reveal a puzzle piece on the death screen. Finding all the puzzle pieces will help you to reveal the final secret, unlocking the hidden character 'The Lost'.; In Afterbirth dying with this trinket causes you to respawn as The Lost character and dying in a sacrifice room while holding this trinket will now unlock the Lost character.",
       "itemUnlock" : "Unlock this item by beating Dark Room with Isaac.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -339,7 +339,7 @@
       "itemDescription" : "• Higher chance to find Soul Hearts.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -348,7 +348,7 @@
       "itemDescription" : "• Mom's Leg will now appear every 60 seconds and stomp down randomly in the room dealing 300 damage to enemies, similar to how Daddy Longlegs works but less frequent.; • Be warned though, Mom's leg can also stomp and hurt Isaac too!",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -357,7 +357,7 @@
       "itemDescription" : "• When you reach half a heart of life remaining, a black heart will spawn.; • After three black hearts have spawned, the trinket dissapears.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -366,7 +366,7 @@
       "itemDescription" : "• Causes Isaac to create poops randomly.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -375,7 +375,7 @@
       "itemDescription" : "• Imitates the behaviours of some of the other 'paper' items/trinkets.; • A Missing Page: When taking damage, Isaac has a chance to deal damage to the entire room in a Necronomicon style effect.; • Has a chance to trigger the Polaroid or Negative effect every time you take damage with half a red heart or less.; • Missing Poster: Dying in a sacrifice room while holding this trinket will reveal a puzzle piece on the death screen. Finding all the puzzle pieces will help you to reveal the final secret, unlocking the hidden character 'The Lost'.; • If held when you touch the chest after the Satan or Isaac fight and you don't have the relevant item to go to the next floor (Polaroid or Negative), you have a small chance to be taken there anyway.",
       "itemUnlock" : "Unlock this item by beating the Chest with Eden.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -384,7 +384,7 @@
       "itemDescription" : "• Allows you to unlock golden chests without needing a key.; • Does not work on locked rooms.; In Afterbirth Cain starts with this trinket after donating 68 coins to the Greed Donation Machine.",
       "itemUnlock" : "",
       "itemTags" : "starting",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -393,7 +393,7 @@
       "itemDescription" : "• While held, Isaac has a significantly higher chance to find drops when breaking poops.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -402,7 +402,7 @@
       "itemDescription" : "• Isaac's tears have a chance to poison enemies.; • The poison effect leaves a damage over time, which deals 4 or 6 damage per tick.; • The chance to poison enemies is affected by your luck stat and at +18 Luck it will activate every time.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -411,7 +411,7 @@
       "itemDescription" : "• Tears shrink and grow in size as they go across the room.; • Does not appear to affect your damage and only the hitbox size of tears.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -420,7 +420,7 @@
       "itemDescription" : "• Higher chance for champion enemies while held.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -429,7 +429,7 @@
       "itemDescription" : "• Isaac now has a chance to make a spectral and piercing tear.; • The chance to fire a piercing tear is affected by your luck stat and at +18 Luck it will activate every time.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -438,7 +438,7 @@
       "itemDescription" : "• You have a chance when taking damage to gain +1.8 Damage Up for the rest of the room.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -447,7 +447,7 @@
       "itemDescription" : "• While held, tears move in a spiral pattern across the screen at high speed.; • Effectively increases your range due to the tear pattern.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -456,7 +456,7 @@
       "itemDescription" : "• Increases your chances to find an Angel Room instead of a Devil Room.; • Normally there is a 50%/50% chance of a Angel or Devil room with if a door spawns after the boss. The Rosary Bead changes this to a 75%/25% chance of an angel or devil room (respectively).",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -465,7 +465,7 @@
       "itemDescription" : "• Gives Isaac a higher chance to find keys and chests.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -474,7 +474,7 @@
       "itemDescription" : "• Gives Isaac a higher chance to find pills.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -483,7 +483,7 @@
       "itemDescription" : "• When you kill an enemy, you have a chance to get +0.5 damage up for the current room.",
       "itemUnlock" : "Unlock this item by beating the Dark Room with Samson.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -492,7 +492,7 @@
       "itemDescription" : "• While this trinket is held, all items in the Shop cost 0 coins.; • After buying any 0 cent item in the Shop, the trinket disappears.",
       "itemUnlock" : "Unlock this item by beating the Chest with Lazarus.",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -501,7 +501,7 @@
       "itemDescription" : "• Each time you get hit, you drop a coin or two.",
       "itemUnlock" : "Unlock this item by beating Challenge #15 (Slow Roll).",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -510,7 +510,7 @@
       "itemDescription" : "• When you enter a boss room, immediately remove 15% health from the boss and restore 1 red heart.; • This trinket can only be removed by picking up the Match Stick trinket, meaning you are otherwise unable to take any more trinkets unless you get the Mom's Purse item.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -519,7 +519,7 @@
       "itemDescription" : "• If you take damage which leaves you at 1/2 a heart, you gain a Little Steve familiar that follows you and shoots homing tears.",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -528,7 +528,7 @@
       "itemDescription" : "• +0.5 Shot Speed Up.; • Your tears now whip across the room at a very high shot speed.; • Shot speed gives your tears more effective range, but doesn't increase your range stat directly.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     },
     {
@@ -537,7 +537,7 @@
       "itemDescription" : "• Tears now move in a wave fashion across the room.",
       "itemUnlock" : "",
       "itemTags" : "",
-      "globalType" : "trinket",
+      "globalType" : "trinkets",
       "game" : "Rebirth"
     }
   ]}
