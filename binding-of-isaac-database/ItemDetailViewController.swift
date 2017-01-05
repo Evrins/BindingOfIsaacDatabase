@@ -159,7 +159,7 @@ extension ItemDetailViewController {
         let endIndex = string.endIndex
         let range = startIndex..<endIndex
         
-        let convertedString = string.replacingOccurrences(of: ";", with: "\n", options: .regularExpression, range: range)
+        let convertedString = string.replacingOccurrences(of: ";", with: "\n\n", options: .regularExpression, range: range)
         
         return convertedString
     }
