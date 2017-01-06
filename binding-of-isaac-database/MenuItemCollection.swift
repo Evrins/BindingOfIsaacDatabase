@@ -12,6 +12,7 @@ import SwifterSwift
 class MenuItemCollection: NSObject {
     
     var onComplete: ((() -> Void))?
+    var setActive: ((() -> Void))?
     
     static let sharedInstance = MenuItemCollection()
     private override init() {}
@@ -48,13 +49,30 @@ class MenuItemCollection: NSObject {
     func loadMenuItems() {
         menuTitles.forEach { title in
             let type = title.camelCased
-            let newItem = MenuItem(title: title, type: type)
+            var newItem = MenuItem(title: title, type: type)
+            if title == "Search" {
+                newItem = MenuItem(title: title, type: type, active: true)
+            }
             menuItems.append(newItem)
         }
         onComplete?()
     }
     
-
+    func setActiveItem(to: MenuItem) {
+        menuItems.forEach { (item) in
+            item.active = false
+            if item == to {
+                item.active = true
+            }
+        }
+        setActive?()
+    }
+    
+    func getActive() -> MenuItem? {
+        let activeItem = menuItems.filter { $0.active == true }.first
+        return activeItem
+    }
+    
     func getMenuItems() -> [MenuItem] {
         return self.menuItems
     }

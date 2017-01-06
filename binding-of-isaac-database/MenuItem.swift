@@ -12,14 +12,24 @@ class MenuItem: NSObject {
     var title = ""
     var image: UIImage? = nil
     var type = ""
+    var active = false
     
-    init?(title: String, image: UIImage?, type: String) {
+    func toggleActive() {
+        active = !active
+    }
+    
+    init?(title: String, image: UIImage?, type: String, active: Bool) {
         self.title = title
         self.image = image
         self.type = type
+        self.active = active
     }
     
     convenience init(title: String, type: String) {
-        self.init(title: title, image: nil, type: type)!
+        self.init(title: title, image: nil, type: type, active: false)!
+    }
+    
+    convenience init(title: String, type: String, active: Bool) {
+        self.init(title: title, image: nil, type: type, active: active)!
     }
 }

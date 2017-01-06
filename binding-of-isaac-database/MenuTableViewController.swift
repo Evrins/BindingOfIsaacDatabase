@@ -62,9 +62,8 @@ extension MenuTableViewController {
         }
         let menuItem = menuItems[indexPath.row]
         self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: "globalType")
-
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ItemViewController") as! ItemViewController
-        vc.viewTitle = menuItem.title
+        
+        menuItemCollection.setActiveItem(to: menuItem)
         
         self.dismissView()
     }

@@ -38,6 +38,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     fileprivate var tap: UITapGestureRecognizer!
     
     let itemCollection = ItemCollection.sharedInstance
+    let menuItemCollection = MenuItemCollection.sharedInstance
     var items: Results<ItemModel>!
     var searchItems: Results<ItemModel>!
     var selectedItem: ItemModel? = nil
@@ -45,36 +46,36 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     let gridFlowLayout = GridFlowLayout()
     let listFlowLayout = ListFlowLayout()
     
-    var viewTitle: String? = "" {
-        didSet {
-            print(viewTitle)
-            self.title = viewTitle
-            print(self.title)
-            print(self.navigationController?.navigationBar.topItem?.title)
-            print(self.navigationController?.navigationItem)
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewTitle = "Search"
-        navigationController?.navigationBar.isTranslucent = false
-
+        if menuItemCollection.getActive() == nil {
+            self.title = "Search"
+        }
+        
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        
+        menuItemCollection.setActive = { _ in
+            self.title = self.menuItemCollection.getActive()?.title
+        }
         
         itemCollection.onComplete = { _ in
             self.items = self.itemCollection.getItems().sorted(byProperty: "itemId", ascending: true)
-            self.searchItems = self.items
-            self.collectionView.reloadData()
+            print(self.title)
+            if self.title != "Search" {
+                self.searchItems = self.items
+                self.collectionView.reloadData()
+            }
         }
 
         itemCollection.loadItems()
         self.setUpSideMenu()
         self.setupConstraints()
-
+        
         displayOptions(layoutType: layoutType)
         collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
+        
+        navigationController?.navigationBar.isTranslucent = false
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(layoutButtonTapped))
@@ -130,7 +131,7 @@ extension ItemViewController {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        if items != nil {
+        if items != nil && searchItems != nil {
             return searchItems.count
         }
         return 0

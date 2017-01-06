@@ -13,7 +13,6 @@ import SwiftyJSON
 
 class DataSource {
     static func loadItems(_ completionHandler:@escaping (Bool) -> ()) {
-        
         let realm = try! Realm()
 //        guard realm.isEmpty else {return}
         
@@ -60,6 +59,7 @@ class DataSource {
                 completionHandler(false)
             }
         }
+        
     }
     
 }
