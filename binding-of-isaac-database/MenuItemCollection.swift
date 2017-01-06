@@ -55,6 +55,7 @@ class MenuItemCollection: NSObject {
             }
             menuItems.append(newItem)
         }
+        setActive?()
         onComplete?()
     }
     

@@ -25,6 +25,11 @@ class ItemCollection: NSObject {
         return self.currentItems
     }
     
+    func setCurrentItemsToLoadedItems() {
+        self.currentItems = self.loadedItems
+        onComplete?()
+    }
+    
     func filterItemsByProperty(property: String, itemAttribute: String) {
         let predicate = NSPredicate(format: "globalType == '\(property.lowercased())'")
         self.currentItems = self.loadedItems.filter(predicate)
@@ -40,8 +45,7 @@ extension ItemCollection {
         if self.loadedItems.isEmpty {
             self.loadInitialItems()
         } else {
-            self.currentItems = self.loadedItems
-            onComplete?()
+            self.setCurrentItemsToLoadedItems()
         }
     }
     
@@ -53,8 +57,7 @@ extension ItemCollection {
     func loadInitialItems() {
         DataSource.loadItems() { (success) -> Void in
             self.loadedItems = self.realm.objects(ItemModel.self)
-            self.currentItems = self.loadedItems
-            self.onComplete?()
+            self.setCurrentItemsToLoadedItems()
         }
     }
 }

@@ -55,20 +55,18 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
-        menuItemCollection.setActive = { _ in
-            self.title = self.menuItemCollection.getActive()?.title
-        }
-        
         itemCollection.onComplete = { _ in
             self.items = self.itemCollection.getItems().sorted(byProperty: "itemId", ascending: true)
-            print(self.title)
-            if self.title != "Search" {
-                self.searchItems = self.items
-                self.collectionView.reloadData()
-            }
+            self.searchItems = self.items
+            self.collectionView.reloadData()
+        }
+        
+        menuItemCollection.setActive = { _ in
+            self.title = self.menuItemCollection.getActive()?.title            
         }
 
         itemCollection.loadItems()
+        menuItemCollection.loadMenuItems()
         self.setUpSideMenu()
         self.setupConstraints()
         

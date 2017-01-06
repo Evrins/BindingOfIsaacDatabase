@@ -25,8 +25,8 @@ class MenuTableViewController: UITableViewController {
             self.menuItems = self.menuItemCollection.getMenuItems()
         }
         
-        menuItemCollection.loadMenuItems()
-        
+        self.menuItems = self.menuItemCollection.getMenuItems()
+                
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Hide", style: .plain, target: self, action: #selector(dismissView))
         
         self.tableView.tableFooterView = UIView()
@@ -61,7 +61,12 @@ extension MenuTableViewController {
             self.tableView.deselectRow(at: index, animated: true)
         }
         let menuItem = menuItems[indexPath.row]
+        
         self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: "globalType")
+        
+        if menuItem.title == "Search" {
+            self.itemCollection.setCurrentItemsToLoadedItems()
+        }
         
         menuItemCollection.setActiveItem(to: menuItem)
         
