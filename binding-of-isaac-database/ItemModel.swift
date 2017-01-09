@@ -93,5 +93,10 @@ class ItemModel: Object, Mappable {
     func getGame() -> String? {
         return self.game
     }
+    
+    func getImageUrl() -> URL? {
+        //@TODO: Use trinket name
+        return Bundle.main.url(forResource: self.getItemId(), withExtension: ".png")
+    }
 }
 

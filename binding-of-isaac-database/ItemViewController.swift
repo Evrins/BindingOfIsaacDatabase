@@ -39,6 +39,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     let itemCollection = ItemCollection.sharedInstance
     let menuItemCollection = MenuItemCollection.sharedInstance
+    
     var items: Results<ItemModel>!
     var searchItems: Results<ItemModel>!
     var selectedItem: ItemModel? = nil
@@ -48,7 +49,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if menuItemCollection.getActive() == nil {
             self.title = "Search"
         }
@@ -138,10 +139,11 @@ extension ItemViewController {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = searchItems[indexPath.row]
         
-        var url = Bundle.main.url(forResource: "001", withExtension: ".png")
-        if let itemId = item.getItemId() {
-            url = Bundle.main.url(forResource: itemId, withExtension: ".png")
-        }
+        var url = item.getImageUrl()
+        
+//        if url == nil {
+//            url = Bundle.main.url(forResource: "001", withExtension: ".png")
+//        }
         
         switch(layoutType) {
         case .List:
@@ -157,17 +159,16 @@ extension ItemViewController {
                 cell.itemImage.kf.setImage(with: url)
             }
             
-            cell.alpha = 0
-            UIView.animate(withDuration: 0.25, animations: { cell.alpha = 1 })
             
             return cell
         default: // .Grid
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
             
-//            cell.itemTitle.text = ""
-            cell.itemTitle.text = item.getItemName()
+            cell.itemTitle.text = ""
             
-            cell.itemImage.backgroundColor = .cyan
+//            cell.itemTitle.text = item.getItemName()
+//            cell.itemImage.backgroundColor = .cyan
+            
             cell.itemImage.layer.magnificationFilter = kCAFilterNearest
 
             if url != nil {
@@ -175,11 +176,12 @@ extension ItemViewController {
                 cell.itemImage.kf.setImage(with: url)
             }
             
-            cell.alpha = 0
-            UIView.animate(withDuration: 0.25, animations: { cell.alpha = 1 })
-            
             return cell
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -280,9 +282,10 @@ extension ItemViewController {
         SideMenuManager.menuPresentMode = .menuSlideIn
         SideMenuManager.menuAnimationBackgroundColor = UIColor.clear
         
+        //@TODO: Add right navigation controller
         let menuRightNavigationController = UISideMenuNavigationController()
         // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
-        SideMenuManager.menuRightNavigationController = menuRightNavigationController
+//        SideMenuManager.menuRightNavigationController = menuRightNavigationController
         
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!

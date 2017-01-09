@@ -20,10 +20,10 @@ class DataSource {
             realm.deleteAll()
         }
         
-        if let url = Bundle.main.url(forResource: "Rebirth Items", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "BoI Items", withExtension: "json") {
             do {
                 let jsonData = try Data(contentsOf: url)
-               
+                
                 let json = JSON(data: jsonData)
                 
                 for item in json["Rebirth Items"].arrayValue {
@@ -33,18 +33,6 @@ class DataSource {
                         realm.add(newItem!)
                     }
                 }
-                completionHandler(true)
-            } catch {
-                // Handle Error
-                completionHandler(false)
-            }
-        }
-        
-        if let url = Bundle.main.url(forResource: "Rebirth Trinkets", withExtension: "json") {
-            do {
-                let jsonData = try Data(contentsOf: url)
-                
-                let json = JSON(data: jsonData)
                 
                 for item in json["Rebirth Trinkets"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
@@ -53,12 +41,70 @@ class DataSource {
                         realm.add(newItem!)
                     }
                 }
+                
+                for item in json["Afterbirth Items"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
+                for item in json["Afterbirth Trinkets"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
                 completionHandler(true)
             } catch {
                 // Handle Error
+                print("There was an issue loading from JSON")
                 completionHandler(false)
             }
         }
+        
+//        if let url = Bundle.main.url(forResource: "Rebirth Items", withExtension: "json") {
+//            do {
+//                let jsonData = try Data(contentsOf: url)
+//               
+//                let json = JSON(data: jsonData)
+//                
+//                for item in json["Rebirth Items"].arrayValue {
+//                    let newItem = ItemModel(JSONString: "\(item)")
+//                    
+//                    try! realm.write {
+//                        realm.add(newItem!)
+//                    }
+//                }
+//                completionHandler(true)
+//            } catch {
+//                // Handle Error
+//                completionHandler(false)
+//            }
+//        }
+//        
+//        if let url = Bundle.main.url(forResource: "Rebirth Trinkets", withExtension: "json") {
+//            do {
+//                let jsonData = try Data(contentsOf: url)
+//                
+//                let json = JSON(data: jsonData)
+//                
+//                for item in json["Rebirth Trinkets"].arrayValue {
+//                    let newItem = ItemModel(JSONString: "\(item)")
+//                    
+//                    try! realm.write {
+//                        realm.add(newItem!)
+//                    }
+//                }
+//                completionHandler(true)
+//            } catch {
+//                // Handle Error
+//                completionHandler(false)
+//            }
+//        }
         
     }
     

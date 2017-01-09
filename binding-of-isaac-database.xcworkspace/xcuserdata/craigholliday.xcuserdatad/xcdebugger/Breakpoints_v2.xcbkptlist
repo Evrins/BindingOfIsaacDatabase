@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "binding-of-isaac-database/ItemDetailViewController.swift"
-            timestampString = "505363256.395557"
+            timestampString = "505616529.923531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "getItemFields(item:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -89,6 +89,14 @@ extension ItemDetailViewController {
                 
                 cell.itemImage.layer.magnificationFilter = kCAFilterNearest;
                 
+                cell.itemImage.image = UIImage(named: "ImageNotFoundPlaceholder")
+                
+                if let url = item?.getImageUrl() {
+                    print(url)
+                    cell.itemImage.kf.indicatorType = .activity
+                    cell.itemImage.kf.setImage(with: url)
+                }
+                
                 var image: UIImage? = nil
                 if let itemId = item?.getItemId() {
                     image = UIImage(named: itemId)
@@ -133,8 +141,7 @@ extension ItemDetailViewController {
                 }
                 
                 return cell
-        }
-        
+        }  
         
     }
     
@@ -150,7 +157,7 @@ extension ItemDetailViewController {
             ItemProperty(key: "Game:", value: item.getGame())
         ]
         
-        itemProperties = itemProperties.filter{ $0.value != ""}
+        itemProperties = itemProperties.filter{ $0.value != "" && $0.value != nil }
         
         return itemProperties
     }

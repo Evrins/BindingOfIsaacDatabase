@@ -71,7 +71,7 @@ enum Stylesheet {
 extension Stylesheet {
     
 //    static func applyOn(cell: CountdownListCell) {
-//        typealias context = Stylesheet.Contexts.CountdownListCell
+//        typealias context = .CountdownListCell
 //        cell.backgroundColor = context.BackgroundColor
 //        cell.contentView.backgroundColor = context.BackgroundColor
 //        

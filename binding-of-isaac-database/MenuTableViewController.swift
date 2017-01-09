@@ -62,7 +62,7 @@ extension MenuTableViewController {
         }
         let menuItem = menuItems[indexPath.row]
         
-        self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: "globalType")
+        self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: Filters.ItemAttribute.GlobalType)
         
         if menuItem.title == "Search" {
             self.itemCollection.setCurrentItemsToLoadedItems()

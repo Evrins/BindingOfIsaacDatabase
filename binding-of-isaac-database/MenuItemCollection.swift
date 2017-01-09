@@ -42,7 +42,7 @@ class MenuItemCollection: NSObject {
         "Challenges",
         "Babies (Co-op)",
          */
-        "Collection",
+//        "Collection",
         "Settings"
     ]
     
