@@ -104,10 +104,6 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         menuItemCollection.loadMenuItems()
         filterCollection.loadFilterModels()
         
-        //@TODO: Remove this
-        print(filterCollection.getAllFilters()[16].filterValue)
-        self.filterCollection.addActiveFilter(filter: filterCollection.getAllFilters()[16])
-        
         self.setUpSideMenu()
         self.setupConstraints()
         

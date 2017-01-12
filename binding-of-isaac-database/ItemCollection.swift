@@ -50,16 +50,14 @@ extension ItemCollection {
     
     
     func filterItemsByActiveFilters() {
-        var subPredicates = [NSPredicate]()
+        let subPredicates = filterCollection.activeSubPredicates
         
-        for filter in filterCollection.getActiveFilters() {
-            let predicate = NSPredicate(format: "%K contains[C] %@", filter.filterType, filter.filterValue)
-            subPredicates.append(predicate)
+        if !subPredicates.isEmpty {
+            let compoundPredicate = NSCompoundPredicate(type: .or, subpredicates: subPredicates)
+            
+            currentItems = currentItems.filter(compoundPredicate)
         }
         
-        let compoundPredicate = NSCompoundPredicate(type: .or, subpredicates: subPredicates)
-        
-        currentItems = currentItems.filter(compoundPredicate)
     }
 }
 

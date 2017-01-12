@@ -25,23 +25,19 @@ class MenuItemCollection: NSObject {
         "Trinkets",
         "Cards and Runes",
         "Pickups",
-        /*
-        "Achievements",
-        "Transformations",
-        "Seeds",
-         */
+//        "Achievements",
+//        "Transformations",
+//        "Seeds",
         "Pills",
-        /*
-        "Monsters",
-        "Bosses",
-        "Characters",
-        "Objects",
-        "Curses",
-        "Floors",
-        "Rooms",
-        "Challenges",
-        "Babies (Co-op)",
-         */
+//        "Monsters",
+//        "Bosses",
+//        "Characters",
+//        "Objects",
+//        "Curses",
+//        "Floors",
+//        "Rooms",
+//        "Challenges",
+//        "Babies (Co-op)",
 //        "Collection",
         "Settings"
     ]

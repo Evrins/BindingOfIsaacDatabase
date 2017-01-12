@@ -103,7 +103,7 @@ class ItemModel: Object, Mappable {
         var resourceString: String? = self.getItemId()
         
         if resourceString == nil {
-            resourceString = "ImageNotFoundPlaceholder"
+            resourceString = self.getItemName()
         }
         
         url = Bundle.main.url(forResource: resourceString, withExtension: ".png")
