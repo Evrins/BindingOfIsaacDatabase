@@ -24,13 +24,13 @@ class ItemModel: Object, Mappable {
     dynamic var globalType: String? = nil
     dynamic var game: String? = nil
     
+    override static func primaryKey() -> String? {
+        return "itemKey"
+    }
+    
     //Impl. of Mappable protocol
     required convenience init?(map: Map) {
         self.init()
-    }
-    
-    override static func primaryKey() -> String? {
-        return "itemKey"
     }
     
     // Mappable
@@ -96,7 +96,23 @@ class ItemModel: Object, Mappable {
     
     func getImageUrl() -> URL? {
         //@TODO: Use trinket name
-        return Bundle.main.url(forResource: self.getItemId(), withExtension: ".png")
+        
+        let placeholderUrl: URL? = Bundle.main.url(forResource: "ImageNotFoundPlaceholder", withExtension: ".png")
+        
+        var url: URL? = nil
+        var resourceString: String? = self.getItemId()
+        
+        if resourceString == nil {
+            resourceString = "ImageNotFoundPlaceholder"
+        }
+        
+        url = Bundle.main.url(forResource: resourceString, withExtension: ".png")
+        
+        if url == nil {
+            url = placeholderUrl
+        }
+        
+        return url
     }
 }
 

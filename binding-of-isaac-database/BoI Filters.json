@@ -1,0 +1,273 @@
+{
+  "BoI Filters" : [
+    {
+      "filterName" : "",
+      "filterValue" : "",
+      "filterType" : ""
+    },
+    {
+      "filterName" : "All",
+      "filterValue" : "",
+      "filterType" : "game"
+    },
+    {
+      "filterName" : "Rebirth",
+      "filterValue" : "rebirth",
+      "filterType" : "game"
+    },
+    {
+      "filterName" : "Afterbirth",
+      "filterValue" : "afterbirth",
+      "filterType" : "game"
+    },
+    {
+      "filterName" : "AfterbirthPlus",
+      "filterValue" : "afterbirthPlus",
+      "filterType" : "game"
+    },
+    {
+      "filterName" : "",
+      "filterValue" : "",
+      "filterType" : ""
+    },
+    {
+      "filterName" : "ItemName",
+      "filterValue" : "itemName",
+      "filterType" : "itemName"
+    },
+    {
+      "filterName" : "ItemId",
+      "filterValue" : "itemId",
+      "filterType" : "itemId"
+    },
+    {
+      "filterName" : "ItemQuote",
+      "filterValue" : "itemQuote",
+      "filterType" : "itemQuote"
+    },
+    {
+      "filterName" : "ItemDescription",
+      "filterValue" : "itemDescription",
+      "filterType" : "itemDescription"
+    },
+    {
+      "filterName" : "ItemType",
+      "filterValue" : "itemType",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "ItemPool",
+      "filterValue" : "itemPool",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "ItemTags",
+      "filterValue" : "itemTags",
+      "filterType" : "itemTags"
+    },
+    {
+      "filterName" : "RechargeTime",
+      "filterValue" : "rechargeTime",
+      "filterType" : "rechargeTime"
+    },
+    {
+      "filterName" : "ItemUnlock",
+      "filterValue" : "itemUnlock",
+      "filterType" : "itemUnlock"
+    },
+    {
+      "filterName" : "GlobalType",
+      "filterValue" : "globalType",
+      "filterType" : "globalType"
+    },
+    {
+      "filterName" : "Game",
+      "filterValue" : "game",
+      "filterType" : "game"
+    },
+    {
+      "filterName" : "",
+      "filterValue" : "",
+      "filterType" : ""
+    },
+    {
+      "filterName" : "All",
+      "filterValue" : "",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "Active",
+      "filterValue" : "Active",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "Passive",
+      "filterValue" : "Passive",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "",
+      "filterValue" : "",
+      "filterType" : ""
+    },
+    {
+      "filterName" : "All",
+      "filterValue" : "",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "TearModifier",
+      "filterValue" : "Tear Modifier",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "Familiar",
+      "filterValue" : "Familiar",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "Orbital",
+      "filterValue" : "Orbital",
+      "filterType" : "itemType"
+    },
+    {
+      "filterName" : "",
+      "filterValue" : "",
+      "filterType" : ""
+    },
+    {
+      "filterName" : "All",
+      "filterValue" : "",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Shop",
+      "filterValue" : "Shop",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Treasure Room",
+      "filterValue" : "Treasure Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Boss Room",
+      "filterValue" : "Boss Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Beggar",
+      "filterValue" : "Beggar",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Curse Room",
+      "filterValue" : "Curse Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Library",
+      "filterValue" : "Library",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Challenge Room",
+      "filterValue" : "Challenge Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Devil Room",
+      "filterValue" : "Devil Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Angel Room",
+      "filterValue" : "Angel Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Secret Room",
+      "filterValue" : "Secret Room",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Bomb Beggar",
+      "filterValue" : "Bomb Beggar",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Red Chest",
+      "filterValue" : "Red Chest",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Demon Beggar",
+      "filterValue" : "Demon Beggar",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Gold Chest",
+      "filterValue" : "Gold Chest",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Boss Rush",
+      "filterValue" : "Boss Rush",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Key Beggar",
+      "filterValue" : "Key Beggar",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "",
+      "filterValue" : "",
+      "filterType" : ""
+    },
+    {
+      "filterName" : "Library (Greed Mode)",
+      "filterValue" : "Library, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Boss (Greed Mode)",
+      "filterValue" : "Boss, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Shop (Greed Mode)",
+      "filterValue" : "Shop, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Curse Room (Greed Mode)",
+      "filterValue" : "Curse Room, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Treasure Room (Greed Mode)",
+      "filterValue" : "Treasure Room, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Angel Room (Greed Mode)",
+      "filterValue" : "Angel Room, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Gold Chest (Greed Mode)",
+      "filterValue" : "Gold Chest, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Secret Room (Greed Mode)",
+      "filterValue" : "Secret Room, Greed Mode",
+      "filterType" : "itemPool"
+    },
+    {
+      "filterName" : "Devil Room (Greed Mode)",
+      "filterValue" : "Devil Room, Greed Mode",
+      "filterType" : "itemPool"
+    }
+  ]}

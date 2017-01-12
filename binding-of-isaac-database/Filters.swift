@@ -23,6 +23,7 @@ enum Filters {
     
     enum ItemAttribute {
         static let ItemName = "itemName"
+        static let ItemId = "itemId"
         static let ItemQuote = "itemQuote"
         static let ItemDescription = "itemDescription"
         static let ItemType = "itemType"
@@ -32,12 +33,32 @@ enum Filters {
         static let ItemUnlock = "itemUnlock"
         static let GlobalType = "globalType"
         static let Game = "game"
+        
+        static let allValues = [
+            ItemAttribute.ItemName,
+            ItemAttribute.ItemId,
+            ItemAttribute.ItemQuote,
+            ItemAttribute.ItemDescription,
+            ItemAttribute.ItemType,
+            ItemAttribute.ItemPool,
+            ItemAttribute.ItemTags,
+            ItemAttribute.RechargeTime,
+            ItemAttribute.ItemUnlock,
+            ItemAttribute.GlobalType,
+            ItemAttribute.Game
+        ]
     }
     
     enum MainType {
         static let All = "All"
         static let Active = "Active"
         static let Passive = "Passive"
+        
+        static let allValues = [
+            MainType.All,
+            MainType.Passive,
+            MainType.Active
+        ]
     }
     
     enum SubType {
@@ -79,3 +100,5 @@ enum Filters {
     }
 
 }
+
+

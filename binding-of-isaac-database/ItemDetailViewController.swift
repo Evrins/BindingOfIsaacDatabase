@@ -88,11 +88,8 @@ extension ItemDetailViewController {
                 let item = selectedItem
                 
                 cell.itemImage.layer.magnificationFilter = kCAFilterNearest;
-                
-                cell.itemImage.image = UIImage(named: "ImageNotFoundPlaceholder")
-                
+                                
                 if let url = item?.getImageUrl() {
-                    print(url)
                     cell.itemImage.kf.indicatorType = .activity
                     cell.itemImage.kf.setImage(with: url)
                 }

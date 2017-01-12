@@ -11,6 +11,8 @@ import RealmSwift
 
 class ItemCollection: NSObject {
     
+    let filterCollection = FilterCollection.sharedInstance
+    
     var onComplete: ((() -> Void))?
     
     static let sharedInstance = ItemCollection()
@@ -29,11 +31,35 @@ class ItemCollection: NSObject {
         self.currentItems = self.loadedItems
         onComplete?()
     }
-    
-    func filterItemsByProperty(property: String, itemAttribute: String) {
-        let predicate = NSPredicate(format: "globalType == '\(property.lowercased())'")
+}
+
+// MARK: - Filtering Item
+extension ItemCollection {
+    func filterGlobalType(by: String) {
+
+        let predicate = NSPredicate(format: "\(Filters.ItemAttribute.GlobalType) == '\(by)'")
+        
         self.currentItems = self.loadedItems.filter(predicate)
+        
+        if by == "items" {
+            self.filterItemsByActiveFilters()
+        }
+        
         onComplete?()
+    }
+    
+    
+    func filterItemsByActiveFilters() {
+        var subPredicates = [NSPredicate]()
+        
+        for filter in filterCollection.getActiveFilters() {
+            let predicate = NSPredicate(format: "%K contains[C] %@", filter.filterType, filter.filterValue)
+            subPredicates.append(predicate)
+        }
+        
+        let compoundPredicate = NSCompoundPredicate(type: .or, subpredicates: subPredicates)
+        
+        currentItems = currentItems.filter(compoundPredicate)
     }
 }
 

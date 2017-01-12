@@ -14,7 +14,7 @@ import SnapKit
 
 private let reuseIdentifier = "Cell"
 
-class ItemViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ItemViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -39,6 +39,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     let itemCollection = ItemCollection.sharedInstance
     let menuItemCollection = MenuItemCollection.sharedInstance
+    let filterCollection = FilterCollection.sharedInstance
     
     var items: Results<ItemModel>!
     var searchItems: Results<ItemModel>!
@@ -46,6 +47,31 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     let gridFlowLayout = GridFlowLayout()
     let listFlowLayout = ListFlowLayout()
+    
+    let placeholderView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        return view
+    }()
+    
+    var layoutButton: UIButton = {
+        let button = UIButton(type: .system)
+        //@TODO: Uncommit this
+//        button.tintColor = .white
+        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        return button
+    }()
+    
+    var isSearchView = false {
+        didSet {
+            switch(isSearchView) {
+            case true:
+                addInSearchBar()
+            case false:
+                removeSearchBar()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,17 +83,31 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
         itemCollection.onComplete = { _ in
-            self.items = self.itemCollection.getItems().sorted(byProperty: "itemId", ascending: true)
+            self.items = self.itemCollection.getItems().sorted(byProperty: Filters.ItemAttribute.ItemId, ascending: true)
             self.searchItems = self.items
             self.collectionView.reloadData()
         }
         
         menuItemCollection.setActive = { _ in
-            self.title = self.menuItemCollection.getActive()?.title            
+            self.title = self.menuItemCollection.getActive()?.title
+            self.placeholderViewCheck()
+            self.clearSearchBar()
+            self.setupBarButtonItems()
+            
+            self.isSearchView = false
+            if self.title == "Search" {
+                self.isSearchView = true
+            }
         }
-
+        
         itemCollection.loadItems()
         menuItemCollection.loadMenuItems()
+        filterCollection.loadFilterModels()
+        
+        //@TODO: Remove this
+        print(filterCollection.getAllFilters()[16].filterValue)
+        self.filterCollection.addActiveFilter(filter: filterCollection.getAllFilters()[16])
+        
         self.setUpSideMenu()
         self.setupConstraints()
         
@@ -76,25 +116,36 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         navigationController?.navigationBar.isTranslucent = false
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Switch", style: .plain, target: self, action: #selector(layoutButtonTapped))
-        
         // Register Custom Cells
         collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
         collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
+        
+        setUpSearchBar()
+        setupBarButtonItems()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func placeholderViewCheck() {
+        self.placeholderView.isHidden = true
+        
+        if self.title == "Search" {
+            self.placeholderView.isHidden = false
+        }
     }
     
     func menuButtonPressed() {
         present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
+        handleTap()
     }
     
     func layoutButtonTapped() {
         layoutType.next()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupBarButtonItems()
+        handleTap()
     }
     
     // MARK: - Private methods
@@ -109,19 +160,68 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func setupConstraints() {
-        searchBar.snp.makeConstraints { (make) -> Void in
+        view.addSubview(placeholderView)
+        
+        searchBar.snp.remakeConstraints { (make) -> Void in
             make.top.equalTo(view.snp.top)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalTo(collectionView.snp.top)
         }
         
-        collectionView.snp.makeConstraints { (make) -> Void in
+        collectionView.snp.remakeConstraints { (make) -> Void in
             make.top.equalTo(searchBar.snp.bottom)
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalTo(view.snp.bottom)
         }
+        
+        placeholderView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(collectionView.snp.top)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(collectionView.snp.bottom)
+        }
+    }
+
+    func setupBarButtonItems() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
+        
+        var layoutBarButton = UIBarButtonItem()
+        var searchButton = UIBarButtonItem()
+        
+        searchButton = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(self.toggleSearchBar))
+        
+        layoutButton.addTarget(self, action: #selector(self.layoutButtonTapped), for: .touchUpInside)
+
+        switch(layoutType) {
+        case .Grid:
+            if self.layoutButton.alpha != 1 {
+                self.layoutButton.alpha = 0
+            }
+                
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+                self.layoutButton.alpha = 1
+                self.layoutButton.setImage(UIImage(named: "GridItem"), for: .normal)
+            }, completion: nil)
+        case .List:
+            if self.layoutButton.alpha != 1 {
+                self.layoutButton.alpha = 0
+            }
+            
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
+                self.layoutButton.alpha = 1
+                self.layoutButton.setImage(UIImage(named: "ListItem"), for: .normal)
+            }, completion: nil)
+        }
+        
+        layoutBarButton = UIBarButtonItem(customView: layoutButton)
+        
+        if self.title == "Search" {
+            searchButton = UIBarButtonItem()
+        }
+        
+        navigationItem.rightBarButtonItems = [layoutBarButton, searchButton]
     }
 }
 
@@ -137,50 +237,50 @@ extension ItemViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = searchItems[indexPath.row]
-        
-        var url = item.getImageUrl()
-        
-//        if url == nil {
-//            url = Bundle.main.url(forResource: "001", withExtension: ".png")
-//        }
         
         switch(layoutType) {
         case .List:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCollectionViewCell.id, for: indexPath) as! ItemListCollectionViewCell
             
-            cell.itemQuote.text = "\"\(item.getItemQuote()!)\""
-            cell.itemTitle.text = item.getItemName()
-
-            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            
-            if url != nil {
-                cell.itemImage.kf.indicatorType = .activity
-                cell.itemImage.kf.setImage(with: url)
-            }
-            
-            
             return cell
         default: // .Grid
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
-            
-            cell.itemTitle.text = ""
-            
-//            cell.itemTitle.text = item.getItemName()
-//            cell.itemImage.backgroundColor = .cyan
-            
-            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-
-            if url != nil {
-                cell.itemImage.kf.indicatorType = .activity
-                cell.itemImage.kf.setImage(with: url)
-            }
             
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        let item = searchItems[indexPath.row]
+        let url: URL? = item.getImageUrl()
+        
+        switch(layoutType) {
+        case .List:
+            let cell: ItemListCollectionViewCell = cell as! ItemListCollectionViewCell
+
+            cell.itemQuote.text = "\"\(item.getItemQuote()!)\""
+            cell.itemTitle.text = item.getItemName()
+            
+            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
+            
+            if url != nil {
+                cell.itemImage.kf.indicatorType = .activity
+                cell.itemImage.kf.setImage(with: url)
+            }
+            
+        default: // .Grid
+            let cell: ItemCollectionViewCell = cell as! ItemCollectionViewCell
+            
+            cell.itemTitle.text = ""
+            
+            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
+            
+            if url != nil {
+                cell.itemImage.kf.indicatorType = .activity
+                cell.itemImage.kf.setImage(with: url)
+            }
+        }
         
     }
     
@@ -221,32 +321,33 @@ extension ItemViewController {
     
     // MARK: Search bar
     
+    func setUpSearchBar() {
+        searchBar.placeholder = "Search"
+        searchBar.isTranslucent = false
+        searchBar.barTintColor = UIColor(hex: 0xEAEAEA)
+        searchBar.backgroundImage = UIImage()
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
+            placeholderViewCheck()
+            
             searchItems = items
         } else {
-            let newSearchText = searchText.lowercased()
-            let predicate = NSPredicate(format: "itemName contains[c] '\(newSearchText)'")
-            let predicate1 = NSPredicate(format: "itemId contains[c] '\(newSearchText)'")
-            let predicate2 = NSPredicate(format: "itemQuote contains[c] '\(newSearchText)'")
-            let predicate3 = NSPredicate(format: "itemDescription contains[c] '\(newSearchText)'")
-            let predicate4 = NSPredicate(format: "itemType contains[c] '\(newSearchText)'")
-            let predicate5 = NSPredicate(format: "itemPool contains[c] '\(newSearchText)'")
-            let predicate6 = NSPredicate(format: "itemTags contains[c] '\(newSearchText)'")
-            let predicate7 = NSPredicate(format: "rechargeTime contains[c] '\(newSearchText)'")
+            placeholderView.isHidden = true
             
-            let compoundPredicate = NSCompoundPredicate(type: .or, subpredicates:
-                [
-                    predicate,
-                    predicate1,
-                    predicate2,
-                    predicate3,
-                    predicate4,
-                    predicate5,
-                    predicate6,
-                    predicate7
-                ]
-            )
+            
+            let newSearchText = searchText.lowercased()
+            
+            // @TODO: Document
+            var subPredicates = [NSPredicate]()
+            
+            for attribute in Filters.ItemAttribute.allValues {
+                let predicate = NSPredicate(format: "%K contains[C] %@", attribute, newSearchText)
+                subPredicates.append(predicate)
+            }
+        
+            let compoundPredicate = NSCompoundPredicate(type: .or, subpredicates: subPredicates)
             
             searchItems = items.filter(compoundPredicate)
             
@@ -267,6 +368,59 @@ extension ItemViewController {
         view.endEditing(true)
     }
     
+    func toggleSearchBar() {
+        if searchBar.isHidden {
+            addInSearchBar()
+            return
+        }
+        
+        if self.title != "Search" {
+            removeSearchBar()
+        }
+    }
+    
+    func addInSearchBar() {
+        searchBar.snp.remakeConstraints { (make) -> Void in
+            make.top.equalTo(view.snp.top)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(collectionView.snp.top)
+        }
+        
+        collectionView.snp.remakeConstraints { (make) -> Void in
+            make.top.equalTo(searchBar.snp.bottom)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(view.snp.bottom)
+        }
+        
+        handleTap()
+        searchBar.isHidden = false
+    }
+    
+    func removeSearchBar() {
+        searchBar.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(view.snp.top)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(view.snp.top)
+        }
+        
+        collectionView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(view.snp.top)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(view.snp.bottom)
+        }
+        
+        handleTap()
+        searchBar.isHidden = true
+    }
+    
+    func clearSearchBar() {
+        searchBar.text = ""
+        searchBar(searchBar, textDidChange: "")
+    }
 }
 
 extension ItemViewController {
@@ -281,12 +435,7 @@ extension ItemViewController {
         
         SideMenuManager.menuPresentMode = .menuSlideIn
         SideMenuManager.menuAnimationBackgroundColor = UIColor.clear
-        
-        //@TODO: Add right navigation controller
-        let menuRightNavigationController = UISideMenuNavigationController()
-        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration of it here like setting its viewControllers.
-//        SideMenuManager.menuRightNavigationController = menuRightNavigationController
-        
+                
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
         SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)

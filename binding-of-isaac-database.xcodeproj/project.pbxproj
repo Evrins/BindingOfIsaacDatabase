@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11C1C40DD4D330BEC8518379 /* Pods_binding_of_isaac_databaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B8D305240D0443C3396A0F /* Pods_binding_of_isaac_databaseTests.framework */; };
+		16155DF31E254AC300D35B0F /* ImageNotFoundPlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 16155DF21E254AC300D35B0F /* ImageNotFoundPlaceholder.png */; };
+		16155DF71E26C20100D35B0F /* FilterCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16155DF61E26C20100D35B0F /* FilterCollection.swift */; };
+		1617D6F91E281963001A2864 /* BoI Filters.json in Resources */ = {isa = PBXBuildFile; fileRef = 1617D6F81E281963001A2864 /* BoI Filters.json */; };
 		1618528E1E08DAF2004F6859 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618528D1E08DAF2004F6859 /* ItemCollectionViewCell.swift */; };
 		161B21B21E2023EE00FA27A4 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B21B11E2023EE00FA27A4 /* Filters.swift */; };
 		161B21B61E20412700FA27A4 /* BoI Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 161B21B51E20412700FA27A4 /* BoI Items.json */; };
@@ -401,6 +404,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16155DF21E254AC300D35B0F /* ImageNotFoundPlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageNotFoundPlaceholder.png; sourceTree = "<group>"; };
+		16155DF61E26C20100D35B0F /* FilterCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollection.swift; sourceTree = "<group>"; };
+		1617D6F81E281963001A2864 /* BoI Filters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BoI Filters.json"; sourceTree = "<group>"; };
 		1618528D1E08DAF2004F6859 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		161B21B11E2023EE00FA27A4 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		161B21B51E20412700FA27A4 /* BoI Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BoI Items.json"; sourceTree = "<group>"; };
@@ -817,6 +823,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16155DF81E26C32600D35B0F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				168730541E09EEC4003745E9 /* DataSource.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		163F1F9B1E07371D005BCDA9 = {
 			isa = PBXGroup;
 			children = (
@@ -842,10 +856,11 @@
 		163F1FA61E07371E005BCDA9 /* binding-of-isaac-database */ = {
 			isa = PBXGroup;
 			children = (
+				16155DF81E26C32600D35B0F /* Data */,
+				16155DF21E254AC300D35B0F /* ImageNotFoundPlaceholder.png */,
 				1682C33F1E1EFAE600DA955B /* Rebirth Items */,
 				163F1FA71E07371E005BCDA9 /* AppDelegate.swift */,
 				16FB4FD81E0EDFB400219B63 /* Assets.xcassets */,
-				168730541E09EEC4003745E9 /* DataSource.swift */,
 				16E2527A1E0B5E6800108E27 /* Flow Layouts */,
 				16E2527D1E0B5F1B00108E27 /* Helpers */,
 				163F1FB31E07371E005BCDA9 /* Info.plist */,
@@ -907,6 +922,7 @@
 				162CDD0A1E136B3E00009505 /* MenuItem.swift */,
 				162CDD0C1E136BF200009505 /* MenuItemCollection.swift */,
 				161B21B71E205D5200FA27A4 /* FilterModel.swift */,
+				16155DF61E26C20100D35B0F /* FilterCollection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1291,6 +1307,7 @@
 		16F8DA1D1E09F1D600AAC94D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				1617D6F81E281963001A2864 /* BoI Filters.json */,
 				161B21B51E20412700FA27A4 /* BoI Items.json */,
 				1682C5EC1E1EFD8F00DA955B /* Rebirth Trinkets.json */,
 				16DB7E431E1E0D3200DDB23B /* Rebirth Items.json */,
@@ -1515,6 +1532,7 @@
 				1682C4E61E1EFAE700DA955B /* 084.png in Resources */,
 				1682C5441E1EFAE700DA955B /* 178.png in Resources */,
 				1682C5391E1EFAE700DA955B /* 167.png in Resources */,
+				1617D6F91E281963001A2864 /* BoI Filters.json in Resources */,
 				1682C5241E1EFAE700DA955B /* 146.png in Resources */,
 				1682C5411E1EFAE700DA955B /* 175.png in Resources */,
 				1682C5061E1EFAE700DA955B /* 116.png in Resources */,
@@ -1647,6 +1665,7 @@
 				1682C5681E1EFAE700DA955B /* 214.png in Resources */,
 				1682C4BA1E1EFAE600DA955B /* 037.png in Resources */,
 				1682C53E1E1EFAE700DA955B /* 172.png in Resources */,
+				16155DF31E254AC300D35B0F /* ImageNotFoundPlaceholder.png in Resources */,
 				1682C5271E1EFAE700DA955B /* 149.png in Resources */,
 				1682C59C1E1EFAE700DA955B /* 268.png in Resources */,
 				1682C5311E1EFAE700DA955B /* 159.png in Resources */,
@@ -1955,6 +1974,7 @@
 				168730551E09EEC4003745E9 /* DataSource.swift in Sources */,
 				168730531E09E7FD003745E9 /* ItemCollection.swift in Sources */,
 				1649836F1E09E722000DA36F /* ItemModel.swift in Sources */,
+				16155DF71E26C20100D35B0F /* FilterCollection.swift in Sources */,
 				162CDD0D1E136BF200009505 /* MenuItemCollection.swift in Sources */,
 				16E252821E0B611300108E27 /* GridFlowLayout.swift in Sources */,
 				1618528E1E08DAF2004F6859 /* ItemCollectionViewCell.swift in Sources */,

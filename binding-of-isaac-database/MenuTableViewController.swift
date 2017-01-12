@@ -13,6 +13,7 @@ class MenuTableViewController: UITableViewController {
     
     let itemCollection = ItemCollection.sharedInstance
     let menuItemCollection = MenuItemCollection.sharedInstance
+    let filterCollection = FilterCollection.sharedInstance
     
     var menuItems = [MenuItem]()
 
@@ -62,7 +63,7 @@ extension MenuTableViewController {
         }
         let menuItem = menuItems[indexPath.row]
         
-        self.itemCollection.filterItemsByProperty(property: menuItem.type, itemAttribute: Filters.ItemAttribute.GlobalType)
+        self.itemCollection.filterGlobalType(by: menuItem.type)
         
         if menuItem.title == "Search" {
             self.itemCollection.setCurrentItemsToLoadedItems()

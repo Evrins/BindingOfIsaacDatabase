@@ -7,7 +7,39 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class FilterModel {
+class FilterModel: NSObject, Mappable {
+    var filterName = ""
+    var filterValue = ""
+    var filterType = ""
+    var active = false
     
+    //Impl. of Mappable protocol
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        filterName <- map["filterName"]
+        filterValue <- map["filterValue"]
+        filterType <- map["filterType"]
+    }
+    
+    func toggleActive() {
+        active = !active
+    }
+    
+    func getFilterName() -> String {
+        return self.filterName
+    }
+    
+    func getFilterValue() -> String {
+        return self.filterValue
+    }
+   
+    func getFilterType() -> String {
+        return self.filterType
+    }
 }
