@@ -20,6 +20,13 @@ class FilterCollection: NSObject {
     var allFilters = [FilterModel]()
     var activeFilters = [FilterModel]()
     
+    var filterSections: [FilterSection] = [
+        FilterSection(sectionTitle: "Game")!,
+        FilterSection(sectionTitle: "Main Type")!,
+        FilterSection(sectionTitle: "Sub Type")!,
+        FilterSection(sectionTitle: "Item Pool")!
+    ]
+    
     var activeSubPredicates = [NSPredicate]()
     
     func loadFilterModels() {
@@ -42,6 +49,8 @@ class FilterCollection: NSObject {
                 print("There was an issue loading from JSON")
             }
         }
+        
+        self.sortFiltersBySection()
     }
     
     func addMultipleActiveFilter(filters: [FilterModel]?) {
@@ -79,6 +88,31 @@ class FilterCollection: NSObject {
         }
         
         return self.activeSubPredicates
+    }
+    
+    func sortFiltersBySection() {
+        for filter in allFilters {
+            switch filter.getHeaderType() {
+            case "Game":
+                let section = filterSections.filter({ $0.getSectionTitle() == "Game"}).first
+                section?.addFilterToSection(filter: filter)
+            case "Main Type":
+                let section = filterSections.filter({ $0.getSectionTitle() == "Main Type"}).first
+                section?.addFilterToSection(filter: filter)
+            case "Sub Type":
+                let section = filterSections.filter({ $0.getSectionTitle() == "Sub Type"}).first
+                section?.addFilterToSection(filter: filter)
+            case "Item Pool":
+                let section = filterSections.filter({ $0.getSectionTitle() == "Item Pool"}).first
+                section?.addFilterToSection(filter: filter)
+            default:
+                print("Defaulted")
+            }
+        }
+    }
+    
+    func getFiltersBySection() -> [FilterSection] {
+        return filterSections
     }
     
 }

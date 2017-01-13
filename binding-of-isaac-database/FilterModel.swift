@@ -13,6 +13,7 @@ class FilterModel: NSObject, Mappable {
     var filterName = ""
     var filterValue = ""
     var filterType = ""
+    var headerType = ""
     var active = false
     
     //Impl. of Mappable protocol
@@ -25,6 +26,7 @@ class FilterModel: NSObject, Mappable {
         filterName <- map["filterName"]
         filterValue <- map["filterValue"]
         filterType <- map["filterType"]
+        headerType <- map["headerType"]
     }
     
     func toggleActive() {
@@ -41,5 +43,9 @@ class FilterModel: NSObject, Mappable {
    
     func getFilterType() -> String {
         return self.filterType
+    }
+    
+    func getHeaderType() -> String {
+        return self.headerType
     }
 }
