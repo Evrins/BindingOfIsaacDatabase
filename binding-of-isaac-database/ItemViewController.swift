@@ -341,7 +341,7 @@ extension ItemViewController {
             
             var subPredicates = [NSPredicate]()
             
-            for attribute in Filters.ItemAttribute.allValues {
+            for attribute in Filters.ItemAttribute.searchValues {
                 let predicate = NSPredicate(format: "%K contains[C] %@", attribute, newSearchText)
                 subPredicates.append(predicate)
             }

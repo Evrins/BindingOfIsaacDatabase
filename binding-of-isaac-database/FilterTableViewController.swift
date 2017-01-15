@@ -31,7 +31,7 @@ class FilterTableViewController: UITableViewController {
             registerNotifications(for: filtersBySection[index], in: index)
         }
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveButtonPressed))
+        self.setupBarButtonItems()
         
         self.navigationController?.navigationBar.isTranslucent = false
         
@@ -41,6 +41,25 @@ class FilterTableViewController: UITableViewController {
     func saveButtonPressed() {
         itemCollection.filterByAllFilters()
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func undoButtonPressed() {
+        for filter in filterCollection.allFilters {
+            try! realm.write {
+                if filter.filterName != "All" {
+                    filter.active = false
+                    return
+                }
+                
+                filter.active = true
+            }
+            
+        }
+    }
+    
+    func setupBarButtonItems() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Undo", style: .plain, target: self, action: #selector(undoButtonPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(saveButtonPressed))
     }
 }
 
@@ -87,10 +106,19 @@ extension FilterTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = filtersBySection[indexPath.section][indexPath.row]
+        let section = filtersBySection[indexPath.section]
+        let item = section[indexPath.row]
         
         try! realm.write {
             item.toggleActive()
+        }
+        
+        // If no filters are active, set All (first item in section) item to active
+        if item.filterName != "All" && item.active == false {
+            try! realm.write {
+                section[0].active = true
+            }
+            return
         }
         
         let filterItemsToUncheck = filtersBySection[indexPath.section].filter({$0.filterName != item.filterName})
@@ -102,8 +130,6 @@ extension FilterTableViewController {
                 }
             }
         }
-        
-        //@TODO: If no filters are active, set All item to active
         
         tableView.deselectRow(at: indexPath, animated: true)
     }

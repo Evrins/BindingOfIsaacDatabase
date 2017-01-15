@@ -42,7 +42,21 @@ enum Filters {
             ItemAttribute.ItemDescription,
             ItemAttribute.MainType,
             ItemAttribute.SubType,
-            ItemAttribute.ItemPool,
+//            ItemAttribute.ItemPool,
+            ItemAttribute.ItemTags,
+            ItemAttribute.RechargeTime,
+            ItemAttribute.ItemUnlock,
+            ItemAttribute.GlobalType,
+            ItemAttribute.Game
+        ]
+        
+        // @TODO: Create search value
+        static let searchValues = [
+            ItemAttribute.ItemName,
+            ItemAttribute.ItemId,
+            ItemAttribute.ItemQuote,
+            ItemAttribute.MainType,
+            ItemAttribute.SubType,
             ItemAttribute.ItemTags,
             ItemAttribute.RechargeTime,
             ItemAttribute.ItemUnlock,
