@@ -63,13 +63,13 @@ extension MenuTableViewController {
         }
         let menuItem = menuItems[indexPath.row]
         
-        self.itemCollection.filterGlobalType(by: menuItem.type)
+        menuItemCollection.setActiveItem(to: menuItem)
+        
+        self.itemCollection.filterByAllFilters()
         
         if menuItem.title == "Search" {
             self.itemCollection.setCurrentItemsToLoadedItems()
         }
-        
-        menuItemCollection.setActiveItem(to: menuItem)
         
         self.dismissView()
     }

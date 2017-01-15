@@ -10,26 +10,21 @@ import Foundation
 import SwifterSwift
 import ObjectMapper
 import SwiftyJSON
+import RealmSwift
 
-class FilterCollection: NSObject {    
+class FilterCollection: NSObject {
     static let sharedInstance = FilterCollection()
     private override init() {}
     
+    let realm = try! Realm()
+    
     var filtersChanged: ((() -> Void))?
     
-    var allFilters = [FilterModel]()
-    var activeFilters = [FilterModel]()
-    
-    var filterSections: [FilterSection] = [
-        FilterSection(sectionTitle: "Game")!,
-        FilterSection(sectionTitle: "Main Type")!,
-        FilterSection(sectionTitle: "Sub Type")!,
-        FilterSection(sectionTitle: "Item Pool")!
-    ]
+    var allFilters: Results<FilterModel>!
     
     var activeSubPredicates = [NSPredicate]()
     
-    func loadFilterModels() {
+    func loadFilterModels(_ completionHandler:@escaping (Bool) -> ()) {
         if let url = Bundle.main.url(forResource: "BoI Filters", withExtension: "json") {
             do {
                 let jsonData = try Data(contentsOf: url)
@@ -40,79 +35,86 @@ class FilterCollection: NSObject {
                     let newItem = FilterModel(JSONString: "\(item)")
                     
                     if newItem?.filterName != "" {
-                        allFilters.append(newItem!)
+                        try! realm.write {
+                            realm.add(newItem!)
+                        }
                     }
                 }
-                
+                completionHandler(true)
             } catch {
                 // Handle Error
                 print("There was an issue loading from JSON")
+                completionHandler(false)
             }
         }
         
-        self.sortFiltersBySection()
+        self.setAllFilters()
+        self.setDefaultActiveItems()
+    }
+    
+    func setAllFilters() {
+        allFilters = realm.objects(FilterModel.self)
+    }
+    
+    func setDefaultActiveItems() {
+        for filter in allFilters {
+            if filter.filterName == "All" {
+                setActiveFilter(filter: filter)
+            }
+        }
     }
     
     func addMultipleActiveFilter(filters: [FilterModel]?) {
         if filters != nil {
             for filter in filters! {
-                self.addActiveFilter(filter: filter)
+                self.setActiveFilter(filter: filter)
             }
         }
     }
     
-    func addActiveFilter(filter: FilterModel?) {
-        if filter != nil && !activeFilters.contains(filter!) {
-            activeFilters.append(filter!)
+    func setActiveFilter(filter: FilterModel?) {
+        if filter != nil {
+            let filtersToSet = allFilters.filter({$0.filterName == filter?.filterName})
+            for filter in filtersToSet {
+                try! realm.write {
+                    filter.active = true
+                }
+            }
         }
     }
     
-    func clearFilters() {
-        activeFilters = []
-    }
-    
-    func getAllFilters() -> [FilterModel] {
+    func getAllFilters() -> Results<FilterModel> {
         return self.allFilters
     }
     
-    func getActiveFilters() -> [FilterModel] {
-        return self.activeFilters
+    func getActiveFilters() -> Results<FilterModel> {
+        let activeFilters = allFilters.filter("active = true")
+        
+        return activeFilters
     }
     
     func getActivePredicates() -> [NSPredicate] {
-        activeSubPredicates = []
+
+        activeSubPredicates = [NSPredicate]()
         
         for filter in self.getActiveFilters() {
-            let predicate = NSPredicate(format: "%K contains[C] %@", filter.filterType, filter.filterValue)
+            
+            
+            var predicate = NSPredicate(format: "%K IN %@", filter.getFilterType(), filter.getFilterValueArray())
+            
+            if filter.headerType == "Item Pool" {
+                // @TODO: Change ANY to ALL and make that work <.<
+                predicate = NSPredicate(format: "ANY itemPool.value IN %@", filter.getFilterValueArray())
+            }
             self.activeSubPredicates.append(predicate)
+            
+            // If filterType == ALL remove predicate
+            if filter.filterName == "All" {
+                self.activeSubPredicates.removeLast()
+            }
         }
         
         return self.activeSubPredicates
-    }
-    
-    func sortFiltersBySection() {
-        for filter in allFilters {
-            switch filter.getHeaderType() {
-            case "Game":
-                let section = filterSections.filter({ $0.getSectionTitle() == "Game"}).first
-                section?.addFilterToSection(filter: filter)
-            case "Main Type":
-                let section = filterSections.filter({ $0.getSectionTitle() == "Main Type"}).first
-                section?.addFilterToSection(filter: filter)
-            case "Sub Type":
-                let section = filterSections.filter({ $0.getSectionTitle() == "Sub Type"}).first
-                section?.addFilterToSection(filter: filter)
-            case "Item Pool":
-                let section = filterSections.filter({ $0.getSectionTitle() == "Item Pool"}).first
-                section?.addFilterToSection(filter: filter)
-            default:
-                print("Defaulted")
-            }
-        }
-    }
-    
-    func getFiltersBySection() -> [FilterSection] {
-        return filterSections
     }
     
 }

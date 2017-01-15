@@ -7,14 +7,21 @@
 //
 
 import Foundation
+import RealmSwift
 import ObjectMapper
 
-class FilterModel: NSObject, Mappable {
-    var filterName = ""
-    var filterValue = ""
-    var filterType = ""
-    var headerType = ""
-    var active = false
+class FilterModel: Object, Mappable {
+    dynamic var filterName = ""
+    dynamic var filterValue = ""
+    dynamic var filterType = ""
+    dynamic var headerType = ""
+    dynamic var active = false
+    
+    dynamic var filterKey = UUID().uuidString
+    
+    override static func primaryKey() -> String? {
+        return "filterKey"
+    }
     
     //Impl. of Mappable protocol
     required convenience init?(map: Map) {
@@ -48,4 +55,16 @@ class FilterModel: NSObject, Mappable {
     func getHeaderType() -> String {
         return self.headerType
     }
+    
+    func isActive() -> Bool {
+        if active {
+            return true
+        }
+        return false
+    }
+    
+    func getFilterValueArray() -> [String] {
+        return self.filterValue.components(separatedBy: ",")
+    }
+
 }

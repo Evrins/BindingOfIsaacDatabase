@@ -16,6 +16,7 @@ class DataSource {
         let realm = try! Realm()
 //        guard realm.isEmpty else {return}
         
+        //@TODO: Fix delete all objects
         try! realm.write {
             realm.deleteAll()
         }

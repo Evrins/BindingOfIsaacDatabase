@@ -8,7 +8,7 @@
     },
     {
       "filterName" : "All",
-      "filterValue" : "rebirth,afterbirth,afterbirthPlus",
+      "filterValue" : ",rebirth,afterbirth,afterbirthPlus",
       "filterType" : "game",
       "headerType" : "Game"
     },
@@ -38,20 +38,20 @@
     },
     {
       "filterName" : "All",
-      "filterValue" : "Active,Passive",
-      "filterType" : "itemType",
+      "filterValue" : ",Active,Passive",
+      "filterType" : "mainType",
       "headerType" : "Main Type"
     },
     {
       "filterName" : "Active",
       "filterValue" : "Active",
-      "filterType" : "itemType",
+      "filterType" : "mainType",
       "headerType" : "Main Type"
     },
     {
       "filterName" : "Passive",
       "filterValue" : "Passive",
-      "filterType" : "itemType",
+      "filterType" : "mainType",
       "headerType" : "Main Type"
     },
     {
@@ -62,26 +62,32 @@
     },
     {
       "filterName" : "All",
-      "filterValue" : "Tear Modifier,Familiar,Orbital",
-      "filterType" : "itemType",
+      "filterValue" : ",Tear Modifier,Bomb Modifier,Familiar,Orbital",
+      "filterType" : "subType",
       "headerType" : "Sub Type"
     },
     {
-      "filterName" : "TearModifier",
+      "filterName" : "Tear Modifier",
       "filterValue" : "Tear Modifier",
-      "filterType" : "itemType",
+      "filterType" : "subType",
+      "headerType" : "Sub Type"
+    },
+    {
+      "filterName" : "Bomb Modifier",
+      "filterValue" : "Bomb Modifier",
+      "filterType" : "subType",
       "headerType" : "Sub Type"
     },
     {
       "filterName" : "Familiar",
       "filterValue" : "Familiar",
-      "filterType" : "itemType",
+      "filterType" : "subType",
       "headerType" : "Sub Type"
     },
     {
       "filterName" : "Orbital",
       "filterValue" : "Orbital",
-      "filterType" : "itemType",
+      "filterType" : "subType",
       "headerType" : "Sub Type"
     },
     {
@@ -92,7 +98,7 @@
     },
     {
       "filterName" : "All",
-      "filterValue" : "Shop,Treasure Room,Boss Room,Beggar,Curse Room,Library,Challenge Room,Devil Room,Angel Room,Secret Room,Bomb Beggar,Red Chest,Demon Beggar,Gold Chest,Boss Rush,Key Beggar,Greed Mode",
+      "filterValue" : ",Item Room,Shop,Treasure Room,Boss Room,Beggar,Curse Room,Library,Challenge Room,Devil Room,Angel Room,Secret Room,Bomb Beggar,Red Chest,Demon Beggar,Gold Chest,Boss Rush,Key Beggar,Greed Mode",
       "filterType" : "itemPool",
       "headerType" : "Item Pool"
     },
@@ -103,8 +109,8 @@
       "headerType" : "Item Pool"
     },
     {
-      "filterName" : "Treasure Room",
-      "filterValue" : "Treasure Room",
+      "filterName" : "Item Room",
+      "filterValue" : "Item Room",
       "filterType" : "itemPool",
       "headerType" : "Item Pool"
     },
@@ -223,8 +229,8 @@
       "headerType" : "Item Pool"
     },
     {
-      "filterName" : "Treasure Room (Greed Mode)",
-      "filterValue" : "Treasure Room, Greed Mode",
+      "filterName" : "Item Room (Greed Mode)",
+      "filterValue" : "Item Room, Greed Mode",
       "filterType" : "itemPool",
       "headerType" : "Item Pool"
     },

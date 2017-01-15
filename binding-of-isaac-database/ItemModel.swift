@@ -10,14 +10,19 @@ import UIKit
 import RealmSwift
 import ObjectMapper
 
+public class Value: Object {
+    public dynamic var value: String?
+}
+
 class ItemModel: Object, Mappable {
     dynamic var itemKey = UUID().uuidString
     dynamic var itemName: String? = nil
     dynamic var itemId: String? = nil
     dynamic var itemQuote: String? = nil
     dynamic var itemDescription: String? = nil
-    dynamic var itemType: String? = nil
-    dynamic var itemPool: String? = nil
+    dynamic var mainType: String? = nil
+    dynamic var subType: String? = nil
+    public let itemPool = List<Value>()
     dynamic var itemTags: String? = nil
     dynamic var rechargeTime: String? = nil
     dynamic var itemUnlock: String? = nil
@@ -39,13 +44,27 @@ class ItemModel: Object, Mappable {
         itemId <- map["itemId"]
         itemQuote <- map["itemQuote"]
         itemDescription <- map["itemDescription"]
-        itemType <- map["itemType"]
-        itemPool <- map["itemPool"]
+        mainType <- map["mainType"]
+        subType <- map["subType"]
+        
         itemTags <- map["itemTags"]
         rechargeTime <- map["rechargeTime"]
         itemUnlock <- map["itemUnlock"]
         globalType <- map["globalType"]
         game <- map["game"]
+        
+        var itemPoolString: String? = nil
+        var options: [String]? = nil
+        itemPoolString <- map["itemPool"] // Maps to local variable
+        
+        options = itemPoolString?.components(separatedBy: ",")
+        
+        options?.forEach { option in // Then fill options to `List`
+            let value = Value()
+            value.value = option.trimmingCharacters(in: .whitespaces)
+            self.itemPool.append(value)
+        }
+
     }
     
     // Mark: Getters
@@ -66,12 +85,25 @@ class ItemModel: Object, Mappable {
         return self.itemDescription
     }
     
-    func getItemType() -> String? {
-        return self.itemType
+    func getMainType() -> String? {
+        return self.mainType
     }
     
-    func getItemPool() -> String? {
+    func getSubType() -> String? {
+        return self.subType
+    }
+    
+    func getItemPool() -> List<Value> {
         return self.itemPool
+    }
+    
+    func getItemPoolString() -> String {
+        var itemPools = [String]()
+        for item in self.itemPool {
+            itemPools.append(item.value!)
+        }
+        
+        return itemPools.joined(separator: ", ")
     }
     
     func getItemTags() -> String? {
@@ -95,7 +127,7 @@ class ItemModel: Object, Mappable {
     }
     
     func getImageUrl() -> URL? {
-        //@TODO: Use trinket name
+        //@TODO: Check if trinket name is used
         
         let placeholderUrl: URL? = Bundle.main.url(forResource: "ImageNotFoundPlaceholder", withExtension: ".png")
         

@@ -77,6 +77,34 @@
             </objects>
             <point key="canvasLocation" x="2410" y="260"/>
         </scene>
+        <!--Filter Table View Controller-->
+        <scene sceneID="FvS-GS-SBF">
+            <objects>
+                <tableViewController storyboardIdentifier="FilterTableViewController" id="ne2-Mk-Lzr" customClass="FilterTableViewController" customModule="binding_of_isaac_database" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CZx-nt-hs3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Z6W-yH-cRl">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z6W-yH-cRl" id="mrR-nO-LwT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ne2-Mk-Lzr" id="ZUf-FQ-aB8"/>
+                            <outlet property="delegate" destination="ne2-Mk-Lzr" id="mcc-ix-XiC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpn-Aw-Cij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3326" y="260"/>
+        </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="UAY-np-uTU">
             <objects>

@@ -11,6 +11,7 @@ import RealmSwift
 import SideMenu
 import Kingfisher
 import SnapKit
+import SwifterSwift
 
 private let reuseIdentifier = "Cell"
 
@@ -102,10 +103,11 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         itemCollection.loadItems()
         menuItemCollection.loadMenuItems()
-        filterCollection.loadFilterModels()
-        
+        filterCollection.loadFilterModels() { _ -> Void in }
+
         self.setUpSideMenu()
-        self.setupConstraints()
+      
+            self.setupConstraints()
         
         displayOptions(layoutType: layoutType)
         collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
@@ -181,6 +183,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
 
     func setupBarButtonItems() {
+        self.navigationItem.titleView = CustomTitleView()
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(menuButtonPressed))
         
         var layoutBarButton = UIBarButtonItem()
@@ -335,7 +339,6 @@ extension ItemViewController {
             
             let newSearchText = searchText.lowercased()
             
-            // @TODO: Document
             var subPredicates = [NSPredicate]()
             
             for attribute in Filters.ItemAttribute.allValues {

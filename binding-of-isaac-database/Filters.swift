@@ -26,7 +26,8 @@ enum Filters {
         static let ItemId = "itemId"
         static let ItemQuote = "itemQuote"
         static let ItemDescription = "itemDescription"
-        static let ItemType = "itemType"
+        static let MainType = "mainType"
+        static let SubType = "subType"
         static let ItemPool = "itemPool"
         static let ItemTags = "itemTags"
         static let RechargeTime = "rechargeTime"
@@ -39,7 +40,8 @@ enum Filters {
             ItemAttribute.ItemId,
             ItemAttribute.ItemQuote,
             ItemAttribute.ItemDescription,
-            ItemAttribute.ItemType,
+            ItemAttribute.MainType,
+            ItemAttribute.SubType,
             ItemAttribute.ItemPool,
             ItemAttribute.ItemTags,
             ItemAttribute.RechargeTime,

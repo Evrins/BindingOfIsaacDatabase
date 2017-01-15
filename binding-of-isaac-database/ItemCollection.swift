@@ -12,6 +12,7 @@ import RealmSwift
 class ItemCollection: NSObject {
     
     let filterCollection = FilterCollection.sharedInstance
+    let menuItemCollection = MenuItemCollection.sharedInstance
     
     var onComplete: ((() -> Void))?
     
@@ -35,14 +36,15 @@ class ItemCollection: NSObject {
 
 // MARK: - Filtering Item
 extension ItemCollection {
-    func filterGlobalType(by: String) {
+    func filterByAllFilters() {
+        let menuAttribute = menuItemCollection.getActive()?.type
+        let predicate = NSPredicate(format: "\(Filters.ItemAttribute.GlobalType) == '\(menuAttribute!)'")
 
-        let predicate = NSPredicate(format: "\(Filters.ItemAttribute.GlobalType) == '\(by)'")
+        currentItems = loadedItems.filter(predicate)
         
-        self.currentItems = self.loadedItems.filter(predicate)
-        
-        if by == "items" {
+        if menuAttribute == "items" {
             self.filterItemsByActiveFilters()
+            return
         }
         
         onComplete?()
@@ -50,14 +52,16 @@ extension ItemCollection {
     
     
     func filterItemsByActiveFilters() {
-        let subPredicates = filterCollection.activeSubPredicates
+        let subPredicates = filterCollection.getActivePredicates()
         
         if !subPredicates.isEmpty {
-            let compoundPredicate = NSCompoundPredicate(type: .or, subpredicates: subPredicates)
+        
+            let compoundPredicate = NSCompoundPredicate(type: .and, subpredicates: subPredicates)
             
             currentItems = currentItems.filter(compoundPredicate)
+            
         }
-        
+        onComplete?()
     }
 }
 

@@ -147,8 +147,9 @@ extension ItemDetailViewController {
         var itemProperties = [
             ItemProperty(key: "ID:", value: item.getItemId()),
             ItemProperty(key: "Description:", value: item.getItemDescription()),
-            ItemProperty(key: "Type:", value: item.getItemType()),
-            ItemProperty(key: "Item Pool:", value: item.getItemPool()),
+            ItemProperty(key: "Main Type:", value: item.getMainType()),
+            ItemProperty(key: "Sub Type:", value: item.getSubType()),
+            ItemProperty(key: "Item Pool:", value: item.getItemPoolString()),
             ItemProperty(key: "Recharge Time:", value: item.getRechargeTime()),
             ItemProperty(key: "Unlock:", value: item.getItemUnlock()),
             ItemProperty(key: "Game:", value: item.getGame())
