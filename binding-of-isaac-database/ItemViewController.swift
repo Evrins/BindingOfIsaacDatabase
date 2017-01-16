@@ -49,11 +49,13 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     let gridFlowLayout = GridFlowLayout()
     let listFlowLayout = ListFlowLayout()
     
-    let placeholderView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .lightGray
-        return view
-    }()
+//    let placeholderView: UIView = {
+//        let view = UIView()
+//        view.backgroundColor = .lightGray
+//        return view
+//    }()
+    
+    let placeholderView = PlaceHolderView()
     
     var layoutButton: UIButton = {
         let button = UIButton(type: .system)
@@ -335,7 +337,9 @@ extension ItemViewController {
             searchItems = items
         } else {
             placeholderView.isHidden = true
-            
+            if searchItems.isEmpty {
+                placeholderView.isHidden = false
+            }
             
             let newSearchText = searchText.lowercased()
             
@@ -352,6 +356,7 @@ extension ItemViewController {
             
         }
         
+        placeholderView.searchText = searchText
         collectionView.reloadData()
     }
     

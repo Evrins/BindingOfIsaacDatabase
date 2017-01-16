@@ -371,6 +371,7 @@
 		168730531E09E7FD003745E9 /* ItemCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168730521E09E7FD003745E9 /* ItemCollection.swift */; };
 		168730551E09EEC4003745E9 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168730541E09EEC4003745E9 /* DataSource.swift */; };
 		168AA22F1E0B482C0034B3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168AA22E1E0B482C0034B3F3 /* Main.storyboard */; };
+		16C783D91E2C4879005110B7 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C783D81E2C4879005110B7 /* PlaceholderView.swift */; };
 		16D6CFD21E285E8A00DE20FE /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6CFD11E285E8A00DE20FE /* FilterTableViewController.swift */; };
 		16D6CFDA1E294EC700DE20FE /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6CFD91E294EC700DE20FE /* CustomTitleView.swift */; };
 		16D6CFE81E2AE52500DE20FE /* BoI Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D6CFE71E2AE52500DE20FE /* BoI Items.json */; };
@@ -775,6 +776,7 @@
 		168730521E09E7FD003745E9 /* ItemCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollection.swift; sourceTree = "<group>"; };
 		168730541E09EEC4003745E9 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		168AA22E1E0B482C0034B3F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		16C783D81E2C4879005110B7 /* PlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		16D6CFD11E285E8A00DE20FE /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		16D6CFD91E294EC700DE20FE /* CustomTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
 		16D6CFE71E2AE52500DE20FE /* BoI Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BoI Items.json"; sourceTree = "<group>"; };
@@ -905,6 +907,7 @@
 				16E252761E0B4C6800108E27 /* ItemListCollectionViewCell.swift */,
 				16E252781E0B4C7300108E27 /* ItemListCollectionViewCell.xib */,
 				16D6CFD91E294EC700DE20FE /* CustomTitleView.swift */,
+				16C783D81E2C4879005110B7 /* PlaceholderView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1995,6 +1998,7 @@
 				167611931E0EEE410091AA04 /* Helpers.swift in Sources */,
 				161B21B81E205D5200FA27A4 /* FilterModel.swift in Sources */,
 				167611951E0F0F180091AA04 /* ItemDetailViewController.swift in Sources */,
+				16C783D91E2C4879005110B7 /* PlaceholderView.swift in Sources */,
 				166DB6EA1E1467290060FAE2 /* Stylesheet.swift in Sources */,
 				161B21B21E2023EE00FA27A4 /* Filters.swift in Sources */,
 				16E252751E0B4BC200108E27 /* CellInterface.swift in Sources */,
