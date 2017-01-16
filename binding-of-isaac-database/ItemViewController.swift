@@ -15,6 +15,16 @@ import SwifterSwift
 
 private let reuseIdentifier = "Cell"
 
+enum Titles {
+    static let Search = "Search"
+    static let Items = "Items"
+    static let Trinkets = "Trinkets"
+    static let CardsAndRunes = "Cards And Runes"
+    static let Pickups = "Pickups"
+    static let Pills = "Pills"
+    static let Settings = "Settings"
+}
+
 class ItemViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -22,6 +32,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     var layoutType = LayoutMachine.Grid {
         didSet {
             displayOptions(layoutType: layoutType)
+            setupBarButtonItems()
         }
     }
     
@@ -95,12 +106,13 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.title = self.menuItemCollection.getActive()?.title
             self.placeholderViewCheck()
             self.clearSearchBar()
-            self.setupBarButtonItems()
             
             self.isSearchView = false
             if self.title == "Search" {
                 self.isSearchView = true
             }
+            
+            self.layoutCheck()
         }
         
         itemCollection.loadItems()
@@ -127,6 +139,27 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func layoutCheck() {
+        switch (self.title!) {
+        case Titles.Search :
+            layoutType = .Grid
+        case Titles.Items :
+            layoutType = .Grid
+        case Titles.Trinkets :
+            layoutType = .List
+        case Titles.CardsAndRunes :
+            layoutType = .List
+        case Titles.Pickups :
+            layoutType = .List
+        case Titles.Pills :
+            layoutType = .List
+        case Titles.Settings :
+            layoutType = .Grid
+        default:
+            print("default case called")
+        }
     }
     
     func placeholderViewCheck() {
@@ -204,7 +237,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
                 
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
                 self.layoutButton.alpha = 1
-                self.layoutButton.setImage(UIImage(named: "GridItem"), for: .normal)
+                self.layoutButton.setImage(UIImage(named: "ListItem"), for: .normal)
             }, completion: nil)
         case .List:
             if self.layoutButton.alpha != 1 {
@@ -213,7 +246,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
             
             UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
                 self.layoutButton.alpha = 1
-                self.layoutButton.setImage(UIImage(named: "ListItem"), for: .normal)
+                self.layoutButton.setImage(UIImage(named: "GridItem"), for: .normal)
             }, completion: nil)
         }
         
@@ -261,7 +294,15 @@ extension ItemViewController {
         case .List:
             let cell: ItemListCollectionViewCell = cell as! ItemListCollectionViewCell
 
-            cell.itemQuote.text = "\"\(item.getItemQuote()!)\""
+            
+            if let itemQuote = item.getItemQuote(), item.getItemQuote() != nil {
+                cell.itemQuote.text = "\"\(itemQuote)\""
+            }
+            
+            if item.getItemQuote() == nil && item.getItemDescription() != nil {
+                cell.itemQuote.text = "\(item.getItemDescription()!)"
+            }
+            
             cell.itemTitle.text = item.getItemName()
             
             cell.itemImage.layer.magnificationFilter = kCAFilterNearest

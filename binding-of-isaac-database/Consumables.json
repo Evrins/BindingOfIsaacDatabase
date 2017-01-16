@@ -1,0 +1,956 @@
+{
+  "Cards And Runes" : [
+    {
+      "itemName" : "O - The Fool",
+      "itemQuote" : "Where your journey begins",
+      "itemDescription" : "• Teleports the player to the first room of the current floor.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsandrunes"
+    },
+    {
+      "itemName" : "I - The Magician",
+      "itemQuote" : "May you never miss your goal",
+      "itemDescription" : "• For the current room, tears now have the Spoon Bender effect, which allows them to curve towards enemies and gives them a purрle appearance.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "II - The High Priestess",
+      "itemQuote" : "Mother is watching you",
+      "itemDescription" : "• Summons Mom's foot which will stomp on a random enemy in the current room, dealing 300 damage.  • If no enemies are in the current room, the foot will target Isaac (and do damage if it hits), however it can be used to break rocks.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "III - The Empress",
+      "itemQuote" : "May your rage bring power",
+      "itemDescription" : "• Gives the player the Whore of Babylon effect for the current room, increasing damage and speed.",
+      "itemUnlock" : "",
+      "itemTags" : "speed up",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "IV - The Emperor",
+      "itemQuote" : "Challenge me!",
+      "itemDescription" : "• Teleports the player to the Boss room on the current floor.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "V - The Hierophant",
+      "itemQuote" : "Two prayers for the lost",
+      "itemDescription" : "• Spawns 2 Soul hearts on the floor.",
+      "itemUnlock" : "",
+      "itemTags" : ", the lost item pool",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "VI - The Lovers",
+      "itemQuote" : "May you prosper and be in good health",
+      "itemDescription" : "• Spawns 2 red hearts on the floor.",
+      "itemUnlock" : "",
+      "itemTags" : ", the lost item pool",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "VII - The Chariot",
+      "itemQuote" : "May nothing stand before you",
+      "itemDescription" : "• Grants the same effect as 'My Little Unicorn', which makes Isaac invincible and deal 40 contact damage to enemies per hit.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "VIII - Justice",
+      "itemQuote" : "May your future become balanced",
+      "itemDescription" : "• Spawns 1 bomb, 1 key, 1 coin, 1 heart, which can be random variants of each.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "IX - The Hermit",
+      "itemQuote" : "May you see what life has to offer",
+      "itemDescription" : "• Teleports the player to the Shop.  • On or below the Womb, this acts as a random teleport, since there are no shops on those floors.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "X - Wheel of Fortune",
+      "itemQuote" : "Spin the wheel of destiny",
+      "itemDescription" : "• Spawns a Slot Machine or a Fortune Machine.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XI - Strength",
+      "itemQuote" : "May your power bring rage",
+      "itemDescription" : "• Gives the player the Magic Mushroom effect, which increasing size and all stats by 1 for the current room.  • If you use the Strength card with 12 heart containers, it will take you down to 11 when you leave the room.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XII - The Hanged Man",
+      "itemQuote" : "May you find enlightenment",
+      "itemDescription" : "• Gives the player the flying effect for the current room, allowing the player to fly over obstacles in the room.  • This card is useless if you have any item which allows you to permanently fly.",
+      "itemUnlock" : "",
+      "itemTags" : ", the lost item pool",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XIII - Death",
+      "itemQuote" : "Lay waste to all that oppose you",
+      "itemDescription" : "• Deals 40 damage to all enemies in the room in a similar style to the Necronomicon.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XIV - Temperance",
+      "itemQuote" : "May you be pure in heart",
+      "itemDescription" : "• Spawns a Blood Donation Machine.",
+      "itemUnlock" : "",
+      "itemTags" : ", the lost item pool",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XV - The Devil",
+      "itemQuote" : "Revel in the power of your darkness",
+      "itemDescription" : "• Gives the Book of Belial effect for the current room, increasing damage.",
+      "itemUnlock" : "",
+      "itemTags" : "damage up",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XVI - The Tower",
+      "itemQuote" : "Destruction brings creation",
+      "itemDescription" : "• Spawns some troll bombs at random locations in the current room.  • Each bomb deals 60 damage (normal bomb damage.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XVII - The Stars",
+      "itemQuote" : "May you find what you desire",
+      "itemDescription" : "• Teleports the player to the Item Room.  • On or below the Womb, this acts as a random teleport, since there are no item rooms on those floors.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XVIII - The Moon",
+      "itemQuote" : "May you find all you have lost",
+      "itemDescription" : "• Teleports the player to the Secret Room.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XIX - The Sun",
+      "itemQuote" : "May the light heal and enlighten you",
+      "itemDescription" : "• A card with three uses: A full heal, deals 100 damage to all enemies in the current room and reveals the entire map for the current floor (Treasure Map + The Compass).",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XX - Judgement",
+      "itemQuote" : "Judge lest ye be judged",
+      "itemDescription" : "• Spawns a beggar.  • Has a chance to be a demon beggar.  • Killing a Devil Beggar, Key Master, or Shell Game Beggar gives you an increased chance of finding Angel rooms instead of Devil rooms. See the dedicated Devil room page for more details.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "XXI - The World",
+      "itemQuote" : "Open your eyes and see",
+      "itemDescription" : "• Reveals the entire map and shows the icons for every room which has one.  • This is completely useless if you currently have both the Treasure Map and The Compass.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "2 of Spades",
+      "itemQuote" : "Item multiplier",
+      "itemDescription" : "• Doubles the number of keys you have.  • If you have no keys, it gives you two.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "2 of Clubs",
+      "itemQuote" : "Item multiplier",
+      "itemDescription" : "• Doubles the number of Bombs you have.  • If you have no bombs, it gives you two.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "2 of Hearts",
+      "itemQuote" : "Item multiplier",
+      "itemDescription" : "• Doubles your current red hearts up to full health.  • This card is useless for the Bluе Baby.",
+      "itemUnlock" : "",
+      "itemTags" : ", the lost item pool",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "2 of Diamonds",
+      "itemQuote" : "Item multiplier",
+      "itemDescription" : "• Doubles the number of coins you have.  • If you have no coins, it gives you two.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "The Joker",
+      "itemQuote" : "???",
+      "itemDescription" : "• Teleports you to the Devil Deal Room on the current floor.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Chaos Card",
+      "itemQuote" : "???",
+      "itemDescription" : "• A card which can be thrown as a projectile directly infront of Isaac, instantly killing anything it hits, including most bosses.  • If thrown at a multi-phase boss with multiple forms such Satan, Mega Satan or Hush it will only kill that particular phase of the boss.  • If thrown at a multi-phase boss that works from a single health bar such as Isaac, ??? or The Lamb, it will die instantly.  • Will destroy rocks and poop in its path.  • Can also be thrown against a door to open it (Doesn't work against Mega Satan's door).",
+      "itemUnlock" : "Unlock this card by beating Challenge #9 (Demo Man).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Credit Card",
+      "itemQuote" : "Charge it!",
+      "itemDescription" : "• When used, removes the price tag from all items in the current shop or devil deal, making everything free.  • The effect of the Credit Card only lasts for the current room.",
+      "itemUnlock" : "Unlock this card by beating Challenge #10 (Cursed!).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rules Card",
+      "itemQuote" : "???",
+      "itemDescription" : "• Displays a random cryptic message on the screen similar to the fortune machine ones. One of the following messages may show:  • \"Rooms may yield more than you expect\"  • \"Some doors require a blessing. Carry them with you\"  • \"The walls will harden over time. Time is the essence\"  • \"Sleeping gatekeepers will need to be awoken with a loud sound\"  • \"A piece of paper is your guide\"  • \"Deny his gifts to attain your reward\"  • \"A dark market lies under your feet  • \"Chub dislikes smoke!",
+      "itemUnlock" : "Unlock this card by beating Challenge #11 (Glass Cannon).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Card Against Humanity",
+      "itemQuote" : "Something stinks...",
+      "itemDescription" : "• When used, fills the entire room with poop!",
+      "itemUnlock" : "Unlock this card by beating Challenge #12 (When Life Gives You Lemons).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Suicide King",
+      "itemQuote" : "A true ending?",
+      "itemDescription" : "• When used, instantly kills you and spawns 10 pickup on the floor.  • Each of the 10 things spawned can be any type of consumable or sometimes a pedestal item (up to a maximum of 3 pedestal items).  • Any pedestal item created by Suicide King will be related to the room where it was used, meaning that using it in the Angel room will spawn Angel room items.",
+      "itemUnlock" : "Unlock this card by beating Challenge #7 (Suicide King).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Algiz",
+      "itemQuote" : "Resistance",
+      "itemDescription" : "• When used, gives you an invincibility effect which lasts for 30 seconds (much longer than normal invincibility effects).",
+      "itemUnlock" : "Unlock this card by beating Challenge #8 (Cat Got Your Tongue).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Ansuz",
+      "itemQuote" : "Vision",
+      "itemDescription" : "• When used, reveals the entire map including all the secret room locations and other icon rooms.",
+      "itemUnlock" : "Unlock this card by beating Challenge #5 (The Tank).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Berkano",
+      "itemQuote" : "Companionship",
+      "itemDescription" : "• Summons 3 blue friendly spiders and 3 blue flies.",
+      "itemUnlock" : "Unlock this card by beating Challenge #20 (Purist).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Dagaz",
+      "itemQuote" : "Purity",
+      "itemDescription" : "• Removes the curse which is in effect on the current floor.  • Can also cure the effect of the Amnesia pill.  • +1 Soul Heart.",
+      "itemUnlock" : "Unlock this card by beating Challenge #4 (Darkness Falls).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Ehwaz",
+      "itemQuote" : "Passage",
+      "itemDescription" : "• Creates a trapdoor on the floor (Same effect as We Need To Go Deeper).",
+      "itemUnlock" : "Unlock this card by beating Challenge #3 (Head Trauma).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Hagalaz",
+      "itemQuote" : "Destruction",
+      "itemDescription" : "• When used, this rune will destroy all breakable objects in the current room, such as poop, rocks and skulls.",
+      "itemUnlock" : "Unlock this card by beating Challenge #1 (Pitch Black).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Jera",
+      "itemQuote" : "Abundance",
+      "itemDescription" : "• When used this rune will double all pickups on the floor in the room.  • Creates copies of pickups, even if you haven't purchased them yet.  • Can be used to double the number of golden item chests in the first room of the final Chest floor.",
+      "itemUnlock" : "Unlock this card by beating Challenge #2 (High Brow).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Rune of Perthro",
+      "itemQuote" : "Change",
+      "itemDescription" : "• Rerolls all pedestal items in the current room (One time use of the D6).",
+      "itemUnlock" : "Unlock this card by beating Challenge #6 (Solar System).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Blank Rune",
+      "itemQuote" : "???",
+      "itemDescription" : "• When used, gives a random Mystic rune effect.  • Possible effects include: Algiz, Ansuz, Berkano, Dagaz, Ehwaz, Hagalaz, Jera, Perthro.  • Also has a 25% chance to spawn another Blank Rune upon use.",
+      "itemUnlock" : "Unlock this card by beating Challenge #30 (Guardian).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Dice Shard",
+      "itemQuote" : "",
+      "itemDescription" : "• Gives a one-time use of the D6 and D20 effects at the same time.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Get Out Of Jail Free Card",
+      "itemQuote" : "Open sesame",
+      "itemDescription" : "• When used, will open all doors in the current room, similar to a one-time use of Dad's Key.",
+      "itemUnlock" : "Unlock this card by beating Challenge #22 (Speed).",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "? Card",
+      "itemQuote" : "Double active",
+      "itemDescription" : "• When used this card will activate a use of your spacebar item for free.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Emergency Contact",
+      "itemQuote" : "Help from above",
+      "itemDescription" : "• When used will cause two of Mom's Hand to come down and grab a random enemy.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Ace of Hearts",
+      "itemQuote" : "Convert all",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Hearts.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "afterbirthPlus",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Ace of Spades",
+      "itemQuote" : "Convert all",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Keys.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "afterbirthPlus",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Ace of Clubs",
+      "itemQuote" : "Convert all",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Bombs.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "afterbirthPlus",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Ace of Diamonds",
+      "itemQuote" : "Convert all",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Coins.",
+      "itemUnlock" : "",
+      "itemTags" : "",
+      "game" : "afterbirthPlus",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Holy Card",
+      "itemQuote" : "You feel protected",
+      "itemDescription" : "• Grants the Holy Mantle effect for one room, which will negate your next hit of damage",
+      "itemUnlock" : "Unlock this item by defeating Delirium in The Void floor with The Lost.",
+      "itemTags" : "",
+      "game" : "afterbirthPlus",
+      "globalType" : "cardsAndRunes"
+    },
+    {
+      "itemName" : "Black Rune",
+      "itemQuote" : "Void",
+      "itemDescription" : "• When used, this rune deals 40 damage to all enemies in the room and consumes all pedestal items in the room, giving you a random stat increase for each item consumed.",
+      "itemUnlock" : "Unlock this item by beating Greedier mode as Apollyon.",
+      "itemTags" : "",
+      "game" : "afterbirthPlus",
+      "globalType" : "cardsAndRunes"
+    }
+  ],
+  "Pills" : [
+    {
+      "itemName" : "48 Hour Energy",
+      "itemDescription" : "Drops one to two battery charges and fully charges the spacebar item. Can \nbe used with the Placebo to generate infinite batteries.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Amnesia",
+      "itemDescription" : "Replaces the floor map with a ? for the rest of the floor. If no other \ncurses are active for the floor, the Curse of the Lost will appear under \nthe level name when TAB is held. This effect cannot be negated by Black \nCandle. Also the only pill to have its flavour text appear on a piece of \npaper, like curses do.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Bad Gas",
+      "itemDescription" : "Isaac farts, poisoning enemies around him.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Bad Trip",
+      "itemDescription" : "Injures Isaac by a full heart. If a Bad Trip pill is used while Isaac only \nhas a single heart left or less, the pill will turn into a Full Health pill \ninstead. (This damage counts as red heart damage for the purposes of \ngetting a Devil Deal.)",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Balls of Steel",
+      "itemDescription" : "Grants Isaac two soul hearts.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Bombs Are Key",
+      "itemDescription" : "Switches number of bombs and keys.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Explosive Diarrhea",
+      "itemDescription" : "Spawns five active bombs behind Isaac over a period of five seconds, at one \na second.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Full Health",
+      "itemDescription" : "Restores all health.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Health Down",
+      "itemDescription" : "Removes one red heart container upon use. While Isaac has one or fewer red \nheart containers, it will act as a *Health Up* pill instead.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Health Up",
+      "itemDescription" : "Adds one empty red heart container upon use.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Hematemesis",
+      "itemDescription" : "Empties all but one red heart container and spawns 1-4 full red heart \npickups. If Isaac only has half of a heart left, it will heal him to one \nheart. If used without any red heart containers, no health will be \ndeducted, but red hearts will still spawn. If used in a Black Heart or Eternal \nHeart-containing Super Secret Room, it will spawn those types of hearts \ninstead.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "I Can See Forever",
+      "itemDescription" : "Opens all entrances to the Secret Room and Super Secret Room for the \ncurrent floor.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "I Found Pills",
+      "itemDescription" : "Changes the appearance of Isaac's face. This pill is cosmetic only, and the \neffect disappears when you leave the room.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Lemon Party",
+      "itemDescription" : "Spawns a large yellow pool (similar to Lemon Mishap) around your character. \nGreatly damages any enemy that steps on it.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Luck Down",
+      "itemDescription" : "Decreases Isaac's luck by 1.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Luck Up",
+      "itemDescription" : "Increases Isaac's luck by 1.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Paralysis",
+      "itemDescription" : "Prevents Isaac from moving for a short duration.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Pheromones",
+      "itemDescription" : "Charms all enemies in the room for a short period of time.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Puberty",
+      "itemDescription" : "Causes Isaac to grow four hairs from the top of his head and zits on his \nface. This pill is cosmetic only, and will stay for the rest of the run.\nConsuming three puberty pills will grant the Adult transformation.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Pretty Fly",
+      "itemDescription" : "Grants 1 fly orbital that circles the player, blocking projectiles and \ndamaging fly-type enemies on touch.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Range Down",
+      "itemDescription" : "Decreases Isaac's range by 2.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Range Up",
+      "itemDescription" : "Increases Isaac's range by 2.5.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "R U a Wizard?",
+      "itemDescription" : "Tears are shot diagonally outwards for about one minute. This effect does \nnot reset upon exiting the room.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Speed Down",
+      "itemDescription" : "Decreases Isaac's movement speed by 0.12.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Speed Up",
+      "itemDescription" : "Increases Isaac's movement speed by 0.15.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Tears Down",
+      "itemDescription" : "Decreases Isaac's tears by 0.28.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Tears Up",
+      "itemDescription" : "Increases Isaac's tears by 0.35.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Telepills",
+      "itemDescription" : "Isaac gets teleported to a random room. Has a small chance to teleport \nIsaac to the I AM ERROR room, and an extremely small chance to teleport him \nto the Black Market, like Undefined.",
+      "game" : "rebirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Addicted",
+      "itemDescription" : "Makes Isaac take a full heart of damage from all sources for the current \nroom. Unlocked by completing Challenge #24: PAY TO PLAY.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Friends Till The End!",
+      "itemDescription" : "Spawns three Blue Flies.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Infested!",
+      "itemDescription" : "Destroys all poop in the room and spawns a single Blue Spider under Isaac \nand on each destroyed poop.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Infested?",
+      "itemDescription" : "Spawns Blue Spiders equal to the number of enemies in the room. If there \nare no enemies in the room, spawns 1-3 Blue Spiders.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "One Makes You Small",
+      "itemDescription" : "Decreases Isaac's size and increases the pitch of his voice. This effect \ndecreases the size of Isaac's hitbox.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "One Makes You Larger",
+      "itemDescription" : "Increases Isaac's size and decreases the pitch of his voice. This effect \ndoes not increase the size of Isaac's hitbox.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Percs",
+      "itemDescription" : "Gives The Wafer effect while in the room. Unlocked by completing Challenge \n#24: PAY TO PLAY.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Power Pill",
+      "itemDescription" : "Activates an effect similar to The Gamekid.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Re-Lax",
+      "itemDescription" : "For a short time, poop spawns wherever Isaac moves, like Explosive Diarrhea \nbut with poop. A higher move speed means you can touch more tiles in the \nsame time. A pun on laxatives. Unlocked by completing Challenge #25: Have A \nHeart.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Retro Vision",
+      "itemDescription" : "Briefly pixelates the screen 3 times over 30 seconds.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "???",
+      "itemDescription" : "Gives the Curse of the Maze effect for the remainder of the floor. The \neffect can stack with other curses. If no other curses are active for the \nfloor, Curse of the Maze will appear under the level name when TAB is held. \nThis effect cannot be negated by Black Candle. Unlocked by completing \nChallenge #25: Have A Heart.",
+      "game" : "afterbirth",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Feels like I'm walking on sunshine!",
+      "itemDescription" : "Temporarily makes Isaac invincible, similar to Unicorn Stump.\nUnlocked by acquiring the Sin Collector achievement.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Gulp!",
+      "itemDescription" : "Upon use, any trinkets that the player is holding are destroyed, and their \neffects are permanently applied to the player.\nUnlocked by acquiring the Once More With Feeling! achievement.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Horf!",
+      "itemDescription" : "Upon use, Isaac shoots an explosive tear with the Ipecac effect.\nUnlocked by acquiring the Dedication achievement.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "I'm Drowsy...",
+      "itemDescription" : "Upon use, slows all enemies for the duration of the room.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "I'm Excited!!!",
+      "itemDescription" : "Upon use, increases the speed of all enemies for the duration of the room.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Something's wrong...",
+      "itemDescription" : "Creates a pool of black creep beneath Isaac.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "Vurp!",
+      "itemDescription" : "Throws up the last pill you used.\nUnlocked by acquiring the U Broke It! achievement.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    },
+    {
+      "itemName" : "X-Lax",
+      "itemDescription" : "Creates a pool of slippery brown creep underneath Isaac.",
+      "game" : "afterbirthPlus",
+      "globalType" : "pills"
+    }
+  ],
+  "Pickups" : [
+    {
+      "itemName" : "Little Battery",
+      "itemQuote" : "Little Battery (or Lil Battery as referred to by Edmund) will fully charge your activated item upon pickup.\n\n",
+      "itemDescription" : "",
+      "globalType" : "pickups",
+      "mainType" : "battery",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "1+1 Free Bomb",
+      "itemQuote" : "Adds 2 bombs on pickup. These pickups are rarer than regular Bomb pick-ups, but Humbling Bundle and Bogo Bombs replace all Bomb drops with 1+1 Free Bombs.",
+      "itemDescription" : "",
+      "globalType" : "pickups",
+      "mainType" : "bomb",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Bombs",
+      "itemQuote" : "Bombs are used to damage enemies, destroy rocks, and open up regular doors and secret rooms. When spawned, there is a possibility for it to be a Troll Bomb instead.",
+      "itemDescription" : "",
+      "globalType" : "pickups",
+      "mainType" : "bomb",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Gold Bombs ",
+      "itemQuote" : "Once picked up, you gain unlimited bomb use for the rest of the floor.",
+      "itemDescription" : "Gold bombs will not add to the player's bomb count, but when picked up, they will give the player unlimited bombs for the duration of the current floor, similarly to Golden Keys. They are unlocked by completing the challenge Blue Bomber.",
+      "globalType" : "pickups",
+      "mainType" : "bomb",
+      "itemUnlock" : "Unlock this item by beating challenge #23 (Blue Bomber).",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Mega Troll Bombs",
+      "itemQuote" : "Mega Troll Bombs are another bomb variation that behaves similarly to regular Troll Bombs, but come with additional hazards.",
+      "itemDescription" : "They are bigger and have a larger blast radius (like bombs upgraded with Mr. Mega).\nIf nearby, they actively chase Isaac before exploding (as if under the influence of Magneto).",
+      "globalType" : "pickups",
+      "mainType" : "bomb",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Troll Bombs",
+      "itemQuote" : "Bomb pickups have a chance to spawn as a Troll Bomb. Normal Troll Bombs cannot be picked up and are already lit, so be wary of the imminent explosion.",
+      "itemDescription" : "",
+      "globalType" : "pickups",
+      "mainType" : "bomb",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "1+1 Free Penny",
+      "itemQuote" : "A 1+1 Free Penny is worth 2 pennies.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Coins",
+      "itemQuote" : "Coins serve as the currency for shops, the payment for the Donation Machine in shops, and payment for the slot machines, fortune telling machines, shell game, beggars, and Restock Boxes. They are also consumed to use a few activated items (most notably Magic Fingers and Portable Slot). They will naturally drop as a Penny, a Nickel, and rarely a Dime.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Dime",
+      "itemQuote" : "A Dime is worth 10 pennies.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Lucky Penny",
+      "itemQuote" : "A Lucky Penny increases luck by 1 when picked up.\n\nBumbo and Bum Friend are unable to pick up Lucky Pennies; they instead hover over them attempting to pick them up.\n\nHumbling Bundle does not double lucky pennies.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "Unlocked by donating 1 coin to the Greed Machine.",
+      "game" : "afterbirth"
+    },
+    {
+      "itemName" : "Nickel",
+      "itemQuote" : "A Nickel is worth 5 pennies.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Penny",
+      "itemQuote" : "The basic currency of the game.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Sticky Nickel",
+      "itemQuote" : "A Nickel that will flip upside-down when Isaac tries to collect it. Afterwards, it will get stuck on the ground, unable to be picked up unless blasted off the ground with an explosion.\n\nUnlocked by completing Boss Rush with Keeper. It won't reduce the spawn rate of regular Nickels: rather, Pennies have an additional chance to become Sticky Nickels.",
+      "itemDescription" : " ",
+      "globalType" : "pickups",
+      "mainType" : "coin",
+      "itemUnlock" : "Unlocked by completing Boss Rush with Keeper. It won't reduce the spawn rate of regular Nickels: rather, Pennies have an additional chance to become Sticky Nickels.",
+      "game" : "afterbirth"
+    },
+    {
+      "itemName" : "1+1 Free Heart",
+      "itemQuote" : "Replenishes two red hearts of Isaac's health.",
+      "itemDescription" : "Isaac can't take red hearts if all of his heart containers are full.\nIf Isaac takes a heart that would heal him for more than his current maximum health (for example, taking a red heart when he is only missing half a red heart worth of health), the excessive health will be wasted.\nUnless an item effect specifically states it, a red heart always has the chance to be replaced by a Soul, Black, or Eternal heart.\nRed heart pickups created by item, card, or pill effects can be forced to be spawned as Black or Eternal hearts instead by using the item, card, or pill in a relevant Super Secret Room.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Black Hearts",
+      "itemQuote" : "Black Hearts are mostly identical to Soul Hearts, with one key difference; a black heart, when fully lost, will damage all enemies in the room, similar to The Necronomicon's effect.",
+      "itemDescription" : "If Isaac has red hearts and half a soul heart, taking a full heart of damage will not remove any red hearts.\nIf Isaac's health bar is filled with soul hearts, picking up a black heart will replace the topmost soul heart.\nIf Isaac's topmost heart is a half Soul Heart, collecting a Black Heart will complete it into a whole soul heart, and add half a Black heart.\nLikewise, collecting a Soul Heart with half a Black Heart left will complete the Black Heart, and add half a Soul Heart.\nIf Isaac's health bar is filled up to 11 1/2 (Soul/Black) hearts with the last one being half a Black Heart, picking up a Black Heart will fill that one and convert a full Soul Heart to a Black Heart (therefore adding half a Black Heart and converting a Soul Heart).\nLosing Soul Hearts does not count as Red Heart damage for the purposes of determining Devil or Angel Room spawn chances.\nStandard Soul Heart pickups have a chance to be replaced by Black Hearts.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Eternal Hearts",
+      "itemQuote" : "Eternal Hearts are the second-rarest variation of a heart. They always appear as half-hearts and, once picked up, can transform into a new heart container in two ways: either by collecting a second Eternal Heart, or by traveling to a new floor.\n\n",
+      "itemDescription" : "An Eternal Heart appends to the end of the health bar. This will usually be the rightmost heart container, but can also be the leftmost Soul Heart (or Black Heart) if there are no containers.\nThis means that an Eternal Heart will not be counted against the regular cap of 12 hearts.\nIf Isaac has 12 red heart containers and travels to a new floor with an eternal heart, Isaac will heal one red heart but will not gain another heart container. If Isaac is at full health, the eternal heart will simply disappear.\nLike Soul Hearts, an Eternal Heart cannot be replenished when lost (without picking up a new one).\nAn Eternal Heart will be used up the first time Isaac takes red heart damage. This means that using a Blood Donation Machine or activated items like the Razor Blade will drain the Eternal Heart, even if Isaac has full health and/or Soul Hearts.\nEternal Hearts are not lost by taking red heart damage if Isaac has no red heart containers.\nHealth removal from taking Devil Room items will not drain an Eternal Heart. Rather, the Eternal Heart is appended onto the end of the next red heart. However, if, after a Deal with the Devil, Isaac will have no red hearts, Soul Hearts, or Black Hearts, Isaac will die; half an Eternal Heart cannot keep Isaac alive by itself.\nUsing a 5 pip room or Forget Me Now to reroll the floor will also trigger the eternal heart.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Gold Hearts ",
+      "itemQuote" : "Once picked up, the gold heart will drop money on the floor the next time Isaac loses a heart.",
+      "itemDescription" : "Gold Hearts are the rarest variation of a heart. They always appear as full hearts and, once picked up, drop money the next time Isaac loses a Heart. A Golden Heart appends to the end of the health bar, surrounding it in a golden glow. Gold Hearts are depleted when Isaac takes damage and loses the rightmost heart, but do not prevent the surrounding heart from being depleted.\nGold Hearts can be found in Greed Mode without unlocking them; it is unknown if this is a bug or intentional, as Greed Mode is heavily focused on money.\nA Gold Heart will not be counted against the regular cap of 12 hearts.\nLike Soul Hearts and Eternal Hearts, a Gold Heart cannot be replenished when lost (without picking up a new one).\nGold Hearts are not lost by taking red heart damage by using a Blood Donation Machine or activated items like the Razor Blade.\nIf Isaac has a Gold Heart and gains a heart container while at 12 soul or black hearts, the Gold Heart will disappear, although its effect will still activate.\nLosing many hearts at once — for example, by picking up a Dead Cat or using a Hematemesis pill — will correspondingly trigger the Gold Heart effect many times at once and shower you with coins.\nCollecting a Gold Heart while you already have a Gold Heart will cause a large number of coins to drop on the ground.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "Unlock this item by beating challenge #21 (XXXXXXXXL).",
+      "game" : "afterbirth"
+    },
+    {
+      "itemName" : "Half Red Heart",
+      "itemQuote" : "",
+      "itemDescription" : "Replenishes half a red heart of Isaac's health.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Red Hearts",
+      "itemQuote" : "",
+      "itemDescription" : "Red Hearts are the standard HP for most characters and can be found in half-heart, full-heart, or double-heart varieties. The player cannot have more red hearts than heart containers.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Soul Hearts",
+      "itemQuote" : "",
+      "itemDescription" : "Soul Hearts are blue hearts that are added to the end of the health bar. Soul Hearts are not permanent; once lost, they cannot be replenished, although new ones may be added.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Golden Keys",
+      "itemQuote" : "Once picked up, you gain unlimited key use for the rest of the floor.",
+      "itemDescription" : "When picked up, a golden key will not add to the player's key count. It will, however, allow the player to open any locked door, key block, or chest without spending any keys for the duration of the floor, even if the player has 0 keys. There is a 1/50 chance for any given key pickup to be a golden key.",
+      "globalType" : "pickups",
+      "mainType" : "key",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Key Ring",
+      "itemQuote" : "Adds 2 keys on pickup.",
+      "itemDescription" : "",
+      "globalType" : "pickups",
+      "mainType" : "key",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    },
+    {
+      "itemName" : "Keys",
+      "itemQuote" : "Keys are used to gain entry to many of the game's rooms, as well as golden chests.",
+      "itemDescription" : "",
+      "globalType" : "pickups",
+      "mainType" : "key",
+      "itemUnlock" : "",
+      "game" : "rebirth"
+    }
+  ]
+}

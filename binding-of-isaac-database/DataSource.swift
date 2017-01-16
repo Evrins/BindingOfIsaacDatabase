@@ -59,6 +59,22 @@ class DataSource {
                     }
                 }
                 
+                for item in json["AfterbirthPlus Items"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
+                for item in json["AfterbirthPlus Trinkets"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
                 completionHandler(true)
             } catch {
                 // Handle Error
@@ -67,26 +83,43 @@ class DataSource {
             }
         }
         
-//        if let url = Bundle.main.url(forResource: "Rebirth Items", withExtension: "json") {
-//            do {
-//                let jsonData = try Data(contentsOf: url)
-//               
-//                let json = JSON(data: jsonData)
-//                
-//                for item in json["Rebirth Items"].arrayValue {
-//                    let newItem = ItemModel(JSONString: "\(item)")
-//                    
-//                    try! realm.write {
-//                        realm.add(newItem!)
-//                    }
-//                }
-//                completionHandler(true)
-//            } catch {
-//                // Handle Error
-//                completionHandler(false)
-//            }
-//        }
-//        
+        if let url = Bundle.main.url(forResource: "Consumables", withExtension: "json") {
+            do {
+                let jsonData = try Data(contentsOf: url)
+               
+                let json = JSON(data: jsonData)
+                
+                for item in json["Cards And Runes"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
+                for item in json["Pills"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
+                for item in json["Pickups"].arrayValue {
+                    let newItem = ItemModel(JSONString: "\(item)")
+                    
+                    try! realm.write {
+                        realm.add(newItem!)
+                    }
+                }
+                
+                completionHandler(true)
+            } catch {
+                // Handle Error
+                completionHandler(false)
+            }
+        }
+//
 //        if let url = Bundle.main.url(forResource: "Rebirth Trinkets", withExtension: "json") {
 //            do {
 //                let jsonData = try Data(contentsOf: url)

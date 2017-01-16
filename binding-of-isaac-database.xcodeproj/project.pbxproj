@@ -366,17 +366,16 @@
 		1682C5E91E1EFAE700DA955B /* 345.png in Resources */ = {isa = PBXBuildFile; fileRef = 1682C4931E1EFAE600DA955B /* 345.png */; };
 		1682C5EA1E1EFAE700DA955B /* 346.png in Resources */ = {isa = PBXBuildFile; fileRef = 1682C4941E1EFAE600DA955B /* 346.png */; };
 		1682C5EB1E1EFAE700DA955B /* questionmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1682C4951E1EFAE600DA955B /* questionmark.png */; };
-		1682C5ED1E1EFD8F00DA955B /* Rebirth Trinkets.json in Resources */ = {isa = PBXBuildFile; fileRef = 1682C5EC1E1EFD8F00DA955B /* Rebirth Trinkets.json */; };
 		1682D3B91E13111E00878BE6 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1682D3B81E13111E00878BE6 /* MenuTableViewController.swift */; };
 		168730531E09E7FD003745E9 /* ItemCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168730521E09E7FD003745E9 /* ItemCollection.swift */; };
 		168730551E09EEC4003745E9 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168730541E09EEC4003745E9 /* DataSource.swift */; };
 		168AA22F1E0B482C0034B3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168AA22E1E0B482C0034B3F3 /* Main.storyboard */; };
 		16C783D91E2C4879005110B7 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C783D81E2C4879005110B7 /* PlaceholderView.swift */; };
+		16C783E01E2D3984005110B7 /* BoI Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 16C783DE1E2D3984005110B7 /* BoI Items.json */; };
+		16C783E51E2D3A95005110B7 /* Consumables.json in Resources */ = {isa = PBXBuildFile; fileRef = 16C783E41E2D3A95005110B7 /* Consumables.json */; };
 		16D6CFD21E285E8A00DE20FE /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6CFD11E285E8A00DE20FE /* FilterTableViewController.swift */; };
 		16D6CFDA1E294EC700DE20FE /* CustomTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6CFD91E294EC700DE20FE /* CustomTitleView.swift */; };
-		16D6CFE81E2AE52500DE20FE /* BoI Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D6CFE71E2AE52500DE20FE /* BoI Items.json */; };
 		16D6CFEA1E2C2B0E00DE20FE /* BoI Filters.json in Resources */ = {isa = PBXBuildFile; fileRef = 16D6CFE91E2C2B0E00DE20FE /* BoI Filters.json */; };
-		16DB7E441E1E0D3200DDB23B /* Rebirth Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 16DB7E431E1E0D3200DDB23B /* Rebirth Items.json */; };
 		16E252721E0B4ACC00108E27 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E252711E0B4ACC00108E27 /* ItemCollectionViewCell.xib */; };
 		16E252751E0B4BC200108E27 /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E252741E0B4BC200108E27 /* CellInterface.swift */; };
 		16E252771E0B4C6800108E27 /* ItemListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E252761E0B4C6800108E27 /* ItemListCollectionViewCell.swift */; };
@@ -771,17 +770,16 @@
 		1682C4931E1EFAE600DA955B /* 345.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 345.png; sourceTree = "<group>"; };
 		1682C4941E1EFAE600DA955B /* 346.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 346.png; sourceTree = "<group>"; };
 		1682C4951E1EFAE600DA955B /* questionmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionmark.png; sourceTree = "<group>"; };
-		1682C5EC1E1EFD8F00DA955B /* Rebirth Trinkets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Rebirth Trinkets.json"; sourceTree = "<group>"; };
 		1682D3B81E13111E00878BE6 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		168730521E09E7FD003745E9 /* ItemCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollection.swift; sourceTree = "<group>"; };
 		168730541E09EEC4003745E9 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		168AA22E1E0B482C0034B3F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		16C783D81E2C4879005110B7 /* PlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
+		16C783DE1E2D3984005110B7 /* BoI Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BoI Items.json"; sourceTree = "<group>"; };
+		16C783E41E2D3A95005110B7 /* Consumables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consumables.json; sourceTree = "<group>"; };
 		16D6CFD11E285E8A00DE20FE /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		16D6CFD91E294EC700DE20FE /* CustomTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTitleView.swift; sourceTree = "<group>"; };
-		16D6CFE71E2AE52500DE20FE /* BoI Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BoI Items.json"; sourceTree = "<group>"; };
 		16D6CFE91E2C2B0E00DE20FE /* BoI Filters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BoI Filters.json"; sourceTree = "<group>"; };
-		16DB7E431E1E0D3200DDB23B /* Rebirth Items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Rebirth Items.json"; sourceTree = "<group>"; };
 		16E252711E0B4ACC00108E27 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		16E252741E0B4BC200108E27 /* CellInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
 		16E252761E0B4C6800108E27 /* ItemListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -1316,10 +1314,9 @@
 		16F8DA1D1E09F1D600AAC94D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				16C783E41E2D3A95005110B7 /* Consumables.json */,
+				16C783DE1E2D3984005110B7 /* BoI Items.json */,
 				16D6CFE91E2C2B0E00DE20FE /* BoI Filters.json */,
-				16D6CFE71E2AE52500DE20FE /* BoI Items.json */,
-				1682C5EC1E1EFD8F00DA955B /* Rebirth Trinkets.json */,
-				16DB7E431E1E0D3200DDB23B /* Rebirth Items.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -1505,8 +1502,6 @@
 				1682C5211E1EFAE700DA955B /* 143.png in Resources */,
 				1682C5DE1E1EFAE700DA955B /* 334.png in Resources */,
 				1682C5A51E1EFAE700DA955B /* 277.png in Resources */,
-				16DB7E441E1E0D3200DDB23B /* Rebirth Items.json in Resources */,
-				1682C5ED1E1EFD8F00DA955B /* Rebirth Trinkets.json in Resources */,
 				1682C5E41E1EFAE700DA955B /* 340.png in Resources */,
 				1682C5691E1EFAE700DA955B /* 215.png in Resources */,
 				1682C4E21E1EFAE700DA955B /* 080.png in Resources */,
@@ -1536,6 +1531,7 @@
 				1682C4AC1E1EFAE600DA955B /* 023.png in Resources */,
 				1682C5AF1E1EFAE700DA955B /* 287.png in Resources */,
 				1682C5101E1EFAE700DA955B /* 126.png in Resources */,
+				16C783E01E2D3984005110B7 /* BoI Items.json in Resources */,
 				1682C5491E1EFAE700DA955B /* 183.png in Resources */,
 				1682C4E61E1EFAE700DA955B /* 084.png in Resources */,
 				1682C5441E1EFAE700DA955B /* 178.png in Resources */,
@@ -1612,7 +1608,6 @@
 				1682C5B51E1EFAE700DA955B /* 293.png in Resources */,
 				1682C55C1E1EFAE700DA955B /* 202.png in Resources */,
 				1682C4F91E1EFAE700DA955B /* 103.png in Resources */,
-				16D6CFE81E2AE52500DE20FE /* BoI Items.json in Resources */,
 				1682C4A91E1EFAE600DA955B /* 020.png in Resources */,
 				1682C4FA1E1EFAE700DA955B /* 104.png in Resources */,
 				1682C4E11E1EFAE700DA955B /* 079.png in Resources */,
@@ -1808,6 +1803,7 @@
 				1682C4C11E1EFAE600DA955B /* 045.png in Resources */,
 				1682C4F81E1EFAE700DA955B /* 102.png in Resources */,
 				1682C5A21E1EFAE700DA955B /* 274.png in Resources */,
+				16C783E51E2D3A95005110B7 /* Consumables.json in Resources */,
 				1682C4C01E1EFAE600DA955B /* 044.png in Resources */,
 				1682C5911E1EFAE700DA955B /* 256.png in Resources */,
 				1682C5A71E1EFAE700DA955B /* 279.png in Resources */,
