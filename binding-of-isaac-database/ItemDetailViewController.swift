@@ -88,6 +88,7 @@ extension ItemDetailViewController {
                 let item = selectedItem
                 
                 cell.itemImage.layer.magnificationFilter = kCAFilterNearest;
+                cell.itemImage.contentMode = .scaleAspectFit
                                 
                 if let url = item?.getImageUrl() {
                     cell.itemImage.kf.indicatorType = .activity

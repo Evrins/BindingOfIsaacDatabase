@@ -19,7 +19,7 @@ enum Titles {
     static let Search = "Search"
     static let Items = "Items"
     static let Trinkets = "Trinkets"
-    static let CardsAndRunes = "Cards And Runes"
+    static let CardsAndRunes = "Cards and Runes"
     static let Pickups = "Pickups"
     static let Pills = "Pills"
     static let Settings = "Settings"

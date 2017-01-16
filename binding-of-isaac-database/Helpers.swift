@@ -9,6 +9,23 @@
 import Foundation
 import UIKit
 
+class Helpers: NSObject {
+    static let sharedInstance = Helpers()
+    private override init() {}
+
+    func randomSequenceGenerator(min: Int, max: Int) -> () -> Int {
+        var numbers: [Int] = []
+        return {
+            if numbers.count == 0 {
+                numbers = Array(min ... max)
+            }
+            
+            let index = Int(arc4random_uniform(UInt32(numbers.count)))
+            return numbers.remove(at: index)
+        }
+    }
+}
+
 //extension UIColor {
 //    
 //    /**

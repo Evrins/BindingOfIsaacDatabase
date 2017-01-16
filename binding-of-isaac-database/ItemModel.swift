@@ -135,7 +135,21 @@ class ItemModel: Object, Mappable {
         var resourceString: String? = self.getItemId()
         
         if resourceString == nil {
-            resourceString = self.getItemName()
+            //@TODO: Clean this up
+            var itemName = self.getItemName()?.lowercased()
+            itemName = itemName?.replacingOccurrences(of: " ", with: "")
+            itemName = itemName?.replacingOccurrences(of: "-", with: "")
+            itemName = itemName?.replacingOccurrences(of: "'", with: "")
+            itemName = itemName?.replacingOccurrences(of: "!", with: "")
+            itemName = itemName?.replacingOccurrences(of: "???", with: "qmark")
+            itemName = itemName?.replacingOccurrences(of: "?", with: "q")
+            resourceString = itemName
+        }
+        
+        if self.globalType == "pills" {
+            let randomNum:UInt32 = arc4random_uniform(13)
+            
+            resourceString = "pill" + String(randomNum)
         }
         
         url = Bundle.main.url(forResource: resourceString, withExtension: ".png")

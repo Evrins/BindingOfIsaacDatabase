@@ -809,15 +809,6 @@
       "game" : "rebirth"
     },
     {
-      "itemName" : "Coins",
-      "itemQuote" : "Coins serve as the currency for shops, the payment for the Donation Machine in shops, and payment for the slot machines, fortune telling machines, shell game, beggars, and Restock Boxes. They are also consumed to use a few activated items (most notably Magic Fingers and Portable Slot). They will naturally drop as a Penny, a Nickel, and rarely a Dime.",
-      "itemDescription" : " ",
-      "globalType" : "pickups",
-      "mainType" : "coin",
-      "itemUnlock" : "",
-      "game" : "rebirth"
-    },
-    {
       "itemName" : "Dime",
       "itemQuote" : "A Dime is worth 10 pennies.",
       "itemDescription" : " ",
@@ -847,7 +838,7 @@
     {
       "itemName" : "Penny",
       "itemQuote" : "The basic currency of the game.",
-      "itemDescription" : " ",
+      "itemDescription" : "Coins serve as the currency for shops, the payment for the Donation Machine in shops, and payment for the slot machines, fortune telling machines, shell game, beggars, and Restock Boxes. They are also consumed to use a few activated items (most notably Magic Fingers and Portable Slot). They will naturally drop as a Penny, a Nickel, and rarely a Dime.",
       "globalType" : "pickups",
       "mainType" : "coin",
       "itemUnlock" : "",
@@ -908,6 +899,15 @@
       "game" : "rebirth"
     },
     {
+      "itemName" : "Half Soul Hearts",
+      "itemQuote" : "",
+      "itemDescription" : "Half soul hearts are a variant of normal soul hearts added in Afterbirth+ that only add half a heart to the end of the normal bar. They are unlocked after getting the \"Mr. Resetter!\" achievement, which is granted after the player resets seven runs in quick succession.\n\nHalf soul hearts are fairly uncommon compared to their whole counterpart.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "afterbirthPlus"
+    },
+    {
       "itemName" : "Red Hearts",
       "itemQuote" : "",
       "itemDescription" : "Red Hearts are the standard HP for most characters and can be found in half-heart, full-heart, or double-heart varieties. The player cannot have more red hearts than heart containers.",
@@ -924,6 +924,15 @@
       "mainType" : "heart",
       "itemUnlock" : "",
       "game" : "rebirth"
+    },
+    {
+      "itemName" : "Blended Hearts",
+      "itemQuote" : "",
+      "itemDescription" : "A heart variant added in Afterbirth+ which will fill up a full red Heart Container, but will act as a Soul Heart when no Containers are free.",
+      "globalType" : "pickups",
+      "mainType" : "heart",
+      "itemUnlock" : "",
+      "game" : "afterbirthPlus"
     },
     {
       "itemName" : "Golden Keys",
