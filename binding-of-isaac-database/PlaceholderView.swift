@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 
 class PlaceHolderView: UIView {
+    let itemColletion = ItemCollection.sharedInstance
     
     var searchText: String = "" {
         didSet {
@@ -26,14 +27,17 @@ class PlaceHolderView: UIView {
     var searchTextLabel = UILabel()
     var placeholderImage: UIImageView = {
         let imageView = UIImageView()
-        //@TODO: Create placeholder image
-        imageView.image = UIImage(named: "GridItem")
+        imageView.image = UIImage(named: "Judas")
+        
+        imageView.layer.magnificationFilter = kCAFilterNearest
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
     var placeholderTextLabel: UILabel = {
         //@TODO: Change text color
         let label = UILabel()
+        label.numberOfLines = 0
         label.text = "Type in the search bar to start searching."
         return label
     }()
@@ -60,6 +64,14 @@ class PlaceHolderView: UIView {
         self.frame = UIScreen.main.bounds
     }
     
+    func setPlaceholderLabelText() {
+        placeholderTextLabel.text = "Type in the search bar to start searching."
+        
+        if itemColletion.getItems() != nil && itemColletion.getItems().isEmpty {
+            placeholderTextLabel.text = "No items meet your filter criteria." + "\n" + "Try expanding your filter settings."
+        }
+    }
+    
     func setUpTitleLabelText() {
         //@TODO: Change text color
         searchTextLabel.numberOfLines = 0
@@ -84,10 +96,11 @@ class PlaceHolderView: UIView {
         }
         
         placeholderImage.snp.makeConstraints { (make) -> Void in
-            //@TODO: See if there should be a left right and bottom constraint
             make.centerX.equalTo(self.snp.centerX)
             make.top.equalTo(self.searchTextLabel.snp.bottom).inset(-10).priority(251)
             make.top.equalTo(self.placeholderTextLabel.snp.bottom).inset(-10).priority(250)
+            
+            make.size.equalTo(CGSize(width: 200, height: 200))
         }
     }
 }

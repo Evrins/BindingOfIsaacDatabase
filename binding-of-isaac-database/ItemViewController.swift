@@ -32,7 +32,6 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     var layoutType = LayoutMachine.Grid {
         didSet {
             displayOptions(layoutType: layoutType)
-            setupBarButtonItems()
         }
     }
     
@@ -59,12 +58,6 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     let gridFlowLayout = GridFlowLayout()
     let listFlowLayout = ListFlowLayout()
-    
-//    let placeholderView: UIView = {
-//        let view = UIView()
-//        view.backgroundColor = .lightGray
-//        return view
-//    }()
     
     let placeholderView = PlaceHolderView()
     
@@ -100,6 +93,9 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.items = self.itemCollection.getItems().sorted(byProperty: Filters.ItemAttribute.ItemId, ascending: true)
             self.searchItems = self.items
             self.collectionView.reloadData()
+            self.placeholderViewCheck()
+            
+            self.placeholderView.setPlaceholderLabelText()
         }
         
         menuItemCollection.setActive = { _ in
@@ -113,6 +109,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
             }
             
             self.layoutCheck()
+            self.setUpSearchBar()
+            self.setupBarButtonItems()
         }
         
         itemCollection.loadItems()
@@ -132,8 +130,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
         collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
         
-        setUpSearchBar()
-        setupBarButtonItems()
+        self.setUpSearchBar()
+        self.setupBarButtonItems()
     }
     
     override func didReceiveMemoryWarning() {
@@ -165,7 +163,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     func placeholderViewCheck() {
         self.placeholderView.isHidden = true
         
-        if self.title == "Search" {
+        if self.title == "Search" || searchItems.isEmpty {
             self.placeholderView.isHidden = false
         }
     }
@@ -252,7 +250,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         layoutBarButton = UIBarButtonItem(customView: layoutButton)
         
-        if self.title == "Search" {
+        if self.title != "Items" {
             searchButton = UIBarButtonItem()
         }
         
