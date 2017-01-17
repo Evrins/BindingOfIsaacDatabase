@@ -90,7 +90,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z6W-yH-cRl" id="mrR-nO-LwT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -137,7 +137,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gos-c2-o5K">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jtk-uV-XK2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jtk-uV-XK2" customClass="NavigationController" customModule="binding_of_isaac_database" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ee8-6V-NP1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

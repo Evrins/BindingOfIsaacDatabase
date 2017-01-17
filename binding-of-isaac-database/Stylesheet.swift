@@ -14,11 +14,11 @@ enum Stylesheet {
     
     enum Colors {
         static let White = UIColor(hex: 0xFFFFFF)
-        static let Black = UIColor(hex: 0x262626)
-        static let DarkGray = UIColor(hex: 0x333333)
-        static let LightGray = UIColor(hex: 0x787878)
-        static let Blue = UIColor(hex: 0x7AA0CC)
-        static let LightBlue = UIColor(hex: 0x9AC9FF)
+        static let Tan = UIColor(hex: 0xC7B29A)
+        static let DarkTan = UIColor(hex: 0xB09C87)
+        static let DarkBrown = UIColor(hex: 0x362F2D)
+        static let DarkRed = UIColor(hex: 0x771C00)
+        static let LightRed = UIColor(hex: 0xFF4B29)
         // Colors borrowed from Tweetbot's dark color scheme
     }
     
@@ -30,38 +30,38 @@ enum Stylesheet {
     enum Contexts {
         enum Global {
             static let StatusBarStyle = UIStatusBarStyle.lightContent
-            static let BackgroundColor = Colors.DarkGray
+            static let BackgroundColor = Colors.DarkBrown
         }
         
         enum NavigationController {
-            static let BarTintColor = Colors.Black
-            static let BarTextColor = Colors.White
-            static let BarColor = Colors.LightGray
+            static let BarTintColor = Colors.DarkTan
+            static let BarTextColor = Colors.DarkBrown
+            static let BarColor = Colors.DarkBrown
         }
         
-        enum CountdownListCell {
-            static let BackgroundColor = Colors.Black
-            static let TitleTextColor = Colors.Blue
-        }
-        
-        enum CountdownDetail {
-            static let EditModeTitle = "Edit Countdown"
-            static let CreationModeTitle = "Create Countdown"
-            
-            static let CellBackgroundColor = Colors.LightGray
-            static let CellSeparatorColor = Colors.LightGray
-            static let CellTextColor = Colors.LightBlue
-            static let DatePickerTextColor = Colors.Blue
-        }
-        
-        enum CountdownView {
-            static let BackgroundColor = Global.BackgroundColor
-            static let CircleColor = Colors.Blue
-            static let ProgressStrokeColor = Colors.LightBlue
-            static let TextColor = Colors.White
-            
-            static let ProgressStrokeWidth = 3.0
-        }
+//        enum CountdownListCell {
+//            static let BackgroundColor = Colors.Black
+//            static let TitleTextColor = Colors.Blue
+//        }
+//        
+//        enum CountdownDetail {
+//            static let EditModeTitle = "Edit Countdown"
+//            static let CreationModeTitle = "Create Countdown"
+//            
+//            static let CellBackgroundColor = Colors.LightGray
+//            static let CellSeparatorColor = Colors.LightGray
+//            static let CellTextColor = Colors.LightBlue
+//            static let DatePickerTextColor = Colors.Blue
+//        }
+//        
+//        enum CountdownView {
+//            static let BackgroundColor = Global.BackgroundColor
+//            static let CircleColor = Colors.Blue
+//            static let ProgressStrokeColor = Colors.LightBlue
+//            static let TextColor = Colors.White
+//            
+//            static let ProgressStrokeWidth = 3.0
+//        }
         
     }
     
@@ -69,6 +69,14 @@ enum Stylesheet {
 
 // MARK: - Apply Stylesheet
 extension Stylesheet {
+    
+    static func applyOn(_ navVC: NavigationController) {
+        typealias context = Contexts.NavigationController
+        navVC.navigationBar.barTintColor = context.BarTintColor
+        navVC.navigationBar.tintColor = context.BarColor
+        navVC.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: Fonts.Regular, size: 22.0)!, NSForegroundColorAttributeName: context.BarTextColor]
+        navVC.navigationBar.isTranslucent = false
+    }
     
 //    static func applyOn(cell: CountdownListCell) {
 //        typealias context = .CountdownListCell

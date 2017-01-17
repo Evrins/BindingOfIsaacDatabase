@@ -33,8 +33,8 @@ class CustomTitleView: UIView {
     
     func setUpTitleLabelText() {
         titleLabel.numberOfLines = 0
-        //@TODO: Uncommit this
-//        titleLabel.textColor = .white
+        //@TODO: Set this to bar tint color 
+        titleLabel.textColor = Stylesheet.Contexts.NavigationController.BarTextColor
         titleLabel.textAlignment = .center
         
         let title = menuItemCollection.getActive()?.title
@@ -61,7 +61,8 @@ class CustomTitleView: UIView {
 
         if let vc = storyboard.instantiateViewController(withIdentifier: "FilterTableViewController") as? FilterTableViewController {
             
-            let navController = UINavigationController(rootViewController: vc)
+            // Use Cutom Navigation Controller
+            let navController = NavigationController(rootViewController: vc)
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.window?.rootViewController!.present(navController, animated: true, completion: nil)
