@@ -52,17 +52,16 @@
                     <connections>
                         <outlet property="collectionView" destination="zQM-IA-sls" id="zCa-Jp-D51"/>
                         <outlet property="searchBar" destination="cqO-1o-Axd" id="WFG-Zb-Dog"/>
-                        <segue destination="Net-7K-0l5" kind="show" identifier="showItemDetail" id="XTI-eK-CXx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icz-Wt-gW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1541.5999999999999" y="259.52023988005999"/>
+            <point key="canvasLocation" x="1559" y="260"/>
         </scene>
         <!--Item Detail View Controller-->
         <scene sceneID="vQL-bf-laN">
             <objects>
-                <viewController id="Net-7K-0l5" customClass="ItemDetailViewController" customModule="binding_of_isaac_database" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemDetailViewController" id="Net-7K-0l5" customClass="ItemDetailViewController" customModule="binding_of_isaac_database" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FWj-Yf-dgH"/>
                         <viewControllerLayoutGuide type="bottom" id="awp-Jd-f1G"/>
@@ -90,7 +89,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z6W-yH-cRl" id="mrR-nO-LwT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -118,7 +117,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R7A-9H-Pud" id="zIl-8m-ayp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -137,7 +136,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gos-c2-o5K">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jtk-uV-XK2" customClass="NavigationController" customModule="binding_of_isaac_database" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jtk-uV-XK2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ee8-6V-NP1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

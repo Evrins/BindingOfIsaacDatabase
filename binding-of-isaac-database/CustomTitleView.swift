@@ -37,11 +37,11 @@ class CustomTitleView: UIView {
         titleLabel.textColor = Stylesheet.Contexts.NavigationController.BarTextColor
         titleLabel.textAlignment = .center
         
-        let title = menuItemCollection.getActive()?.title
-        titleLabel.text = title!
+        let title = menuItemCollection.getActive().title
+        titleLabel.text = title
         
         if title == "Items" {
-            titleLabel.text = title! + "\n" + "(Tap to Add Filter)"
+            titleLabel.text = title + "\n" + "(Tap to Add Filter)"
             titleLabel.sizeToFit()
             setUpButton()
         }
@@ -62,7 +62,7 @@ class CustomTitleView: UIView {
         if let vc = storyboard.instantiateViewController(withIdentifier: "FilterTableViewController") as? FilterTableViewController {
             
             // Use Cutom Navigation Controller
-            let navController = NavigationController(rootViewController: vc)
+            let navController = UINavigationController(rootViewController: vc)
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             appDelegate.window?.rootViewController!.present(navController, animated: true, completion: nil)

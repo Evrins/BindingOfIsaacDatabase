@@ -13,6 +13,7 @@ import SwifterSwift
 
 class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var selectedItem: ItemModel? = nil
+    
     lazy var selectedItemProperties: [ItemProperty] = {
         let item = self.selectedItem
         var itemProperties = self.getItemFields(item: item!)
@@ -22,10 +23,10 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     var tableView = UITableView()
     var contentView = UIView()
     
+    let menuItemCollection = MenuItemCollection.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationController?.navigationBar.isTranslucent = false
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -46,6 +47,10 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         contentView.addSubview(tableView)
         view.addSubview(contentView)
         
+        self.title = "Cards and Runes"
+//
+//        print(self.title!)
+        
         setupConstraints()
     }
 
@@ -65,7 +70,6 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.snp.makeConstraints { (make) -> Void in
             make.edges.equalTo(contentView.snp.edges)
         }
-        
     }
     
 }
@@ -185,7 +189,10 @@ class ItemDetailTopCell: UITableViewCell, Reusable {
         self.contentView.addSubview(itemQuoteLabel)
         
         self.itemTitleLabel.sizeToFit()
+        
         self.itemQuoteLabel.sizeToFit()
+        self.itemQuoteLabel.numberOfLines = 0
+        self.itemQuoteLabel.lineBreakMode = .byWordWrapping
         
         setupConstraints()
     }
@@ -207,8 +214,11 @@ class ItemDetailTopCell: UITableViewCell, Reusable {
         itemQuoteLabel.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(itemTitleLabel.snp.bottom)
             make.left.equalTo(itemTitleLabel.snp.left)
+            make.right.equalToSuperview().inset(5)
         }
         contentView.snp.makeConstraints { (make) -> Void in
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
             make.bottom.equalTo(itemImage.snp.bottom).inset(-10)
         }
     }

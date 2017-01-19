@@ -7,34 +7,43 @@
 //
 
 import UIKit
+import SideMenu
 
-class NavigationController: UINavigationController {
-
-    override func viewDidLoad() {
+extension UINavigationController {
+    override open func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
         Stylesheet.applyOn(self)
+        self.navigationItem.titleView = CustomTitleView()
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         return Stylesheet.Contexts.Global.StatusBarStyle
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension UISideMenuNavigationController {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        
+        Stylesheet.applyOn(self)
     }
-    */
-
+    
+    override open func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        return Stylesheet.Contexts.Global.StatusBarStyle
+    }
 }

@@ -21,7 +21,6 @@
 		163F1FC81E07371E005BCDA9 /* binding_of_isaac_databaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F1FC71E07371E005BCDA9 /* binding_of_isaac_databaseUITests.swift */; };
 		1649836A1E09E324000DA36F /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164983691E09E324000DA36F /* ItemViewController.swift */; };
 		1649836F1E09E722000DA36F /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649836E1E09E722000DA36F /* ItemModel.swift */; };
-		1655F3051E2D6E2A00D80B76 /* Consumables.json in Resources */ = {isa = PBXBuildFile; fileRef = 1655F3041E2D6E2A00D80B76 /* Consumables.json */; };
 		1655F9531E2D754D00D80B76 /* Achievement_-0-_baby.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F30E1E2D754A00D80B76 /* Achievement_-0-_baby.png */; };
 		1655F9541E2D754D00D80B76 /* Achievement_1001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F30F1E2D754A00D80B76 /* Achievement_1001.png */; };
 		1655F9551E2D754D00D80B76 /* Achievement_2_new_pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F3101E2D754A00D80B76 /* Achievement_2_new_pills.png */; };
@@ -1440,7 +1439,7 @@
 		1655FEDA1E2D754E00D80B76 /* blackhearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8A71E2D754C00D80B76 /* blackhearts.png */; };
 		1655FEDB1E2D754E00D80B76 /* blendedhearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8A81E2D754C00D80B76 /* blendedhearts.png */; };
 		1655FEDC1E2D754E00D80B76 /* bombs.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8A91E2D754C00D80B76 /* bombs.png */; };
-		1655FEDD1E2D754E00D80B76 /* 0thefool.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8AB1E2D754C00D80B76 /* 0thefool.png */; };
+		1655FEDD1E2D754E00D80B76 /* othefool.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8AB1E2D754C00D80B76 /* othefool.png */; };
 		1655FEDE1E2D754E00D80B76 /* 2ofclubs.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8AC1E2D754C00D80B76 /* 2ofclubs.png */; };
 		1655FEDF1E2D754E00D80B76 /* 2ofdiamonds.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8AD1E2D754C00D80B76 /* 2ofdiamonds.png */; };
 		1655FEE01E2D754E00D80B76 /* 2ofhearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F8AE1E2D754C00D80B76 /* 2ofhearts.png */; };
@@ -1599,7 +1598,7 @@
 		1655FF791E2D754E00D80B76 /* umbilicalcord.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F94F1E2D754D00D80B76 /* umbilicalcord.png */; };
 		1655FF7A1E2D754E00D80B76 /* whipworm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F9501E2D754D00D80B76 /* whipworm.png */; };
 		1655FF7B1E2D754E00D80B76 /* wiggleworm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F9511E2D754D00D80B76 /* wiggleworm.png */; };
-		1655FF811E2E7A2200D80B76 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655FF801E2E7A2200D80B76 /* AppCoordinator.swift */; };
+		1663663B1E2EF48300E1457F /* Consumables.json in Resources */ = {isa = PBXBuildFile; fileRef = 1663663A1E2EF48300E1457F /* Consumables.json */; };
 		166DB6EA1E1467290060FAE2 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166DB6E91E1467290060FAE2 /* Stylesheet.swift */; };
 		167611931E0EEE410091AA04 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167611921E0EEE410091AA04 /* Helpers.swift */; };
 		167611951E0F0F180091AA04 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167611941E0F0F180091AA04 /* ItemDetailViewController.swift */; };
@@ -1662,7 +1661,6 @@
 		163F1FC91E07371E005BCDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		164983691E09E324000DA36F /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		1649836E1E09E722000DA36F /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
-		1655F3041E2D6E2A00D80B76 /* Consumables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consumables.json; sourceTree = "<group>"; };
 		1655F30E1E2D754A00D80B76 /* Achievement_-0-_baby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Achievement_-0-_baby.png"; sourceTree = "<group>"; };
 		1655F30F1E2D754A00D80B76 /* Achievement_1001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Achievement_1001.png; sourceTree = "<group>"; };
 		1655F3101E2D754A00D80B76 /* Achievement_2_new_pills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Achievement_2_new_pills.png; sourceTree = "<group>"; };
@@ -3081,7 +3079,7 @@
 		1655F8A71E2D754C00D80B76 /* blackhearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackhearts.png; sourceTree = "<group>"; };
 		1655F8A81E2D754C00D80B76 /* blendedhearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blendedhearts.png; sourceTree = "<group>"; };
 		1655F8A91E2D754C00D80B76 /* bombs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bombs.png; sourceTree = "<group>"; };
-		1655F8AB1E2D754C00D80B76 /* 0thefool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0thefool.png; sourceTree = "<group>"; };
+		1655F8AB1E2D754C00D80B76 /* othefool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = othefool.png; sourceTree = "<group>"; };
 		1655F8AC1E2D754C00D80B76 /* 2ofclubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2ofclubs.png; sourceTree = "<group>"; };
 		1655F8AD1E2D754C00D80B76 /* 2ofdiamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2ofdiamonds.png; sourceTree = "<group>"; };
 		1655F8AE1E2D754C00D80B76 /* 2ofhearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2ofhearts.png; sourceTree = "<group>"; };
@@ -3240,7 +3238,7 @@
 		1655F94F1E2D754D00D80B76 /* umbilicalcord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umbilicalcord.png; sourceTree = "<group>"; };
 		1655F9501E2D754D00D80B76 /* whipworm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whipworm.png; sourceTree = "<group>"; };
 		1655F9511E2D754D00D80B76 /* wiggleworm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiggleworm.png; sourceTree = "<group>"; };
-		1655FF801E2E7A2200D80B76 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1663663A1E2EF48300E1457F /* Consumables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consumables.json; sourceTree = "<group>"; };
 		166DB6E91E1467290060FAE2 /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 		167611921E0EEE410091AA04 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		167611941E0F0F180091AA04 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
@@ -5013,7 +5011,7 @@
 		1655F8AA1E2D754C00D80B76 /* cards and runes */ = {
 			isa = PBXGroup;
 			children = (
-				1655F8AB1E2D754C00D80B76 /* 0thefool.png */,
+				1655F8AB1E2D754C00D80B76 /* othefool.png */,
 				1655F8AC1E2D754C00D80B76 /* 2ofclubs.png */,
 				1655F8AD1E2D754C00D80B76 /* 2ofdiamonds.png */,
 				1655F8AE1E2D754C00D80B76 /* 2ofhearts.png */,
@@ -5227,7 +5225,6 @@
 		1655FF821E2E7A3000D80B76 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				1655FF801E2E7A2200D80B76 /* AppCoordinator.swift */,
 				163F1FA71E07371E005BCDA9 /* AppDelegate.swift */,
 				16FB4FD81E0EDFB400219B63 /* Assets.xcassets */,
 			);
@@ -5265,7 +5262,7 @@
 		16F8DA1D1E09F1D600AAC94D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				1655F3041E2D6E2A00D80B76 /* Consumables.json */,
+				1663663A1E2EF48300E1457F /* Consumables.json */,
 				16C783DE1E2D3984005110B7 /* BoI Items.json */,
 				16D6CFE91E2C2B0E00DE20FE /* BoI Filters.json */,
 			);
@@ -5372,7 +5369,7 @@
 				TargetAttributes = {
 					163F1FA31E07371D005BCDA9 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 6MS9QWALYV;
+						DevelopmentTeam = 6TY8WC8WPP;
 						ProvisioningStyle = Automatic;
 					};
 					163F1FB71E07371E005BCDA9 = {
@@ -6007,7 +6004,6 @@
 				1655FBFA1E2D754D00D80B76 /* 032_baby_cry.png in Resources */,
 				1655FA381E2D754D00D80B76 /* Achievement_swallowed_penny.png in Resources */,
 				1655FD471E2D754E00D80B76 /* 370_baby_pinkghost.png in Resources */,
-				1655F3051E2D6E2A00D80B76 /* Consumables.json in Resources */,
 				1655FBF11E2D754D00D80B76 /* 027_baby_steven.png in Resources */,
 				1655F9EA1E2D754D00D80B76 /* Achievement_lost_holds_holy_mantle.png in Resources */,
 				1655FD9C1E2D754E00D80B76 /* 029.png in Resources */,
@@ -6779,7 +6775,7 @@
 				1655F9CE1E2D754D00D80B76 /* Achievement_isaac%27s_heart.png in Resources */,
 				1655FEC01E2D754E00D80B76 /* 326.png in Resources */,
 				1655FC771E2D754D00D80B76 /* 134_baby_tears.png in Resources */,
-				1655FEDD1E2D754E00D80B76 /* 0thefool.png in Resources */,
+				1655FEDD1E2D754E00D80B76 /* othefool.png in Resources */,
 				1655F9811E2D754D00D80B76 /* Achievement_blue_map.png in Resources */,
 				1655FF7A1E2D754E00D80B76 /* whipworm.png in Resources */,
 				1655FD121E2D754D00D80B76 /* 317_baby_maw.png in Resources */,
@@ -6795,6 +6791,7 @@
 				1655FEF11E2D754E00D80B76 /* iithehighpriestess.png in Resources */,
 				1655FDCE1E2D754E00D80B76 /* 082.png in Resources */,
 				1655FD741E2D754E00D80B76 /* 415_baby_holyknight.png in Resources */,
+				1663663B1E2EF48300E1457F /* Consumables.json in Resources */,
 				1655FC671E2D754D00D80B76 /* 118_baby_upset.png in Resources */,
 				1655FE021E2D754E00D80B76 /* 134.png in Resources */,
 				1655FD1F1E2D754D00D80B76 /* 330_baby_butterfly.png in Resources */,
@@ -7163,7 +7160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				168730551E09EEC4003745E9 /* DataSource.swift in Sources */,
-				1655FF811E2E7A2200D80B76 /* AppCoordinator.swift in Sources */,
 				168730531E09E7FD003745E9 /* ItemCollection.swift in Sources */,
 				1649836F1E09E722000DA36F /* ItemModel.swift in Sources */,
 				16155DF71E26C20100D35B0F /* FilterCollection.swift in Sources */,
@@ -7331,7 +7327,8 @@
 			baseConfigurationReference = 5EA583A07AB4FFFB274AC532 /* Pods-binding-of-isaac-database.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6MS9QWALYV;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-database/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-database";
@@ -7345,7 +7342,8 @@
 			baseConfigurationReference = 3E1B36335ABABCA78FDFA315 /* Pods-binding-of-isaac-database.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6MS9QWALYV;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-database/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-database";

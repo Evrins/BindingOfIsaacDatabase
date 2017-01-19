@@ -25,6 +25,13 @@ class FilterCollection: NSObject {
     var activeSubPredicates = [NSPredicate]()
     
     func loadFilterModels(_ completionHandler:@escaping (Bool) -> ()) {
+        guard realm.objects(FilterModel.self).isEmpty else {
+            completionHandler(false)
+            self.setAllFilters()
+            self.setDefaultActiveItems()
+            return
+        }
+        
         if let url = Bundle.main.url(forResource: "BoI Filters", withExtension: "json") {
             do {
                 let jsonData = try Data(contentsOf: url)

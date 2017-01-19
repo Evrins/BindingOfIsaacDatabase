@@ -8,6 +8,7 @@
 
 import UIKit
 import SwifterSwift
+import SideMenu
 
 // MARK: - Stylesheet
 enum Stylesheet {
@@ -70,12 +71,21 @@ enum Stylesheet {
 // MARK: - Apply Stylesheet
 extension Stylesheet {
     
-    static func applyOn(_ navVC: NavigationController) {
+    static func applyOn(_ navVC: UINavigationController) {
         typealias context = Contexts.NavigationController
         navVC.navigationBar.barTintColor = context.BarTintColor
         navVC.navigationBar.tintColor = context.BarColor
         navVC.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: Fonts.Regular, size: 22.0)!, NSForegroundColorAttributeName: context.BarTextColor]
         navVC.navigationBar.isTranslucent = false
+        
+    }
+    
+    static func applyOn(_ sideVC: UISideMenuNavigationController) {
+        typealias context = Contexts.NavigationController
+        sideVC.navigationBar.barTintColor = context.BarTintColor
+        sideVC.navigationBar.tintColor = context.BarColor
+        sideVC.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: Fonts.Regular, size: 22.0)!, NSForegroundColorAttributeName: context.BarTextColor]
+        sideVC.navigationBar.isTranslucent = false
     }
     
 //    static func applyOn(cell: CountdownListCell) {

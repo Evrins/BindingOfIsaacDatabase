@@ -26,6 +26,12 @@ class Helpers: NSObject {
     }
 }
 
+extension CGPoint {
+    static var Center: CGPoint {
+        return CGPoint(x: UIScreen.main.bounds.maxX/2, y: UIScreen.main.bounds.maxY/2)
+    }
+}
+
 //extension UIColor {
 //    
 //    /**

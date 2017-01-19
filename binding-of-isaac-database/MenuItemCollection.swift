@@ -55,19 +55,22 @@ class MenuItemCollection: NSObject {
         onComplete?()
     }
     
-    func setActiveItem(to: MenuItem) {
+    func setActiveItem(to newActiveItem: MenuItem) {
         menuItems.forEach { (item) in
             item.active = false
-            if item == to {
+            if item == newActiveItem {
                 item.active = true
             }
         }
         setActive?()
     }
     
-    func getActive() -> MenuItem? {
+    func getActive() -> MenuItem {
         let activeItem = menuItems.filter { $0.active == true }.first
-        return activeItem
+        if activeItem != nil {
+            return activeItem!
+        }
+        return MenuItem(title: "", type: "")
     }
     
     func getMenuItems() -> [MenuItem] {

@@ -3,16 +3,16 @@
     {
       "itemName" : "O - The Fool",
       "itemQuote" : "Where your journey begins",
-      "itemDescription" : "• Teleports the player to the first room of the current floor.",
+      "itemDescription" : "• Teleports the player to the first room of the current floor.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
-      "globalType" : "cardsandrunes"
+      "globalType" : "cardsAndRunes"
     },
     {
       "itemName" : "I - The Magician",
       "itemQuote" : "May you never miss your goal",
-      "itemDescription" : "• For the current room, tears now have the Spoon Bender effect, which allows them to curve towards enemies and gives them a purрle appearance.",
+      "itemDescription" : "• For the current room, tears now have the Spoon Bender effect, which allows them to curve towards enemies and gives them a purрle appearance.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -21,7 +21,7 @@
     {
       "itemName" : "II - The High Priestess",
       "itemQuote" : "Mother is watching you",
-      "itemDescription" : "• Summons Mom's foot which will stomp on a random enemy in the current room, dealing 300 damage.  • If no enemies are in the current room, the foot will target Isaac (and do damage if it hits), however it can be used to break rocks.",
+      "itemDescription" : "• Summons Mom's foot which will stomp on a random enemy in the current room, dealing 300 damage.;  • If no enemies are in the current room, the foot will target Isaac (and do damage if it hits), however it can be used to break rocks.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -30,7 +30,7 @@
     {
       "itemName" : "III - The Empress",
       "itemQuote" : "May your rage bring power",
-      "itemDescription" : "• Gives the player the Whore of Babylon effect for the current room, increasing damage and speed.",
+      "itemDescription" : "• Gives the player the Whore of Babylon effect for the current room, increasing damage and speed.;",
       "itemUnlock" : "",
       "itemTags" : "speed up",
       "game" : "",
@@ -39,7 +39,7 @@
     {
       "itemName" : "IV - The Emperor",
       "itemQuote" : "Challenge me!",
-      "itemDescription" : "• Teleports the player to the Boss room on the current floor.",
+      "itemDescription" : "• Teleports the player to the Boss room on the current floor.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -48,7 +48,7 @@
     {
       "itemName" : "V - The Hierophant",
       "itemQuote" : "Two prayers for the lost",
-      "itemDescription" : "• Spawns 2 Soul hearts on the floor.",
+      "itemDescription" : "• Spawns 2 Soul hearts on the floor.;",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
       "game" : "",
@@ -57,7 +57,7 @@
     {
       "itemName" : "VI - The Lovers",
       "itemQuote" : "May you prosper and be in good health",
-      "itemDescription" : "• Spawns 2 red hearts on the floor.",
+      "itemDescription" : "• Spawns 2 red hearts on the floor.;",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
       "game" : "",
@@ -66,7 +66,7 @@
     {
       "itemName" : "VII - The Chariot",
       "itemQuote" : "May nothing stand before you",
-      "itemDescription" : "• Grants the same effect as 'My Little Unicorn', which makes Isaac invincible and deal 40 contact damage to enemies per hit.",
+      "itemDescription" : "• Grants the same effect as 'My Little Unicorn', which makes Isaac invincible and deal 40 contact damage to enemies per hit.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -75,7 +75,7 @@
     {
       "itemName" : "VIII - Justice",
       "itemQuote" : "May your future become balanced",
-      "itemDescription" : "• Spawns 1 bomb, 1 key, 1 coin, 1 heart, which can be random variants of each.",
+      "itemDescription" : "• Spawns 1 bomb, 1 key, 1 coin, 1 heart, which can be random variants of each.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -84,7 +84,7 @@
     {
       "itemName" : "IX - The Hermit",
       "itemQuote" : "May you see what life has to offer",
-      "itemDescription" : "• Teleports the player to the Shop.  • On or below the Womb, this acts as a random teleport, since there are no shops on those floors.",
+      "itemDescription" : "• Teleports the player to the Shop.;  • On or below the Womb, this acts as a random teleport, since there are no shops on those floors.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -93,7 +93,7 @@
     {
       "itemName" : "X - Wheel of Fortune",
       "itemQuote" : "Spin the wheel of destiny",
-      "itemDescription" : "• Spawns a Slot Machine or a Fortune Machine.",
+      "itemDescription" : "• Spawns a Slot Machine or a Fortune Machine.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -102,7 +102,7 @@
     {
       "itemName" : "XI - Strength",
       "itemQuote" : "May your power bring rage",
-      "itemDescription" : "• Gives the player the Magic Mushroom effect, which increasing size and all stats by 1 for the current room.  • If you use the Strength card with 12 heart containers, it will take you down to 11 when you leave the room.",
+      "itemDescription" : "• Gives the player the Magic Mushroom effect, which increasing size and all stats by 1 for the current room.;  • If you use the Strength card with 12 heart containers, it will take you down to 11 when you leave the room.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -111,7 +111,7 @@
     {
       "itemName" : "XII - The Hanged Man",
       "itemQuote" : "May you find enlightenment",
-      "itemDescription" : "• Gives the player the flying effect for the current room, allowing the player to fly over obstacles in the room.  • This card is useless if you have any item which allows you to permanently fly.",
+      "itemDescription" : "• Gives the player the flying effect for the current room, allowing the player to fly over obstacles in the room.;  • This card is useless if you have any item which allows you to permanently fly.;",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
       "game" : "",
@@ -120,7 +120,7 @@
     {
       "itemName" : "XIII - Death",
       "itemQuote" : "Lay waste to all that oppose you",
-      "itemDescription" : "• Deals 40 damage to all enemies in the room in a similar style to the Necronomicon.",
+      "itemDescription" : "• Deals 40 damage to all enemies in the room in a similar style to the Necronomicon.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -129,7 +129,7 @@
     {
       "itemName" : "XIV - Temperance",
       "itemQuote" : "May you be pure in heart",
-      "itemDescription" : "• Spawns a Blood Donation Machine.",
+      "itemDescription" : "• Spawns a Blood Donation Machine.;",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
       "game" : "",
@@ -138,7 +138,7 @@
     {
       "itemName" : "XV - The Devil",
       "itemQuote" : "Revel in the power of your darkness",
-      "itemDescription" : "• Gives the Book of Belial effect for the current room, increasing damage.",
+      "itemDescription" : "• Gives the Book of Belial effect for the current room, increasing damage.;",
       "itemUnlock" : "",
       "itemTags" : "damage up",
       "game" : "",
@@ -147,7 +147,7 @@
     {
       "itemName" : "XVI - The Tower",
       "itemQuote" : "Destruction brings creation",
-      "itemDescription" : "• Spawns some troll bombs at random locations in the current room.  • Each bomb deals 60 damage (normal bomb damage.",
+      "itemDescription" : "• Spawns some troll bombs at random locations in the current room.;  • Each bomb deals 60 damage (normal bomb damage.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -156,7 +156,7 @@
     {
       "itemName" : "XVII - The Stars",
       "itemQuote" : "May you find what you desire",
-      "itemDescription" : "• Teleports the player to the Item Room.  • On or below the Womb, this acts as a random teleport, since there are no item rooms on those floors.",
+      "itemDescription" : "• Teleports the player to the Item Room.;  • On or below the Womb, this acts as a random teleport, since there are no item rooms on those floors.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -165,7 +165,7 @@
     {
       "itemName" : "XVIII - The Moon",
       "itemQuote" : "May you find all you have lost",
-      "itemDescription" : "• Teleports the player to the Secret Room.",
+      "itemDescription" : "• Teleports the player to the Secret Room.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -174,7 +174,7 @@
     {
       "itemName" : "XIX - The Sun",
       "itemQuote" : "May the light heal and enlighten you",
-      "itemDescription" : "• A card with three uses: A full heal, deals 100 damage to all enemies in the current room and reveals the entire map for the current floor (Treasure Map + The Compass).",
+      "itemDescription" : "• A card with three uses: A full heal, deals 100 damage to all enemies in the current room and reveals the entire map for the current floor (Treasure Map + The Compass).;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -183,7 +183,7 @@
     {
       "itemName" : "XX - Judgement",
       "itemQuote" : "Judge lest ye be judged",
-      "itemDescription" : "• Spawns a beggar.  • Has a chance to be a demon beggar.  • Killing a Devil Beggar, Key Master, or Shell Game Beggar gives you an increased chance of finding Angel rooms instead of Devil rooms. See the dedicated Devil room page for more details.",
+      "itemDescription" : "• Spawns a beggar.;  • Has a chance to be a demon beggar.;  • Killing a Devil Beggar, Key Master, or Shell Game Beggar gives you an increased chance of finding Angel rooms instead of Devil rooms.; See the dedicated Devil room page for more details.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -192,7 +192,7 @@
     {
       "itemName" : "XXI - The World",
       "itemQuote" : "Open your eyes and see",
-      "itemDescription" : "• Reveals the entire map and shows the icons for every room which has one.  • This is completely useless if you currently have both the Treasure Map and The Compass.",
+      "itemDescription" : "• Reveals the entire map and shows the icons for every room which has one.;  • This is completely useless if you currently have both the Treasure Map and The Compass.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -201,7 +201,7 @@
     {
       "itemName" : "2 of Spades",
       "itemQuote" : "Item multiplier",
-      "itemDescription" : "• Doubles the number of keys you have.  • If you have no keys, it gives you two.",
+      "itemDescription" : "• Doubles the number of keys you have.;  • If you have no keys, it gives you two.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -210,7 +210,7 @@
     {
       "itemName" : "2 of Clubs",
       "itemQuote" : "Item multiplier",
-      "itemDescription" : "• Doubles the number of Bombs you have.  • If you have no bombs, it gives you two.",
+      "itemDescription" : "• Doubles the number of Bombs you have.;  • If you have no bombs, it gives you two.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -219,7 +219,7 @@
     {
       "itemName" : "2 of Hearts",
       "itemQuote" : "Item multiplier",
-      "itemDescription" : "• Doubles your current red hearts up to full health.  • This card is useless for the Bluе Baby.",
+      "itemDescription" : "• Doubles your current red hearts up to full health.;  • This card is useless for the Bluе Baby.;",
       "itemUnlock" : "",
       "itemTags" : ", the lost item pool",
       "game" : "",
@@ -228,7 +228,7 @@
     {
       "itemName" : "2 of Diamonds",
       "itemQuote" : "Item multiplier",
-      "itemDescription" : "• Doubles the number of coins you have.  • If you have no coins, it gives you two.",
+      "itemDescription" : "• Doubles the number of coins you have.;  • If you have no coins, it gives you two.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -237,7 +237,7 @@
     {
       "itemName" : "The Joker",
       "itemQuote" : "???",
-      "itemDescription" : "• Teleports you to the Devil Deal Room on the current floor.",
+      "itemDescription" : "• Teleports you to the Devil Deal Room on the current floor.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -246,7 +246,7 @@
     {
       "itemName" : "Chaos Card",
       "itemQuote" : "???",
-      "itemDescription" : "• A card which can be thrown as a projectile directly infront of Isaac, instantly killing anything it hits, including most bosses.  • If thrown at a multi-phase boss with multiple forms such Satan, Mega Satan or Hush it will only kill that particular phase of the boss.  • If thrown at a multi-phase boss that works from a single health bar such as Isaac, ??? or The Lamb, it will die instantly.  • Will destroy rocks and poop in its path.  • Can also be thrown against a door to open it (Doesn't work against Mega Satan's door).",
+      "itemDescription" : "• A card which can be thrown as a projectile directly infront of Isaac, instantly killing anything it hits, including most bosses.;  • If thrown at a multi-phase boss with multiple forms such Satan, Mega Satan or Hush it will only kill that particular phase of the boss.;  • If thrown at a multi-phase boss that works from a single health bar such as Isaac, ??? or The Lamb, it will die instantly.;  • Will destroy rocks and poop in its path.;  • Can also be thrown against a door to open it (Doesn't work against Mega Satan's door).;",
       "itemUnlock" : "Unlock this card by beating Challenge #9 (Demo Man).",
       "itemTags" : "",
       "game" : "",
@@ -255,7 +255,7 @@
     {
       "itemName" : "Credit Card",
       "itemQuote" : "Charge it!",
-      "itemDescription" : "• When used, removes the price tag from all items in the current shop or devil deal, making everything free.  • The effect of the Credit Card only lasts for the current room.",
+      "itemDescription" : "• When used, removes the price tag from all items in the current shop or devil deal, making everything free.;  • The effect of the Credit Card only lasts for the current room.;",
       "itemUnlock" : "Unlock this card by beating Challenge #10 (Cursed!).",
       "itemTags" : "",
       "game" : "",
@@ -264,7 +264,7 @@
     {
       "itemName" : "Rules Card",
       "itemQuote" : "???",
-      "itemDescription" : "• Displays a random cryptic message on the screen similar to the fortune machine ones. One of the following messages may show:  • \"Rooms may yield more than you expect\"  • \"Some doors require a blessing. Carry them with you\"  • \"The walls will harden over time. Time is the essence\"  • \"Sleeping gatekeepers will need to be awoken with a loud sound\"  • \"A piece of paper is your guide\"  • \"Deny his gifts to attain your reward\"  • \"A dark market lies under your feet  • \"Chub dislikes smoke!",
+      "itemDescription" : "• Displays a random cryptic message on the screen similar to the fortune machine ones.; One of the following messages may show:  • \"Rooms may yield more than you expect\"  • \"Some doors require a blessing.; Carry them with you\"  • \"The walls will harden over time.; Time is the essence\"  • \"Sleeping gatekeepers will need to be awoken with a loud sound\"  • \"A piece of paper is your guide\"  • \"Deny his gifts to attain your reward\"  • \"A dark market lies under your feet  • \"Chub dislikes smoke!",
       "itemUnlock" : "Unlock this card by beating Challenge #11 (Glass Cannon).",
       "itemTags" : "",
       "game" : "",
@@ -282,7 +282,7 @@
     {
       "itemName" : "Suicide King",
       "itemQuote" : "A true ending?",
-      "itemDescription" : "• When used, instantly kills you and spawns 10 pickup on the floor.  • Each of the 10 things spawned can be any type of consumable or sometimes a pedestal item (up to a maximum of 3 pedestal items).  • Any pedestal item created by Suicide King will be related to the room where it was used, meaning that using it in the Angel room will spawn Angel room items.",
+      "itemDescription" : "• When used, instantly kills you and spawns 10 pickup on the floor.;  • Each of the 10 things spawned can be any type of consumable or sometimes a pedestal item (up to a maximum of 3 pedestal items).;  • Any pedestal item created by Suicide King will be related to the room where it was used, meaning that using it in the Angel room will spawn Angel room items.;",
       "itemUnlock" : "Unlock this card by beating Challenge #7 (Suicide King).",
       "itemTags" : "",
       "game" : "",
@@ -291,7 +291,7 @@
     {
       "itemName" : "Rune of Algiz",
       "itemQuote" : "Resistance",
-      "itemDescription" : "• When used, gives you an invincibility effect which lasts for 30 seconds (much longer than normal invincibility effects).",
+      "itemDescription" : "• When used, gives you an invincibility effect which lasts for 30 seconds (much longer than normal invincibility effects).;",
       "itemUnlock" : "Unlock this card by beating Challenge #8 (Cat Got Your Tongue).",
       "itemTags" : "",
       "game" : "",
@@ -300,7 +300,7 @@
     {
       "itemName" : "Rune of Ansuz",
       "itemQuote" : "Vision",
-      "itemDescription" : "• When used, reveals the entire map including all the secret room locations and other icon rooms.",
+      "itemDescription" : "• When used, reveals the entire map including all the secret room locations and other icon rooms.;",
       "itemUnlock" : "Unlock this card by beating Challenge #5 (The Tank).",
       "itemTags" : "",
       "game" : "",
@@ -309,7 +309,7 @@
     {
       "itemName" : "Rune of Berkano",
       "itemQuote" : "Companionship",
-      "itemDescription" : "• Summons 3 blue friendly spiders and 3 blue flies.",
+      "itemDescription" : "• Summons 3 blue friendly spiders and 3 blue flies.;",
       "itemUnlock" : "Unlock this card by beating Challenge #20 (Purist).",
       "itemTags" : "",
       "game" : "",
@@ -318,7 +318,7 @@
     {
       "itemName" : "Rune of Dagaz",
       "itemQuote" : "Purity",
-      "itemDescription" : "• Removes the curse which is in effect on the current floor.  • Can also cure the effect of the Amnesia pill.  • +1 Soul Heart.",
+      "itemDescription" : "• Removes the curse which is in effect on the current floor.;  • Can also cure the effect of the Amnesia pill.;  • +1 Soul Heart.;",
       "itemUnlock" : "Unlock this card by beating Challenge #4 (Darkness Falls).",
       "itemTags" : "",
       "game" : "",
@@ -327,7 +327,7 @@
     {
       "itemName" : "Rune of Ehwaz",
       "itemQuote" : "Passage",
-      "itemDescription" : "• Creates a trapdoor on the floor (Same effect as We Need To Go Deeper).",
+      "itemDescription" : "• Creates a trapdoor on the floor (Same effect as We Need To Go Deeper).;",
       "itemUnlock" : "Unlock this card by beating Challenge #3 (Head Trauma).",
       "itemTags" : "",
       "game" : "",
@@ -336,7 +336,7 @@
     {
       "itemName" : "Rune of Hagalaz",
       "itemQuote" : "Destruction",
-      "itemDescription" : "• When used, this rune will destroy all breakable objects in the current room, such as poop, rocks and skulls.",
+      "itemDescription" : "• When used, this rune will destroy all breakable objects in the current room, such as poop, rocks and skulls.;",
       "itemUnlock" : "Unlock this card by beating Challenge #1 (Pitch Black).",
       "itemTags" : "",
       "game" : "",
@@ -345,7 +345,7 @@
     {
       "itemName" : "Rune of Jera",
       "itemQuote" : "Abundance",
-      "itemDescription" : "• When used this rune will double all pickups on the floor in the room.  • Creates copies of pickups, even if you haven't purchased them yet.  • Can be used to double the number of golden item chests in the first room of the final Chest floor.",
+      "itemDescription" : "• When used this rune will double all pickups on the floor in the room.;  • Creates copies of pickups, even if you haven't purchased them yet.;  • Can be used to double the number of golden item chests in the first room of the final Chest floor.;",
       "itemUnlock" : "Unlock this card by beating Challenge #2 (High Brow).",
       "itemTags" : "",
       "game" : "",
@@ -354,7 +354,7 @@
     {
       "itemName" : "Rune of Perthro",
       "itemQuote" : "Change",
-      "itemDescription" : "• Rerolls all pedestal items in the current room (One time use of the D6).",
+      "itemDescription" : "• Rerolls all pedestal items in the current room (One time use of the D6).;",
       "itemUnlock" : "Unlock this card by beating Challenge #6 (Solar System).",
       "itemTags" : "",
       "game" : "",
@@ -363,7 +363,7 @@
     {
       "itemName" : "Blank Rune",
       "itemQuote" : "???",
-      "itemDescription" : "• When used, gives a random Mystic rune effect.  • Possible effects include: Algiz, Ansuz, Berkano, Dagaz, Ehwaz, Hagalaz, Jera, Perthro.  • Also has a 25% chance to spawn another Blank Rune upon use.",
+      "itemDescription" : "• When used, gives a random Mystic rune effect.;  • Possible effects include: Algiz, Ansuz, Berkano, Dagaz, Ehwaz, Hagalaz, Jera, Perthro.;  • Also has a 25% chance to spawn another Blank Rune upon use.;",
       "itemUnlock" : "Unlock this card by beating Challenge #30 (Guardian).",
       "itemTags" : "",
       "game" : "",
@@ -372,7 +372,7 @@
     {
       "itemName" : "Dice Shard",
       "itemQuote" : "",
-      "itemDescription" : "• Gives a one-time use of the D6 and D20 effects at the same time.",
+      "itemDescription" : "• Gives a one-time use of the D6 and D20 effects at the same time.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -381,7 +381,7 @@
     {
       "itemName" : "Get Out Of Jail Free Card",
       "itemQuote" : "Open sesame",
-      "itemDescription" : "• When used, will open all doors in the current room, similar to a one-time use of Dad's Key.",
+      "itemDescription" : "• When used, will open all doors in the current room, similar to a one-time use of Dad's Key.;",
       "itemUnlock" : "Unlock this card by beating Challenge #22 (Speed).",
       "itemTags" : "",
       "game" : "",
@@ -390,7 +390,7 @@
     {
       "itemName" : "? Card",
       "itemQuote" : "Double active",
-      "itemDescription" : "• When used this card will activate a use of your spacebar item for free.",
+      "itemDescription" : "• When used this card will activate a use of your spacebar item for free.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -399,7 +399,7 @@
     {
       "itemName" : "Emergency Contact",
       "itemQuote" : "Help from above",
-      "itemDescription" : "• When used will cause two of Mom's Hand to come down and grab a random enemy.",
+      "itemDescription" : "• When used will cause two of Mom's Hand to come down and grab a random enemy.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "",
@@ -408,7 +408,7 @@
     {
       "itemName" : "Ace of Hearts",
       "itemQuote" : "Convert all",
-      "itemDescription" : "• When used, turns all pickups and chests in the room into Hearts.",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Hearts.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "afterbirthPlus",
@@ -417,7 +417,7 @@
     {
       "itemName" : "Ace of Spades",
       "itemQuote" : "Convert all",
-      "itemDescription" : "• When used, turns all pickups and chests in the room into Keys.",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Keys.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "afterbirthPlus",
@@ -426,7 +426,7 @@
     {
       "itemName" : "Ace of Clubs",
       "itemQuote" : "Convert all",
-      "itemDescription" : "• When used, turns all pickups and chests in the room into Bombs.",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Bombs.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "afterbirthPlus",
@@ -435,7 +435,7 @@
     {
       "itemName" : "Ace of Diamonds",
       "itemQuote" : "Convert all",
-      "itemDescription" : "• When used, turns all pickups and chests in the room into Coins.",
+      "itemDescription" : "• When used, turns all pickups and chests in the room into Coins.;",
       "itemUnlock" : "",
       "itemTags" : "",
       "game" : "afterbirthPlus",
@@ -453,7 +453,7 @@
     {
       "itemName" : "Black Rune",
       "itemQuote" : "Void",
-      "itemDescription" : "• When used, this rune deals 40 damage to all enemies in the room and consumes all pedestal items in the room, giving you a random stat increase for each item consumed.",
+      "itemDescription" : "• When used, this rune deals 40 damage to all enemies in the room and consumes all pedestal items in the room, giving you a random stat increase for each item consumed.;",
       "itemUnlock" : "Unlock this item by beating Greedier mode as Apollyon.",
       "itemTags" : "",
       "game" : "afterbirthPlus",

@@ -69,6 +69,15 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         return button
     }()
     
+    var currentTitle: String = {
+        var title = "Search"
+        let activeMenuItemTitle = MenuItemCollection.sharedInstance.getActive().title
+        if !activeMenuItemTitle.isEmpty {
+            title = MenuItemCollection.sharedInstance.getActive().title
+        }
+        return title
+    }()
+    
     var isSearchView = false {
         didSet {
             switch(isSearchView) {
@@ -82,10 +91,6 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if menuItemCollection.getActive() == nil {
-            self.title = "Search"
-        }
         
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
@@ -99,12 +104,12 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         
         menuItemCollection.setActive = { _ in
-            self.title = self.menuItemCollection.getActive()?.title
+            self.currentTitle = self.menuItemCollection.getActive().title
             self.placeholderViewCheck()
             self.clearSearchBar()
             
             self.isSearchView = false
-            if self.title == "Search" {
+            if self.currentTitle == Titles.Search {
                 self.isSearchView = true
             }
             
@@ -119,12 +124,10 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
 
         self.setUpSideMenu()
       
-            self.setupConstraints()
+        self.setupConstraints()
         
         displayOptions(layoutType: layoutType)
         collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
-        
-        navigationController?.navigationBar.isTranslucent = false
         
         // Register Custom Cells
         collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
@@ -140,7 +143,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func layoutCheck() {
-        switch (self.title!) {
+        switch (currentTitle) {
         case Titles.Search :
             layoutType = .Grid
         case Titles.Items :
@@ -163,7 +166,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     func placeholderViewCheck() {
         self.placeholderView.isHidden = true
         
-        if self.title == "Search" || searchItems.isEmpty {
+        if currentTitle == Titles.Search || currentTitle == Titles.Settings || searchItems.isEmpty {
             self.placeholderView.isHidden = false
         }
     }
@@ -328,16 +331,23 @@ extension ItemViewController {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = searchItems[indexPath.row]
         selectedItem = item
-        performSegue(withIdentifier: "showItemDetail", sender: nil)
+//        performSegue(withIdentifier: "showItemDetail", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let vc = storyboard.instantiateViewController(withIdentifier: "ItemDetailViewController") as? ItemDetailViewController {
+            
+            vc.selectedItem = selectedItem
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showItemDetail" {
-            let destinationVC =  segue.destination as! ItemDetailViewController
-            destinationVC.selectedItem = selectedItem
-        }
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showItemDetail" {
+//            let destinationVC =  segue.destination as! ItemDetailViewController
+//            destinationVC.selectedItem = selectedItem
+//        }
+//    }
 }
 
 extension ItemViewController {
@@ -417,7 +427,7 @@ extension ItemViewController {
             return
         }
         
-        if self.title != "Search" {
+        if currentTitle != Titles.Search {
             removeSearchBar()
         }
     }

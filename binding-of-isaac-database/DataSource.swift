@@ -14,7 +14,7 @@ import SwiftyJSON
 class DataSource {
     static func loadItems(_ completionHandler:@escaping (Bool) -> ()) {
         let realm = try! Realm()
-//        guard realm.isEmpty else {return}
+        guard realm.isEmpty else {return}
         
         //@TODO: Fix delete all objects
         try! realm.write {

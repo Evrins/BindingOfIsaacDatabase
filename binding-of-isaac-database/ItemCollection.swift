@@ -37,8 +37,8 @@ class ItemCollection: NSObject {
 // MARK: - Filtering Item
 extension ItemCollection {
     func filterByAllFilters() {
-        let menuAttribute = menuItemCollection.getActive()?.type
-        let predicate = NSPredicate(format: "\(Filters.ItemAttribute.GlobalType) == '\(menuAttribute!)'")
+        let menuAttribute = menuItemCollection.getActive().type
+        let predicate = NSPredicate(format: "\(Filters.ItemAttribute.GlobalType) == '\(menuAttribute)'")
 
         currentItems = loadedItems.filter(predicate)
         
