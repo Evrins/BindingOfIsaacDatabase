@@ -13,6 +13,7 @@
 		1618528E1E08DAF2004F6859 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1618528D1E08DAF2004F6859 /* ItemCollectionViewCell.swift */; };
 		161B21B21E2023EE00FA27A4 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B21B11E2023EE00FA27A4 /* Filters.swift */; };
 		161B21B81E205D5200FA27A4 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B21B71E205D5200FA27A4 /* FilterModel.swift */; };
+		162CB58B1E31A81700554500 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162CB58A1E31A81700554500 /* ContactView.swift */; };
 		162CDD0B1E136B3E00009505 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162CDD0A1E136B3E00009505 /* MenuItem.swift */; };
 		162CDD0D1E136BF200009505 /* MenuItemCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162CDD0C1E136BF200009505 /* MenuItemCollection.swift */; };
 		163F1FA81E07371E005BCDA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163F1FA71E07371E005BCDA9 /* AppDelegate.swift */; };
@@ -1598,7 +1599,7 @@
 		1655FF791E2D754E00D80B76 /* umbilicalcord.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F94F1E2D754D00D80B76 /* umbilicalcord.png */; };
 		1655FF7A1E2D754E00D80B76 /* whipworm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F9501E2D754D00D80B76 /* whipworm.png */; };
 		1655FF7B1E2D754E00D80B76 /* wiggleworm.png in Resources */ = {isa = PBXBuildFile; fileRef = 1655F9511E2D754D00D80B76 /* wiggleworm.png */; };
-		1663663B1E2EF48300E1457F /* Consumables.json in Resources */ = {isa = PBXBuildFile; fileRef = 1663663A1E2EF48300E1457F /* Consumables.json */; };
+		165CE90E1E313761002EA5EA /* Consumables.json in Resources */ = {isa = PBXBuildFile; fileRef = 165CE90D1E313761002EA5EA /* Consumables.json */; };
 		166DB6EA1E1467290060FAE2 /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166DB6E91E1467290060FAE2 /* Stylesheet.swift */; };
 		167611931E0EEE410091AA04 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167611921E0EEE410091AA04 /* Helpers.swift */; };
 		167611951E0F0F180091AA04 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167611941E0F0F180091AA04 /* ItemDetailViewController.swift */; };
@@ -1647,6 +1648,7 @@
 		1618528D1E08DAF2004F6859 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		161B21B11E2023EE00FA27A4 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		161B21B71E205D5200FA27A4 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		162CB58A1E31A81700554500 /* ContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		162CDD0A1E136B3E00009505 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		162CDD0C1E136BF200009505 /* MenuItemCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCollection.swift; sourceTree = "<group>"; };
 		163F1FA41E07371E005BCDA9 /* binding-of-isaac-database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "binding-of-isaac-database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3238,7 +3240,7 @@
 		1655F94F1E2D754D00D80B76 /* umbilicalcord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umbilicalcord.png; sourceTree = "<group>"; };
 		1655F9501E2D754D00D80B76 /* whipworm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whipworm.png; sourceTree = "<group>"; };
 		1655F9511E2D754D00D80B76 /* wiggleworm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wiggleworm.png; sourceTree = "<group>"; };
-		1663663A1E2EF48300E1457F /* Consumables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consumables.json; sourceTree = "<group>"; };
+		165CE90D1E313761002EA5EA /* Consumables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Consumables.json; sourceTree = "<group>"; };
 		166DB6E91E1467290060FAE2 /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
 		167611921E0EEE410091AA04 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		167611941E0F0F180091AA04 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
@@ -3333,7 +3335,7 @@
 			isa = PBXGroup;
 			children = (
 				1655FF821E2E7A3000D80B76 /* Core */,
-				1655F30C1E2D754A00D80B76 /* Converted Items */,
+				1655F30C1E2D754A00D80B76 /* Item Images */,
 				16155DF81E26C32600D35B0F /* Data */,
 				16E2527A1E0B5E6800108E27 /* Flow Layouts */,
 				16E2527D1E0B5F1B00108E27 /* Helpers */,
@@ -3378,6 +3380,7 @@
 				16D6CFD91E294EC700DE20FE /* CustomTitleView.swift */,
 				16C783D81E2C4879005110B7 /* PlaceholderView.swift */,
 				16B763FF1E2E7CD1000DC7B3 /* NavigationController.swift */,
+				162CB58A1E31A81700554500 /* ContactView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -3406,7 +3409,7 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		1655F30C1E2D754A00D80B76 /* Converted Items */ = {
+		1655F30C1E2D754A00D80B76 /* Item Images */ = {
 			isa = PBXGroup;
 			children = (
 				1655F30D1E2D754A00D80B76 /* Achievements */,
@@ -3417,6 +3420,7 @@
 				1655F5481E2D754B00D80B76 /* questionmark.png */,
 				1655F5491E2D754B00D80B76 /* Rebirth */,
 			);
+			name = "Item Images";
 			path = "Converted Items";
 			sourceTree = "<group>";
 		};
@@ -5262,7 +5266,7 @@
 		16F8DA1D1E09F1D600AAC94D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				1663663A1E2EF48300E1457F /* Consumables.json */,
+				165CE90D1E313761002EA5EA /* Consumables.json */,
 				16C783DE1E2D3984005110B7 /* BoI Items.json */,
 				16D6CFE91E2C2B0E00DE20FE /* BoI Filters.json */,
 			);
@@ -5374,13 +5378,13 @@
 					};
 					163F1FB71E07371E005BCDA9 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 6MS9QWALYV;
+						DevelopmentTeam = 6TY8WC8WPP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 163F1FA31E07371D005BCDA9;
 					};
 					163F1FC21E07371E005BCDA9 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 6MS9QWALYV;
+						DevelopmentTeam = 6TY8WC8WPP;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 163F1FA31E07371D005BCDA9;
 					};
@@ -6791,7 +6795,7 @@
 				1655FEF11E2D754E00D80B76 /* iithehighpriestess.png in Resources */,
 				1655FDCE1E2D754E00D80B76 /* 082.png in Resources */,
 				1655FD741E2D754E00D80B76 /* 415_baby_holyknight.png in Resources */,
-				1663663B1E2EF48300E1457F /* Consumables.json in Resources */,
+				165CE90E1E313761002EA5EA /* Consumables.json in Resources */,
 				1655FC671E2D754D00D80B76 /* 118_baby_upset.png in Resources */,
 				1655FE021E2D754E00D80B76 /* 134.png in Resources */,
 				1655FD1F1E2D754D00D80B76 /* 330_baby_butterfly.png in Resources */,
@@ -7162,6 +7166,7 @@
 				168730551E09EEC4003745E9 /* DataSource.swift in Sources */,
 				168730531E09E7FD003745E9 /* ItemCollection.swift in Sources */,
 				1649836F1E09E722000DA36F /* ItemModel.swift in Sources */,
+				162CB58B1E31A81700554500 /* ContactView.swift in Sources */,
 				16155DF71E26C20100D35B0F /* FilterCollection.swift in Sources */,
 				16D6CFD21E285E8A00DE20FE /* FilterTableViewController.swift in Sources */,
 				16D6CFDA1E294EC700DE20FE /* CustomTitleView.swift in Sources */,
@@ -7328,12 +7333,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-database/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-database";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boi-database.app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -7343,12 +7352,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-database/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-database";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boi-database.app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -7358,7 +7371,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6MS9QWALYV;
+				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-databaseTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-databaseTests";
@@ -7374,7 +7387,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6MS9QWALYV;
+				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-databaseTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-databaseTests";
@@ -7389,7 +7402,7 @@
 			baseConfigurationReference = A9707E44F5880424B8EB9C1A /* Pods-binding-of-isaac-databaseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 6MS9QWALYV;
+				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-databaseUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-databaseUITests";
@@ -7404,7 +7417,7 @@
 			baseConfigurationReference = ADDDFD978BFDC80E5AF60D55 /* Pods-binding-of-isaac-databaseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 6MS9QWALYV;
+				DEVELOPMENT_TEAM = 6TY8WC8WPP;
 				INFOPLIST_FILE = "binding-of-isaac-databaseUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "craig.binding-of-isaac-databaseUITests";

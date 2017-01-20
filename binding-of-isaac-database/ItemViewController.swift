@@ -22,7 +22,8 @@ enum Titles {
     static let CardsAndRunes = "Cards and Runes"
     static let Pickups = "Pickups"
     static let Pills = "Pills"
-    static let Settings = "Settings"
+//    static let Settings = "Settings"
+    static let Contact = "Contact"
 }
 
 class ItemViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
@@ -60,6 +61,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     let listFlowLayout = ListFlowLayout()
     
     let placeholderView = PlaceHolderView()
+    let contactView = ContactView()
     
     var layoutButton: UIButton = {
         let button = UIButton(type: .system)
@@ -156,19 +158,33 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
             layoutType = .List
         case Titles.Pills :
             layoutType = .List
-        case Titles.Settings :
-            layoutType = .Grid
         default:
-            print("default case called")
+            print("default layout case called")
         }
     }
     
     func placeholderViewCheck() {
+        // @TODO: Fix this being called so many times
         self.placeholderView.isHidden = true
         
-        if currentTitle == Titles.Search || currentTitle == Titles.Settings || searchItems.isEmpty {
+        switch (currentTitle, searchItems.isEmpty) {
+        case (Titles.Search, _):
             self.placeholderView.isHidden = false
+            self.contactView.isHidden = true
+        case (Titles.Contact, _):
+            self.placeholderView.isHidden = true
+            self.contactView.isHidden = false
+        case (_, true):
+            self.placeholderView.isHidden = false
+            self.contactView.isHidden = true
+        default:
+            self.placeholderView.isHidden = true
+            self.contactView.isHidden = true
         }
+        
+//        if currentTitle == Titles.Search || currentTitle == Titles.Contact || searchItems.isEmpty {
+//            self.placeholderView.isHidden = false
+//        }
     }
     
     func menuButtonPressed() {
@@ -195,6 +211,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func setupConstraints() {
         view.addSubview(placeholderView)
+        view.addSubview(contactView)
         
         searchBar.snp.remakeConstraints { (make) -> Void in
             make.top.equalTo(view.snp.top)
@@ -211,6 +228,13 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         
         placeholderView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(collectionView.snp.top)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalTo(collectionView.snp.bottom)
+        }
+        
+        contactView.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(collectionView.snp.top)
             make.left.equalToSuperview()
             make.right.equalToSuperview()

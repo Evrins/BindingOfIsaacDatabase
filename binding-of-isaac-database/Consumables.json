@@ -819,8 +819,8 @@
     },
     {
       "itemName" : "Lucky Penny",
-      "itemQuote" : "A Lucky Penny increases luck by 1 when picked up.\n\nBumbo and Bum Friend are unable to pick up Lucky Pennies; they instead hover over them attempting to pick them up.\n\nHumbling Bundle does not double lucky pennies.",
-      "itemDescription" : " ",
+      "itemQuote" : "A Lucky Penny increases luck by 1 when picked up.",
+      "itemDescription" : "Bumbo and Bum Friend are unable to pick up Lucky Pennies; they instead hover over them attempting to pick them up.",
       "globalType" : "pickups",
       "mainType" : "coin",
       "itemUnlock" : "Unlocked by donating 1 coin to the Greed Machine.",
@@ -829,7 +829,7 @@
     {
       "itemName" : "Nickel",
       "itemQuote" : "A Nickel is worth 5 pennies.",
-      "itemDescription" : " ",
+      "itemDescription" : "",
       "globalType" : "pickups",
       "mainType" : "coin",
       "itemUnlock" : "",
@@ -838,7 +838,7 @@
     {
       "itemName" : "Penny",
       "itemQuote" : "The basic currency of the game.",
-      "itemDescription" : "Coins serve as the currency for shops, the payment for the Donation Machine in shops, and payment for the slot machines, fortune telling machines, shell game, beggars, and Restock Boxes. They are also consumed to use a few activated items (most notably Magic Fingers and Portable Slot). They will naturally drop as a Penny, a Nickel, and rarely a Dime.",
+      "itemDescription" : "Humbling Bundle does not double lucky pennies.",
       "globalType" : "pickups",
       "mainType" : "coin",
       "itemUnlock" : "",
@@ -846,7 +846,7 @@
     },
     {
       "itemName" : "Sticky Nickel",
-      "itemQuote" : "A Nickel that will flip upside-down when Isaac tries to collect it. Afterwards, it will get stuck on the ground, unable to be picked up unless blasted off the ground with an explosion.\n\nUnlocked by completing Boss Rush with Keeper. It won't reduce the spawn rate of regular Nickels: rather, Pennies have an additional chance to become Sticky Nickels.",
+      "itemQuote" : "A Nickel that will flip upside-down when Isaac tries to collect it. Afterwards, it will get stuck on the ground, unable to be picked up unless blasted off the ground with an explosion.",
       "itemDescription" : " ",
       "globalType" : "pickups",
       "mainType" : "coin",

@@ -39,7 +39,8 @@ class MenuItemCollection: NSObject {
 //        "Challenges",
 //        "Babies (Co-op)",
 //        "Collection",
-        "Settings"
+//        "Settings"
+        "Contact"
     ]
     
     func loadMenuItems() {

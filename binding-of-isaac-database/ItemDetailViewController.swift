@@ -219,7 +219,8 @@ class ItemDetailTopCell: UITableViewCell, Reusable {
         contentView.snp.makeConstraints { (make) -> Void in
             make.left.equalToSuperview()
             make.right.equalToSuperview()
-            make.bottom.equalTo(itemImage.snp.bottom).inset(-10)
+            make.bottom.equalTo(itemImage.snp.bottom).inset(-10).priority(250)
+            make.bottom.equalTo(itemQuoteLabel.snp.bottom).inset(-10).priority(260)
         }
     }
 }

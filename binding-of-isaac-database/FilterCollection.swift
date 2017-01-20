@@ -64,6 +64,7 @@ class FilterCollection: NSObject {
     }
     
     func setDefaultActiveItems() {
+        clearFilters()
         for filter in allFilters {
             if filter.filterName == "All" {
                 setActiveFilter(filter: filter)
@@ -85,6 +86,16 @@ class FilterCollection: NSObject {
             for filter in filtersToSet {
                 try! realm.write {
                     filter.active = true
+                }
+            }
+        }
+    }
+    
+    func clearFilters() {
+        for filter in allFilters {
+            if filter.filterName != "All" {
+                try! realm.write {
+                    filter.active = false
                 }
             }
         }
