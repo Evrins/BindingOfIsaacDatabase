@@ -8,15 +8,14 @@
 
 import UIKit
 import SideMenu
+import SnapKit
 
 extension UINavigationController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
         Stylesheet.applyOn(self)
-        self.navigationItem.titleView = CustomTitleView()
     }
     
     override open func didReceiveMemoryWarning() {

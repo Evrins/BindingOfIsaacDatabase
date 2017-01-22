@@ -88,6 +88,12 @@ extension Stylesheet {
         sideVC.navigationBar.isTranslucent = false
     }
     
+    static func applyOn(_ view: CustomTitleView) {
+        typealias context = Contexts.NavigationController
+        view.titleLabel.textColor = context.BarTextColor
+        view.titleLabel.font = UIFont(name: Fonts.Regular, size: 22.0)
+    }
+    
 //    static func applyOn(cell: CountdownListCell) {
 //        typealias context = .CountdownListCell
 //        cell.backgroundColor = context.BackgroundColor

@@ -49,18 +49,18 @@ class ContactView: UIScrollView {
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.text = "Visit our website:"
+        label.text = "Visit the website:"
         return label
     }()
     
     var websiteLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor(hex: 0x157efb)
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 1
         label.textAlignment = .center
-        label.text = "KoalaTea.io"
+        label.text = "http://thebindingofisaacdb.com/"
         
         label.isUserInteractionEnabled = true
         
@@ -100,7 +100,7 @@ extension ContactView {
     }
     
     func websiteButtonTapped(sender: UITapGestureRecognizer) {
-        openUrl(urlStr: "http://www.koalatea.io/")
+        openUrl(urlStr: "http://thebindingofisaacdb.com/")
     }
     
     func githubButtonTapped(sender: UITapGestureRecognizer) {

@@ -12,7 +12,7 @@ class CustomTitleView: UIView {
     
     let menuItemCollection = MenuItemCollection.sharedInstance
     
-    let titleLabel = UILabel()
+    var titleLabel = UILabel()
     let button = UIButton()
     
     override init(frame: CGRect) {
@@ -25,6 +25,7 @@ class CustomTitleView: UIView {
     }
     
     func setUpView() {
+        Stylesheet.applyOn(self)
         self.setUpTitleLabelText()
         self.addSubview(titleLabel)
         
@@ -32,9 +33,7 @@ class CustomTitleView: UIView {
     }
     
     func setUpTitleLabelText() {
-        titleLabel.numberOfLines = 0
-        //@TODO: Set this to bar tint color 
-        titleLabel.textColor = Stylesheet.Contexts.NavigationController.BarTextColor
+        titleLabel.numberOfLines = 2
         titleLabel.textAlignment = .center
         
         let title = menuItemCollection.getActive().title
@@ -42,6 +41,8 @@ class CustomTitleView: UIView {
         
         if title == "Items" {
             titleLabel.text = title + "\n" + "(Tap to Add Filter)"
+            // @TODO: Find a better way to do this dynamically
+            titleLabel.font = UIFont(name: Stylesheet.Fonts.Regular, size: 18.0)
             titleLabel.sizeToFit()
             setUpButton()
         }
