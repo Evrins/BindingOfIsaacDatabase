@@ -1,10 +1,14 @@
 
-![](http://i.imgur.com/nz7KPra.png)
+![Imgur](http://i.imgur.com/nz7KPra.png)
 ===============
 This is a [Koala Tea](http://www.koalatea.io/) product.
 
 Signup for the iOS [Beta](http://bit.ly/BoIBetaSignup).
 (Pending release date)
+
+<img src="http://i.imgur.com/KXiiEm5.png" width="275">
+<img src="http://i.imgur.com/HJxx65R.png" width="275">
+<img src="http://i.imgur.com/fiSDwIe.png" width="275">
 
 ## Description
 
