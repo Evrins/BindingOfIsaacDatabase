@@ -40,7 +40,7 @@ We encourage you to participate in this open source project. We love Pull Reques
 4. Build the `binding-of-isaac-database` scheme in Xcode.
 
 ## Open source Libraries in use
-*Not saying you should use these in your next project but you **DEFINITELY** should use these in your next project if you want it to be good.*
+*Not saying you should use these in your next project but you DEFINITELY should use these in your next project if you want it to be good.*
 
 * [Alamofire](
 https://github.com/Alamofire/Alamofire)
