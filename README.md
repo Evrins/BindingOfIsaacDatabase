@@ -6,6 +6,8 @@ This is a [Koala Tea](http://www.koalatea.io/) product.
 Signup for the iOS [Beta](http://bit.ly/BoIBetaSignup).
 (Accepting Beta Testers Now!)
 
+**This app is not affiliated with Nicalis, Inc.**
+
 <img src="http://i.imgur.com/KXiiEm5.png" width="275">
 <img src="http://i.imgur.com/HJxx65R.png" width="275">
 <img src="http://i.imgur.com/fiSDwIe.png" width="275">
