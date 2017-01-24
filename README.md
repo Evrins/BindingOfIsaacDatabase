@@ -1,10 +1,16 @@
 
-![](http://i.imgur.com/nz7KPra.png)
+![Imgur](http://i.imgur.com/nz7KPra.png)
 ===============
 This is a [Koala Tea](http://www.koalatea.io/) product.
 
 Signup for the iOS [Beta](http://bit.ly/BoIBetaSignup).
-(Pending release date)
+(Accepting Beta Testers Now!)
+
+**This app is not affiliated with Nicalis, Inc.**
+
+<img src="http://i.imgur.com/KXiiEm5.png" width="275">
+<img src="http://i.imgur.com/HJxx65R.png" width="275">
+<img src="http://i.imgur.com/fiSDwIe.png" width="275">
 
 ## Description
 
@@ -36,7 +42,7 @@ We encourage you to participate in this open source project. We love Pull Reques
 4. Build the `binding-of-isaac-database` scheme in Xcode.
 
 ## Open source Libraries in use
-*Not saying you should use these in your next project but you **DEFINITELY** should use these in your next project if you want it to be good.*
+*Not saying you should use these in your next project but you DEFINITELY should use these in your next project if you want it to be good.*
 
 * [Alamofire](
 https://github.com/Alamofire/Alamofire)
