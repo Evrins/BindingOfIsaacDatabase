@@ -47,9 +47,7 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         contentView.addSubview(tableView)
         view.addSubview(contentView)
         
-        self.title = "Cards and Runes"
-//
-//        print(self.title!)
+        self.title = menuItemCollection.getActive().title
         
         setupConstraints()
     }
