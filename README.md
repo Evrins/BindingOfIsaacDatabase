@@ -16,7 +16,7 @@ Signup for the iOS [Beta](http://bit.ly/BoIBetaSignup).
 
 This is the WIP iOS app for [The Binding of Isaac Database](http://thebindingofisaacdb.com/), an open source database for everything in the game [The Binding of Isaac: Rebirth](http://bindingofisaac.com/) as well as all DLC.
 
-We are still in the process of building out the database and will be adding items to the app as well as the webiste as we go.
+We are still in the process of building out the database and will be adding items to the app as well as the website as we go.
 
 ## Getting involved
 
