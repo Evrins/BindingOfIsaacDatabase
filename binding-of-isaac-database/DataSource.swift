@@ -29,50 +29,32 @@ class DataSource {
                 
                 for item in json["Rebirth Items"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["Rebirth Trinkets"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["Afterbirth Items"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["Afterbirth Trinkets"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["AfterbirthPlus Items"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["AfterbirthPlus Trinkets"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 completionHandler(true)
@@ -91,26 +73,17 @@ class DataSource {
                 
                 for item in json["Cards And Runes"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["Pills"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 for item in json["Pickups"].arrayValue {
                     let newItem = ItemModel(JSONString: "\(item)")
-                    
-                    try! realm.write {
-                        realm.add(newItem!)
-                    }
+                    newItem?.save()
                 }
                 
                 completionHandler(true)

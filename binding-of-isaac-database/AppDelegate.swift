@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -55,3 +56,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        if userActivity.activityType == CSSearchableItemActionType {
+            if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
+                let realm = try! Realm()
+                let spotlightItem = realm.object(ofType: ItemModel.self, forPrimaryKey: uniqueIdentifier)
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                if let vc = storyboard.instantiateViewController(withIdentifier: "ItemDetailViewController") as? ItemDetailViewController {
+                    
+                    vc.selectedItem = spotlightItem
+                    vc.isFromSpotlight = true
+                    
+                    if var topController = UIApplication.shared.keyWindow?.rootViewController {
+                        while let presentedViewController = topController.presentedViewController {
+                            topController = presentedViewController
+                        }
+                        let navController = UINavigationController(rootViewController: vc)
+                        
+                        topController.present(navController, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+        
+        return true
+    }
+}

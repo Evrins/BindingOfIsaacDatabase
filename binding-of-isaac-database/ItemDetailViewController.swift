@@ -24,6 +24,7 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     var contentView = UIView()
     
     let menuItemCollection = MenuItemCollection.sharedInstance
+    var isFromSpotlight = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +51,17 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         self.title = menuItemCollection.getActive().title
         
         setupConstraints()
+        
+        if isFromSpotlight {
+            self.title = selectedItem?.getItemName()
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dismiss", style: .plain, target: self, action: #selector(self.dismissMe))
+        }
     }
 
+    func dismissMe() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,7 +79,6 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
             make.edges.equalTo(contentView.snp.edges)
         }
     }
-    
 }
 
 extension ItemDetailViewController {

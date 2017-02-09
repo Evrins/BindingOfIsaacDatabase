@@ -57,7 +57,7 @@ class PlaceHolderView: UIView {
         self.setUpTitleLabelText()
         self.addSubview(searchTextLabel)
         self.addSubview(placeholderTextLabel)
-        self.addSubview(placeholderImage)
+//        self.addSubview(placeholderImage)
         
         self.setupConstraints()
         
@@ -95,13 +95,13 @@ class PlaceHolderView: UIView {
             make.top.equalTo(self.snp.top).inset(30)
         }
         
-        placeholderImage.snp.makeConstraints { (make) -> Void in
-            make.centerX.equalTo(self.snp.centerX)
-            make.top.equalTo(self.searchTextLabel.snp.bottom).inset(-10).priority(251)
-            make.top.equalTo(self.placeholderTextLabel.snp.bottom).inset(-10).priority(250)
-            
-            make.size.equalTo(CGSize(width: 200, height: 200))
-        }
+//        placeholderImage.snp.makeConstraints { (make) -> Void in
+//            make.centerX.equalTo(self.snp.centerX)
+//            make.top.equalTo(self.searchTextLabel.snp.bottom).inset(-10).priority(251)
+//            make.top.equalTo(self.placeholderTextLabel.snp.bottom).inset(-10).priority(250)
+//            
+//            make.size.equalTo(CGSize(width: 200, height: 200))
+//        }
     }
 }
 

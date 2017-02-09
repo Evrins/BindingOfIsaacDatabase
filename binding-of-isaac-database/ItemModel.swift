@@ -10,6 +10,9 @@ import UIKit
 import RealmSwift
 import ObjectMapper
 
+import CoreSpotlight
+import MobileCoreServices
+
 public class Value: Object {
     public dynamic var value: String?
 }
@@ -159,6 +162,36 @@ class ItemModel: Object, Mappable {
         }
         
         return url
+    }
+}
+
+extension ItemModel {
+    func save() {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(self, update: true)
+        }
+        
+        self.indexItem()
+    }
+    
+    func indexItem() {
+        let title = self.itemName
+        let desc = self.itemDescription
+        let identifier = self.itemKey
+        
+        let attributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeText as String)
+        attributeSet.title = title
+        attributeSet.contentDescription = desc
+        
+        let item = CSSearchableItem(uniqueIdentifier: "\(identifier)", domainIdentifier: "com.boi-database.app", attributeSet: attributeSet)
+        CSSearchableIndex.default().indexSearchableItems([item]) { error in
+            if let error = error {
+                print("Indexing error: \(error.localizedDescription)")
+            } else {
+                print("Search item successfully indexed!")
+            }
+        }
     }
 }
 
