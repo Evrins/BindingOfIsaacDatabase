@@ -1,1 +1,1 @@
-
+This is the WIP iOS app for The Binding of Isaac Database, an open source database for everything in the game The Binding of Isaac: Rebirth as well as all DLC.
