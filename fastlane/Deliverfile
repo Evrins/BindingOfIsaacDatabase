@@ -9,5 +9,4 @@
 app_identifier "com.boi-database.app" # The bundle identifier of your app
 username "hollidaycraig@yahoo.com" # your Apple ID user
 
-default_language "en-US"
 automatic_release false
