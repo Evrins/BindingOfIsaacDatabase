@@ -164,7 +164,10 @@ class ItemModel: Object, Mappable {
     }
     
     func toggleCollected() {
-        self.collected = !self.collected
+        let realm = try! Realm()
+        try! realm.write {
+            self.collected = !self.collected
+        }
     }
     
     func isCollected() -> Bool {

@@ -12,7 +12,7 @@ import Reusable
 import SwifterSwift
 
 class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var selectedItem: ItemModel? = nil
+    var selectedItem: ItemModel!
     
     lazy var selectedItemProperties: [ItemProperty] = {
         let item = self.selectedItem
@@ -26,6 +26,8 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     let menuItemCollection = MenuItemCollection.sharedInstance
     var isFromSpotlight = false
     
+    let collectedButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +37,7 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.alwaysBounceVertical = false
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.tableFooterView = UIView()
+//        tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
         
@@ -56,6 +58,8 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
             self.title = selectedItem?.getItemName()
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dismiss", style: .plain, target: self, action: #selector(self.dismissMe))
         }
+        
+        setupFooter()
     }
 
     func dismissMe() {
@@ -154,6 +158,43 @@ extension ItemDetailViewController {
         
     }
     
+    func setupFooter() {
+        let height = UIScreen.main.bounds.height / 12
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: height))
+        
+        collectedButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        collectedButton.setTitle("Not Collected", for: .normal)
+        collectedButton.setTitle("Collected", for: .selected)
+        collectedButton.titleLabel?.textAlignment = .center
+        collectedButton.titleLabel?.textColor = Stylesheet.Colors.White
+        collectedButton.addTarget(self, action: #selector(self.collectedButtonPressed), for: .touchUpInside)
+        
+        setButtonAttributes()
+        
+        view.addSubview(collectedButton)
+        collectedButton.snp.makeConstraints { (make) -> Void in
+            make.edges.equalToSuperview()
+        }
+        tableView.tableFooterView = view
+    }
+    
+    func collectedButtonPressed() {
+        selectedItem.toggleCollected()
+        setButtonAttributes()
+    }
+    
+    func setButtonAttributes() {
+        if selectedItem.isCollected() {
+            collectedButton.backgroundColor = .green
+            collectedButton.isSelected = true
+            return
+        }
+        collectedButton.backgroundColor = .gray
+        collectedButton.isSelected = false
+    }
+}
+
+extension ItemDetailViewController {
     func getItemFields(item: ItemModel) -> [ItemProperty] {
         
         var itemProperties = [
