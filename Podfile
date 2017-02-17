@@ -15,6 +15,10 @@ target 'binding-of-isaac-database' do
   pod 'SnapKit'
   pod 'Reusable'
   pod 'Kingfisher', '~> 3.0'
+  pod 'Font-Awesome-Swift'
+  pod 'SwiftyBeaver'
+  pod 'UIFontComplete'
+
 
   target 'binding-of-isaac-databaseTests' do
     inherit! :search_paths

@@ -133,7 +133,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         // Register Custom Cells
         collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
-        collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
+//        collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
+        collectionView.register(cellType: ItemCollectionViewCell.self)
         
         self.setUpSearchBar()
         self.setupBarButtonItems()
@@ -304,8 +305,8 @@ extension ItemViewController {
             
             return cell
         default: // .Grid
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
-            
+//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(for: indexPath) as ItemCollectionViewCell
             return cell
         }
     }
@@ -340,14 +341,9 @@ extension ItemViewController {
         default: // .Grid
             let cell: ItemCollectionViewCell = cell as! ItemCollectionViewCell
             
-            cell.itemTitle.text = ""
+//            cell.itemTitle.text = ""
             
-            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            
-            if url != nil {
-                cell.itemImage.kf.indicatorType = .activity
-                cell.itemImage.kf.setImage(with: url)
-            }
+            cell.setupCell(item: item)
         }
         
     }

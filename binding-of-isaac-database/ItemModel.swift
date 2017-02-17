@@ -9,7 +9,6 @@
 import UIKit
 import RealmSwift
 import ObjectMapper
-
 import CoreSpotlight
 import MobileCoreServices
 
@@ -31,6 +30,8 @@ class ItemModel: Object, Mappable {
     dynamic var itemUnlock: String? = nil
     dynamic var globalType: String? = nil
     dynamic var game: String? = nil
+    
+    dynamic var collected: Bool = false
     
     override static func primaryKey() -> String? {
         return "itemKey"
@@ -130,8 +131,6 @@ class ItemModel: Object, Mappable {
     }
     
     func getImageUrl() -> URL? {
-        //@TODO: Check if trinket name is used
-        
         let placeholderUrl: URL? = Bundle.main.url(forResource: "ImageNotFoundPlaceholder", withExtension: ".png")
         
         var url: URL? = nil
@@ -163,11 +162,29 @@ class ItemModel: Object, Mappable {
         
         return url
     }
+    
+    func toggleCollected() {
+        self.collected = !self.collected
+    }
+    
+    func isCollected() -> Bool {
+        if collected {
+            return true
+        }
+        return false
+    }
 }
 
 extension ItemModel {
     func save() {
         let realm = try! Realm()
+        
+        let existingItem = realm.objects(ItemModel.self).filter("itemName = %@", self.itemName!).first
+        
+        if existingItem != nil {
+            return
+        }
+        
         try! realm.write {
             realm.add(self, update: true)
         }
@@ -189,7 +206,7 @@ extension ItemModel {
             if let error = error {
                 print("Indexing error: \(error.localizedDescription)")
             } else {
-                print("Search item successfully indexed!")
+//                print("Search item successfully indexed!")
             }
         }
     }
