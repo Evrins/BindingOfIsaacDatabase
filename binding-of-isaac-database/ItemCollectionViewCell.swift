@@ -23,7 +23,7 @@ import Kingfisher
 
 class ItemCollectionViewCell: UICollectionViewCell, Reusable {
     let imageView = UIImageView()
-    let checkmark = UIImageView()
+    let checkmarkImageView = UIImageView()
     let imageContentView = UIView()
     
     override init(frame: CGRect) {
@@ -38,7 +38,7 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
     
     func setupConstraints() {
         self.contentView.addSubview(imageView)
-        self.contentView.addSubview(checkmark)
+        self.contentView.addSubview(checkmarkImageView)
         
         contentView.backgroundColor = .clear
         imageView.contentMode = .scaleAspectFit
@@ -50,7 +50,7 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
             make.edges.equalToSuperview().inset(inset)
         }
         
-        checkmark.snp.makeConstraints { (make) -> Void in
+        checkmarkImageView.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview()
             make.right.equalToSuperview()
         }
@@ -61,13 +61,13 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
         let imageSize = CGSize(width: size, height: size)
         
         if item.globalType != "items" {
-            checkmark.image = UIImage()
+            checkmarkImageView.image = UIImage()
         }
         
-        checkmark.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .gray, backgroundColor: .clear)
+        checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .gray, backgroundColor: .clear)
         
         if item.isCollected() {
-            checkmark.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .green, backgroundColor: .clear)
+            checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .green, backgroundColor: .clear)
         }
         
         let url: URL? = item.getImageUrl()

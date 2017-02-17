@@ -6,11 +6,125 @@
 //  Copyright © 2016 Craig Holliday. All rights reserved.
 //
 
+//import UIKit
+//
+//class ItemListCollectionViewCell: UICollectionViewCell, CellInterface {
+//    @IBOutlet weak var itemImage: UIImageView!
+//    @IBOutlet weak var itemTitle: UILabel!
+//    @IBOutlet weak var itemQuote: UILabel!
+//
+//}
+
 import UIKit
+import Reusable
+import SnapKit
+import Font_Awesome_Swift
 
-class ItemListCollectionViewCell: UICollectionViewCell, CellInterface {
-    @IBOutlet weak var itemImage: UIImageView!
-    @IBOutlet weak var itemTitle: UILabel!
-    @IBOutlet weak var itemQuote: UILabel!
-
+class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
+    let imageView = UIImageView()
+    let titleLabel = UILabel()
+    let detailLabel = UILabel()
+    var checkmarkImageView = UIImageView()
+    
+    let leftImageContentView = UIView()
+    let rightImageContentView = UIView()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupConstraints()
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:)")
+    }
+    
+    func setupConstraints() {
+        self.contentView.addSubview(titleLabel)
+        self.contentView.addSubview(leftImageContentView)
+        self.contentView.addSubview(rightImageContentView)
+        
+        self.leftImageContentView.addSubview(imageView)
+        self.rightImageContentView.addSubview(checkmarkImageView)
+        
+        contentView.backgroundColor = .white
+        
+        imageView.contentMode = .scaleAspectFit
+        imageView.layer.magnificationFilter = kCAFilterNearest
+        checkmarkImageView.contentMode = .scaleAspectFit
+        checkmarkImageView.layer.magnificationFilter = kCAFilterNearest
+        
+        let size = 200
+        let imageSize = CGSize(width: size, height: size)
+        checkmarkImageView.image = UIImage.init(icon: .FACheckCircle, size: imageSize, textColor: .gray, backgroundColor: .clear)
+        
+        leftImageContentView.snp.makeConstraints { (make) -> Void in
+            make.height.equalToSuperview()
+            make.width.equalTo(contentView.width / 6)
+            
+            make.left.equalToSuperview()
+        }
+        
+        rightImageContentView.snp.makeConstraints { (make) -> Void in
+            make.height.equalToSuperview()
+            make.width.equalTo(contentView.width / 6)
+            
+            make.right.equalToSuperview()
+        }
+        
+        imageView.snp.makeConstraints { (make) -> Void in
+            make.center.equalToSuperview()
+            let inset = 5
+            make.edges.equalToSuperview().inset(inset)
+        }
+        
+        checkmarkImageView.snp.makeConstraints { (make) -> Void in
+            make.center.equalToSuperview()
+            let inset = 5
+            make.edges.equalToSuperview().inset(inset)
+        }
+        
+        titleLabel.snp.makeConstraints { (make) -> Void in
+            make.centerY.equalToSuperview().inset(5)
+            make.left.equalTo(leftImageContentView.snp.right).inset(5)
+            make.right.equalTo(rightImageContentView.snp.left).inset(5)
+        }
+        
+        titleLabel.snp.makeConstraints { (make) -> Void in
+            make.centerY.equalToSuperview().inset(-5)
+            make.left.equalTo(leftImageContentView.snp.right).inset(5)
+            make.right.equalTo(rightImageContentView.snp.left).inset(5)
+        }
+    }
+    
+    func setupCell(item: ItemModel) {
+        if let itemQuote = item.getItemQuote(), item.getItemQuote() != nil {
+            detailLabel.text = "\"\(itemQuote)\""
+        }
+        
+        if item.getItemQuote() == nil && item.getItemDescription() != nil {
+            detailLabel.text = "\(item.getItemDescription()!)"
+        }
+        
+        titleLabel.text = item.getItemName()
+        
+        let size = imageView.size.height / 2
+        let imageSize = CGSize(width: size, height: size)
+        
+        if item.globalType != "items" {
+            checkmarkImageView.image = UIImage()
+        }
+        
+        checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .gray, backgroundColor: .clear)
+        
+        if item.isCollected() {
+            checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .green, backgroundColor: .clear)
+        }
+        
+        let url: URL? = item.getImageUrl()
+        if url != nil {
+            imageView.kf.indicatorType = .activity
+            imageView.kf.setImage(with: url)
+        }
+    }
 }
