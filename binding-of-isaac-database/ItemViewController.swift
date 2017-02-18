@@ -60,7 +60,9 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     var selectedItem: ItemModel? = nil
     
     let gridFlowLayout = GridFlowLayout()
-    let listFlowLayout = ListFlowLayout()
+//    let listFlowLayout = ListFlowLayout()
+//    let gridFlowLayout = GridLayout()
+    let listFlowLayout = ListLayout()
     
     let placeholderView = PlaceHolderView()
     let contactView = ContactView()
@@ -357,13 +359,6 @@ extension ItemViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showItemDetail" {
-//            let destinationVC =  segue.destination as! ItemDetailViewController
-//            destinationVC.selectedItem = selectedItem
-//        }
-//    }
     
 }
 

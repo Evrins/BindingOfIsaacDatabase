@@ -139,8 +139,6 @@ extension ContactView {
         koalaTeaLogo.snp.makeConstraints { (make) -> Void in
             make.centerX.equalTo(contentView.snp.centerX)
             make.top.equalTo(contentView.snp.top).inset(5)
-            make.left.equalTo(contentView.snp.left).inset(40)
-            make.right.equalTo(contentView.snp.right).inset(40)
             
             make.size.height.equalTo(200)
         }
@@ -150,8 +148,6 @@ extension ContactView {
             make.top.equalTo(koalaTeaLogo.snp.bottom).inset(-10)
             make.left.equalTo(contentView.snp.left).inset(10)
             make.right.equalTo(contentView.snp.right).inset(10)
-            
-            //            make.size.height.equalTo(20)
         }
         
         visitWebsiteLabel.snp.makeConstraints { (make) -> Void in
@@ -159,8 +155,6 @@ extension ContactView {
             make.top.equalTo(textLabel.snp.bottom).inset(-20)
             make.left.equalTo(contentView.snp.left).inset(10)
             make.right.equalTo(contentView.snp.right).inset(10)
-            
-            //            make.size.height.equalTo(20)
         }
         
         websiteLabel.snp.makeConstraints { (make) -> Void in
@@ -168,8 +162,6 @@ extension ContactView {
             make.top.equalTo(visitWebsiteLabel.snp.bottom).inset(-10)
             make.left.equalTo(contentView.snp.left).inset(10)
             make.right.equalTo(contentView.snp.right).inset(10)
-            
-            //            make.size.height.equalTo(20)
         }
         
         secondTextLabel.snp.makeConstraints { (make) -> Void in
@@ -177,15 +169,11 @@ extension ContactView {
             make.top.equalTo(websiteLabel.snp.bottom).inset(-15)
             make.left.equalTo(contentView.snp.left).inset(10)
             make.right.equalTo(contentView.snp.right).inset(10)
-            
-            make.size.height.equalTo(50)
         }
         
         githubLogo.snp.makeConstraints { (make) -> Void in
             make.centerX.equalTo(contentView.snp.centerX)
             make.top.equalTo(secondTextLabel.snp.bottom).inset(-10)
-            make.left.equalTo(contentView.snp.left).inset(40)
-            make.right.equalTo(contentView.snp.right).inset(40)
             
             make.size.height.equalTo(200)
         }

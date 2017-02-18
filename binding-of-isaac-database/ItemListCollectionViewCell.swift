@@ -41,6 +41,7 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
     
     func setupConstraints() {
         self.contentView.addSubview(titleLabel)
+        self.contentView.addSubview(detailLabel)
         self.contentView.addSubview(leftImageContentView)
         self.contentView.addSubview(rightImageContentView)
         
@@ -85,13 +86,13 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
         }
         
         titleLabel.snp.makeConstraints { (make) -> Void in
-            make.centerY.equalToSuperview().inset(5)
+            make.centerY.equalToSuperview().inset(-10)
             make.left.equalTo(leftImageContentView.snp.right).inset(5)
             make.right.equalTo(rightImageContentView.snp.left).inset(5)
         }
         
-        titleLabel.snp.makeConstraints { (make) -> Void in
-            make.centerY.equalToSuperview().inset(-5)
+        detailLabel.snp.makeConstraints { (make) -> Void in
+            make.centerY.equalToSuperview().inset(10)
             make.left.equalTo(leftImageContentView.snp.right).inset(5)
             make.right.equalTo(rightImageContentView.snp.left).inset(5)
         }
@@ -112,6 +113,7 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
         let imageSize = CGSize(width: size, height: size)
         
         if item.globalType != "items" {
+            log.info("not items")
             checkmarkImageView.image = UIImage()
         }
         
