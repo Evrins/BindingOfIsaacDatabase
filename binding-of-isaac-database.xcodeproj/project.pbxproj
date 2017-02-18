@@ -1620,8 +1620,6 @@
 		16E2527C1E0B5E7600108E27 /* ListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2527B1E0B5E7600108E27 /* ListFlowLayout.swift */; };
 		16E2527F1E0B5F2700108E27 /* LayoutMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E2527E1E0B5F2700108E27 /* LayoutMachine.swift */; };
 		16E252821E0B611300108E27 /* GridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E252811E0B611300108E27 /* GridFlowLayout.swift */; };
-		16F7D3D61E57C6800094193A /* ListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7D3D51E57C6800094193A /* ListLayout.swift */; };
-		16F7D3D81E57C6940094193A /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F7D3D71E57C6940094193A /* GridLayout.swift */; };
 		16FB4FD91E0EDFB400219B63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16FB4FD81E0EDFB400219B63 /* Assets.xcassets */; };
 		57D5EEF9B123C5957F3A9300 /* Pods_binding_of_isaac_databaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDE24347B322D561C3564D0 /* Pods_binding_of_isaac_databaseUITests.framework */; };
 		B9A0EA495399D118669E1A90 /* Pods_binding_of_isaac_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888A3B4CA98A75FAD3CB492A /* Pods_binding_of_isaac_database.framework */; };
@@ -3263,8 +3261,6 @@
 		16E2527B1E0B5E7600108E27 /* ListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFlowLayout.swift; sourceTree = "<group>"; };
 		16E2527E1E0B5F2700108E27 /* LayoutMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutMachine.swift; sourceTree = "<group>"; };
 		16E252811E0B611300108E27 /* GridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridFlowLayout.swift; sourceTree = "<group>"; };
-		16F7D3D51E57C6800094193A /* ListLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListLayout.swift; sourceTree = "<group>"; };
-		16F7D3D71E57C6940094193A /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		16FB4FD81E0EDFB400219B63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267A079E28E881318E657DEB /* Pods-binding-of-isaac-databaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-binding-of-isaac-databaseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-binding-of-isaac-databaseTests/Pods-binding-of-isaac-databaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DDE24347B322D561C3564D0 /* Pods_binding_of_isaac_databaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_binding_of_isaac_databaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5252,8 +5248,6 @@
 			children = (
 				16E2527B1E0B5E7600108E27 /* ListFlowLayout.swift */,
 				16E252811E0B611300108E27 /* GridFlowLayout.swift */,
-				16F7D3D51E57C6800094193A /* ListLayout.swift */,
-				16F7D3D71E57C6940094193A /* GridLayout.swift */,
 			);
 			name = "Flow Layouts";
 			sourceTree = "<group>";
@@ -7180,11 +7174,9 @@
 				16E252821E0B611300108E27 /* GridFlowLayout.swift in Sources */,
 				1618528E1E08DAF2004F6859 /* ItemCollectionViewCell.swift in Sources */,
 				16B764001E2E7CD1000DC7B3 /* NavigationController.swift in Sources */,
-				16F7D3D61E57C6800094193A /* ListLayout.swift in Sources */,
 				16E2527C1E0B5E7600108E27 /* ListFlowLayout.swift in Sources */,
 				16E252771E0B4C6800108E27 /* ItemListCollectionViewCell.swift in Sources */,
 				163F1FA81E07371E005BCDA9 /* AppDelegate.swift in Sources */,
-				16F7D3D81E57C6940094193A /* GridLayout.swift in Sources */,
 				1682D3B91E13111E00878BE6 /* MenuTableViewController.swift in Sources */,
 				162CDD0B1E136B3E00009505 /* MenuItem.swift in Sources */,
 				1649836A1E09E324000DA36F /* ItemViewController.swift in Sources */,

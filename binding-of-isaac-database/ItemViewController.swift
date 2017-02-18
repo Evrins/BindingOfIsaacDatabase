@@ -60,10 +60,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     var selectedItem: ItemModel? = nil
     
     let gridFlowLayout = GridFlowLayout()
-//    let listFlowLayout = ListFlowLayout()
-//    let gridFlowLayout = GridLayout()
-    let listFlowLayout = ListLayout()
-    
+    let listFlowLayout = ListFlowLayout()
+
     let placeholderView = PlaceHolderView()
     let contactView = ContactView()
     
