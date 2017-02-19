@@ -41,13 +41,19 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         // Have to remake constraints since it uses contentView.size
-        leftImageContentView.snp.makeConstraints { (make) -> Void in
+        leftImageContentView.snp.remakeConstraints { (make) -> Void in
             make.height.equalToSuperview()
             make.width.equalTo(contentView.width / 6)
             
             make.left.equalToSuperview()
+        }
+        
+        rightImageContentView.snp.remakeConstraints { (make) -> Void in
+            make.height.equalToSuperview()
+            make.width.equalTo(contentView.width / 6)
+            
+            make.right.equalToSuperview()
         }
     }
     
@@ -74,17 +80,17 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
             make.left.equalToSuperview()
         }
         
+        imageView.snp.makeConstraints { (make) -> Void in
+            make.center.equalToSuperview()
+            let inset = 5
+            make.edges.equalToSuperview().inset(inset)
+        }
+        
         rightImageContentView.snp.makeConstraints { (make) -> Void in
             make.height.equalToSuperview()
             make.width.equalTo(contentView.width / 6)
             
             make.right.equalToSuperview()
-        }
-        
-        imageView.snp.makeConstraints { (make) -> Void in
-            make.center.equalToSuperview()
-            let inset = 5
-            make.edges.equalToSuperview().inset(inset)
         }
         
         checkmarkImageView.snp.makeConstraints { (make) -> Void in

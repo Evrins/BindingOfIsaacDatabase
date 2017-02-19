@@ -39,7 +39,6 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         // Have to remake constraints since it uses contentView.size
         checkmarkImageView.snp.remakeConstraints { (make) -> Void in
             make.top.equalToSuperview()

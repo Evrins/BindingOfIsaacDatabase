@@ -61,8 +61,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     
 //    let gridFlowLayout = GridFlowLayout()
 //    let listFlowLayout = ListFlowLayout()
-    let gridFlowLayout = KoalaTeaFlowLayout(ratio: 1.0, cellsAcross: 8, cellSpacing: 4)
-    let listFlowLayout = KoalaTeaFlowLayout(ratio: 0.2, cellsAcross: 1, cellSpacing: 0)
+    let gridFlowLayout = KoalaTeaFlowLayout(ratio: 1.0, topBottomMargin: 5, leftRightMargin: 5, cellsAcross: 8, cellSpacing: 4)
+    let listFlowLayout = KoalaTeaFlowLayout(ratio: 0.2, cellsAcross: 1, cellSpacing: 4)
     
     let placeholderView = PlaceHolderView()
     let contactView = ContactView()
