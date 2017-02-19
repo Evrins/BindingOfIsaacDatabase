@@ -39,6 +39,18 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
         fatalError("init(coder:)")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // Have to remake constraints since it uses contentView.size
+        leftImageContentView.snp.makeConstraints { (make) -> Void in
+            make.height.equalToSuperview()
+            make.width.equalTo(contentView.width / 6)
+            
+            make.left.equalToSuperview()
+        }
+    }
+    
     func setupConstraints() {
         self.contentView.addSubview(titleLabel)
         self.contentView.addSubview(detailLabel)
@@ -54,10 +66,6 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
         imageView.layer.magnificationFilter = kCAFilterNearest
         checkmarkImageView.contentMode = .scaleAspectFit
         checkmarkImageView.layer.magnificationFilter = kCAFilterNearest
-        
-        let size = 200
-        let imageSize = CGSize(width: size, height: size)
-        checkmarkImageView.image = UIImage.init(icon: .FACheckCircle, size: imageSize, textColor: .gray, backgroundColor: .clear)
         
         leftImageContentView.snp.makeConstraints { (make) -> Void in
             make.height.equalToSuperview()
@@ -87,13 +95,13 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
         
         titleLabel.snp.makeConstraints { (make) -> Void in
             make.centerY.equalToSuperview().inset(-10)
-            make.left.equalTo(leftImageContentView.snp.right).inset(5)
+            make.left.equalTo(leftImageContentView.snp.right).inset(-5)
             make.right.equalTo(rightImageContentView.snp.left).inset(5)
         }
         
         detailLabel.snp.makeConstraints { (make) -> Void in
             make.centerY.equalToSuperview().inset(10)
-            make.left.equalTo(leftImageContentView.snp.right).inset(5)
+            make.left.equalTo(leftImageContentView.snp.right).inset(-5)
             make.right.equalTo(rightImageContentView.snp.left).inset(5)
         }
     }
@@ -109,24 +117,17 @@ class ItemListCollectionViewCell: UICollectionViewCell, Reusable {
         
         titleLabel.text = item.getItemName()
         
-        let size = imageView.size.height / 2
-        let imageSize = CGSize(width: size, height: size)
-        
-        if item.globalType != "items" {
-            log.info("not items")
-            checkmarkImageView.image = UIImage()
-        }
-        
-        checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .gray, backgroundColor: .clear)
-        
-        if item.isCollected() {
-            checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: imageSize, textColor: .green, backgroundColor: .clear)
-        }
-        
         let url: URL? = item.getImageUrl()
         if url != nil {
             imageView.kf.indicatorType = .activity
             imageView.kf.setImage(with: url)
         }
+        
+        if item.isCollected() {
+            checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: CGSize(width: 200, height: 200), textColor: .green)
+            return
+        }
+        
+        checkmarkImageView.image = UIImage()
     }
 }

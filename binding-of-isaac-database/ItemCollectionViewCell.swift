@@ -37,6 +37,20 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
         fatalError("init(coder:)")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // Have to remake constraints since it uses contentView.size
+        checkmarkImageView.snp.remakeConstraints { (make) -> Void in
+            make.top.equalToSuperview()
+            make.right.equalToSuperview()
+            
+            let size = contentView.size.height / 2
+            let calculateImageSize = CGSize(width: size, height: size)
+            make.size.equalTo(calculateImageSize)
+        }
+    }
+    
     func setupConstraints() {
         self.contentView.addSubview(imageView)
         self.contentView.addSubview(checkmarkImageView)
@@ -45,16 +59,15 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
         imageView.contentMode = .scaleAspectFit
         imageView.layer.magnificationFilter = kCAFilterNearest
         
+        checkmarkImageView.contentMode = .scaleAspectFit
+        checkmarkImageView.layer.magnificationFilter = kCAFilterNearest
+        
         imageView.snp.makeConstraints { (make) -> Void in
             make.center.equalToSuperview()
             let inset = 0
             make.edges.equalToSuperview().inset(inset)
         }
         
-//        checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: CGSize(width: 200, height: 200), textColor: .black, backgroundColor: .gray)
-//        checkmarkImageView.backgroundColor = .red
-        checkmarkImageView.setFAIconWithName(icon: .FATwitter, textColor: .blue)
-
         checkmarkImageView.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview()
             make.right.equalToSuperview()
@@ -66,18 +79,17 @@ class ItemCollectionViewCell: UICollectionViewCell, Reusable {
     }
     
     func setupCell(item: ItemModel) {
-        if item.globalType != "items" {
-//            checkmarkImageView.tintColor = .clear
-        }
-        
-        if item.isCollected() {
-//            checkmarkImageView.tintColor = .green®
-        }
-        
         let url: URL? = item.getImageUrl()
         if url != nil {
             imageView.kf.indicatorType = .activity
             imageView.kf.setImage(with: url)
         }
+        
+        if item.isCollected() {
+            checkmarkImageView.image = UIImage.init(icon: .FACheckCircleO, size: CGSize(width: 200, height: 200), textColor: .green)
+            return
+        }
+        
+        checkmarkImageView.image = UIImage()
     }
 }

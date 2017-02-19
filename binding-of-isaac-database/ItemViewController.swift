@@ -59,9 +59,11 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     var searchItems: Results<ItemModel>!
     var selectedItem: ItemModel? = nil
     
-    let gridFlowLayout = GridFlowLayout()
-    let listFlowLayout = ListFlowLayout()
-
+//    let gridFlowLayout = GridFlowLayout()
+//    let listFlowLayout = ListFlowLayout()
+    let gridFlowLayout = KoalaTeaFlowLayout(ratio: 1.0, cellsAcross: 8, cellSpacing: 4)
+    let listFlowLayout = KoalaTeaFlowLayout(ratio: 0.2, cellsAcross: 1, cellSpacing: 0)
+    
     let placeholderView = PlaceHolderView()
     let contactView = ContactView()
     
@@ -328,7 +330,6 @@ extension ItemViewController {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = searchItems[indexPath.row]
-        
         switch(layoutType) {
         case .List:
             let cell = collectionView.dequeueReusableCell(for: indexPath) as ItemListCollectionViewCell
@@ -342,8 +343,7 @@ extension ItemViewController {
             return cell
         }
     }
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = searchItems[indexPath.row]
         selectedItem = item
