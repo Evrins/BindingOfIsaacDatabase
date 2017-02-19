@@ -1,1 +1,9 @@
 This is the WIP iOS app for The Binding of Isaac Database, an open source database for everything in the game The Binding of Isaac: Rebirth as well as all DLC.
+
+Features Include:
+
+* Browsing, filtering, and searching items
+* Browsing and searching trinkets
+* Ability to indicate items that have been collected
+* Browsing all consumable items
+* Search items through Spotlight Search iOS feature
