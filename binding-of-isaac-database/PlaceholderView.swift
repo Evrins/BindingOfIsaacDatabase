@@ -25,14 +25,14 @@ class PlaceHolderView: UIView {
         }
     }
     var searchTextLabel = UILabel()
-    var placeholderImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "Judas")
-        
-        imageView.layer.magnificationFilter = kCAFilterNearest
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
+//    var placeholderImage: UIImageView = {
+//        let imageView = UIImageView()
+//        imageView.image = UIImage(named: "Judas")
+//        
+//        imageView.layer.magnificationFilter = kCAFilterNearest
+//        imageView.contentMode = .scaleAspectFit
+//        return imageView
+//    }()
     
     var placeholderTextLabel: UILabel = {
         //@TODO: Change text color

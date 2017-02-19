@@ -47,6 +47,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
     
+    var token: NotificationToken?
+    
     fileprivate var tap: UITapGestureRecognizer!
     
     let itemCollection = ItemCollection.sharedInstance
@@ -57,8 +59,10 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     var searchItems: Results<ItemModel>!
     var selectedItem: ItemModel? = nil
     
-    let gridFlowLayout = GridFlowLayout()
-    let listFlowLayout = ListFlowLayout()
+//    let gridFlowLayout = GridFlowLayout()
+//    let listFlowLayout = ListFlowLayout()
+    let gridFlowLayout = KoalaTeaFlowLayout(ratio: 1.0, topBottomMargin: 5, leftRightMargin: 5, cellsAcross: 8, cellSpacing: 4)
+    let listFlowLayout = KoalaTeaFlowLayout(ratio: 0.2, cellsAcross: 1, cellSpacing: 4)
     
     let placeholderView = PlaceHolderView()
     let contactView = ContactView()
@@ -103,6 +107,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.placeholderViewCheck()
             
             self.placeholderView.setPlaceholderLabelText()
+            
+            self.registerNotifications()
         }
         
         menuItemCollection.setActive = { _ in
@@ -132,8 +138,8 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.backgroundColor = UIColor(hex: 0xEAEAEA)
         
         // Register Custom Cells
-        collectionView.register(ItemListCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemListCollectionViewCell.id)
-        collectionView.register(ItemCollectionViewCell.cellNib, forCellWithReuseIdentifier:ItemCollectionViewCell.id)
+        collectionView.register(cellType: ItemCollectionViewCell.self)
+        collectionView.register(cellType: ItemListCollectionViewCell.self)
         
         self.setUpSearchBar()
         self.setupBarButtonItems()
@@ -283,6 +289,32 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         navigationItem.rightBarButtonItems = [layoutBarButton, searchButton]
     }
+    
+    func registerNotifications() {
+        token = searchItems.addNotificationBlock {[weak self] (changes: RealmCollectionChange) in
+            guard let collectionView = self?.collectionView else { return }
+            
+            switch changes {
+            case .initial:
+                collectionView.reloadData()
+                break
+            case .update(_, let deletions, let insertions, let modifications):
+                let deleteIndexPaths = deletions.map { IndexPath(item: $0, section: 0) }
+                let insertIndexPaths = insertions.map { IndexPath(item: $0, section: 0) }
+                let updateIndexPaths = modifications.map { IndexPath(item: $0, section: 0) }
+                
+                self?.collectionView.performBatchUpdates({
+                    self?.collectionView.deleteItems(at: deleteIndexPaths)
+                    self?.collectionView.insertItems(at: insertIndexPaths)
+                    self?.collectionView.reloadItems(at: updateIndexPaths)
+                }, completion: nil)
+                break
+            case .error(let error):
+                print(error)
+                break
+            }
+        }
+    }
 }
 
 extension ItemViewController {
@@ -297,61 +329,21 @@ extension ItemViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        switch(layoutType) {
-        case .List:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemListCollectionViewCell.id, for: indexPath) as! ItemListCollectionViewCell
-            
-            return cell
-        default: // .Grid
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemCollectionViewCell.id, for: indexPath) as! ItemCollectionViewCell
-            
-            return cell
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
         let item = searchItems[indexPath.row]
-        let url: URL? = item.getImageUrl()
-        
         switch(layoutType) {
         case .List:
-            let cell: ItemListCollectionViewCell = cell as! ItemListCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(for: indexPath) as ItemListCollectionViewCell
+            cell.setupCell(item: item)
 
-            
-            if let itemQuote = item.getItemQuote(), item.getItemQuote() != nil {
-                cell.itemQuote.text = "\"\(itemQuote)\""
-            }
-            
-            if item.getItemQuote() == nil && item.getItemDescription() != nil {
-                cell.itemQuote.text = "\(item.getItemDescription()!)"
-            }
-            
-            cell.itemTitle.text = item.getItemName()
-            
-            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            
-            if url != nil {
-                cell.itemImage.kf.indicatorType = .activity
-                cell.itemImage.kf.setImage(with: url)
-            }
-            
+            return cell
         default: // .Grid
-            let cell: ItemCollectionViewCell = cell as! ItemCollectionViewCell
-            
-            cell.itemTitle.text = ""
-            
-            cell.itemImage.layer.magnificationFilter = kCAFilterNearest
-            
-            if url != nil {
-                cell.itemImage.kf.indicatorType = .activity
-                cell.itemImage.kf.setImage(with: url)
-            }
+            let cell = collectionView.dequeueReusableCell(for: indexPath) as ItemCollectionViewCell
+            cell.setupCell(item: item)
+
+            return cell
         }
-        
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = searchItems[indexPath.row]
         selectedItem = item
@@ -366,31 +358,6 @@ extension ItemViewController {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showItemDetail" {
-//            let destinationVC =  segue.destination as! ItemDetailViewController
-//            destinationVC.selectedItem = selectedItem
-//        }
-//    }
-    
-}
-
-extension ItemViewController {
-    // MARK: - Collection View Delegate Flow Layout Methods
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let bounds = collectionView.bounds
-        
-        return CGSize(width: (bounds.width * 10), height: bounds.height)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
 }
 
 extension ItemViewController {
@@ -440,6 +407,7 @@ extension ItemViewController {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         view.removeGestureRecognizer(tap)
+        self.registerNotifications()
     }
     
     func handleTap() {

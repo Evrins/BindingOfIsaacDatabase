@@ -33,29 +33,23 @@ class GridFlowLayout: UICollectionViewFlowLayout {
      Sets up the layout for the collectionView. 0 distance between each cell, and vertical layout
      */
     func setupGridLayout() {
-        let leftRightMargin = CGFloat(10)
-        let cellsAcross: CGFloat = 7 + 1
-        let cellSpacing = CGFloat(5)
+        let ratio: CGFloat = 1.0
+        let leftRightMargin: CGFloat = 5
+        let cellsAcross: CGFloat = 8
+        let cellSpacing: CGFloat = 4
         let spaceBetweenCells = cellSpacing * (cellsAcross - 1)
         let screenWidth = UIScreen.main.bounds.width
-        let dim = (screenWidth - leftRightMargin - spaceBetweenCells) / cellsAcross
-        calculatedItemSize = CGSize(width: dim, height: dim)
+        let width = (screenWidth - leftRightMargin - spaceBetweenCells) / cellsAcross - 1
+        let height = width * ratio
+        calculatedItemSize = CGSize(width: width, height: height)
         
         itemSize = calculatedItemSize
         
-        sectionInset = UIEdgeInsets(top: 10, left: leftRightMargin, bottom: 10, right: leftRightMargin)
+        sectionInset = UIEdgeInsets(top: 5, left: leftRightMargin, bottom: 5, right: leftRightMargin)
         minimumInteritemSpacing = cellSpacing
         minimumLineSpacing = cellSpacing
     }
-    
-//    override var itemSize: CGSize {
-//        set {
-//            self.itemSize = calculatedItemSize
-//        }
-//        get {
-//            return calculatedItemSize
-//        }
-//    }
+
     
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
         return collectionView!.contentOffset

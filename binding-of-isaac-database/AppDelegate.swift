@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 import CoreSpotlight
+import SwiftyBeaver
+let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // Setup swifty beaver
+        let console = ConsoleDestination()
+        log.addDestination(console) // add to SwiftyBeaver
+        
+        // Setup realm configuration
         var config = Realm.Configuration()
         config.deleteRealmIfMigrationNeeded = true
         

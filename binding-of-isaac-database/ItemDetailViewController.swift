@@ -12,7 +12,7 @@ import Reusable
 import SwifterSwift
 
 class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var selectedItem: ItemModel? = nil
+    var selectedItem: ItemModel!
     
     lazy var selectedItemProperties: [ItemProperty] = {
         let item = self.selectedItem
@@ -26,6 +26,8 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     let menuItemCollection = MenuItemCollection.sharedInstance
     var isFromSpotlight = false
     
+    let collectedButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,7 +37,6 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.alwaysBounceVertical = false
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
         tableView.allowsSelection = false
         
@@ -56,6 +57,8 @@ class ItemDetailViewController: UIViewController, UITableViewDelegate, UITableVi
             self.title = selectedItem?.getItemName()
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Dismiss", style: .plain, target: self, action: #selector(self.dismissMe))
         }
+        
+        setupFooter()
     }
 
     func dismissMe() {
@@ -98,24 +101,7 @@ extension ItemDetailViewController {
                 
                 let item = selectedItem
                 
-                cell.itemImage.layer.magnificationFilter = kCAFilterNearest;
-                cell.itemImage.contentMode = .scaleAspectFit
-                                
-                if let url = item?.getImageUrl() {
-                    cell.itemImage.kf.indicatorType = .activity
-                    cell.itemImage.kf.setImage(with: url)
-                }
-                
-                var image: UIImage? = nil
-                if let itemId = item?.getItemId() {
-                    image = UIImage(named: itemId)
-                }
-                if image != nil {
-                    cell.itemImage.image = image
-                }
-                
-                cell.itemTitleLabel.text = item?.getItemName()
-                cell.itemQuoteLabel.text = item?.getItemQuote()
+                cell.setupCell(item: item)
                 
                 return cell
             default:
@@ -154,6 +140,48 @@ extension ItemDetailViewController {
         
     }
     
+    func setupFooter() {
+        if selectedItem.globalType != "items" {
+            tableView.tableFooterView = UIView()
+            return
+        }
+        
+        let height = UIScreen.main.bounds.height / 12
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: height))
+        
+        collectedButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        collectedButton.setTitle("Not Collected", for: .normal)
+        collectedButton.setTitle("Collected", for: .selected)
+        collectedButton.titleLabel?.textAlignment = .center
+        collectedButton.titleLabel?.textColor = Stylesheet.Colors.White
+        collectedButton.addTarget(self, action: #selector(self.collectedButtonPressed), for: .touchUpInside)
+        
+        setButtonAttributes()
+        
+        view.addSubview(collectedButton)
+        collectedButton.snp.makeConstraints { (make) -> Void in
+            make.edges.equalToSuperview()
+        }
+        tableView.tableFooterView = view
+    }
+    
+    func collectedButtonPressed() {
+        selectedItem.toggleCollected()
+        setButtonAttributes()
+    }
+    
+    func setButtonAttributes() {
+        if selectedItem.isCollected() {
+            collectedButton.backgroundColor = .green
+            collectedButton.isSelected = true
+            return
+        }
+        collectedButton.backgroundColor = .gray
+        collectedButton.isSelected = false
+    }
+}
+
+extension ItemDetailViewController {
     func getItemFields(item: ItemModel) -> [ItemProperty] {
         
         var itemProperties = [
@@ -194,14 +222,13 @@ class ItemDetailTopCell: UITableViewCell, Reusable {
         self.contentView.addSubview(itemImage)
         self.contentView.addSubview(itemTitleLabel)
         self.contentView.addSubview(itemQuoteLabel)
-        
         self.itemTitleLabel.sizeToFit()
         
         self.itemQuoteLabel.sizeToFit()
         self.itemQuoteLabel.numberOfLines = 0
         self.itemQuoteLabel.lineBreakMode = .byWordWrapping
         
-        setupConstraints()
+//        setupConstraints()
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -223,12 +250,38 @@ class ItemDetailTopCell: UITableViewCell, Reusable {
             make.left.equalTo(itemTitleLabel.snp.left)
             make.right.equalToSuperview().inset(5)
         }
+        
         contentView.snp.makeConstraints { (make) -> Void in
             make.left.equalToSuperview()
             make.right.equalToSuperview()
             make.bottom.equalTo(itemImage.snp.bottom).inset(-10).priority(250)
-            make.bottom.equalTo(itemQuoteLabel.snp.bottom).inset(-10).priority(260)
+            if itemQuoteLabel.text != nil {
+                make.bottom.equalTo(itemQuoteLabel.snp.bottom).inset(-10).priority(260)
+            }
         }
+    }
+    
+    func setupCell(item: ItemModel!) {
+        itemImage.layer.magnificationFilter = kCAFilterNearest;
+        itemImage.contentMode = .scaleAspectFit
+        
+        if let url = item.getImageUrl() {
+            itemImage.kf.indicatorType = .activity
+            itemImage.kf.setImage(with: url)
+        }
+        
+        var image: UIImage? = nil
+        if let itemId = item.getItemId() {
+            image = UIImage(named: itemId)
+        }
+        if image != nil {
+            itemImage.image = image
+        }
+        
+        itemTitleLabel.text = item.getItemName()
+        itemQuoteLabel.text = item.getItemQuote()
+        
+        setupConstraints()
     }
 }
 
@@ -247,7 +300,7 @@ class CustomTableViewCell: UITableViewCell, Reusable {
         self.cellLabel.lineBreakMode = .byWordWrapping
         self.cellDetailLabel.sizeToFit()
         self.cellDetailLabel.numberOfLines = 0
-        
+
         setupConstraints()
     }
     
